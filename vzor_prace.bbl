@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,12 @@
 \newblock Dostupn{\'{e}}~z:
   \url{http://businessworld.cz/ostatni/co-je-to-business-intelligence-7157}.
 
+\bibitem[Dolák(2011)]{BigData}
+{\sc Dolák}, O.
+\newblock \emph{Big data} [online]. SystemOnLine.cz, 2011. [cit.~2016/12/10].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.systemonline.cz/clanky/big-data.htm}.
+
 \bibitem[Hoare(1961)]{Hoare1961}
 {\sc Hoare}, C. A.~R.
 \newblock Algorithm 64: {Q}uicksort.
@@ -24,6 +30,12 @@
 \newblock ISSN 0001-0782.
 \newblock \doi{10.1145/366622.366644}.
 \newblock Dostupn{\'{e}}~z: \url{http://doi.acm.org/10.1145/366622.366644}.
+
+\bibitem[INfo a kompatibilita()]{Splunk_a_kompatibilita}
+\emph{Download Splunk Enterprise} [online]. Splunk Inc., 2015-2016.
+  [cit.~2016/12/10].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.splunk.com/en_us/download/sem.html?ac=ga0508_s_splunk&_kk=download%2520splunk&_kt=c02e72c3-e19a-49ad-b070-f6acd33faee3&gclid=CNK84bG06dACFUE_Gwodux8AlQ}.
 
 \bibitem[Knuth(1997)]{KnuthAOCP2}
 {\sc Knuth}, D.~E.
@@ -44,9 +56,21 @@
 \newblock Dostupn{\'{e}}~z:
   \url{https://www.inetsoft.com/company/bi_dashboard_pricing/}.
 
+\bibitem[Python based machine learning()]{MachineLearning}
+\emph{Machine Learning Toolkit} [online]. Splunk Inc., 2016. [cit.~2016/12/10].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://splunkbase.splunk.com/app/2890/#/overview}.
+
 \bibitem[Table of programming languages()]{JavaStandings}
 \emph{Tiobe index for December 2016} [online]. TIOBE software BV, 2016.
   [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z: \url{http://www.tiobe.com/tiobe-index/}.
+
+\bibitem[US government()]{Splunk_security}
+\emph{Booz Allen Hamilton and Splunk Announce Strategic Alliance to Deliver
+  Predictive Security Analytics and Operationalize Threat Intelligence}
+  [online]. Splunk Inc., 2015. [cit.~2016/12/10].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://www.splunk.com/view/booz-allen-hamilton-and-splunk-announce-strategic-alliance-to-deliver-predictive-security-analytics-and-operationalize-threat-intelligence/SP-CAAAPB7}.
 
 \end{thebibliography}

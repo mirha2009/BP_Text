@@ -95,8 +95,10 @@ První kapitola práce je zaměřena na nástroje, pomocí kterých je možné a
 
 \section{InetSoft Style Intelligence}
 Jedná se o produkt firmy InetSoft Technology Corporation, která  se zaměřuje na vývoj BI aplikací. Společnost nabízí aplikace určené k tvorbě podnikových reportů a k vizualizaci vlastních firemních dat. Tyto aplikace jsou založené na webových technologiích a jsou některé zdarma (jako např. Vizualize Free a Style Scope Free Edition) Při vývoji se především používá XML, SOAP, jazyk Java a JavaScript\cite{InetTechnology}. Hlavně díky použití jazyku Java, který je dnes celosvětovou jedničkou mezi programovacími jazyky \cite{JavaStandings} jsou aplikace snadno integrovatelné s jinými softwary, které jsou založeny na otevřených standardech. 
+
 \subsection{Přehled}
 InetSoft Style Intelligence je velmi silný nástroj, který umožňuje zpracovávat a kombinovat data z různých zdrojů. Systém je nabízen jako cloudová aplikace nebo jako řešení na míru. Řešení na míru je například produkt InetSoft Style, který je implementován přímo na server subjektu, který požádal o řešení, a InetSoft garantuje minimální zatížení na chod serveru.
+
 \subsection{Technologie}
 \begin{itemize}
 	\item Kolekce dat
@@ -120,8 +122,40 @@ InetSoft Style Intelligence je velmi silný nástroj, který umožňuje zpracov�
 
 \subsection{Kompatabilita}
 Firma tvrdí, že její produkt je schopný převzít data z téměř jakéhokoliv zdroje, což zvládá díky jejich data mashup engine. Zákazník tedy může použít jak strukturovaná tak semistrukturovaná nebo nestrukturovaná data. InetSoft Style Intelligence podporuje export do běžných formátů, díky čemu jsou data a grafy využitelné v balíčku MS Office. Jelikož se jedná o službu založenou na webové technologii, tak je dostupná na všech hlavních prohlížečích na běžných systémech jako jsou Windows, Unix, Linux, Mac OS, HP-Unix, Solaris a další.\cite{InetKompatilbilita}
+
 \subsection{Hodnocení a ceník}
 Hlavní výhodou tohoto produktu je uživatelsky přívětivé prostředí, kde uživatelé tvoří vizualizace svých dat. To je především díky přehlednosti webové stránky, ze které se nástroj ovládá, jednotlivým tlačítkům zlehčující ovladatelnost systému a také systémem drag and drop, bez nutnosti používat jakýkoliv dotazovací jazyk. Velkým pozitivem je i možnost ovládat nástroje přes mobilní telefon, ale podle mě je to vhodné jen k zobrazování již vytvořených analýz a dashboardů. Dalším pozitivem je i možnost nahlédnout přímo do raw dat pouhým kliknutím na libovolný prvek vizualizace. Výhodou taktéž je, že produkt není určen primárně pro technicky vzdělané uživatele, ale je určené pro běžné uživatele bez nutnosti podpory IT oddělení. Balíček služeb je dostupný již od 2 800 dolarů.\cite{InetCenik}
+
+\chapter{Splunk Enterprice}
+Software byl vytvořen firmou Splunk Inc., která se zaměřuje na vývoj podpůrného softwaru pro vyhledávání, analyzování a monitoring strojových dat skrze webové rozhraní.\cite{Splunk_a_kompatibilita} Splunk Enterprise patří mezi základní produkty této firmy, ale ta dále nabízí cloudovou verzi Enterprise pod názvem Splunk Cloud™ a Splunk Light, což je nástroj na monitoring logů pro menší IT subjekty. Základní verze těchto produktů je možno rozšířit o další nadstavby a vytvořit tak komplexní řešení na míru každého zákazníka. Mezi nadstavby patří produkty Splunk Enterprise Security, který se zaměřuje na kolekci a analýzu dat získaných ze zabezpečovacích technologií (Firewally, Antiviry), Splunk IT Service Intelligence, což je nástroj na sledování funkčnosti IT systémů (sleduje podezřelé aktivity systému, výkon systému a předem definované kritické částí systému), a Splunk User Behaviour Analytics, který používá strojové učení k detekci potencionálních hrozeb a kyber útoků. Právě díky nástrojům vhodným ke zlepšení kyber bezpečnosti spolupracuje firma s americkou vládou skrze zprostředkovatelskou firmu, která zajišťuje kyberbezpečnost pro vládu.\cite{Splunk_security}
+
+\section{Přehled}
+Produkt Splunk Enterprise je vhodný pro sběr, analýzu a úpravu strojových dat ve velkém množství (tzv. Big Data). Tyto data mohou být generována různými interními systémy uživatele ve formě serverových logů, aplikačních logů, dat o výrobě, logů ze sociálních sítí a podobně. Software je určen primárně pro zpracování semistrukturovaných a nestrukturovaných dat z non-SQL databází.
+\section{Technologie}
+\begin{itemize}
+	\item Kolekce dat
+		\begin{itemize}
+			\item Velkou výhodou tohoto řešení je nezávislost na formě vstupních dat, protože ty jsou zpracována a zaindexována do formy, kterou produkty od firmy Splunk vyžadují. Nedochází avšak k normalizaci dat, ale data jsou uchovávána v raw podobě na které odkazují metadata v souborech s indexy. 
+		\end{itemize}
+	\item Vyhledávání
+		\begin{itemize}
+			\item Vyhledávání je zprostředkováno vlastním query jazykem, který se jmenuje Search Processing Language neboli SPL™. Jazyk je velmi rozsáhlý, obsahuje více než 140 příkazů a podporuje korelaci přes pět oblastí (čas, transakce, join, lookup a subvyhledávání). Výsledky z vyhledávání jsou interpretovány do vhodných interaktivních grafů, které jsou zvoleny přímo aplikací na základě množství a formy dat. Vyhledává se buďto pomocí SPL™ nebo přes velké množství filtrů anebo kombinovaně. 
+		\end{itemize}
+	\item Zpracování dat
+		\begin{itemize}
+			\item Jelikož je vytvořen soubor s indexy, tak Splunk Enterprise zvládá korelaci a analýzu z různých zdrojů najednou, což značně urychluje práci analytikům. K tvorbě modelů a k predikci anomálií v chování systému používá produkt strojové učení. Modely lze vytvářet přímo skrze webový prohlížeč pomocí speciálních příkazů jazyka SPL™. Jako základ strojového učení jsou použity knihovny programovacího jazyka Python. \cite{MachineLearning}
+			\item Data se vizualizují pomocí různých uživatelsky přizpůsobitelných grafů, které se následně skládají do interaktivních dashboardů, které lze následně exportovat ve formě HTML. Výhodou je, že lze nastavit uživatelská práva jednotlivým dashboardům, přiřadit jim ovládací prvky a následně je sdílet s ostatními kolegy skrze společný pracovní prostor.
+		\end{itemize}
+\end{itemize}
+
+\section{Kompatibilita}
+Splunk je zaměřen především na zpracování big dat, ale je možné ho připojit i na relační databáze, nebo ho propojit s Excelem či Tableau. Splunk lze rozšiřovat vlastními aplikacemi, nebo využít databázi Splunkbase, kde jsou již vytvořené aplikace a rozšíření, které umožňují lepší integraci a vizualizaci. K aplikaci je také možné se připojit přes mobilní zařízení a kontrolovat tak chod sledovaného systému. Splunk je možné provozovat pod operačními systémy Linux, Windows 7 a novější a pod operačním systémem Mac OS X. \cite{Splunk_a_kompatibilita}
+
+\section{Hodnocení a ceník}
+ Ke každému produktu jsou k dispozici zkušební verze, které jsou omezeny jak časově, tak množstvím přenesených dat. Od množství přenesených dat za den se odvíjí i cena produktu, ale je k dispozici produkt Splunk Free, který je určen pro jednotlivce a má omezené funkce monitoringu a strojového učení. Velkou výhodu spatřuji v existenci vlastní komunity, která zprostředkovává možnost přímo se zeptat uživatelů na přínosy, popřípadě je to místo, kde hledat pomoc při problémech se softwarem od společnosti Splunk Inc.
+ 
+ \chapter{Tableau Desktop}
+ 
 \chapter{Původní text}
 V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \cite{KnuthAOCP2}, článek v časopisu \cite{Hoare1961}, webovou stránku 
  
@@ -133,6 +167,8 @@ V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \ci
 \textbf{BI:} \uv{Business intelligence, nebo také BI, je rámcový termín, označující paletu softwarových aplikací využívaných k analýze syrových dat organizace.} \cite{BI} \label{BI_slovnik}
 \newline \textbf{SOAP:} Simple Object Access Protocol je protokol zajišťující přenos zpráv založených na XML pomocí protokolu HTTP.
 \newline \textbf{Materializovaný pohled:} jsou to databázové objekty obsahující výsledek dotazu. Přstup k výsledku je rychlejší než u normálních query dotazů, ale nesmí se měnit vstupní data pro materializovaný pohled, protože se neaktualizuje automaticky při změně databáze.
+\newline
+\textbf{Big Data} : \uv{big data je termí aplikovatelný na soubory dat, jejichž velikost je mimo schopnosti zachycovat, spravovat a zpracovávat data běžně používanými softwarovými nástroji v rozumném čase.} \cite{BigData}
 \bibliographystyle{csplainnatkiv}
 {\raggedright\small
 \bibliography{literatura}
