@@ -1,9 +1,21 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Archive()]{InetTechnology}
+\emph{Company Background} [online]. InetSoft Technology Corp, 2002.
+  [cit.~2016/12/10].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://web.archive.org/web/20020210121546/www.inetsoft.com/cgi-bin/v6/index.pl?aboutus/backgrounder.html}.
+
+\bibitem[Business world - BI()]{BI}
+\emph{Co je to business intelligence} [online]. CFO world, 1999.
+  [cit.~2016/12/10].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://businessworld.cz/ostatni/co-je-to-business-intelligence-7157}.
 
 \bibitem[Hoare(1961)]{Hoare1961}
 {\sc Hoare}, C. A.~R.
@@ -13,17 +25,28 @@
 \newblock \doi{10.1145/366622.366644}.
 \newblock Dostupn{\'{e}}~z: \url{http://doi.acm.org/10.1145/366622.366644}.
 
-\bibitem[Java SE Documentation - Graphics()]{Graphics2D}
-\emph{Class Graphics2D} [online]. Oracle, 2016. [cit.~2016/03/09]. Java {SE}
-  Documentation.
-\newblock Dostupn{\'{e}}~z:
-  \url{https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html}.
-
 \bibitem[Knuth(1997)]{KnuthAOCP2}
 {\sc Knuth}, D.~E.
 \newblock \emph{The Art of Computer Programming, Volume 2 (3rd Ed.):
   Seminumerical Algorithms}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., 1997.
 \newblock ISBN 0-201-89684-2.
+
+\bibitem[Kompatibilita()]{InetKompatilbilita}
+\emph{Style Intelligence - Business Intelligence Software} [online]. InetSoft
+  Technology Corp, 2016. [cit.~2016/12/10].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.inetsoft.com/products/StyleIntelligence/}.
+
+\bibitem[Pricing()]{InetCenik}
+\emph{Style Intelligence - Business Intelligence Software} [online]. InetSoft
+  Technology Corp, 2016. [cit.~2016/12/10].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.inetsoft.com/company/bi_dashboard_pricing/}.
+
+\bibitem[Table of programming languages()]{JavaStandings}
+\emph{Tiobe index for December 2016} [online]. TIOBE software BV, 2016.
+  [cit.~2016/12/10].
+\newblock Dostupn{\'{e}}~z: \url{http://www.tiobe.com/tiobe-index/}.
 
 \end{thebibliography}

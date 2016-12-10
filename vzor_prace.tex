@@ -18,14 +18,14 @@
 %
 % Jméno a příjmení; kvůli textu prohlášení určete, 
 % zda jde o mužské, nebo ženské jméno.
-\author{Přemysl Oráč}
+\author{Miroslav Havlíček}
 \declarationmale
 
 %alternativa: 
 %\declarationfemale
 
 % Název práce
-\title{Titul práce\\nanejvýš na dvě\\až tři řádky}
+\title{Analýza a vizualizace dat z ubytovacích portálů}
 
 % 
 % Texty abstraktů (anglicky, česky)
@@ -45,7 +45,7 @@
 %\university{Západočeská univerzita v Plzni}
 %\faculty{Fakulta aplikovaných věd}
 %\department{Katedra informatiky a výpočetní techniky}
-%\subject{Bakalářská práce}
+\subject{Projekt 5}
 %\titlepagetown{Plzeň}
 %\declarationtown{Plzni}
 
@@ -89,13 +89,50 @@
 \maketitle
 \tableofcontents
 
-\chapter{Úvod}
-V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \cite{KnuthAOCP2}, článek v časopisu \cite{Hoare1961}, webovou stránku \cite{Graphics2D}.
+\chapter{Nástroje na analýzu a vizualizaci dat }
+
+První kapitola práce je zaměřena na nástroje, pomocí kterých je možné analyzaovat a vizualizovat semi-strukturovaná popřípadě nestrukturovaná data. Na trhu je mnoho nástrojů určených pro zpracování firemních dat a většinou jsou součástí komplexnějšího řešení ve formě BI nástroje.
+
+\section{InetSoft Style Intelligence}
+Jedná se o produkt firmy InetSoft Technology Corporation, která  se zaměřuje na vývoj BI aplikací. Společnost nabízí aplikace určené k tvorbě podnikových reportů a k vizualizaci vlastních firemních dat. Tyto aplikace jsou založené na webových technologiích a jsou některé zdarma (jako např. Vizualize Free a Style Scope Free Edition) Při vývoji se především používá XML, SOAP, jazyk Java a JavaScript\cite{InetTechnology}. Hlavně díky použití jazyku Java, který je dnes celosvětovou jedničkou mezi programovacími jazyky \cite{JavaStandings} jsou aplikace snadno integrovatelné s jinými softwary, které jsou založeny na otevřených standardech. 
+\subsection{Přehled}
+InetSoft Style Intelligence je velmi silný nástroj, který umožňuje zpracovávat a kombinovat data z různých zdrojů. Systém je nabízen jako cloudová aplikace nebo jako řešení na míru. Řešení na míru je například produkt InetSoft Style, který je implementován přímo na server subjektu, který požádal o řešení, a InetSoft garantuje minimální zatížení na chod serveru.
+\subsection{Technologie}
+\begin{itemize}
+	\item Kolekce dat
+	\begin{itemize}
+		\item Základem je technologie Data Block$^{TM}$, která zprostředkovává shromažďování dat z různých zdrojů. Data z databáze získává tento nástroj přímo z originálních úložišť pomocí před připravených materializovaných pohledů.
+	\end{itemize}
+	\item Zpracování dat
+	\begin{itemize}
+		\item Real-time interaktivní dashboardy
+		\item Multidimenzionální grafy
+		\item Geografické mapy
+		\item Předpřipravené typy dashboardů pro:
+		\begin{itemize}
+			\item Prodej a nákup
+			\item Zdravotnictví
+			\item Vzdělávání
+			\item Různé formy analýz
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\subsection{Kompatabilita}
+Firma tvrdí, že její produkt je schopný převzít data z téměř jakéhokoliv zdroje, což zvládá díky jejich data mashup engine. Zákazník tedy může použít jak strukturovaná tak semistrukturovaná nebo nestrukturovaná data. InetSoft Style Intelligence podporuje export do běžných formátů, díky čemu jsou data a grafy využitelné v balíčku MS Office. Jelikož se jedná o službu založenou na webové technologii, tak je dostupná na všech hlavních prohlížečích na běžných systémech jako jsou Windows, Unix, Linux, Mac OS, HP-Unix, Solaris a další.\cite{InetKompatilbilita}
+\subsection{Hodnocení a ceník}
+Hlavní výhodou tohoto produktu je uživatelsky přívětivé prostředí, kde uživatelé tvoří vizualizace svých dat. To je především díky přehlednosti webové stránky, ze které se nástroj ovládá, jednotlivým tlačítkům zlehčující ovladatelnost systému a také systémem drag and drop, bez nutnosti používat jakýkoliv dotazovací jazyk. Velkým pozitivem je i možnost ovládat nástroje přes mobilní telefon, ale podle mě je to vhodné jen k zobrazování již vytvořených analýz a dashboardů. Dalším pozitivem je i možnost nahlédnout přímo do raw dat pouhým kliknutím na libovolný prvek vizualizace. Výhodou taktéž je, že produkt není určen primárně pro technicky vzdělané uživatele, ale je určené pro běžné uživatele bez nutnosti podpory IT oddělení. Balíček služeb je dostupný již od 2 800 dolarů.\cite{InetCenik}
+\chapter{Původní text}
+V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \cite{KnuthAOCP2}, článek v časopisu \cite{Hoare1961}, webovou stránku 
  
 % 
 % PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT
 % CITAČNÍ STYL!
 %
+\chapter{Slovník pojmů}
+\textbf{BI:} \uv{Business intelligence, nebo také BI, je rámcový termín, označující paletu softwarových aplikací využívaných k analýze syrových dat organizace.} \cite{BI} \label{BI_slovnik}
+\newline \textbf{SOAP:} Simple Object Access Protocol je protokol zajišťující přenos zpráv založených na XML pomocí protokolu HTTP.
+\newline \textbf{Materializovaný pohled:} jsou to databázové objekty obsahující výsledek dotazu. Přstup k výsledku je rychlejší než u normálních query dotazů, ale nesmí se měnit vstupní data pro materializovaný pohled, protože se neaktualizuje automaticky při změně databáze.
 \bibliographystyle{csplainnatkiv}
 {\raggedright\small
 \bibliography{literatura}
