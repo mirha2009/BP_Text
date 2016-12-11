@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -37,6 +37,13 @@
 \newblock Dostupn{\'{e}}~z:
   \url{https://www.splunk.com/en_us/download/sem.html?ac=ga0508_s_splunk&_kk=download%2520splunk&_kt=c02e72c3-e19a-49ad-b070-f6acd33faee3&gclid=CNK84bG06dACFUE_Gwodux8AlQ}.
 
+\bibitem[Interview()]{TableauHistory}
+\emph{How To Get a 20 Million Dollar Pre-Money Valuation for Series A: Tableau
+  Software CEO Christian Chabot} [online]. Sramana Mitra's Biography, 2010.
+  [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://www.sramanamitra.com/2010/03/04/how-to-get-a-20-million-pre-money-valuation-for-series-a-tableau-software-ceo-christian-chabot-part-2/}.
+
 \bibitem[Knuth(1997)]{KnuthAOCP2}
 {\sc Knuth}, D.~E.
 \newblock \emph{The Art of Computer Programming, Volume 2 (3rd Ed.):
@@ -50,16 +57,32 @@
 \newblock Dostupn{\'{e}}~z:
   \url{https://www.inetsoft.com/products/StyleIntelligence/}.
 
-\bibitem[Pricing()]{InetCenik}
+\bibitem[Overview()]{VizQL}
+\emph{VizQL™} [online]. TABLEAU SOFTWARE, 2016. [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z: \url{http://www.tableau.com/about/mission#vizql}.
+
+\bibitem[Pricing({\natexlab{a}})]{InetCenik}
 \emph{Style Intelligence - Business Intelligence Software} [online]. InetSoft
-  Technology Corp, 2016. [cit.~2016/12/10].
+  Technology Corp, 2016{\natexlab{a}}. [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z:
   \url{https://www.inetsoft.com/company/bi_dashboard_pricing/}.
+
+\bibitem[Pricing({\natexlab{b}})]{TableauPricing}
+\emph{Pricing} [online]. TABLEAU SOFTWARE, 2016{\natexlab{b}}.
+  [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://www.tableau.com/products/desktop#pricing-specs}.
 
 \bibitem[Python based machine learning()]{MachineLearning}
 \emph{Machine Learning Toolkit} [online]. Splunk Inc., 2016. [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z:
   \url{https://splunkbase.splunk.com/app/2890/#/overview}.
+
+\bibitem[Sources()]{TableauSources}
+\emph{Connect to more data} [online]. TABLEAU SOFTWARE, 2016.
+  [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://www.tableau.com/products/desktop#data-sources-professional}.
 
 \bibitem[Table of programming languages()]{JavaStandings}
 \emph{Tiobe index for December 2016} [online]. TIOBE software BV, 2016.
