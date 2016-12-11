@@ -28,6 +28,7 @@
 \contentsline {chapter}{\numberline {5}Kibana}{17}{chapter.5}
 \contentsline {section}{\numberline {5.1}P\IeC {\v r}ehled}{17}{section.5.1}
 \contentsline {section}{\numberline {5.2}Technologie}{17}{section.5.2}
-\contentsline {section}{\numberline {5.3}Kompatibilita}{18}{section.5.3}
-\contentsline {chapter}{\numberline {6}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{19}{chapter.6}
-\contentsline {chapter}{Literatura}{20}{chapter*.5}
+\contentsline {section}{\numberline {5.3}Kompatibilita}{17}{section.5.3}
+\contentsline {section}{\numberline {5.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{17}{section.5.4}
+\contentsline {chapter}{\numberline {6}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{18}{chapter.6}
+\contentsline {chapter}{Literatura}{19}{chapter*.5}
