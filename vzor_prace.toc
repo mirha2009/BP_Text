@@ -20,6 +20,15 @@
 \contentsline {section}{\numberline {3.2}Technologie}{11}{section.3.2}
 \contentsline {section}{\numberline {3.3}Kompatibilita}{12}{section.3.3}
 \contentsline {section}{\numberline {3.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{13}{section.3.4}
-\contentsline {chapter}{\numberline {4}P\IeC {\r u}vodn\IeC {\'\i } text}{14}{chapter.4}
-\contentsline {chapter}{\numberline {5}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{15}{chapter.5}
-\contentsline {chapter}{Literatura}{16}{chapter*.5}
+\contentsline {chapter}{\numberline {4}Sisense}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}P\IeC {\v r}ehled}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Technologie}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Kompatibilita}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{15}{section.4.4}
+\contentsline {chapter}{\numberline {5}Kibana}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}P\IeC {\v r}ehled}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Technologie}{17}{section.5.2}
+\contentsline {section}{\numberline {5.3}Kompatibilita}{17}{section.5.3}
+\contentsline {section}{\numberline {5.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{17}{section.5.4}
+\contentsline {chapter}{\numberline {6}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{18}{chapter.6}
+\contentsline {chapter}{Literatura}{19}{chapter*.5}

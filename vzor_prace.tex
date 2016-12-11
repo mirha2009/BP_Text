@@ -182,10 +182,63 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
  Tableau nabízí možnost využít základní aplikaci pro programovatelný přístup k datům a vizualizacím, ale jelikož je napsána v JavaScriptu je možné ji rozšiřovat dle vlastních potřeb. Pomocí této aplikace lze vizualizace exportovat do jiných programů především z rodiny MS Office. Aplikace je založena na webových technologiích, takže je kompatibilní s běžnými distribucemi Windows 7 a vyšší a s Mac OSX 10.10 a novější. Verzi personal je možné propojit s zdroji typu MS Access popřípadě přímo s textovými soubory ve formátu CSV popřípadě JSON. Verze professional je již propojitelné s většinou databázových systémů, které se dnes používají (např. Oracle Databases, PostgresSQL, Cloudera Hadoop Hive and Impala, Cisco Information Server).\cite{TableauSources}
  
  \section{Hodnocení a ceník}
- Cena se pohybuje od 999\$ za osobní verzi, až po 1999\$ za profesionální edici Tableau Desktop.\cite{TableauPricing} Zajímavostí je, že firma nezapomněla na své kořeny ze Stanfordské univerzity a je tak pro všechny studenty a vyučující k dispozici zdarma bez omezení. Verze Tableau Public, která je zdarma pro širokou veřejnost má podobné vizualizační nástroje jako placené verze, ale podporuje zpracování pouze již strukturovaných dat. Stejně jako u produktu Splunk Enterprise má Tableau vlastní komunitu, která je podporována přímo firmou Tableau a kam přispívají jak jednotlivý zaměstnanci, tak i zákazníci. 
+ Cena se pohybuje od 999\$ za osobní verzi, až po 1999\$ za profesionální edici Tableau Desktop.\cite{TableauPricing} Zajímavostí je, že firma nezapomněla na své kořeny ze Stanfordské univerzity a je tak pro všechny studenty a vyučující k dispozici zdarma bez omezení. Verze Tableau Public, která je zdarma pro širokou veřejnost má podobné vizualizační nástroje jako placené verze, ale podporuje zpracování pouze již strukturovaných dat. Stejně jako u produktu Splunk Enterprise má Tableau vlastní komunitu, která je podporována přímo firmou Tableau a kam přispívají jak jednotlivý zaměstnanci, tak i zákazníci. K dispozici je taktéž mobilní aplikace, která je primárně určená pro prohlížení vytvořených dashboardů. 
  
-\chapter{Původní text}
-V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \cite{KnuthAOCP2}, článek v časopisu \cite{Hoare1961}, webovou stránku 
+ \chapter{Sisense}
+  Tento software je produktem stejnojmenné firmy, která se zaměřuje na nástroje Buisiness Intelligence. Jejich řešení jsou komplexní a obsahují jak nástroje na sběr dat, tak nástroje na jejich vizualizaci. Společnost je uváděna jako lídr oblasti poskytovatelů Buisiness Intelligence nástrojů, které se v očích odborné veřejnosti tak i v očích uživatelů jeví jako velmi spolehlivé.\cite{SisenseStandings}
+ 
+ \section{Přehled}
+
+ Sisense je koncový BI nástroj, který byl vyvinut pro uživatele, kteří nemají téměř žádné zkušenosti s BI nástroji a nemusejí být technicky zdatní. Aplikace nabízí nástroje pro správu, text mining a pro interaktivní analýzu dat, která jsou uložena v databázi ElastiCube, což je podpůrný produkt Sisense. Výhodou Sisense je velmi snadná ovladatelnost pomocí systému drag and drop, bez nutnosti znalosti query jazyka.
+ \section{Technologie}
+ \begin{itemize}
+ 	\item Kolekce a příprava dat
+ 	\begin{itemize}
+ 		\item Sisense nevyžaduje časově nároční předzpracování dat, tak jako ostatní BI nástroje na trhu. Data z různých zdrojů jsou sjednocena a importována do jednotného repositáře, což usnadňuje práci s daty a nevyžaduje nákup speciálních programů na přípravu dat, popřípadě spouštět skripty nad daty. Databáze ElastiCube je sloupcově orientovaná a je tvořena mnoha poli, kde každá hodnota v polích má odpovídající logickou hodnotu v jiném poli a tím je databáze propojena. Proto je vhodné používat tento typ uložení při velkém množství dat, nebo pokud jsou data z různých zdrojů.
+ 		
+ 		\item Výhodou je také zpracování jednotlivých dotazů, které nejsou na rozdíl od běžných technologií zpracovány jako celek, ale jsou rozděleny do bloků, které se následně vyhodnocují. To je výhodné časově, protože při jednotném zpracování dotazů musí, CPU při každé změně v dotazu opětovně vyhodnotit celý dotaz, ale při blokovém musí zpracovat jen tu část dotazu, která byla změněna.
+ 		
+ 		\item Rychlost, za kterou je produkt velmi ceněn je dána způsobem zpracování dat, který je na rozdíl od ostatních produktů na trhu zajištěn technologií in-chip. Tato technologie je v databázových systémech jedinečná a jejím základem je maximalizace využití paměti, kterou poskytují jednotlivá CPU, protože přístup do této paměti je výrazně rychlejší, než přístup do paměti RAM, která je využívána technologií in-memory.
+ 		
+ 	\end{itemize}
+ 	\item Zpracování dat
+ 	\begin{itemize}
+ 		\item Vizualizace je umožněna širokou paletou grafů a geografických map, které lze skládat do interaktivních real-time dashboardů. Tyto dashboardy se následně můžou sdílet napříč organizací a sledovat jeho vývoj a případně upravit uživatelská práva. Každý dashboard obsahuje ovládací panely s filtry a lze zde přímo upravovat query dotazy a přizpůsobovat tak vizualizace dle aktuálních potřeb. Aplikace již obsahuje některé dashboardy předpřipravené, což je určeno především pro nezkušené analytiky.
+
+ 	\end{itemize}
+ \end{itemize}
+ 
+ \section{Kompatibilita}
+  Nabízí předpřipravené nástroje na import dat z Excelu, Google Adwords, Salseforce, CRM reports, Splunk bez nutnosti složitého importu dat, což je opět určeno především pro netechnické uživatele, kteří dokáží pomocí systému drag and drop jak importovat a zpracovat data, tak je následně vizualizovat a popřípadě exportovat například do formátů CSV, PDF, Excel a podobně. Software je založen na webových technologiích a je tak kompatibilní s běžnými operačními systémy jako jsou Windows, Android, OS X. Splunk nabízí možnost obohatit produkt o řadu předpřipravených rozšíření, nebo je možné  přímo vyvíjet rozšíření v JavaScriptu, kdy je ovšem doporučeno toto rozšíření konzultovat s komunitou.
+ \section{Hodnocení a ceník}
+ Cena softwaru se odvíjí od  velikosti společnosti a od velikosti zpracovávaných dat, ale je k dispozici až na konkrétní dotaz. K dispozici je avšak demo verze, která obsahuje již data a je tak možné si vyzkoušet funkcionalitu systému před jeho zakoupením. Výhodou je napojení systému na mobilní telefony, kdy výrobce deklaruje, a zákazníci potvrzují, že především sledování vývoje dashboardů přes mobilní zařízení je velmi praktické. Co se týče zpracování strojových dat, sám výrobce doporučuje propojení Sisense s produkty od firmy Splunk. Stejně jako Tableau a Splunk, podporuje Sisense vlastní komunitu.
+ 
+ 
+ \chapter{Kibana}
+ 
+ 
+ \section{Přehled}
+ 
+ \section{Technologie}
+ \begin{itemize}
+ 	\item Kolekce a příprava dat
+ 	\begin{itemize}
+ 		\item 
+ 		
+ 		\item 
+ 	\end{itemize}
+ 	\item Zpracování dat
+ 	\begin{itemize}
+ 		\item 
+ 		
+ 		\item 
+ 	\end{itemize}
+ \end{itemize}
+ 
+ \section{Kompatibilita}
+
+ 
+ \section{Hodnocení a ceník}
  
 % 
 % PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT
