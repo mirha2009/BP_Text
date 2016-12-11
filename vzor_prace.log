@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  11 DEC 2016 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  11 DEC 2016 16:02
 entering extended mode
 **./vzor_prace.tex
 (vzor_prace.tex
@@ -781,9 +781,9 @@ Kapitola 4.
 Kapitola 5.
 [17
 
-]
+] [18]
 Kapitola 6.
-(vzor_prace.bbl [18
+(vzor_prace.bbl [19
 
 ]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 12.
@@ -793,37 +793,37 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 12.
 
-Overfull \hbox (234.36317pt too wide) in paragraph at lines 34--38
+Overfull \hbox (234.36317pt too wide) in paragraph at lines 40--44
 \T1/lmtt/m/n/10.95 how-[]to-[]get-[]a-[]20-[]million-[]pre-[]money-[]valuation-
 []for-[]series-[]a-[]tableau-[]software-[]ceo-[]christian-[]chabot-[]part-[]2/$
 [][]\T1/lmr/m/n/10.95 .  
  []
 
-[19
+[20
 
 ]
-Overfull \hbox (443.02467pt too wide) in paragraph at lines 84--88
+Overfull \hbox (443.02467pt too wide) in paragraph at lines 90--94
 \T1/lmtt/m/n/10.95 booz-[]allen-[]hamilton-[]and-[]splunk-[]announce-[]strategi
 c-[]alliance-[]to-[]deliver-[]predictive-[]security-[]analytics-[]and-[]operati
 onalize-[]threat-[]intelligence / 
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
- [20]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
+ [21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
  (vzor_prace.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
 Package rerunfilecheck Info: File `vzor_prace.out' has not changed.
-(rerunfilecheck)             Checksum: B51183387D3FE7E0848C23493145DB7F;3468.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 258.
+(rerunfilecheck)             Checksum: 59E3C7AFB3091FA6AC46625C3EB4C6C7;3316.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
  ) 
 Here is how much of TeX's memory you used:
- 10507 strings out of 494874
- 145406 string characters out of 3174258
- 225411 words of memory out of 3000000
- 13747 multiletter control sequences out of 15000+200000
+ 10510 strings out of 494874
+ 145462 string characters out of 3174258
+ 225449 words of memory out of 3000000
+ 13749 multiletter control sequences out of 15000+200000
  73018 words of font info for 47 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
  31i,5n,28p,1340b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -837,9 +837,9 @@ lic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmtt10.pfb>
-Output written on vzor_prace.pdf (20 pages, 296685 bytes).
+Output written on vzor_prace.pdf (21 pages, 301370 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 

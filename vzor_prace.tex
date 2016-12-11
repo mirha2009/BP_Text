@@ -196,7 +196,7 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
  	\begin{itemize}
  		\item Sisense nevyžaduje časově nároční předzpracování dat, tak jako ostatní BI nástroje na trhu. Data z různých zdrojů jsou sjednocena a importována do jednotného repositáře, což usnadňuje práci s daty a nevyžaduje nákup speciálních programů na přípravu dat, popřípadě spouštět skripty nad daty. Databáze ElastiCube je sloupcově orientovaná a je tvořena mnoha poli, kde každá hodnota v polích má odpovídající logickou hodnotu v jiném poli a tím je databáze propojena. Proto je vhodné používat tento typ uložení při velkém množství dat, nebo pokud jsou data z různých zdrojů.
  		
- 		\item Výhodou je také zpracování jednotlivých dotazů, které nejsou na rozdíl od běžných technologií zpracovány jako celek, ale jsou rozděleny do bloků, které se následně vyhodnocují. To je výhodné časově, protože při jednotném zpracování dotazů musí, CPU při každé změně v dotazu opětovně vyhodnotit celý dotaz, ale při blokovém musí zpracovat jen tu část dotazu, která byla změněna.
+ 		\item Výhodou je také zpracování jednotlivých dotazů, které nejsou na rozdíl od běžných technologií zpracovány jako celek, ale jsou rozděleny do bloků, které se následně vyhodnocují. To je výhodné časově, protože při jednotném zpracování dotazů musí, CPU při každé změně v dotazu opětovně vyhodnotit celý dotaz, ale při blokovém musí zpracovat jen tu část dotazu, která byla změněna.\cite{ElasticCube}
  		
  		\item Rychlost, za kterou je produkt velmi ceněn je dána způsobem zpracování dat, který je na rozdíl od ostatních produktů na trhu zajištěn technologií in-chip. Tato technologie je v databázových systémech jedinečná a jejím základem je maximalizace využití paměti, kterou poskytují jednotlivá CPU, protože přístup do této paměti je výrazně rychlejší, než přístup do paměti RAM, která je využívána technologií in-memory.
  		
@@ -215,30 +215,31 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
  
  
  \chapter{Kibana}
- 
+ Kibana je open source nástroj na vizualizaci dat od firmy Elastic a byla vytvořena jako plugin do fulltextového vyhledávače Elasticsearch, který vychází z Apache Lucene. Elasticsearch je NoSQL bezschémová databáze, což znamená, že není nutné definovat předem přesnou strukturu databáze, ale databáze sama nastaví schéma podle dat, která obsahuje. Přesto se doporučuje zvolení alespoň základního schématu, což může usnadnit následující analýzy nad daty. Oba nástroje jsou součástí produktu Elastic Stack, který je jediným produktem firmy Elastic a je dostupný jako open source, ale forma dále nabízí rozšířené funkce, které je ovšem již nutné zakoupit. Elastic Stack se tak skládá z Elasticsearch, Kibany, Logstash a Beats.
  
  \section{Přehled}
- 
+ Kibana byla původně vytvořena jen jako plugin k Elasticsearch, ale nyní je z ní plnohodnotná součást celku Elastic Stack a je hojně využívána především pro monitoring logů ze serverů. Kibana umožňuje spojit data z databáze do komplexních grafických prvků, ze kterých je snazší datům přiřadit význam. Díky rychlosti databáze Elasticsearch a jejím možnostem fulltextového vyhledávání můžeme Kibanu nazývat real-time nástrojem, pokud jsou tedy správně zaindexována data, které obsahuje databáze.  Problémem může být pro některé uživatele ovladatelnost, která není tak jednoduchá jako například u Tableau i přes přítomnost systému drag and drop. Na druhou stranu je oceňované rychlé fulltextové vyhledávání buďto skrze všechna data, nebo lze data pomocí query dotazu patřičně specifikovat.
  \section{Technologie}
  \begin{itemize}
  	\item Kolekce a příprava dat
  	\begin{itemize}
- 		\item 
- 		
- 		\item 
+ 		\item Jelikož je Kibana součástí produktu Elastic Stack, který obsahuje i Elasticsearch, nemusí řešit ukládání dat, ale stačí definovat indexování, které odpovídá indexům v Elasticsearch. Indexy lze přidat i za běhu Kibany v záložce „Nastavení“. Kibana, kterou požívám při vypracování bakalářské práce, obsahuje tři indexy a to konkrétně „hospitality“, „hotels“ a testovací „test“. 
  	\end{itemize}
+	\item Prohlížení dat
+	\begin{itemize}
+		\item Data lze přímo prohlížet skrze Kibana na záložce „Discover“, kde jsou zobrazena všechna data přidaná za časový úsek, který lze měnit v pravém horním rohu stránky. Data jsou zobrazena v defalutně tabulce, kdy jsou rozepsány jednotlivé skupiny dat, nebo je možné zobrazit soubor JSON, který je přímo uložený  v databázi. Jednotlivé záznamy lze je řadit podle data přidání a je možné změnit rozložení tabulky vybráním specifických skupin dat ze seznamu, který je po levé straně webové stránky.
+	\end{itemize}
  	\item Zpracování dat
  	\begin{itemize}
- 		\item 
+ 		\item Záložka „Vizualize“ slouží ke grafickému vyjádření dat v Elasticsearch ve formě například plošných grafů, spojnicových grafů, kruhových grafů nebo například jako geografickou oblast. Jednotlivé vizualizace lze ukládat do komplexnějších dashboardů, které lze upravovat na záložce „Dashboards“. Dashboardy lze tvořit z vizualizací, které vznikly na základě různých indexů, což nebylo v předchozích verzích možné a hlavně jedna vizualizace může být využita ve více dashboardech, protože existuje jako samostatný objekt.
  		
- 		\item 
+ 		\item Filtry lze použít přímo v jednotlivých objektech, nebo nad celými daty. Filtrování lze provádět pomocí speciálních query dotazů zadávaných do vyhledávacího pole nad vizualizacemi, daty či dashboardy. Kibana používá syntaxi Lucene dotazovacího jazyka, nebo pomocí JSON souboru, který používá syntaxi  Query String Query, která je také založena na Lucene query jazyku.
  	\end{itemize}
  \end{itemize}
  
  \section{Kompatibilita}
-
+	Kibana je napsána v JavaScriptu a využívá architektury klient-server s potvrzováním. Jelikož se patří do Elastic Stack, který je distribuovaným systémem, tak je snadno integrovatelná s jinými nástroji. Například od verze 5 lze přímo skrze Kibanu vkládat do Elasticsearch data ve formátu CSV, což umožňuje integraci s nástrojem MS Excel. Problémová je kompatibilita se staršími verzemi Kibany, kdy je naprosto nutné upgradovat nejprve Elasticsearch, protože každá verze má jiné clustery, což je kolekce serverů, která shromažďuje data a poskytuje indexování a vyhledávání přes jednotlivé servery.
  
- \section{Hodnocení a ceník}
  
 % 
 % PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT
