@@ -1,22 +1,39 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
 %
 % Vzor pro sazbu kvalifikační práce
+
 %
 % Západočeská univerzita v Plzni
-% Fakulta aplikovaných věd
-% Katedra informatiky a výpočetní techniky
+
+
+                          % Fakulta aplikovaných věd
+% Katedra informatiky a výpoetní techniky
 %
-% Petr Lobaz, lobaz@kiv.zcu.cz, 2016/03/14
+% Petr Lobaz, lobaz@kiv.zc.cz, 2016/03/14
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                 %%%%%%%%%%%%%%%%%%%
 
 % Možné jazyky práce: czech, english
-% Možné typy práce: BP (bakalářská), DP (diplomová)
+                                                                                                                                                                                                                                                                                                                      % Možné typy práce: BP (bakalářská), DP (diplomová)
 \documentclass[czech,BP]{thesiskiv}
 
+
 % Definujte údaje pro vstupní strany
-%
+
+
+
+                      %
 % Jméno a příjmení; kvůli textu prohlášení určete, 
+
+
+
 % zda jde o mužské, nebo ženské jméno.
 \author{Miroslav Havlíček}
 \declarationmale
@@ -24,44 +41,126 @@
 %alternativa: 
 %\declarationfemale
 
+
+
+
+
 % Název práce
+
 \title{Analýza a vizualizace dat z ubytovacích portálů}
+
+
+
+
 
 % 
 % Texty abstraktů (anglicky, česky)
 %
 \abstracttexten{The text of the abstract (in English). It contains the English translation of the thesis title and a short description of the thesis.}
 
-\abstracttextcz{Text abstraktu (česky). Obsahuje krátkou anotaci (cca 10 řádek) v češtině. Budete ji potřebovat i při vyplňování údajů o bakalářské práci ve STAGu. Český i anglický abstrakt by měly být na stejné stránce a měly by si obsahem co možná nejvíce odpovídat (samozřejmě není možný doslovný překlad!).
+\abstracttextcz{Text abstraktu (česky). Obsahuje krátkou anotaci (cca 10 řdek) v češtině. Budete ji potřebovat i při vyplňování údajů o bakalářské práci ve STAGu. Český i anglický abstrakt by měly být na stejné stránce a měly by si obsahem co možná nejvíce odpovídat (samozřejmě není možný doslovný překlad!).
 }
 
-% Na titulní stranu a do textu prohlášení se automaticky vkládá 
-% aktuální rok, resp. datum. Můžete je změnit:
-%\titlepageyear{2016}
-%\declarationdate{1. března 2016}
+                    % Na titulní stranu a do textu prohlášení se automaticky vkládá 
+% aktuální rok, resp. datum. Můžete je          změnit:
 
-% Ve zvláštních případech je možné ovlivnit i ostatní texty:
-%
-%\university{Západočeská univerzita v Plzni}
+
+
+
+
+
+
+
+              %\titlepageyear{2016}
+%\declarationdate{1. března 2016}
+% Ve zvláštních případech je možné ovlivnit i ostatní texty:%
+%\university{Západočeská univerzita v Plzni} 
 %\faculty{Fakulta aplikovaných věd}
-%\department{Katedra informatiky a výpočetní techniky}
+%\department{Katedra informatiky avýpočetní techniky}
+
+
+
+
+
+
+
+
 \subject{Projekt 5}
 %\titlepagetown{Plzeň}
 %\declarationtown{Plzni}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+
+
+
+
+
+
+
 % DODATEČNÉ BALÍČKY PRO SAZBU
 % Jejich užívání či neužívání záleží na libovůli autora 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
 % práce
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Zařadit literaturu do obsahu
+
+
+
+
+
+
+
+
 \usepackage[nottoc,notlot,notlof]{tocbibind}
 
 % Umožňuje vkládání obrázků
 \usepackage[pdftex]{graphicx}
+
+
+
+
+
+
+
+
+
+
+
+
 
 % Odkazy v PDF jsou aktivní; navíc se automaticky vkládá
 % balíček 'url', který umožňuje např. dělení slov
@@ -126,12 +225,12 @@ Firma tvrdí, že její produkt je schopný převzít data z téměř jakéhokol
 \subsection{Hodnocení a ceník}
 Hlavní výhodou tohoto produktu je uživatelsky přívětivé prostředí, kde uživatelé tvoří vizualizace svých dat. To je především díky přehlednosti webové stránky, ze které se nástroj ovládá, jednotlivým tlačítkům zlehčující ovladatelnost systému a také systémem drag and drop, bez nutnosti používat jakýkoliv dotazovací jazyk. Velkým pozitivem je i možnost ovládat nástroje přes mobilní telefon, ale podle mě je to vhodné jen k zobrazování již vytvořených analýz a dashboardů. Dalším pozitivem je i možnost nahlédnout přímo do raw dat pouhým kliknutím na libovolný prvek vizualizace. Výhodou taktéž je, že produkt není určen primárně pro technicky vzdělané uživatele, ale je určené pro běžné uživatele bez nutnosti podpory IT oddělení. Balíček služeb je dostupný již od 2 800 dolarů.\cite{InetCenik}
 
-\chapter{Splunk Enterprice}
+\section{Splunk Enterprice}
 Software byl vytvořen firmou Splunk Inc., která se zaměřuje na vývoj podpůrného softwaru pro vyhledávání, analyzování a monitoring strojových dat skrze webové rozhraní.\cite{Splunk_a_kompatibilita} Splunk Enterprise patří mezi základní produkty této firmy, ale ta dále nabízí cloudovou verzi Enterprise pod názvem Splunk Cloud\texttrademark a Splunk Light, což je nástroj na monitoring logů pro menší IT subjekty. Základní verze těchto produktů je možno rozšířit o další nadstavby a vytvořit tak komplexní řešení na míru každého zákazníka. Mezi nadstavby patří produkty Splunk Enterprise Security, který se zaměřuje na kolekci a analýzu dat získaných ze zabezpečovacích technologií (Firewally, Antiviry), Splunk IT Service Intelligence, což je nástroj na sledování funkčnosti IT systémů (sleduje podezřelé aktivity systému, výkon systému a předem definované kritické částí systému), a Splunk User Behaviour Analytics, který používá strojové učení k detekci potencionálních hrozeb a kyber útoků. Právě díky nástrojům vhodným ke zlepšení kyber bezpečnosti spolupracuje firma s americkou vládou skrze zprostředkovatelskou firmu, která zajišťuje kyberbezpečnost pro vládu.\cite{Splunk_security}
 
-\section{Přehled}
+\subsection{Přehled}
 Produkt Splunk Enterprise je vhodný pro sběr, analýzu a úpravu strojových dat ve velkém množství (tzv. Big Data). Tyto data mohou být generována různými interními systémy uživatele ve formě serverových logů, aplikačních logů, dat o výrobě, logů ze sociálních sítí a podobně. Software je určen primárně pro zpracování semistrukturovaných a nestrukturovaných dat z non-SQL databází.
-\section{Technologie}
+\subsection{Technologie}
 \begin{itemize}
 	\item Kolekce dat
 		\begin{itemize}
@@ -148,19 +247,19 @@ Produkt Splunk Enterprise je vhodný pro sběr, analýzu a úpravu strojových d
 		\end{itemize}
 \end{itemize}
 
-\section{Kompatibilita}
+\subsection{Kompatibilita}
 Splunk je zaměřen především na zpracování big dat, ale je možné ho připojit i na relační databáze, nebo ho propojit s Excelem či Tableau. Splunk lze rozšiřovat vlastními aplikacemi, nebo využít databázi Splunkbase, kde jsou již vytvořené aplikace a rozšíření, které umožňují lepší integraci a vizualizaci. K aplikaci je také možné se připojit přes mobilní zařízení a kontrolovat tak chod sledovaného systému. Splunk je možné provozovat pod operačními systémy Linux, Windows 7 a novější a pod operačním systémem Mac OS X. \cite{Splunk_a_kompatibilita}
 
-\section{Hodnocení a ceník}
+\subsection{Hodnocení a ceník}
  Ke každému produktu jsou k dispozici zkušební verze, které jsou omezeny jak časově, tak množstvím přenesených dat. Od množství přenesených dat za den se odvíjí i cena produktu, ale je k dispozici produkt Splunk Free, který je určen pro jednotlivce a má omezené funkce monitoringu a strojového učení. Velkou výhodu spatřuji v existenci vlastní komunity, která zprostředkovává možnost přímo se zeptat uživatelů na přínosy, popřípadě je to místo, kde hledat pomoc při problémech se softwarem od společnosti Splunk Inc.
  
- \chapter{Tableau Desktop}
+ \section{Tableau Desktop}
  Jedná se o produkt americké softwarové společnosti Tableau Software, jenž se zaměřuje na softwary vhodné pro vizualizaci dat a na nástroje business intelligence. Firma vznikla na základě výzkumů v oblasti vizualizace dat ze Standfordské univerzity. Konkrétně se jednalo projekt Polaris z oddělení počítačových věd.\cite{TableauHistory} Mezi hlavní produkty firmy patří kromě Tableau Desktop taktéž Tableau Server, který je určený především pro spolupráci napříč organizací, Tableau Online, což je cloudová verze produktu Tableau Server, Tableau Public, který je určen pro jednotlivce na nekomerční užití a proto je zdarma, a Tableau Reader, který je taktéž volně dostupný a slouží k prohlížení a manipulaci vizualizací vytvořených některým produktem Tableau. Produkty od firmy Tableau jsou dnes především využívané datovými žurnalisty, kteří oceňují jeho snadnou ovladatelnost.
  
- \section{Přehled}
+ \subsection{Přehled}
  Jedná se o nástroj k analýze a vizualizaci vlastních dat a také o nástroj Business Intelligence. Produkt je nabízen ve verzi Personal, která je určena osobnímu použití a vstupní data musejí být strukturovaná, a ve verzi Professional, která zvládá i nestrukturovaná Big Data. Výhodné je spojení s produktem Tableau Server, aby bylo možné vytvořené dashboardy a ostatní vizualizace sdílet s ostatními kolegy. Předností produktu Tableau Desktop je uživatelská přívětivost, protože k jeho běžnému nejsou nutné žádné pokročilé technologické znalosti, ale stačí používat systém tvorby vizualizací drag and drop. 
  
- \section{Technologie}
+ \subsection{Technologie}
  
  \begin{itemize}
  	\item Kolekce a příprava dat
@@ -178,25 +277,26 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
  	\end{itemize}
  \end{itemize}
  
- \section{Kompatibilita}
+ \subsection{Kompatibilita}
  Tableau nabízí možnost využít základní aplikaci pro programovatelný přístup k datům a vizualizacím, ale jelikož je napsána v JavaScriptu je možné ji rozšiřovat dle vlastních potřeb. Pomocí této aplikace lze vizualizace exportovat do jiných programů především z rodiny MS Office. Aplikace je založena na webových technologiích, takže je kompatibilní s běžnými distribucemi Windows 7 a vyšší a s Mac OSX 10.10 a novější. Verzi personal je možné propojit s zdroji typu MS Access popřípadě přímo s textovými soubory ve formátu CSV popřípadě JSON. Verze professional je již propojitelné s většinou databázových systémů, které se dnes používají (např. Oracle Databases, PostgresSQL, Cloudera Hadoop Hive and Impala, Cisco Information Server).\cite{TableauSources}
  
- \section{Hodnocení a ceník}
+ \subsection{Hodnocení a ceník}
  Cena se pohybuje od 999\$ za osobní verzi, až po 1999\$ za profesionální edici Tableau Desktop.\cite{TableauPricing} Zajímavostí je, že firma nezapomněla na své kořeny ze Stanfordské univerzity a je tak pro všechny studenty a vyučující k dispozici zdarma bez omezení. Verze Tableau Public, která je zdarma pro širokou veřejnost má podobné vizualizační nástroje jako placené verze, ale podporuje zpracování pouze již strukturovaných dat. Stejně jako u produktu Splunk Enterprise má Tableau vlastní komunitu, která je podporována přímo firmou Tableau a kam přispívají jak jednotlivý zaměstnanci, tak i zákazníci. K dispozici je taktéž mobilní aplikace, která je primárně určená pro prohlížení vytvořených dashboardů. 
  
- \chapter{Sisense}
+ \section{Sisense}
   Tento software je produktem stejnojmenné firmy, která se zaměřuje na nástroje Buisiness Intelligence. Jejich řešení jsou komplexní a obsahují jak nástroje na sběr dat, tak nástroje na jejich vizualizaci. Společnost je uváděna jako lídr oblasti poskytovatelů Buisiness Intelligence nástrojů, které se v očích odborné veřejnosti tak i v očích uživatelů jeví jako velmi spolehlivé.\cite{SisenseStandings}
  
- \section{Přehled}
+ \subsection{Přehled}
 
  Sisense je koncový BI nástroj, který byl vyvinut pro uživatele, kteří nemají téměř žádné zkušenosti s BI nástroji a nemusejí být technicky zdatní. Aplikace nabízí nástroje pro správu, text mining a pro interaktivní analýzu dat, která jsou uložena v databázi ElastiCube, což je podpůrný produkt Sisense. Výhodou Sisense je velmi snadná ovladatelnost pomocí systému drag and drop, bez nutnosti znalosti query jazyka.
- \section{Technologie}
+ \subsection{Technologie}
+ 
  \begin{itemize}
  	\item Kolekce a příprava dat
  	\begin{itemize}
  		\item Sisense nevyžaduje časově nároční předzpracování dat, tak jako ostatní BI nástroje na trhu. Data z různých zdrojů jsou sjednocena a importována do jednotného repositáře, což usnadňuje práci s daty a nevyžaduje nákup speciálních programů na přípravu dat, popřípadě spouštět skripty nad daty. Databáze ElastiCube je sloupcově orientovaná a je tvořena mnoha poli, kde každá hodnota v polích má odpovídající logickou hodnotu v jiném poli a tím je databáze propojena. Proto je vhodné používat tento typ uložení při velkém množství dat, nebo pokud jsou data z různých zdrojů.
  		
- 		\item Výhodou je také zpracování jednotlivých dotazů, které nejsou na rozdíl od běžných technologií zpracovány jako celek, ale jsou rozděleny do bloků, které se následně vyhodnocují. To je výhodné časově, protože při jednotném zpracování dotazů musí, CPU při každé změně v dotazu opětovně vyhodnotit celý dotaz, ale při blokovém musí zpracovat jen tu část dotazu, která byla změněna.
+ 		\item Výhodou je také zpracování jednotlivých dotazů, které nejsou na rozdíl od běžných technologií zpracovány jako celek, ale jsou rozděleny do bloků, které se následně vyhodnocují. To je výhodné časově, protože při jednotném zpracování dotazů musí, CPU při každé změně v dotazu opětovně vyhodnotit celý dotaz, ale při blokovém musí zpracovat jen tu část dotazu, která byla změněna.\cite{ElasticCube}
  		
  		\item Rychlost, za kterou je produkt velmi ceněn je dána způsobem zpracování dat, který je na rozdíl od ostatních produktů na trhu zajištěn technologií in-chip. Tato technologie je v databázových systémech jedinečná a jejím základem je maximalizace využití paměti, kterou poskytují jednotlivá CPU, protože přístup do této paměti je výrazně rychlejší, než přístup do paměti RAM, která je využívána technologií in-memory.
  		
@@ -208,37 +308,39 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
  	\end{itemize}
  \end{itemize}
  
- \section{Kompatibilita}
+ \subsection{Kompatibilita}
   Nabízí předpřipravené nástroje na import dat z Excelu, Google Adwords, Salseforce, CRM reports, Splunk bez nutnosti složitého importu dat, což je opět určeno především pro netechnické uživatele, kteří dokáží pomocí systému drag and drop jak importovat a zpracovat data, tak je následně vizualizovat a popřípadě exportovat například do formátů CSV, PDF, Excel a podobně. Software je založen na webových technologiích a je tak kompatibilní s běžnými operačními systémy jako jsou Windows, Android, OS X. Splunk nabízí možnost obohatit produkt o řadu předpřipravených rozšíření, nebo je možné  přímo vyvíjet rozšíření v JavaScriptu, kdy je ovšem doporučeno toto rozšíření konzultovat s komunitou.
- \section{Hodnocení a ceník}
+ \subsection{Hodnocení a ceník}
  Cena softwaru se odvíjí od  velikosti společnosti a od velikosti zpracovávaných dat, ale je k dispozici až na konkrétní dotaz. K dispozici je avšak demo verze, která obsahuje již data a je tak možné si vyzkoušet funkcionalitu systému před jeho zakoupením. Výhodou je napojení systému na mobilní telefony, kdy výrobce deklaruje, a zákazníci potvrzují, že především sledování vývoje dashboardů přes mobilní zařízení je velmi praktické. Co se týče zpracování strojových dat, sám výrobce doporučuje propojení Sisense s produkty od firmy Splunk. Stejně jako Tableau a Splunk, podporuje Sisense vlastní komunitu.
  
  
- \chapter{Kibana}
+ \section{Kibana}
+ Kibana je open source nástroj na vizualizaci dat od firmy Elastic a byla vytvořena jako plugin do fulltextového vyhledávače Elasticsearch, který vychází z Apache Lucene. Elasticsearch je NoSQL bezschémová databáze, což znamená, že není nutné definovat předem přesnou strukturu databáze, ale databáze sama nastaví schéma podle dat, která obsahuje. Přesto se doporučuje zvolení alespoň základního schématu, což může usnadnit následující analýzy nad daty. Oba nástroje jsou součástí produktu Elastic Stack, který je jediným produktem firmy Elastic a je dostupný jako open source, ale forma dále nabízí rozšířené funkce, které je ovšem již nutné zakoupit. Elastic Stack se tak skládá z Elasticsearch, Kibany, Logstash a Beats.
  
+ \subsection{Přehled}
+ Kibana byla původně vytvořena jen jako plugin k Elasticsearch, ale nyní je z ní plnohodnotná součást celku Elastic Stack a je hojně využívána především pro monitoring logů ze serverů. Kibana umožňuje spojit data z databáze do komplexních grafických prvků, ze kterých je snazší datům přiřadit význam. Díky rychlosti databáze Elasticsearch a jejím možnostem fulltextového vyhledávání můžeme Kibanu nazývat real-time nástrojem, pokud jsou tedy správně zaindexována data, které obsahuje databáze.  Problémem může být pro některé uživatele ovladatelnost, která není tak jednoduchá jako například u Tableau i přes přítomnost systému drag and drop. Na druhou stranu je oceňované rychlé fulltextové vyhledávání buďto skrze všechna data, nebo lze data pomocí query dotazu patřičně specifikovat.
+ \subsection{Technologie}
  
- \section{Přehled}
- 
- \section{Technologie}
  \begin{itemize}
  	\item Kolekce a příprava dat
  	\begin{itemize}
- 		\item 
- 		
- 		\item 
+ 		\item Jelikož je Kibana součástí produktu Elastic Stack, který obsahuje i Elasticsearch, nemusí řešit ukládání dat, ale stačí definovat indexování, které odpovídá indexům v Elasticsearch. Indexy lze přidat i za běhu Kibany v záložce „Nastavení“. Kibana, kterou požívám při vypracování bakalářské práce, obsahuje tři indexy a to konkrétně „hospitality“, „hotels“ a testovací „test“. 
  	\end{itemize}
+	\item Prohlížení dat
+	\begin{itemize}
+		\item Data lze přímo prohlížet skrze Kibana na záložce „Discover“, kde jsou zobrazena všechna data přidaná za časový úsek, který lze měnit v pravém horním rohu stránky. Data jsou zobrazena v defalutně tabulce, kdy jsou rozepsány jednotlivé skupiny dat, nebo je možné zobrazit soubor JSON, který je přímo uložený  v databázi. Jednotlivé záznamy lze je řadit podle data přidání a je možné změnit rozložení tabulky vybráním specifických skupin dat ze seznamu, který je po levé straně webové stránky.
+	\end{itemize}
  	\item Zpracování dat
  	\begin{itemize}
- 		\item 
+ 		\item Záložka „Vizualize“ slouží ke grafickému vyjádření dat v Elasticsearch ve formě například plošných grafů, spojnicových grafů, kruhových grafů nebo například jako geografickou oblast. Jednotlivé vizualizace lze ukládat do komplexnějších dashboardů, které lze upravovat na záložce „Dashboards“. Dashboardy lze tvořit z vizualizací, které vznikly na základě různých indexů, což nebylo v předchozích verzích možné a hlavně jedna vizualizace může být využita ve více dashboardech, protože existuje jako samostatný objekt.
  		
- 		\item 
+ 		\item Filtry lze použít přímo v jednotlivých objektech, nebo nad celými daty. Filtrování lze provádět pomocí speciálních query dotazů zadávaných do vyhledávacího pole nad vizualizacemi, daty či dashboardy. Kibana používá syntaxi Lucene dotazovacího jazyka, nebo pomocí JSON souboru, který používá syntaxi  Query String Query, která je také založena na Lucene query jazyku.
  	\end{itemize}
  \end{itemize}
  
- \section{Kompatibilita}
-
+ \subsection{Kompatibilita}
+	Kibana je napsána v JavaScriptu a využívá architektury klient-server s potvrzováním. Jelikož se patří do Elastic Stack, který je distribuovaným systémem, tak je snadno integrovatelná s jinými nástroji. Například od verze 5 lze přímo skrze Kibanu vkládat do Elasticsearch data ve formátu CSV, což umožňuje integraci s nástrojem MS Excel. Problémová je kompatibilita se staršími verzemi Kibany, kdy je naprosto nutné upgradovat nejprve Elasticsearch, protože každá verze má jiné clustery, což je kolekce serverů, která shromažďuje data a poskytuje indexování a vyhledávání přes jednotlivé servery.
  
- \section{Hodnocení a ceník}
  
 % 
 % PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT

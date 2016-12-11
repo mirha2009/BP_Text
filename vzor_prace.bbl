@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,6 +22,12 @@
 \newblock \emph{Big data} [online]. SystemOnLine.cz, 2011. [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z:
   \url{https://www.systemonline.cz/clanky/big-data.htm}.
+
+\bibitem[ElasticCube technology()]{ElasticCube}
+\emph{Introduction to ElastiCubes} [online]. Sisense Inc., 2014.
+  [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.sisense.com/documentation/v5/elasticube-manager/introduction-to-elasticube-manager/}.
 
 \bibitem[INfo a kompatibilita()]{Splunk_a_kompatibilita}
 \emph{Download Splunk Enterprise} [online]. Splunk Inc., 2015-2016.
