@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,13 @@
   [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z:
   \url{http://web.archive.org/web/20020210121546/www.inetsoft.com/cgi-bin/v6/index.pl?aboutus/backgrounder.html}.
+
+\bibitem[Brasetvik(2013)]{SchemaElastic}
+{\sc Brasetvik}, A.
+\newblock \emph{Elasticsearch as a NoSQL Database} [online]. Elasticsearch,
+  2013. [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.elastic.co/blog/found-elasticsearch-as-nosql#schema-flexible}.
 
 \bibitem[Business world - BI()]{BI}
 \emph{Co je to business intelligence} [online]. CFO world, 1999.

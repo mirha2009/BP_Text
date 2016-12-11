@@ -29,5 +29,6 @@
 \contentsline {subsection}{\numberline {1.5.1}P\IeC {\v r}ehled}{14}{subsection.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}Technologie}{15}{subsection.1.5.2}
 \contentsline {subsection}{\numberline {1.5.3}Kompatibilita}{16}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Verze 5}{16}{subsection.1.5.4}
 \contentsline {chapter}{\numberline {2}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{17}{chapter.2}
 \contentsline {chapter}{Literatura}{18}{chapter*.5}
