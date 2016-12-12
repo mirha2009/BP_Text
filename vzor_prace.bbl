@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -66,6 +66,19 @@
 \newblock Dostupn{\'{e}}~z:
   \url{https://reviews.financesonline.com/p/sisense/}.
 
+\bibitem[Levy(2015)]{SisenseAndSplunk}
+{\sc Levy}, E.
+\newblock \emph{SISENSE 5.7 IS OUT: SAY HELLO TO MACHINE DATA, MONGODB}
+  [online]. Sisense Inc., 2015. [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.sisense.com/blog/sisense-5-7-is-out-say-hello-to-machine-data-mongodb/}.
+
+\bibitem[Operational intelligence()]{Operational_intelligence}
+\emph{Splunk} [online]. ZiffDavis, LLC. PCMag Digital Group., 2016.
+  [cit.~2016/12/10].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://www.pcmag.com/business/directory/network-monitoring/1830-splunk}.
+
 \bibitem[Overview()]{VizQL}
 \emph{VizQL™} [online]. TABLEAU SOFTWARE, 2016. [cit.~2016/12/11].
 \newblock Dostupn{\'{e}}~z: \url{http://www.tableau.com/about/mission#vizql}.
@@ -91,6 +104,17 @@
 \emph{Revision history} [online]. TABLEAU SOFTWARE, 2016. [cit.~2016/12/11].
 \newblock Dostupn{\'{e}}~z: \url{http://www.tableau.com/new-features/10.0#}.
 
+\bibitem[Roes(2016)]{Kibana5intro}
+{\sc Roes}, T.
+\newblock \emph{Kibana 5 Introduction} [online]. https://www.timroes.de, 2016.
+  [cit.~2016/12/13].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.timroes.de/2016/10/23/kibana5-introduction/}.
+
+\bibitem[Sisense addons()]{SisenseAdd-ons}
+\emph{SISENSE ADD-ONS} [online]. Sisense Inc., 2016. [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z: \url{https://www.sisense.com/product/add-ons/}.
+
 \bibitem[Sources()]{TableauSources}
 \emph{Connect to more data} [online]. TABLEAU SOFTWARE, 2016.
   [cit.~2016/12/11].
@@ -108,5 +132,11 @@
   [online]. Splunk Inc., 2015. [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z:
   \url{http://www.splunk.com/view/booz-allen-hamilton-and-splunk-announce-strategic-alliance-to-deliver-predictive-security-analytics-and-operationalize-threat-intelligence/SP-CAAAPB7}.
+
+\bibitem[Widgets()]{SisenseVizualize}
+\emph{Sisense} [online]. ZiffDavis, LLC. PCMag Digital Group., 2016.
+  [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://www.pcmag.com/business/directory/data-visualization/1225-sisense}.
 
 \end{thebibliography}
