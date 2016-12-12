@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -104,12 +104,19 @@
 \emph{Revision history} [online]. TABLEAU SOFTWARE, 2016. [cit.~2016/12/11].
 \newblock Dostupn{\'{e}}~z: \url{http://www.tableau.com/new-features/10.0#}.
 
-\bibitem[Roes(2016)]{Kibana5intro}
+\bibitem[Roes(2016{\natexlab{a}})]{Kibana5intro}
 {\sc Roes}, T.
-\newblock \emph{Kibana 5 Introduction} [online]. https://www.timroes.de, 2016.
-  [cit.~2016/12/13].
+\newblock \emph{Kibana 5 Introduction} [online]. https://www.timroes.de,
+  2016{\natexlab{a}}. [cit.~2016/12/13].
 \newblock Dostupn{\'{e}}~z:
   \url{https://www.timroes.de/2016/10/23/kibana5-introduction/}.
+
+\bibitem[Roes(2016{\natexlab{b}})]{KibanaQueries}
+{\sc Roes}, T.
+\newblock \emph{Elasticsearch/Kibana Queries - In Depth Tutorial} [online].
+  https://www.timroes.de, 2016{\natexlab{b}}. [cit.~2016/12/13].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.timroes.de/2016/05/29/elasticsearch-kibana-queries-in-depth-tutorial/}.
 
 \bibitem[Sisense addons()]{SisenseAdd-ons}
 \emph{SISENSE ADD-ONS} [online]. Sisense Inc., 2016. [cit.~2016/12/11].
