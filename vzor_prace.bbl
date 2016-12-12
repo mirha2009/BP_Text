@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,6 +23,12 @@
   [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z:
   \url{http://businessworld.cz/ostatni/co-je-to-business-intelligence-7157}.
+
+\bibitem[Data Dimension()]{TableauDimensions}
+\emph{Tableau Desktop} [online]. ZiffDavis, LLC. PCMag Digital Group., 2016.
+  [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://www.pcmag.com/business/directory/business-intelligence/182-tableau-desktop}.
 
 \bibitem[Dolák(2011)]{BigData}
 {\sc Dolák}, O.
@@ -80,6 +86,10 @@
 \emph{Machine Learning Toolkit} [online]. Splunk Inc., 2016. [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z:
   \url{https://splunkbase.splunk.com/app/2890/#/overview}.
+
+\bibitem[Revision history()]{TableauVersion}
+\emph{Revision history} [online]. TABLEAU SOFTWARE, 2016. [cit.~2016/12/11].
+\newblock Dostupn{\'{e}}~z: \url{http://www.tableau.com/new-features/10.0#}.
 
 \bibitem[Sources()]{TableauSources}
 \emph{Connect to more data} [online]. TABLEAU SOFTWARE, 2016.
