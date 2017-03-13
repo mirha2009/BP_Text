@@ -1,34 +1,30 @@
 \select@language {british}
 \select@language {czech}
-\select@language {british}
-\select@language {czech}
-\select@language {czech}
-\select@language {czech}
-\contentsline {chapter}{\numberline {1}N\IeC {\'a}stroje na anal\IeC {\'y}zu a vizualizaci dat }{6}{chapter.1}
-\contentsline {section}{\numberline {1.1}InetSoft Style Intelligence}{6}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}P\IeC {\v r}ehled}{6}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Technologie}{6}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Kompatabilita}{7}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{7}{subsection.1.1.4}
-\contentsline {section}{\numberline {1.2}Splunk Enterprice}{7}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}P\IeC {\v r}ehled}{8}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Technologie}{8}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Kompatibilita}{9}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{9}{subsection.1.2.4}
-\contentsline {section}{\numberline {1.3}Tableau Desktop}{10}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}P\IeC {\v r}ehled}{10}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Technologie}{10}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Kompatibilita}{11}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{12}{subsection.1.3.4}
-\contentsline {section}{\numberline {1.4}Sisense}{12}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}P\IeC {\v r}ehled}{12}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Technologie}{12}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Kompatibilita}{13}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{14}{subsection.1.4.4}
-\contentsline {section}{\numberline {1.5}Kibana}{14}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}P\IeC {\v r}ehled}{14}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Technologie}{15}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Kompatibilita}{16}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Verze 5}{16}{subsection.1.5.4}
-\contentsline {chapter}{\numberline {2}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{17}{chapter.2}
-\contentsline {chapter}{Literatura}{18}{chapter*.5}
+\contentsline {chapter}{\numberline {1}N\IeC {\'a}stroje na anal\IeC {\'y}zu a vizualizaci dat }{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}InetSoft Style Intelligence}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}P\IeC {\v r}ehled}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Technologie}{2}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Kompatabilita}{3}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{3}{subsection.1.1.4}
+\contentsline {section}{\numberline {1.2}Splunk Enterprice}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}P\IeC {\v r}ehled}{4}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Technologie}{4}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Kompatibilita}{5}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{5}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}Tableau Desktop}{6}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}P\IeC {\v r}ehled}{6}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Technologie}{6}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Kompatibilita}{7}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{8}{subsection.1.3.4}
+\contentsline {section}{\numberline {1.4}Sisense}{8}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}P\IeC {\v r}ehled}{8}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Technologie}{8}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Kompatibilita}{9}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{10}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Kibana}{10}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}P\IeC {\v r}ehled}{10}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Technologie}{11}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Kompatibilita}{12}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Verze 5}{12}{subsection.1.5.4}
+\contentsline {chapter}{\numberline {2}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{13}{chapter.2}
+\contentsline {chapter}{Literatura}{14}{chapter*.2}
