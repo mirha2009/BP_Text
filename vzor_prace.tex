@@ -21,7 +21,7 @@
 
 % Možné jazyky práce: czech, english
                                                                                                                                                                                                                                                                         % Možné typy práce: BP (bakalářská), DP (diplomová)
-\documentclass[czech,BP]{thesiskiv2}
+\documentclass[czech,BP]{thesiskiv}
 
 
 % Definujte údaje pro vstupní strany
@@ -169,7 +169,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %
-\maketitle
+%\maketitle
 \tableofcontents
 
 \chapter{Nástroje na analýzu a vizualizaci dat }
@@ -346,17 +346,25 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
 
 
 
-\textbf{BI:} \uv{Business intelligence, nebo také BI, je rámcový termín, označující paletu softwarových aplikací využívaných k analýze syrových dat organizace.} \cite{BI}
+\hspace{0,5cm} \textbf{BI:} \uv{Business intelligence, nebo také BI, je rámcový termín, označující paletu softwarových aplikací využívaných k analýze syrových dat organizace.} \cite{BI}
 
 \textbf{Big Data:} \uv{big data je termín aplikovatelný na soubory dat, jejichž velikost je mimo schopnosti zachycovat, spravovat a zpracovávat data běžně používanými softwarovými nástroji v rozumném čase.} \cite{BigData}
 
-\textbf{SOAP:} Simple Object Access Protocol je protokol zajišťující přenos zpráv založených na XML pomocí protokolu HTTP.
+\textbf{CRM} neboli Customer Relationship Management je zkratka pro podpůrné informační systémy, které jsou určené pro řízení vztahů se zákazníky.
+
+\textbf{CSV} neboli Comma-separated values je souborový formát určený pro výměnu tabulkových dat. Soubor se skládá z řádků, na kterých jsou uložené položky, které jsou od sebe odděleny čárkami.
+
+\textbf{JSON} \uv{neboli JavaScript Object Notation je formát souborů určený k výměně dat.} Je snadno čitelný i zapisovatelný člověkem a zároveň lze soubory ve formátu JSON snadno generovat i zpracovávat strojově.\cite{JSON}
+
+\textbf{NoSQL}\uv{Jedná se o novou generaci databázových systému pro správu velkého množství dat, které jsou převážně ne-relační, distribuované, škálovatelné a podporují replikaci. Často jsou to databáze bez datového schématu, s jednoduchým rozhraním pro práci s daty a open source přístupem}.\cite{NoSQL}
 
 \textbf{Materializovaný pohled:} jsou to databázové objekty obsahující výsledek dotazu. Přístup k výsledku je rychlejší než u normálních query dotazů, ale nesmí se měnit vstupní data pro materializovaný pohled, protože se neaktualizuje automaticky při změně databáze.
 
-\textbf{XML:} XML neboli Extensible Markup Language je obecný značkovací jazyk určen pro uchování a přenos dat. Je čitelný jak pro lidi tak i pro stroje.
+\textbf{PDF} \uv{PDF neboli Portable Document Format je formát používaný k prezentaci a spolehlivé výměně dokumentů, který je nezávislý na softwaru, hardwaru i operačnímu systému.} \citealp{PDF}
 
+\textbf{SOAP:} Simple Object Access Protocol je protokol zajišťující přenos zpráv založených na XML pomocí protokolu HTTP.
 
+\textbf{XML:} neboli Extensible Markup Language je obecný značkovací jazyk určen pro uchování a přenos dat. Je čitelný jak pro lidi tak i pro stroje.
 
 \bibliographystyle{csplainnatkiv}
 {\raggedright\small

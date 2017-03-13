@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -42,6 +42,12 @@
 \newblock Dostupn{\'{e}}~z:
   \url{https://www.sisense.com/documentation/v5/elasticube-manager/introduction-to-elasticube-manager/}.
 
+\bibitem[Holubová et~al.(2015)Holubová, Kosek, Minařík,, Novák]{NoSQL}
+{\sc Holubová}, I. et~al.
+\newblock \emph{Big Data a NoSQL databáze}.
+\newblock Grada, 2015.
+\newblock ISBN 978-80-247-5466-6.
+
 \bibitem[INfo a kompatibilita()]{Splunk_a_kompatibilita}
 \emph{Download Splunk Enterprise} [online]. Splunk Inc., 2015-2016.
   [cit.~2016/12/10].
@@ -54,6 +60,11 @@
   [cit.~2016/12/11].
 \newblock Dostupn{\'{e}}~z:
   \url{http://www.sramanamitra.com/2010/03/04/how-to-get-a-20-million-pre-money-valuation-for-series-a-tableau-software-ceo-christian-chabot-part-2/}.
+
+\bibitem[JSON definice()]{JSON}
+\emph{JSON} [online]. Refsnes Data, 2017. [cit.~2017/03/13].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.w3schools.com/js/js_json_intro.asp}.
 
 \bibitem[Kompatibilita()]{InetKompatilbilita}
 \emph{Style Intelligence - Business Intelligence Software} [online]. InetSoft
@@ -82,6 +93,11 @@
 \bibitem[Overview()]{VizQL}
 \emph{VizQL™} [online]. TABLEAU SOFTWARE, 2016. [cit.~2016/12/11].
 \newblock Dostupn{\'{e}}~z: \url{http://www.tableau.com/about/mission#vizql}.
+
+\bibitem[PDF definice()]{PDF}
+\emph{PDF} [online]. Adobe Systems Incorporated., 2017. [cit.~2017/03/13].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://acrobat.adobe.com/cz/cs/why-adobe/about-adobe-pdf.html}.
 
 \bibitem[Pricing({\natexlab{a}})]{InetCenik}
 \emph{Style Intelligence - Business Intelligence Software} [online]. InetSoft
