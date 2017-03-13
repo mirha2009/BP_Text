@@ -111,7 +111,7 @@
 % Jejich užívání či neužívání záleží na libovůli autora 
 
 
-
+\usepackage{listings}
 
 
 
@@ -338,6 +338,133 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
  \subsection{Verze 5}
  V říjnu roku 2016 vyšla verze 5.0, kdy Kibana doznala především grafických změn, které na její funkčnost nemají velký význam. Ke změnám funkcionalit lze řadit nezobrazování histogramu záznamů u dat, která neobsahují časovou značku, což na rozdíl od předchozí verze šetří čas při zobrazování logů. Velmi podstatnou změnou je odstranění linku nad jednotlivými záznamy v databázi, které mohli způsobovat bezpečnostní riziko, jelikož odkaz vracel reálný JSON soubor uložený v Elasticsearch skrze prohlížeč a volání GET. Toto se změnilo a nyní je k dispozici pouze náhled, který neodkazuje na JSON a je tak bezpečnější ho sdílet. Novinkou je také generování krátkých URL odkazujících na vizualizace či dashboardy, což je více uživatelsky přívětivé, než předchozí dlouhé URL adresy. Novinkami jsou i nové nabídky na hlavní liště, která byla přesunuta na levou stranu a je skryta, když není používána, což zvětšuje prostor k zobrazení vizualizací. Navíc přibyly nástroje Timelion a Console, což dříve byli jen pluginy. Timelion je nástroj, který umožňuje sledovat změny v čase v jednotlivých datech. Console je nástroj, který usnadňuje psaní query dotazů. Dotazy lze skládat do jednoho souboru, dělit je podle indexů a nástroj má dokonce funkci našeptávače, který ještě více usnadňuje psaní dotazů. Co se týče možností rozšiřování kódu, doznala verze 5 také vylepšení, protože jednotlivé položky hlavního menu byly rozděleny do samostatných pluginů, které se dají lépe upravovat. Další novinkou je možnost upravovat názvy os u jednotlivých vizualizací, jelikož se v nabídce objevil nový parametr s názvem \uv{Custom Label}. U filtrů, které lze připnout nad vizualizace taktéž přibyla možnost přímé úpravy query dotazu a lze tak ovlivnit chování daného filtru. \cite{Kibana5intro}
  
+ 
+\chapter{Nevím název}
+V druhé části mé práce je mým úkolem prostudovat otázky, které se vztahují k dostupným datům z ubytovacích portálů a nalézt vhodnou formu jejich vizualizace. Tato kapitola popíše syntaxi a použití filtrů a query dotazů, které jsou pro vlastní vizualizaci potřebné, dále pak popíše rozšíření nástroje Kibana, nástroje na vizualizaci, které Kibana poskytuje a také samozřejmě použití těchto nástrojů při vizualizaci některých otázek.
+
+\section{Query DSL}
+Jak již bylo zmíněno, Elasticsearch využívá syntaxi dotazovacího jazyka Lucene, nebo dotazovacího jazyka založeného na JSON k definování jednotlivých dotazů nad daty. Existují dva typy dotazů a to \textbf{Leaf query clauses} a \textbf{Comound query clauses}. První jmenovaný typ dotazů slouží k vyhledávání přesné hodnoty v předem určené oblasti dat. Do této skupiny dotazů řadíme dotazy obsahující výrazy \textit{match}, \textit{term} a \textit{range}. Druhý typ dotazů slouží ke kombinování více dotazů v logickou posloupnost nebo k ovlivňování výsledků filtrů či dotazů. Tato třída obsahuje dotazy s výrazy, jako jsou \textit{bool}, \textit{dis\_max} nebo \textit{constant\_score}. Chování obou klauzulí záleží také na tom, jestli jsou použity v kontextu dotazu nebo filtru. Při použití v kontextu dotazu rozhoduje klauzule, jestli záznam odpovídá dotazu a navíc vypočítává skóre, které vyjadřuje, jak moc odpovídá v porovnání s ostatními záznamy. Pokud je klauzule použita v kontextu filtru,  rozhoduje klauzule jen o tom, jestli záznam odpovídá nebo ne. \cite{QueryDSL}
+
+\subsection{Full textové dotazy}
+Tato třída dotazů se využívá hlavně na záznamy obsahující souvislý text. Zkoumají, jak byl záznam analyzován a následně podle toho aplikuje stejnou metodu analyzování na výraz, který dotaz obsahuje. Jelikož data z ubytovacích portálů obsahují převážně textové řetězce, je vhodné se s touto třídou seznámit. Tato třída dotazů se dělí na:
+\begin{itemize}
+	\item Match Query
+		\begin{itemize}
+			\item Dotazy typu boolean, které akceptují parametry typu text, číslo a datum. To znamená, že je text analyzován a následně vytvořen booleovský dotaz obsahující v základu logický operátor OR. 
+		\end{itemize}
+	\item Match Phrase Query
+		\begin{itemize}
+			\item Dotazy založené na match query, které slouží k vyhledávání přesných frází. Zadanou frázi zanalyzuje, sestaví jednotlivé dotazy formou více vnořených match query dotazů a provede vlastní dotaz nad daty.
+		\end{itemize}
+	\item Match Phrase Prefix Query
+		\begin{itemize}
+			\item Obdobně jako předchozí typ se zaměřuje na vyhledávání frází, kdy ovšem hledá záznamy obsahující text, jehož prefixem je právě dotazovaná fráze. Pomocí parametru \textit{max\_expansions} lze nastavit maximální počet znaků, které následují za prefixem a omezit tak možné výsledky.
+		\end{itemize}
+	\item Multi Match Query
+		\begin{itemize}
+			\item Jedná se o rozšířené dotazy typu match query, kdy lze vyhledávat ve více oblastech najednou. Pro názvy oblastí lze použít zástupné znaky, které mohou určovat prioritu oblasti, nebo název (např. „*“ je používána jako zástupný znak pro libovolný počet znaků, nebo „“ je používán pro zvýšení priority). Výsledek dotazu ovlivňuje parametr typ, kdy jednotlivé typy využívají jinou interpretaci hodnoty skóre, kterou vrátí dotaz match query.
+		\end{itemize}
+	\item Common Terms Query
+		\begin{itemize}
+			\item Tyto dotazy rozdělí zadaný dotaz na 2 skupiny a to na skupinu s vysokou důležitostí, kam se řadí výrazy z dotazu, které se v záznamech neobjevují příliš často, a pak na skupiny s nižší důležitostí, kde jsou výrazy, které jsou v záznamech velmi časté. Nejprve dojde ke zpracování skupiny s vyšší důležitostí, což způsobí vyfiltrování jen relevantních dokumentů a po zpracování druhé skupiny se počítá celkové skóre jen těchto dokumentů, což značně ovlivňuje výkon vyhledávání. 
+		\end{itemize}
+	\item Query String Query
+		\begin{itemize}
+			\item Dotazy, které plně odpovídají syntaxi Lucene Query Parser Syntax, specifikují logické operátory, jako jsou AND, OR a NOT a zároveň umožňují provádět vyhledávání přes více polí jedním dotazem. Zadaný dotaz se rozdělí na jednotlivé výrazy a operátory, přičemž výrazy mohou být jednoslovné anebo mohou obsahovat fráze. Pokud chceme, aby výraz obsahoval fráze, je nutné v původním dotazu tuto frázi psát uvnitř uvozovek. Defaultně nastavený logický operátor je OR, ale lze to změnit přidáním parametru „default\_operator“ do struktury dotazu.
+			\item Tento typ dotazů má také definovanou skupinu znaků, které nelze použít samostatně ve vlastním podobě dotazu. Tato skupina dotazů se nazývá rezervované znaky a je tvořena následujícími znaky: \uv{+, -, =, \&\&, ||, >, <, !, ( ), \{ \} $\wedge$, [ ],$ \sim $ ,* ,? ,: ,/, \textbackslash}. Pokud je nutné některý z těchto znaků v dotazu použít, musí se před něj vložit tzv. escape znak, který indikuje výskyt znaku z množiny rezervovaných znaků. Jedná se tedy o surjekci znaků, které se v dotazu mohou vyskytovat do množiny povolených znaků a escape sekvencí.
+			\item Například při hledání hotelů, jejichž celkové skóre je vetší než 8 a zároveň menší než 9 a jejichž skóre neplaceného WiFi připojení je vetší nebo rovna 6, by struktura dotazu ve formátu JSON vypadala následovně:
+			
+			
+		\end{itemize}
+	\end{itemize}
+
+	\begin{lstlisting}[frame=single]
+	{
+	 "query":{
+	  "query_string":{
+	   "query":"SCORE_TOTAL:[8 to 9] AND 
+	    SCORE_FREE_WIFI:>6"
+	   }
+	  }
+	}
+	\end{lstlisting}
+	\begin{itemize}
+		
+	\item Simple Query String Query
+		\begin{itemize}
+			\item Obdobné dotazy jako query string s tím rozdílem, že tyto dotazy nikdy nevrátí výjimku způsobenou nesprávným zápisem dotazu, protože tyto části ignoruje. Zároveň nahrazuje logické operátory zástupnými znaky a zjednodušuje tak uživatelům psaní dotazů.  Stejně jako u query\_string je nastavený defaultní operátor na hodnotu OR.
+		\end{itemize}
+		
+
+\end{itemize}
+
+\section{Vyhledávání v Kibana}
+Aplikace Kibana má v základu k dispozici pole, kam lze vkládat prosté řetězce, nebo  jednoduché dotazy, které respektují syntaxi Query String Query. Do tohoto pole lze taktéž vkládat dotazy ve formátu JSON, který je popsán v části Query DSL. Toto pole je v aplikaci k dispozici na záložkách \uv{Discover}, \uv{Visualize} a \uv{Dashboards}. Před samotným vyhledáváním je důležité porozumět funkci analyzátoru, který analyzuje data při přidání mezi záznamy databáze.
+\subsection{Funkce analyzátoru}
+Chování analyzátoru závisí na mapovaní indexu, do kterého jsou data nahrávána. Pokud není mapování nastaveno, má Elasticsearch schopnost detekovat jakého typu jsou hodnoty daného pole. Většinou volí typ \uv{text}, který následně analyzuje skrze zvolený analyzátor. Pro Query String Query a fulltextové vyhledávání rozeberu funkci analyzátoru na polích, které jsou typu \uv{text}, nebo ve starších verzích typu \uv{string}. S analyzátorem je spjato několik tokenizátorů, které získají hodnotu z pole a následně ji rozdělí na jednotlivé výrazy podle mezer nebo interpunkce. Jednotlivé tokeny, které jsou výsledkem tokenizace mohou být upraveny (například převedeny na malá písmena) popřípadě využity jako hodnoty pro filtry, které jsou taktéž s analyzátorem spjaté. Výsledkem práce analyzátoru jsou tedy jednotlivé tokeny, které jsou ukládány do takzvaného invertovaného indexu, který navíc ještě obsahuje odkaz na záznam, ze kterého byly tokeny získány. Výhodou je, že se při vyhledávání jednoho výrazu nemusí procházet všechny záznamy v databázi, ale projdou se jen tokeny v invertovaném indexu a výsledkem jsou záznamy, které byly spjaty s daným tokenem. Pokud nechceme, aby bylo pole analyzováno, stačí nastavit parametr mapovaní \uv{index} na hodnotu \uv{not\_analyzed}. Poté neproběhne rozdělení textu na tokeny a vyhledání je citlivé na velikost písmen. U neanalyzovaného pole také není možné vyhledávat podle slov, ale jen podle přesných frází, které pole obsahuje jako hodnoty.
+
+\subsection{Fulltextové vyhledávání}
+Pokud do tohoto pole vložíme řetězec, který není v souladu s používanou syntaxí, dojde k fulltextovému vyhledávání nad defaultně nastaveným polem s hodnotami. V základu je toto pole v aplikaci Kibana nastaveno na hodnotu \uv{\_all}, což znamená, že vyhledávání proběhne ve speciálním invertovaném indexu, který obsahuje tokeny ze všech záznamů, které kdy byly přidány. Elasticsearch totiž při přidání záznamu rozdělí hodnoty podle mapování, ale zároveň si uloží celý vstup jako jeden dlouhý řetězec, který následně analyzuje pomocí standardního analyzátoru a vytvoří invertovaný index s tokeny, který známe jako pole \uv{\_all}. Pokud chceme vyhledávat fráze napříč všemi záznamy v databázi, je nutné uzavřít dotaz do uvozovek, aby nedošlo k rozdělení celkového dotazu na jednotlivé výrazy, protože pak by výsledky vyhledávání byli nerelevantní.
+
+\subsection{Dotazy ve formátu Query String Query}
+Hlavní výhodou těchto dotazů je možnost omezení výsledků na vybraná pole. Realizace této restrikce je velmi jednoduchá, protože stačí znát přesný název vybraného pole a za něj zadat frázi popřípadě výraz. Jedná se o například dotaz HOTEL\_NAME: \uv{Villa Rotana}, který zobrazí záznamy, které obsahují v poli HOTEL\_NAME hodnotu Villa Rotana. Při psaní dotazů lze taktéž využít následující prvky:
+\begin{itemize}
+	\item Zástupné znaky
+		\begin{itemize}
+			\item Při psaní dotazů není nutné psát přesný název jednotlivých polí nebo celé výrazy, ale lze využít zástupných znaků, které jsou k dispozici. Jedná se o znaky \uv{?} a \uv{*}, kdy první znak nahrazuje právě jeden znak na zadaném místě v řetězci a druhý znak nahrazuje celou skupinu znaků, která může být i prázdná.
+			\item Výjimkou, kdy nelze využít zástupných znaků jsou fráze, protože analyzátor tyto znaky nenahradí a hledá záznamy, které obsahují řetězec, který přesně odpovídá zadané frázi.
+			\item o	Pokud tedy využiji dotaz, který vyhledává záznamy obsahující zmínku o hotelu \uv{Villa Rotana} a zároveň použiji zástupné znaky, bude dotaz vypadat například následovně \textit{HOTEL\_NAME: \uv{Villa Rot*}} a výsledkem budou všechny záznamy, které obsahují sekvenci \uv{Villa Rot}, která může být následována libovolnou posloupností znaků.
+		\end{itemize}
+	\item Logické operátory
+		\begin{itemize}
+			\item Jako každý dotazovací jazyk, i jazyk Query DSL, konkrétněji Query String Query používá pro spojení částí dotazů do větších dotazů logické operátory. Hodnota defaultního operátoru je nastavena na hodnotu OR, což znamená, že se dotaz\textit{ HOTEL\_NAME: \uv{Villa Rotana} HOTEL\_NAME: \uv{Royal} } přeloží na dotaz \textit{HOTEL\_NAME: \uv{Villa Rotana} OR HOTEL\_NAME: \uv{Royal} }, takže výsledkem budou všechny záznamy z databáze, které obsahují v poli HOTEL\_NAME hodnoty Villa Rotana, nebo Royal.
+			\item Důležité je, že logické operátory se musejí psát velkými písmeny, jinak jsou brány jako součást vyhledávané fráze a ne jako spojovací výraz.
+			\item Jednotlivé části dotazu lze spojovat nejen operátory AND a OR, ale také je lze sdružovat do skupin pomocí závorek, nebo nahradit operátor AND znaky \&\& a OR znaky ||.
+			\item Další operátory, pomocí kterých je také možné ovlivnit chování dotazu, jsou znaky \uv{+} a \uv{-}, které se vkládají před vybranou část dotazu.
+			\item o	Operátor plus zapříčiní, že vybraný výraz se musí vyskytovat v záznamech a další výrazy v dotazu, které nejsou označeny operátorem plus jsou pouze volitelným doplňkem prvního výrazu, takže se v dokumentu nemusejí vyskytovat.
+			\item o	Exkluze, neboli vyloučení je možné vyjádřit hned několika operátory a to \uv{-}, \uv{!} nebo výrazem NOT. Stejně jako u operátoru plus je nutné tyto operátory psát před vybraný výraz.
+			\item o	Ekvivalentem tohoto zápisu jsou dotazy typu match query. Například dotaz \textit{quick OR brown AND fox AND NOT news} lze přepsat následovně:
+			
+		\end{itemize}
+	\begin{lstlisting}
+	{
+	"bool":{
+	 "must":	{"match":"fox"},
+	 "should":	{"match":"quick brown"},
+	 "must_not":	{"match":"news"}
+	 }
+	}
+	\end{lstlisting}
+	\item Dotazy s omezeným rozsahem
+		\begin{itemize}
+			\item Pro vyhledávání v polích s numerickými hodnotami se využívají znaky \uv{\{\}, [], <, >, =}  a operátor TO.
+			\item Operátor TO se pojí s použitím obou typů závorek. Například dotaz \textit{TOTAL\_SCORE:[7 TO 8\}} vrátí záznamy, jejichž pole TOTAL\_SCORE obsahuje hodnoty 7 až 8, včetně hraniční hodnoty 7. Z tohoto příkladu je možné vypozorovat, že hranaté závorky zahrnují hraniční hodnoty a složené závorky naopak tyto hodnoty nezahrnují.
+			\item Tento typ dotazů je ovšem možné taktéž použít na pole, která obsahují hodnoty typu text popřípadě \uv{string}. V tomto případě je nutné si uvědomit, že hodnoty jsou řazeny podle jejich ASCII hodnoty, takže nejmenší hodnotu má znak \uv{A} a naopak největší hodnotu znak \uv{a}. K vyhledávání už poté lze využít jen operátory \uv{<} (menší) nebo \uv{>} (větší).
+			\item Problémem nastává, při použití těchto dotazů na neanalyzované pole typu \uv{text}, protože Elasticsearch defaultně převede zadaný dotaz na malá písmena. Tento problém lze vyřešit použitím dotazů ve formátu JSON a nastavením parametru \textit{lowercase\_expanded\_terms} na hodnotu \textit{false}.
+		\end{itemize}
+	
+\end{itemize}
+
+\section{Graph}
+Jedním z dostupných rozšíření aplikace Kibana je Graph, které bylo představeno v rámci ElastiCON 2016 jakožto součást připravovaného balíku rozšíření X-Pack. Graph lze rozdělit na dvě základní části a to na rozšíření možností nástroje Elasticsearch, které umožňuje uživatelům vyhledat spojitosti mezi jednotlivými zaindexovanými položkami, a také jako rozšíření Kibany, kdy Graph poskytuje uživatelům vizualizaci, ze které jsou snadno rozpoznatelné váhy jednotlivých spojení.
+
+\subsection{Ovládání}
+Základním požadavkem pro vytvoření vizualizace pomocí rozšíření Graph je zvolení správného indexu, který obsahuje pole s hodnotami, které chceme prozkoumat a vizualizovat. V případě této bakalářské práce se jedná o index \uv{hospitality}. Bez zvolení indexu není možné v tvorbě grafu pokračovat. Po zvolení indexu se musí zvolit zdroj dat pro jednotlivé vektory. Je nutné, aby tento zdroj obsahoval pouze textové řetězce nebo celá čísla a zároveň musí mít tento zdroj nastaven atribut \uv{aggregatable}, protože komunikace nástroje Graph s aplikací Elasticsearch probíhá skrze automaticky tvořené dotazy, které obsahují atribut \uv{aggs}. Po zvolení zdrojového pole je možné si zvolit barvu, kterou budou mít ve výsledném grafu vektory, ikonu výsledných vektorů a také počet vektorů, které se zobrazí. Pokud z výsledku chceme vynechat vybrané pole, je možné ho buďto odstranit skrze tlačítko \uv{Remove}, nebo ho lze vynechat z dotazu tak, že podržíme klávesu \uv{Shift} a následně na něj klikneme.  Posledním povinným polem je pole vyhledávací kam je možné vložit buďto text, kdy se provede fulltextové vyhledávání napříč všemi poli, které vybraný index obsahuje, nebo lze použít dotaz ve formátu Lucene query syntax a prohledat tak jen vybrané pole. Text, který je vložen do tohoto pole bude klíčový při následné tvorbě grafu, protože určuje spojení, které očekáváme mezi jednotlivými záznamy v databázi. Jak aplikace Graph interně funguje lze zjistit z následující části.
+\subsubsection{Interní komunikace}
+Výstupem tohoto rozšíření je pouze síť položek daného indexu, které mají stejné definované vlastnosti. Zobrazené výsledné položky se v Elasticsearch nazývají vektory a vztahy mezi nimi jsou znázorněny spojeními. Toto názvosloví ovšem nekoreluje s teorií grafů, kdy by měli být vektory správně nazývány vrcholy a spojení by měli být jednotlivé hrany mezi vrcholy grafu. Toto názvosloví bylo zvoleno z důvodu, že v Elasticsearch se již termín „vrcholy“ používá jako název pro součást topologie, která reprezentuje instanci Elasticsearch. 
+\newline
+Jelikož je rozšíření Graph v aplikaci Kibana jen front-end aplikací, jsou jednotlivé operace uživatelů automaticky přetransformovány do patřičné podoby query dotazu a následně je odeslán požadavek Elasticsearchu, který požadavek zpracuje a jako odpověď vrátí pole vektorů obsahující pole s názvem vektoru, což jsou vlastně hodnoty ze zadaného pole, které vyhovují vstupnímu dotazu. Následně také vrací pole obsahující informace o spojeních mezi jednotlivými vektory. Síla těchto spojení je reprezentována váhou spojení, která vyjadřuje podíl mezi počtem záznamů databáze, které obsahují oba vektory a mezi počtem záznamů, které obsahují alespoň jeden z vektorů. Váha tudíž může nabývat hodnot 0 až 1,  kdy 1 znamená, že oba vektory jsou obsaženy ve všech odpovídajících záznamech.
+\subsubsection{Přidání spojení}
+Pokud při tvoření sítě potřebujeme zadat do vyhledávacího pole více výrazů, je nutné tyto kroky od sebe oddělit, což ale samozřejmě také znamená, že přijdeme o automatické vytvoření spojení mezi jednotlivými vektory. Ve výsledku tak získáme několik oddělených skupin vektorů, přičemž každá skupina je vnitřně propojena podle výrazu, který byl zadán při jejím vzniku. Pokud ovšem chceme vidět i spojení mezi jednotlivými skupinami, je již nutné využít možnost přidání spojení mezi existující skupiny, což nástroj Graph v aplikaci Kibana nabízí pod ikonou dvou spojených řetězů. Po stisku tohoto symbolu se výsledný graf sám aktualizuje a podle nových ohodnocení spojení vytvoří komplexnější vizualizaci.
+\subsubsection{Práce s vektory}
+\begin{itemize}
+	\item Základním úkonem při práci s vektory je jejich selekce, která je umožněna buďto tlačítky \uv{all}, \uv{none}, \uv{invert} a \uv{linked}, nebo lze výběr provádět ručně za pomoci klávesnice \uv{Shift} a myši.
+	\item Graph umožňuje uživatelům provádět takzvaný \uv{spidering}, což je operace při které uživatelé rozšiřují jen vybranou část původního vygenerovaného grafu. K této operaci jsou potřeba dva mezikroky. Tím prvním je označit si skupinu vektorů, pro které si přejeme provést \uv{spidering} a následně vyloučit z hledání vektory, které jsou již v původním grafu zobrazené, což lze provést přidáním klauzule \uv{expand} do dotazu pro Elasticsearch.\cite{Spidering} Tyto kroky lze také vykonat v rozšíření pro aplikaci Kibana, kdy je pouze nutné zvolit vektory původního grafu, které si přejeme rozšířit, což je ekvivalent ke klauzuli \uv{expand}, upravit vstupní zdrojová pole a následně jen stisknout ikonu s plusem, kdy dojde k novému dotazu a výsledkem je obnovený a rozšířený graf.
+	\item Dále je možné jednotlivé vektory sdružovat do skupin. Nejprve je nutné si vybrané vektory označit a následně je pomocí tlačítka \uv{group} sloučit. Inverzní operaci lze provést kliknutím na tlačítko \uv{ungroup}. Sjednocení vektorů je vhodné, pokud je použito neanalyzované zdrojové pole, které je citlivé na velikost písmen.
+	\item Vektory lze také vyloučit z budoucího hledání jejich přidáním na černou listinu. K tomu slouží tlačítko \uv{Blacklist selection from return to workspace} a seznam blokovaných vektorů lze kdykoliv najít v nastavení aplikace Graph.
+\end{itemize}
+\subsection{Shrnutí}
+Tento nástroj je vhodný především pro analýzu dat, kde lze předem očekávat spojitosti mezi daty a především ve spojení s aplikací Logstah se jedná o velmi účinný nástroj například k analýze chování uživatelů popřípadě na hledání vzorů chování útočníků. Další možnost použití vidím v analyzování dat ze sociálních sítí, kdy lze zjistit například jak moc se jednotlivé příspěvky šíří a jak jsou populární. Obecně je tento nástroj užitečný v oblasti bezpečnosti jako detekce hrozeb a také v oblasti komerce jako personalizované návrhy produktů. Nevýhodou je, že je dostupný jen jako součást balíku Elastic Stack, který je ovšem placený.
 % 
 % PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT
 % CITAČNÍ STYL!
