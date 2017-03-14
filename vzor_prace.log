@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  14 MAR 2017 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  14 MAR 2017 19:32
 entering extended mode
 **./vzor_prace.tex
 (vzor_prace.tex
@@ -810,7 +810,13 @@ Overfull \hbox (4.33615pt too wide) in paragraph at lines 417--418
 O-TEL_NAME: Villa
  []
 
-[22] [23] [24] [25] [26]
+[22] [23]
+Overfull \hbox (22.82239pt too wide) in paragraph at lines 444--445
+\T1/lmr/m/n/12 ve for-mátu JSON a na-sta-ve-ním pa-ra-me-tru \T1/lmr/m/it/12 lo
+wer-case_expanded_terms
+ []
+
+[24] [25] [26]
 Kapitola 3.
 (vzor_prace.bbl [27
 
@@ -867,7 +873,7 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 tt10.pfb>
-Output written on vzor_prace.pdf (30 pages, 386152 bytes).
+Output written on vzor_prace.pdf (30 pages, 386160 bytes).
 PDF statistics:
  523 PDF objects out of 1000 (max. 8388607)
  122 named destinations out of 1000 (max. 500000)
