@@ -66,5 +66,8 @@
 \contentsline {subsubsection}{P\IeC {\v r}id\IeC {\'a}n\IeC {\'\i } spojen\IeC {\'\i }}{27}{section*.28}
 \contentsline {subsubsection}{Pr\IeC {\'a}ce s vektory}{27}{section*.29}
 \contentsline {subsection}{\numberline {3.3.2}Shrnut\IeC {\'\i }}{28}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{29}{chapter.4}
-\contentsline {chapter}{Literatura}{30}{chapter*.30}
+\contentsline {section}{\numberline {3.4}Vizualizace pomoc\IeC {\'\i } n\IeC {\'a}stroje Kibana}{28}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Vyu\IeC {\v z}it\IeC {\'\i } roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } Graph}{28}{subsection.3.4.1}
+\contentsline {subsubsection}{Jak\IeC {\'e} n\IeC {\'a}rodnosti nej\IeC {\v c}ast\IeC {\v e}ji nav\IeC {\v s}t\IeC {\v e}vuj\IeC {\'\i } Dubaj, a jak\IeC {\'e} jsou jejich obl\IeC {\'\i }ben\IeC {\'e} hotely?}{29}{section*.30}
+\contentsline {chapter}{\numberline {4}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{35}{chapter.4}
+\contentsline {chapter}{Literatura}{36}{chapter*.31}
