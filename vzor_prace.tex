@@ -172,8 +172,17 @@
 %
 \maketitle
 \tableofcontents
+\chapter{Úvod}
+Hlavním úkolem této bakalářské práce je zanalyzovat a vizualizovat data z ubytovacích portálů. Tato data jsou uložena v databázi Elasticsearch, která byla zvolena, protože se jedná o nestrukturovaná data. Data představují recenze z hotelů v okolí Dubaje, která byla získána z ubytovacích portálů. Tyto recenze byly zpracovány skupinou NLP, která působí na Fakultě aplikovaných věd Západočeské univerzity. Úkolem této práce tudíž není připravit data a uložit je do databáze, ale využít tato data k zodpovězení otázek, které zaslala Zayedova univerzita, která si získání a zpracování dat z ubytovacích portálů objednala.
+\\
+Databáze Elasticsearch byla zvolena díky možnosti ukládání takzvaných Big dat, pro které je typická jejich rozsáhlost a běžně dostupné databázové nástroje nejsou schopny zpracovat v reálném čase, především kvůli velkému množství vazeb mezi daty. První částí této bakalářské práce je prozkoumání různých nástrojů sloužících k vizualizaci dat, které jsou dostupné na trhu. Tyto nástroje jsou nejčastěji součásti aplikací Bussiness Intelligence, což jsou aplikace, které slouží k analýze, reportování a vizualizaci velkého množství dat, které podniky sbírají a následně je využívají jako podporu pro strategické rozhodování. Důležitým kritériem pro výběr nástrojů k prozkoumání je podpora ukládání a zpracování nestrukturovaných dat. Nestrukturovaná data jsou běžně reprezentována fotografiemi, zvukovými nahrávkami, daty ze senzorů, ale také například  souvislým textem, což získané recenze jsou. S výběrem databáze Elasticsearch souvisí i výběr vizualizačního nástroje, kterým je nástroj Kibana, který je stejně jako Elasticsearch od společnosti Elastic. Tento nástroj slouží k vizualizaci dat z nástroje Elasticsearch skrze webové uživatelské rozhraní.
+\\
+Dalším úkolem bakalářské práce je tvorba webových stránek, které budou zobrazovat vybrané vizualizace, které v rámci bakalářské práce vzniknou. Jedná se především o zprostředkování nástroje Kibana běžným uživatelům bez možnosti tvorby vizualizací. Hlavní funkcionalitou by mělo být snazší porovnání vybraných hotelů podle zadaných kritérií, než je tomu u nástroje Kibana, který není pro běžné uživatele snadno ovladatelný.
+\\
+První část práce je zaměřena na porovnání dostupných nástrojů a jejich detailnější představení. Druhá část bakalářské práce se věnuje funkcím nástroje Kibana a jejich využití k analýze a vizualizaci dostupných dat. Další část bakalářské práce je tvořena popisem webových stránek, které jsou v rámci bakalářské práce vypracovány. Poslední částí je zhodnocení práce, za kterou následuje slovníček pojmů, ve kterém je možné dohledat vysvětlení odborných termínů a zkratek.
 
-\chapter{Nástroje na analýzu a vizualizaci dat }
+
+\chapter{Nástroje k analýze a vizualizaci dat }
 
 První kapitola práce je zaměřena na nástroje, pomocí kterých je možné analyzovat a vizualizovat semi-strukturovaná popřípadě nestrukturovaná data. Na trhu je mnoho nástrojů určených pro zpracování firemních dat a většinou jsou součástí komplexnějšího řešení ve formě BI nástroje.
 
