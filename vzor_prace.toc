@@ -15,8 +15,8 @@
 \contentsline {subsection}{\numberline {2.1.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{10}{subsection.2.1.4}
 \contentsline {section}{\numberline {2.2}Splunk Enterprice}{11}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}P\IeC {\v r}ehled}{11}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Technologie}{11}{subsection.2.2.2}
-\contentsline {subsubsection}{Kolekce dat}{11}{section*.7}
+\contentsline {subsection}{\numberline {2.2.2}Technologie}{12}{subsection.2.2.2}
+\contentsline {subsubsection}{Kolekce dat}{12}{section*.7}
 \contentsline {subsubsection}{Vyhled\IeC {\'a}v\IeC {\'a}n\IeC {\'\i }}{12}{section*.8}
 \contentsline {subsubsection}{Zpracov\IeC {\'a}n\IeC {\'\i } dat}{12}{section*.9}
 \contentsline {subsection}{\numberline {2.2.3}Kompatibilita}{12}{subsection.2.2.3}
@@ -33,41 +33,41 @@
 \contentsline {subsection}{\numberline {2.4.2}Technologie}{16}{subsection.2.4.2}
 \contentsline {subsubsection}{Kolekce a p\IeC {\v r}\IeC {\'\i }prava dat}{16}{section*.12}
 \contentsline {subsubsection}{Zpracov\IeC {\'a}n\IeC {\'\i } dat}{16}{section*.13}
-\contentsline {subsection}{\numberline {2.4.3}Kompatibilita}{16}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.3}Kompatibilita}{17}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{17}{subsection.2.4.4}
 \contentsline {section}{\numberline {2.5}Kibana}{17}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}P\IeC {\v r}ehled}{17}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.1}P\IeC {\v r}ehled}{18}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Technologie}{18}{subsection.2.5.2}
 \contentsline {subsubsection}{Kolekce a p\IeC {\v r}\IeC {\'\i }prava dat}{18}{section*.14}
 \contentsline {subsubsection}{Prohl\IeC {\'\i }\IeC {\v z}en\IeC {\'\i } dat}{18}{section*.15}
 \contentsline {subsubsection}{Zpracov\IeC {\'a}n\IeC {\'\i } dat}{18}{section*.16}
 \contentsline {subsection}{\numberline {2.5.3}Kompatibilita}{19}{subsection.2.5.3}
 \contentsline {subsection}{\numberline {2.5.4}Verze 5}{19}{subsection.2.5.4}
-\contentsline {chapter}{\numberline {3}Nev\IeC {\'\i }m n\IeC {\'a}zev}{20}{chapter.3}
-\contentsline {section}{\numberline {3.1}Query DSL}{20}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Full textov\IeC {\'e} dotazy}{20}{subsection.3.1.1}
-\contentsline {subsubsection}{Match Query}{20}{section*.17}
-\contentsline {subsubsection}{Match Phrase Query}{21}{section*.18}
-\contentsline {subsubsection}{Match Phrase Prefix Query}{21}{section*.19}
-\contentsline {subsubsection}{Multi Match Query}{21}{section*.20}
-\contentsline {subsubsection}{Common Terms Query}{21}{section*.21}
-\contentsline {subsubsection}{Query String Query}{21}{section*.22}
-\contentsline {subsubsection}{Simple Query String Query}{22}{section*.23}
-\contentsline {section}{\numberline {3.2}Vyhled\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } v Kibana}{22}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Funkce analyz\IeC {\'a}toru}{23}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Fulltextov\IeC {\'e} vyhled\IeC {\'a}v\IeC {\'a}n\IeC {\'\i }}{23}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Dotazy ve form\IeC {\'a}tu Query String Query}{24}{subsection.3.2.3}
-\contentsline {subsubsection}{Z\IeC {\'a}stupn\IeC {\'e} znaky}{24}{section*.24}
-\contentsline {subsubsection}{Logick\IeC {\'e} oper\IeC {\'a}tory}{24}{section*.25}
-\contentsline {subsubsection}{Dotazy s omezen\IeC {\'y}m rozsahem}{25}{section*.26}
-\contentsline {section}{\numberline {3.3}Graph}{25}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Ovl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i }}{26}{subsection.3.3.1}
-\contentsline {subsubsection}{Intern\IeC {\'\i } komunikace}{26}{section*.27}
-\contentsline {subsubsection}{P\IeC {\v r}id\IeC {\'a}n\IeC {\'\i } spojen\IeC {\'\i }}{27}{section*.28}
-\contentsline {subsubsection}{Pr\IeC {\'a}ce s vektory}{27}{section*.29}
-\contentsline {subsection}{\numberline {3.3.2}Shrnut\IeC {\'\i }}{28}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Vizualizace pomoc\IeC {\'\i } n\IeC {\'a}stroje Kibana}{28}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Vyu\IeC {\v z}it\IeC {\'\i } roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } Graph}{28}{subsection.3.4.1}
-\contentsline {subsubsection}{Jak\IeC {\'e} n\IeC {\'a}rodnosti nej\IeC {\v c}ast\IeC {\v e}ji nav\IeC {\v s}t\IeC {\v e}vuj\IeC {\'\i } Dubaj, a jak\IeC {\'e} jsou jejich obl\IeC {\'\i }ben\IeC {\'e} hotely?}{29}{section*.30}
-\contentsline {chapter}{\numberline {4}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{35}{chapter.4}
-\contentsline {chapter}{Literatura}{36}{chapter*.31}
+\contentsline {chapter}{\numberline {3}Nev\IeC {\'\i }m n\IeC {\'a}zev}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Query DSL}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Full textov\IeC {\'e} dotazy}{21}{subsection.3.1.1}
+\contentsline {subsubsection}{Match Query}{21}{section*.17}
+\contentsline {subsubsection}{Match Phrase Query}{22}{section*.18}
+\contentsline {subsubsection}{Match Phrase Prefix Query}{22}{section*.19}
+\contentsline {subsubsection}{Multi Match Query}{22}{section*.20}
+\contentsline {subsubsection}{Common Terms Query}{22}{section*.21}
+\contentsline {subsubsection}{Query String Query}{22}{section*.22}
+\contentsline {subsubsection}{Simple Query String Query}{23}{section*.23}
+\contentsline {section}{\numberline {3.2}Vyhled\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } v Kibana}{23}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Funkce analyz\IeC {\'a}toru}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Fulltextov\IeC {\'e} vyhled\IeC {\'a}v\IeC {\'a}n\IeC {\'\i }}{24}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Dotazy ve form\IeC {\'a}tu Query String Query}{25}{subsection.3.2.3}
+\contentsline {subsubsection}{Z\IeC {\'a}stupn\IeC {\'e} znaky}{25}{section*.24}
+\contentsline {subsubsection}{Logick\IeC {\'e} oper\IeC {\'a}tory}{25}{section*.25}
+\contentsline {subsubsection}{Dotazy s omezen\IeC {\'y}m rozsahem}{26}{section*.26}
+\contentsline {section}{\numberline {3.3}Graph}{26}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Ovl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i }}{27}{subsection.3.3.1}
+\contentsline {subsubsection}{Intern\IeC {\'\i } komunikace}{27}{section*.27}
+\contentsline {subsubsection}{P\IeC {\v r}id\IeC {\'a}n\IeC {\'\i } spojen\IeC {\'\i }}{28}{section*.28}
+\contentsline {subsubsection}{Pr\IeC {\'a}ce s vektory}{28}{section*.29}
+\contentsline {subsection}{\numberline {3.3.2}Shrnut\IeC {\'\i }}{29}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Vizualizace pomoc\IeC {\'\i } n\IeC {\'a}stroje Kibana}{29}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Vyu\IeC {\v z}it\IeC {\'\i } roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } Graph}{29}{subsection.3.4.1}
+\contentsline {subsubsection}{Jak\IeC {\'e} n\IeC {\'a}rodnosti nej\IeC {\v c}ast\IeC {\v e}ji nav\IeC {\v s}t\IeC {\v e}vuj\IeC {\'\i } Dubaj, a jak\IeC {\'e} jsou jejich obl\IeC {\'\i }ben\IeC {\'e} hotely?}{30}{section*.30}
+\contentsline {chapter}{\numberline {4}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{36}{chapter.4}
+\contentsline {chapter}{Literatura}{37}{chapter*.31}
