@@ -69,5 +69,16 @@
 \contentsline {chapter}{\numberline {4}Vizualizace pomoc\IeC {\'\i } n\IeC {\'a}stroje Kibana}{29}{chapter.4}
 \contentsline {section}{\numberline {4.1}Vyu\IeC {\v z}it\IeC {\'\i } roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } Graph}{29}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Jak\IeC {\'e} n\IeC {\'a}rodnosti nej\IeC {\v c}ast\IeC {\v e}ji nav\IeC {\v s}t\IeC {\v e}vuj\IeC {\'\i } Dubaj, a jak\IeC {\'e} jsou jejich obl\IeC {\'\i }ben\IeC {\'e} hotely?}{29}{subsection.4.1.1}
-\contentsline {chapter}{\numberline {5}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{35}{chapter.5}
-\contentsline {chapter}{Literatura}{36}{chapter*.30}
+\contentsline {subsection}{\numberline {4.1.2}Charakterizujte n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ky hotel\IeC {\r u}, kte\IeC {\v r}\IeC {\'\i } jezd\IeC {\'\i } do Dubaje na pracovn\IeC {\'\i } cesty, dovolenou, l\IeC {\'\i }b\IeC {\'a}nky a podobn\IeC {\v e}.}{34}{subsection.4.1.2}
+\contentsline {subsubsection}{Charakteristika obchodn\IeC {\'\i }ch cestuj\IeC {\'\i }c\IeC {\'\i }ch}{34}{section*.30}
+\contentsline {subsubsection}{Charakteristika lid\IeC {\'\i } jezd\IeC {\'\i }c\IeC {\'\i }ch do Dubaje na dovolenou}{36}{section*.31}
+\contentsline {subsubsection}{Postup p\IeC {\v r}i tvorb\IeC {\v e} vizualizace}{37}{section*.32}
+\contentsline {section}{\numberline {4.2}N\IeC {\'a}stroje Kibana}{38}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Jak\IeC {\'a} je sez\IeC {\'o}n\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnost Dubaje podle st\IeC {\'a}t\IeC {\r u}?}{38}{subsection.4.2.1}
+\contentsline {subsubsection}{Pou\IeC {\v z}it\IeC {\'e} n\IeC {\'a}stroje}{38}{section*.33}
+\contentsline {subsubsection}{Odpov\IeC {\v e}\IeC {\v d} na ot\IeC {\'a}zku}{38}{section*.34}
+\contentsline {paragraph}{Glob\IeC {\'a}ln\IeC {\'\i } rozlo\IeC {\v z}en\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnosti do sez\IeC {\'o}n}{38}{section*.35}
+\contentsline {paragraph}{Glob\IeC {\'a}ln\IeC {\'\i } rozlo\IeC {\v z}en\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnosti do sez\IeC {\'o}n}{39}{section*.36}
+\contentsline {subsubsection}{Postup p\IeC {\v r}i tvorb\IeC {\v e} vizualizace odpov\IeC {\v e}di}{40}{section*.37}
+\contentsline {chapter}{\numberline {5}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{41}{chapter.5}
+\contentsline {chapter}{Literatura}{42}{chapter*.38}

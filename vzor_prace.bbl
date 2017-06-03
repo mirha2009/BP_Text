@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -40,6 +40,10 @@
 \newblock \emph{Big data} [online]. SystemOnLine.cz, 2011. [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z:
   \url{https://www.systemonline.cz/clanky/big-data.htm}.
+
+\bibitem[Dubai teplota()]{DubaiTemperature}
+\emph{Dubai, Emirates} [online]. climatebase.ru, 2012. [cit.~2017/06/03].
+\newblock Dostupn{\'{e}}~z: \url{http://climatebase.ru/station/41194/?lang=en}.
 
 \bibitem[ElasticCube technology()]{ElasticCube}
 \emph{Introduction to ElastiCubes} [online]. Sisense Inc., 2014.
@@ -88,6 +92,13 @@
   [online]. Sisense Inc., 2015. [cit.~2016/12/11].
 \newblock Dostupn{\'{e}}~z:
   \url{https://www.sisense.com/blog/sisense-5-7-is-out-say-hello-to-machine-data-mongodb/}.
+
+\bibitem[McGinley(2011)]{BusinessDubai}
+{\sc McGinley}, S.
+\newblock \emph{Dubai ranked as top global business hub} [online]. ITP Digital
+  Media Inc, 2011. [cit.~2017/06/03].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://www.arabianbusiness.com/dubai-ranked-as-top-global-business-hub-411417.html}.
 
 \bibitem[Operational intelligence()]{Operational_intelligence}
 \emph{Splunk} [online]. ZiffDavis, LLC. PCMag Digital Group., 2016.
@@ -166,6 +177,13 @@
 \emph{Tiobe index for December 2016} [online]. TIOBE software BV, 2016.
   [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z: \url{http://www.tiobe.com/tiobe-index/}.
+
+\bibitem[ČTK(2016)]{GreeceTaxes}
+{\sc ČTK}.
+\newblock \emph{Řecko zvyšuje daně, ale vybírá jich stále méně,
+  konstatuje MMF} [online]. ITP Digital Media Inc, 2016. [cit.~2017/06/03].
+\newblock Dostupn{\'{e}}~z:
+  \url{http://www.reflex.cz/clanek/zpravy/71721/recko-zvysuje-dane-ale-vybira-jich-stale-mene-konstatuje-mmf.html}.
 
 \bibitem[US government()]{Splunk_security}
 \emph{Booz Allen Hamilton and Splunk Announce Strategic Alliance to Deliver
