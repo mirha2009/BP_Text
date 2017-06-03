@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  4 APR 2017 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  3 JUN 2017 10:11
 entering extended mode
 **./vzor_prace.tex
 (vzor_prace.tex
@@ -786,50 +786,54 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Kapitola 1.
 [7
 
-] [8]
+]
 Kapitola 2.
-[9
+[8
 
-] [10] [11]
+] [9] [10]
 Overfull \hbox (0.49753pt too wide) in paragraph at lines 222--225
 \T1/lmr/m/n/12 Data se vi-zu-a-li-zují po-mocí r·z-ných uºi-va-tel-sky p°i-zp·-
 so-bi-tel-ných graf·, které
  []
 
-[12] [13] [14] [15] [16] [17] [18] [19] [20]
+[11] [12] [13] [14] [15] [16] [17] [18] [19]
 Kapitola 3.
-[21
+[20
 
-] [22] [23] [24] [25]
+] [21] [22] [23] [24]
 Overfull \hbox (4.2822pt too wide) in paragraph at lines 381--386
 \T1/lmr/m/n/12 Problém na-stává p°i po-u-ºití t¥chto do-taz· na ne-a-na-ly-zo-v
 ané pole typu text,
  []
 
-[26] [27]
+[25] [26]
 Overfull \hbox (1.47527pt too wide) in paragraph at lines 402--405
 \T1/lmr/m/n/12 Toto lze pro-vést p°i-dá-ním klau-zule expand do do-tazu pro E
 lasticsearch.[[]]
  []
 
-[28] [29]
-<img/5_countries_highest_table.png, id=438, 458.46281pt x 137.7647pt>
+[27] [28]
+Kapitola 4.
+[29
+
+] <img/5_countries_highest_table.png, id=448, 458.46281pt x 137.7647pt>
 File: img/5_countries_highest_table.png Graphic file (type png)
 
 <use img/5_countries_highest_table.png>
 Package pdftex.def Info: img/5_countries_highest_table.png used on input line 4
 20.
 (pdftex.def)             Requested size: 386.95749pt x 116.2828pt.
- [30 <./img/5_countries_highest_table.png>]
-<img/5_countries_highest_appearance_graph.png, id=446, 639.13782pt x 660.21657p
+
+<img/5_countries_highest_appearance_graph.png, id=450, 639.13782pt x 660.21657p
 t>
 File: img/5_countries_highest_appearance_graph.png Graphic file (type png)
  <use img/5_countries_highest_appearance_graph.png>
 Package pdftex.def Info: img/5_countries_highest_appearance_graph.png used on i
 nput line 425.
 (pdftex.def)             Requested size: 386.95749pt x 399.71936pt.
- [31] [32 <./img/5_countries_highest_appearance_graph.png>]
-<img/Australia_travel_type_table.PNG, id=457, 615.0478pt x 197.98969pt>
+ [30 <./img/5_countries_highest_table.png>] [31 <./img/5_countries_highest_appe
+arance_graph.png>]
+<img/Australia_travel_type_table.PNG, id=462, 615.0478pt x 197.98969pt>
 File: img/Australia_travel_type_table.PNG Graphic file (type png)
 
 <use img/Australia_travel_type_table.PNG>
@@ -837,43 +841,43 @@ Package pdftex.def Info: img/Australia_travel_type_table.PNG used on input line
  429.
 (pdftex.def)             Requested size: 386.95749pt x 124.568pt.
 
-<img/Australia_travel_type_chart.PNG, id=458, 858.95906pt x 648.17157pt>
+<img/Australia_travel_type_chart.PNG, id=463, 621.07031pt x 648.17157pt>
 File: img/Australia_travel_type_chart.PNG Graphic file (type png)
 
 <use img/Australia_travel_type_chart.PNG>
 Package pdftex.def Info: img/Australia_travel_type_chart.PNG used on input line
  430.
-(pdftex.def)             Requested size: 386.95749pt x 292.00089pt.
- [33 <./img/Australia_travel_type_table.PNG> <./img/Australia_travel_type_chart
-.PNG>]
-<img/detail_spojeni.PNG, id=465, 405.76593pt x 224.33812pt>
+(pdftex.def)             Requested size: 199.16928pt x 207.85431pt.
+
+<img/detail_spojeni.PNG, id=464, 405.76593pt x 224.33812pt>
 File: img/detail_spojeni.PNG Graphic file (type png)
 
 <use img/detail_spojeni.PNG>
 Package pdftex.def Info: img/detail_spojeni.PNG used on input line 435.
 (pdftex.def)             Requested size: 386.95749pt x 213.94498pt.
-
+ [32 <./img/Australia_travel_type_table.PNG> <./img/Australia_travel_type_chart
+.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
-<img/AUS_atlantis.PNG, id=466, 208.52907pt x 109.1578pt>
+<img/AUS_atlantis.PNG, id=471, 208.52907pt x 109.1578pt>
 File: img/AUS_atlantis.PNG Graphic file (type png)
 
 <use img/AUS_atlantis.PNG>
 Package pdftex.def Info: img/AUS_atlantis.PNG used on input line 439.
 (pdftex.def)             Requested size: 177.25053pt x 92.78456pt.
 
-<img/UK_atlantis.PNG, id=467, 205.5178pt x 110.66344pt>
+<img/UK_atlantis.PNG, id=472, 205.5178pt x 110.66344pt>
 File: img/UK_atlantis.PNG Graphic file (type png)
 
 <use img/UK_atlantis.PNG>
 Package pdftex.def Info: img/UK_atlantis.PNG used on input line 441.
 (pdftex.def)             Requested size: 174.69095pt x 94.06435pt.
- [34 <./img/detail_spojeni.PNG> <./img/AUS_atlantis.PNG> <./img/UK_atlantis.PNG
->] [35]
-Kapitola 4.
-(vzor_prace.bbl [36
+ [33 <./img/detail_spojeni.PNG> <./img/AUS_atlantis.PNG> <./img/UK_atlantis.PNG
+>] [34]
+Kapitola 5.
+(vzor_prace.bbl [35
 
 ]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 12.
@@ -883,16 +887,16 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 12.
 
-Overfull \hbox (234.36317pt too wide) in paragraph at lines 59--63
+Overfull \hbox (234.36317pt too wide) in paragraph at lines 64--68
 \T1/lmtt/m/n/10.95 how-[]to-[]get-[]a-[]20-[]million-[]pre-[]money-[]valuation-
 []for-[]series-[]a-[]tableau-[]software-[]ceo-[]christian-[]chabot-[]part-[]2/$
 [][]\T1/lmr/m/n/10.95 .  
  []
 
-[37
+[36
 
-] [38]
-Overfull \hbox (443.02467pt too wide) in paragraph at lines 167--171
+] [37]
+Overfull \hbox (443.02467pt too wide) in paragraph at lines 172--176
 \T1/lmtt/m/n/10.95 booz-[]allen-[]hamilton-[]and-[]splunk-[]announce-[]strategi
 c-[]alliance-[]to-[]deliver-[]predictive-[]security-[]analytics-[]and-[]operati
 onalize-[]threat-[]intelligence / 
@@ -900,20 +904,20 @@ onalize-[]threat-[]intelligence /
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 480.
- [39]
+ [38]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 480.
  (vzor_prace.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 480.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 480.
 Package rerunfilecheck Info: File `vzor_prace.out' has not changed.
-(rerunfilecheck)             Checksum: 8CB20272F1D03995859C5BB8C373E122;5517.
+(rerunfilecheck)             Checksum: 404B6B6B31B1879CB5CADF09C049214B;6076.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 480.
  ) 
 Here is how much of TeX's memory you used:
- 12261 strings out of 494874
- 169377 string characters out of 3174258
- 248868 words of memory out of 3000000
- 15391 multiletter control sequences out of 15000+200000
+ 12265 strings out of 494874
+ 169464 string characters out of 3174258
+ 248892 words of memory out of 3000000
+ 15395 multiletter control sequences out of 15000+200000
  77280 words of font info for 48 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
  31i,6n,32p,1993b,998s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -928,9 +932,9 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 tt10.pfb>
-Output written on vzor_prace.pdf (39 pages, 539320 bytes).
+Output written on vzor_prace.pdf (38 pages, 540345 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
+ 633 PDF objects out of 1000 (max. 8388607)
  157 named destinations out of 1000 (max. 500000)
- 364 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 372 words of extra memory for PDF output out of 10000 (max. 10000000)
 

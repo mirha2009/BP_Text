@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,6 +23,11 @@
   [cit.~2016/12/10].
 \newblock Dostupn{\'{e}}~z:
   \url{http://businessworld.cz/ostatni/co-je-to-business-intelligence-7157}.
+
+\bibitem[Clusters()]{KibanaClusters}
+\emph{Basic Concepts} [online]. Elasticsearch, 2017. [cit.~2017/06/03].
+\newblock Dostupn{\'{e}}~z:
+  \url{https://www.elastic.co/guide/en/elasticsearch/reference/current/_basic_concepts.html}.
 
 \bibitem[Data Dimension()]{TableauDimensions}
 \emph{Tableau Desktop} [online]. ZiffDavis, LLC. PCMag Digital Group., 2016.
