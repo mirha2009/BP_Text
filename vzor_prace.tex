@@ -121,10 +121,6 @@
 
 
 
-
-
-
-
                  
 % práce
 %
@@ -136,9 +132,7 @@
 
 % Umožňuje vkládání obrázků
 \usepackage[pdftex]{graphicx}
-
-
-
+\usepackage{pgfplots}
 
 
 
@@ -512,26 +506,174 @@ V následující tabulce je vidět počet přidaných recenzí pro jednotlivá r
 	\begin{tabular}{|c|c|}
 		\hline
 		\multicolumn{1}{|l|}{\textbf{Roční období}} & \multicolumn{1}{l|}{\textbf{Počet nových recenzí}} \\ \hline
-		ZIMA                                        & 87493                                              \\ \hline
-		JARO                                        & 100602                                             \\ \hline
-		LÉTO                                        & 91817                                              \\ \hline
-		PODZIM                                      & 89512                                              \\ \hline
+		ZIMA                                        & 87 493                                              \\ \hline
+		JARO                                        & 100 602                                             \\ \hline
+		LÉTO                                        & 91 817                                              \\ \hline
+		PODZIM                                      & 89 512                                              \\ \hline
 	\end{tabular}
 \end{table}
-\paragraph{Globální rozložení návštěvnosti do sezón}\mbox{}\\
-Do vizualizace jsem zahrnul data pěti států, ze kterých pochází nejvíce recenzí. Liniový graf \textbf{XY} zobrazuje trendy návštěvníků z těchto států a jejich oblíbená roční období. V pravé části grafu dochází k výraznému poklesu křivek, ale je to způsobené zvoleným časovým intervalem, který obsahuje data jen za deset dní. Jelikož jsou všechna data v poli DATE\_CREATED\_SEASSONS datována do roku 2000, nelze zvolit lepší časový interval. Rovnoměrné rozložení návštěvnosti je dáno především rozdílnými trendy mezi západními státy, které jsou reprezentovány Spojeným královstvím a Spojenými státy americkými, a mezi východními státy, jenž ve vizualizaci reprezentují Spojené arabské emiráty, Saudská Arábie a Austrálie. U západních států dochází v jarních a letních měsících k lehkému poklesu, ale u východních zástupců dochází k přesnému opaku.
+\paragraph{Sezónní rozložení návštěvnosti podle států}\mbox{}\\
+Do vizualizace jsem zahrnul data pěti států, ze kterých pochází nejvíce recenzí. Liniový graf \ref{fig:Sezona_staty} zobrazuje trendy návštěvníků z těchto států a jejich oblíbená roční období. V pravé části grafu dochází k výraznému poklesu křivek, ale je to způsobené zvoleným časovým intervalem, který obsahuje data jen za deset dní. Jelikož jsou všechna data v poli DATE\_CREATED\_SEASSONS datována do roku 2000, nelze zvolit lepší časový interval. Rovnoměrné rozložení návštěvnosti je dáno především rozdílnými trendy mezi západními státy, které jsou reprezentovány Spojeným královstvím a Spojenými státy americkými, a mezi východními státy, jenž ve vizualizaci reprezentují Spojené arabské emiráty, Saudská Arábie a Austrálie. U západních států dochází v jarních a letních měsících k lehkému poklesu, ale u východních zástupců dochází k přesnému opaku.
 \\
 Z grafu je patrné, že nejoblíbenější měsíce pro návštěvníky ze Spojeného království a ze Spojených států patří Březen a Listopad. Mezi těmito měsíci dochází k poklesu návštěvnosti, což je nejspíše důsledek vyšších teplot, které v Dubaji panují. Lze usoudit, že návštěvníci z těchto států jezdí do Dubaje nejčastěji od podzimu až do Března a ve zbytku roku počet návštěvníků klesá.
 \\
 Tendence návštěvníku ze zemí Arabského poloostrova a z Austrálie jsou opačné tendencím západních zemí. Jelikož jsou obyvatelé z těchto zemí zvyklí na teplé podnebí, má křivka návštěvnosti vrchol v létě a v ostatních ročních obdobích jejich návštěvnost klesá.
-\textbf{Vyexportovat data a udělat to třeba v excelu. GNUPlot. Normalizovaný graf = sečtu za stát a pak podělím období/počet za stát.}
+\\
+\textbf{Vyexportovat data a udělat to třeba v GNUPlot.}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[ width = \textwidth]{img/sezona.PNG}
+	\caption{Sezónní vývoj návštěvnosti podle států}
+	\label{fig:Sezona_staty}	
+\end{figure}\textbf{}
+
 \subsubsection{Postup při tvorbě vizualizace odpovědi}
 Jak již bylo zmíněno, využil jsem dva typy grafů a to koláčový pro globální trendy v návštěvnosti a liniový pro trendy jednotlivých zemí. Koláčový graf je jednoduchý a stačí vyplnit jen agregaci \uv{Date Range}, zdrojové pole DATE\_CREATED\_SEASONS a následně vyplnit meze podle ročních období. Důležité je, že se musí zvolit celkem 5 mezí, protože jsou všechny data koncipována do roku 2000, takže nelze jasně vymezit zimní období, protože obsahuje přelom roku.
 \\
 Ani liniový graf není obtížný. Na ose y je počet recenzí, které byly v daném období přidány a na ose x jsou jednotlivá období. Agregace na ose x je stejná jako u koláčového grafu. Dále je nutné přidat jednotlivé země, což se provede kliknutím na \uv{Add sub-buckets} a volbou \uv{Split Lines}. Ve \uv{Split Lines} zvolíme agregaci podle výrazů a jako zdrojové pole vybereme USER\_LOCATION\_COUNTRY.keyword. Počet zemí omezíme na 5 a volíme sestupné řazení. Výsledek vizualizace bude ovšem matoucí, protože se zobrazí celkem 6 zemí i přes omezení výsledků na 5. Zároveň se zkreslí data pro Austrálii, kdy údajně nepřibyli žádné recenze v zimních měsících. Jedná se nejspíše o interní chybu nástroje Kibana a je nutné ji vyřešit pomocí filtrů. Postupně se musí zakázat výskyt Irska a Indie. Po vyfiltrování již vzniklá vizualizace odpovídá vizualizaci\textbf{ XY}.
 
+\subsection{Jak hodnotí návštěvníci jídlo nabízené v hotelích?}
+Odpověď na tuto otázku lze získat z dostupných dat celkem snadno, protože je v datech k dispozici pole SENTIMENT\_FOOD. Pole v datech, která začínají slovem SENTIMENT, vznikla z analýzy sentimentu, která byla provedena nad texty všech recenzí. Analýza sentimentu je součástí zpracování přirozeného jazyka, čímž se skupiny NLP zabývá. Tato pole obsahují hodnoty 1, 0 nebo -1, přičemž -1 značí nespokojenost a 1 naopak spokojenost. Právě díky dostupnosti těchto dat je možné vyjádřit spokojenost s jídlem jako průměrnou hodnotu pole SENTIMENT\_FOOD. Tato hodnota je graficky i číselně vyjádřena na obrázku \ref{fig:Food_sentiment}. Na obrázku je vidět také číslo, které odpovídá celkovému počtu recenzí, ve kterých bylo jídlo hodnoceno. Jedná se celkem o 20,54\% všech recenzí, což je vzhledem k úplnosti dat celkem přijatelný výsledek. Z vizualizace je vidět, že jsou hodnotící zákazníci s jídlem spokojení a převažují kladné pocity nad negativními.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[ width = 10cm]{img/food_data.png}
+	\caption{Spokojenost hostů s jídlem}
+	\label{fig:Food_sentiment}	
+\end{figure}
+Na obrázku \ref{fig:Food_tags} jsou k vidění nejčastější fráze, které byly použity v recenzích hodnotící jídlo. K vizualizaci byl použit nástroj \uv{Tag cloud}, který je dostupný již v základní verzi nástroje Kibana. Při tvorbě bylo použito pole POSITIVE.keyword a ve vyhledávacím poli jsem použil dotaz ve tvaru \uv{POSITIVE.keyword:*FOOD}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[ width = 8cm]{img/food_positive.png}
+	\caption{Slovní hodnocení jídla}
+	\label{fig:Food_tags}	
+\end{figure}
+
+\subsection{Je přínos z cesty do Dubaje úměrný vynaloženým nákladům?}
+Odpověď na tuto otázku lze získat přímo z dat bez nutnosti jejich úpravy. Data obsahují pole X\_SCORE\_VALUE\_FOR\_MONEY, kde je uložené skóre jednotlivých uživatelů, kteří se vyjádřili k přínosům cesty a nákladům na ní. Platí, že čím vyšší je hodnota v tomto poli, tím více se jim vynaložené náklady na cestu zdají adekvátní k přínosům. Na obrázku \ref{fig:Worth_of_money} je zobrazena maximální, minimální a průměrná hodnota pole X\_SCORE\_VALUE\_FOR\_MONEY a zároveň je na obrázku číslo udávající počet recenzí, které mají vyplněné hodnoty v tomto poli. Lze konstatovat, že jsou návštěvníci s náklady na cestu převážně spokojení a výsledky lze považovat za relevantní, protože vycházejí ze 49\% všech dostupných recenzí.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[ width = 10cm]{img/money_dash.png}
+	\caption{Přínos z cesty}
+	\label{fig:Worth_of_money}	
+\end{figure}
+
+\subsection{Jak hodnotí návštěvníci kvalitu služeb?}
+Odpovědi na otázku lze hledat také přímo v recenzích, které máme k dispozici. Konkrétně jsou klíčové hodnoty uložené v polích REVIEW\_SCO- RE\_SERVICE, SCORE\_SERVICE\textbackslash STAFF a SENTIMENT\_SERVICE.\\ Hodnoty z prvního pole vyjadřují spokojenost jednotlivých návštěvníků se službami, které hotel poskytuje. Mezi tyto služby patří například pokojový servis, připojení k internetu, kvalita hotelových bazénů, nebo doprovodné programy. Průměrná hodnota v tomto poli je 9,133, což značí, že jsou návštěvníci s kvalitou poskytovaných služeb velmi spokojeni. Nižší průměrnou hodnotu obsahuje pole SCORE\_SERVICE\textbackslash STAFF, které kromě poskytovaných služeb také hodnotí přístup personálu a jejich ochotu. Jelikož je průměrná hodnota nižší než průměrná hodnota pole REVIEW\_SCORE\_SER- VICE, lze usoudit, že návštěvníci spatřují v personálu slabé místo, na které by se měly hotely zaměřit. Průměrné hodnoty z těchto dvou polí by měli být co nejvíce podobné, ideálně stejné. Třetí sloupec na obrázku \ref{fig:Services} ukazuje průměrnou hodnotu v poli SENTIMENT\_SERVICE. Z kladné hodnoty průměrného sentimentu lze vyvodit celkovou spokojenost s kvalitou poskytovaných služeb, čímž jsme potvrdili výsledky průměrných hodnot v polích REVIEW\_SCORE\_SERVICE a SCORE\_SERVICE\textbackslash STAFF . Odpověď na otázku vychází z 31,4\% všech dostupných recenzí, takže lze výsledky prohlásit za relevantní.
 % 
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[ width = 10cm]{img/sluzby.png}
+	\caption{Kvalita služeb}
+	\label{fig:Services}	
+\end{figure}
+Mezi nejčastěji hodnocené služby patří internetové připojení, které je v dnešní době velmi důležité především pro obchodní cestující. Hotely poskytují připojení prostřednictvím WiFi připojení, které je buďto zdarma, nebo je zpoplatněno. Předpokládám, že hotely nejčastěji poskytují připojení zdarma, protože pole X\_SCORE\_FREE\_WIFI obsahuje 103 804 záznamů, ale pole X\_SCORE\_PAID\_WIFI obsahuje pouze 8 888 záznamů. Právě velký rozdíl mezi počtem záznamů v obou polích je dle mého názoru také příčinou markantního rozdílu mezi průměrnými hodnotami v jednotlivých polích. Lépe hodnoceno je připojení zdarma a to o 2,3 bodu oproti zpoplatněnému připojení. S připojením  zdarma panuje podle recenzí spokojenost, ale hodnocení placeného připojení je spíše průměrné. Na první pohled je překvapivý je záporný sentiment u WiFi připojení, který má hodnotu -0,382. Tento výsledek se ovšem nedá brát jako relevantní, protože pole SENTIMENT\_WIFI obsahuje pouze 14 992 záznamů, což jsou pouhá 4\% dostupných recenzí. Z tohoto důvodu jsem také hodnotu průměrného sentimentu nezahrnul do vizualizace, která je na obrázku XY. Na vizualizaci lze tedy vidět pouze průměrné hodnoty polí X\_SCORE\_FREE\_WIFI a X\_SCORE\_PAID\_WIFI, které obsahují celkem 108 754 záznamů, což je 28,7\% všech sebraných recenzí.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[ width = 6cm]{img/wifi.png}
+	\caption{Hodnocení spokojenosti s internetovým připojením}
+	\label{fig:WiFi}	
+\end{figure}
+
+\subsection{Má na návštěvníky dopad stav a čistota hotelu?}
+Přesnou odpověď na tuto otázku nelze získat vizualizací přímo z dat. Vizualizovat lze pouze průměrnou hodnotu pole SCORE\_TOTAL, kde jsou uložena celková hodnocení hotelů, a pole SCORE\_HOTEL\_CONDITION/CLEANLINESS. Z výsledné vizualizace by ale nebylo možné vyvodit žádné relevantní výsledky, protože neznáme vztah mezi hodnotami v obou polích.
+\\
+K určení vztahu mezi hodnotami ve dvou polích a ke zjištění jak se hodnoty ovlivňují, slouží statistická metoda zvaná korelace. Výsledkem korelace je korelační koeficient, který může nabývat hodnot -1 až 1. Hodnoty korelačního koeficientu blízkého -1 značí takzvanou antikorelaci, která značí nepřímou závislost mezi hodnotami. To znamená, že pokud se zvětší hodnota v poli A, tak se hodnota v poli B adekvátně zmenší. Pokud je korelační koeficient blízký hodnotě 1, tak jsou hodnoty na sobě přímo závislé, neboli pokud se zvýší hodnota v poli A, zvýší se úměrně i hodnota v poli B. Korelační koeficient blízký 0 značí nekorelovanost, kdy není zjištěna žádná lineární závislost mezi dvěma veličinami či hodnotami. To ovšem nemusí znamenat, že mezi dvěma hodnotami není vztah, jen není lineární a tak jej korelace nedokáže odhalit.\cite{Korelace}
+\\
+Elasticsearch nabízí maticové agregace, které pracují s více poli a provádí statistické výpočty se zadaným objemem dokumentů. Mezi výstupy řadíme počet zahrnutých dokumentů, průměrné hodnoty polí, variaci, kovariaci, korelaci a podobně. Pro nás je nejdůležitější právě korelace, která nám udá sílu vztahu mezi vybranými poli.\cite{MatrixAggs}
+Pro zadání maticové agregace jsem využil nástroj Console, který je v aplikaci Kibana již v základním balíčku. Obecný zápis této agregace v nástroji Console vypadá následovně:
+
+\begin{lstlisting}[title={Zápis matrix\_stats}]
+	       GET_search
+  	       {
+	        "aggs":{
+	         "matrixstats":{
+	          "matrix_stats":{
+	           "fields":["field1","filed2"]
+	          }
+	         }
+	        }
+	       }
+\end{lstlisting}
+\mbox{}\\
+Jelikož otázka žádá odpověď na vztah mezi celkovým hodnocením hotelů a jejich stavem, je maticová agregace ideálním nástrojem jak tento vztah vyjádřit. Hledáme tedy vztah mezi polem SCORE\_TOTAL  a polem SCORE\_HOTEL\_CONDITION/CLEANLINESS. Z výsledku agregace nás zajímá pouze sekce s korelací. V následující tabulce je vidět výsledek korelace mezi zvolenými poli. Pole SCORE\_TOTAL je reprezentováno hodnotou FIELD1 a hodnota FIELD2 reprezentuje pole SCORE\_HOTEL\_CONDI- TION/CLEANLINESS.
+\begin{table}[h]
+	\centering
+	\caption{Výsledné hodnoty korelace}
+	\label{my-label}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{1}{|l|}{\textbf{Název pole}} & \multicolumn{1}{l|}{\textbf{FIELD1}} & \multicolumn{1}{l|}{\textbf{FIELD2}} \\ \hline
+		\textbf{FIELD1} & 1 & 0,8524 \\ \hline
+		\textbf{FIELD2} & 0,8524 & 1 \\ \hline
+	\end{tabular}
+\end{table}
+\mbox{}\\
+Jelikož je výsledný korelační koeficient roven 0,8524, což je číslo blízké hodnotě 1, lze říct, že tato pole mají mezi sebou silný vztah a vzájemně se přímo úměrně ovlivňují. Vzhled hotelu, jeho stav a čistota je pro návštěvníky důležitým kritériem při udílení bodů do celkového skóre hotelů. Závěrem je nutno podotknout, že pole SCORE\_HOTEL\_CONDITION/CLEANLINESS obsahuje celkem 186 071 záznamů, což odpovídá 49,13\% dostupných recenzí. Na základě tohoto čísla lze prohlásit výsledky analýz za relevantní a odpověď na otázku za správnou.
+\subsection{Má velikost hotelu vliv na celkový dojem z hotelu?}
+Odpověď opět nelze získat pouhou vizualizací z dostupných dat, protože by odpověď měla obsahovat velikost vlivu, neboli sílu vztahu mezi celkovým dojmem z hotelu a jeho velikostí. Celkový dojem je v datech uložen ve dvou polích, a to v poli SENTIMENT\_HOTEL a SCORE\_TOTAL. Bude tedy nutné provést korelaci obou polí s polem NUMBER\_OF\_ROOMS, které obsahuje počet pokojů, které jsou v daném hotelu k dispozici. Je to jediný dostupný údaj o velikosti hotelu.  Výsledky korelace jsou k dispozici v tabulce \ref{hotel_korelace}. V této tabulce je pole SCORE\_TOTAL nahrazeno hodnotou FIELD1, SENTIMENT\_HOTEL FIELD2 a hodnota FIELD3 reprezentuje pole NUMBER\_OF\_ROOMS.
+\begin{table}[h]
+	\centering
+	\caption{Vliv velikosti na celkový dojem z hotelu}
+	\label{hotel_korelace}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{Název pole} & \textbf{FIELD1} & \textbf{FIELD2} & \textbf{FIELD3} \\ \hline
+		\textbf{FIELD1}     & 1               & 0,8524          & -0,0331         \\ \hline
+		\textbf{FIELD2}     & 0,0228          & 1               & -0,0636         \\ \hline
+		\textbf{FIELD3}     & -0,0331         & -0,0636         & 1               \\ \hline
+	\end{tabular}
+\end{table}
+Jak je možné v tabulce \ref{hotel_korelace} vidět, jsou korelační koeficienty mezi poli SCORE\_TOTAL a NUMBER\_OF\_ROOMS, respektive poli SENTIMENT\_HOTEL a NUMBER\_OF\_ROOMS lehce negativní. Zároveň však oba korelační koeficienty inklinují k hodnotě 0, což jak již bylo zmíněno, znamená nekorelaci. Hodnoty v polích se tedy neovlivňují lineárně, ale může mezi nimi být jiná nelineární závislost, kterou ovšem nelze prostřednictvím korelace odhalit. Odpovědí tedy je, že  celkový dojem z hotelu není zcela jistě přímo úměrný jeho velikosti, ale může existovat nepřímá úměra, která ovšem není příliš silná. Výsledky lze považovat za relevantní, jelikož pole SCORE\_TOTAL je vyplněno u 72,2\% recenzí, pole SENTIMENT\_HOTEL u 40,7\% a pole NUMBER\_OF\_ROOMS u 28,97\% dostupných recenzí, což je vzhledem k úplnosti dat uspokojivé.
+
+\subsection{Identifikujte hlavní kritéria, která ovlivňují celkové hodnocení hotelů.}
+Jedná se o složitou otázku, která chce zjistit, co ovlivňuje celkové skóre hotelů, aby se na tato kritéria mohly hotely zaměřit a získat více návštěvníků. Jedná o hledání vztahů mezi polem TOTAL\_SCORE a ostatními poli, které obsahují skóre jiných sledovaných oblastí. V tabulce \ref{Korelace_kritéria} je vidět přehled polí u kterých budu sledovat korelaci s celkovým hodnocením. Tabulka obsahuje název pole, počet recenzí , ve kterých je pole vyplněno, procentuální podíl na dostupných recenzích a číslo, které bude reprezentovat toto pole v tabulce s korelacemi.
+\begin{table}[h]
+	\centering
+	\caption{Korelace kritérií}
+	\label{Korelace_kritéria}
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Název pole}}                                                & \textbf{\begin{tabular}[c]{@{}c@{}}Recenze s\\ vyplněným\\  údajem\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Podíl na\\  celkových\\ recenzích\end{tabular}} & \textbf{Alias} \\ \hline
+		\textbf{SCORE\_TOAL}                                                                     & 273 559                                                                                   & 72\%                                                                               & 1              \\ \hline
+		\textbf{SCORE\_LOCATION}                                                                 & 185 931                                                                                   & 49\%                                                                               & 2              \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}SCORE\_HOTEL\_CONDITI-\\ ON/CLEANLINESS\end{tabular}} & 186 071                                                                                   & 49\%                                                                               & 3              \\ \hline
+		\textbf{SCORE\_SERVICE\_STAFF}                                                           & 186 148                                                                                   & 49\%                                                                               & 4              \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}SCORE\_ROOM\_COM-\\ FORT/STANDARD\end{tabular}}       & 196 185                                                                                   & 49\%                                                                               & 5              \\ \hline
+		\textbf{SCORE\_FACILITIES}                                                               & 181 120                                                                                   & 48\%                                                                               & 6              \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}SCORE\_VALUE\_FOR\_MO-\\ NEY\end{tabular}}            & 168 220                                                                                   & 49\%                                                                               & 7              \\ \hline
+		\textbf{SCORE\_FREE\_WIFI}                                                               & 103 804                                                                                   & 27\%                                                                               & 8              \\ \hline
+	\end{tabular}
+\end{table}
+\\
+Kritéria jsem volil tak, aby byla zastoupena alespoň v 25\% dostupných recenzí, což vyřadilo všechna pole, která obsahují výraz \uv{REVIEW}. Výsledkem je tedy celkem 7 kritérií, u kterých určím na základě korelačního koeficientu míru závislosti na celkovém hodnocení hotelu. Na následující vizualizaci je k vidění průměrná hodnota jednotlivých polí. Tato vizualizace slouží jen k porovnání průměrné hodnoty polí s výsledky korelace.
+\begin{figure}[h]
+	\centering
+	\includegraphics[ width = 10cm]{img/skore_vliv_vizualizace.png}
+	\caption{Průměrné skóre kritérií}
+	\label{fig:kkk}	
+\end{figure}
+\mbox{}\\
+V tabulce \ref{Korelace_výsledky} jsou výsledky postupné korelace a ne hromadné, protože hromadná korelace je zkreslena vztahy mezi jednotlivými poli, ale nás zajímá pouze vztah mezi polem SCORE\_TOTAL a jednotlivými kritérii.
+\begin{table}[h]
+	\centering
+	\caption{Výsledky korelace}
+	\label{Korelace_výsledky}
+	\begin{tabular}{|l|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Název pole}}    & \textbf{Korelace} \\ \hline
+		\textbf{SCORE\_SERVICE\_STAFF}               & 0,8022            \\ \hline
+		\textbf{SCORE\_VALUE\_FOR\_MONEY}            & 0,6585            \\ \hline
+		\textbf{SCORE\_LOCATION}                     & 0,6337            \\ \hline
+		\textbf{SCORE\_ROOM\_COMFORT/STANDARD}       & 0,7187            \\ \hline
+		\textbf{SCORE\_FACILITIES}                   & 0,6001            \\ \hline
+		\textbf{SCORE\_HOTEL\_CONDITION/CLEANLINESS} & 0,8524            \\ \hline
+		\textbf{SCORE\_FREE\_WIFI}                   & 0,5977            \\ \hline
+	\end{tabular}
+\end{table}
+\\
+Z tabulky \ref{Korelace_výsledky} je jasně patrné, že pole SCORE\_TOTAL nejvíce koreluje s poli SCORE\_SERVICE\_STAFF a SCORE\_HOTEL\_CONDITION/CLEAN- LINESS, což je pro mne překvapující, protože jejich celková průměrná hodnota se liší o 0,7 bodu. Tato odchylka bude způsobena nejspíše tím, že SCORE\_TOTAL má vyplněno o 23\% více recenzí. Z výsledků lze usoudit, že celkový dojem z hotelu nejvíce ovlivňuje kvalita poskytovaných služeb, ochota personálu, stav a čistota hotelu a také pohodlí pokojů. Lokalita hotelu a přínos návštěvy za vynaložené náklady také ovlivňují celkové skóre, ale podobnou měrou, která je oproti předchozím kritériím výrazně menší. Ze zvolených kritérií naopak nejméně ovlivňuje celkovou známku kvalita poskytované bezplatné WiFi a také úroveň vybavenosti hotelu. 
 % PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT
 % CITAČNÍ STYL!
 %
