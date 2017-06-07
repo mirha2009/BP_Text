@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  5 JUN 2017 22:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  7 JUN 2017 14:34
 entering extended mode
 **./vzor_prace.tex
 (vzor_prace.tex
@@ -858,10 +858,6 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen170
 \Gin@req@width=\dimen171
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.revision.tex")
-Package: pgfplots 2016/08/10 v1.14 Data Visualization (1.14)
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
@@ -1139,119 +1135,44 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 librarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotscore.code.tex"
-\t@pgfplots@toka=\toks37
-\t@pgfplots@tokb=\toks38
-\t@pgfplots@tokc=\toks39
-\pgfplots@tmpa=\dimen274
-\c@pgfplots@coordindex=\count177
-\c@pgfplots@scanlineindex=\count178
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2016/04/19 v0.5f Insert pages of external PDF documents (AM)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfplotssysgeneric.code.
-tex"))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\libs\pgfplotslibrary.code.te
-x")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpg
-fsupp_loader.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryfpu.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-Package pgfplots: loading complementary arithmetics for your pgf version...
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count177
+\calc@Bcount=\count178
+\calc@Adimen=\dimen274
+\calc@Bdimen=\dimen275
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count179
+\calc@Cskip=\skip60
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpg
-fsupp_pgflibraryfpu.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpg
-fsupp_pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count179
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotslistst
-ructure.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotslistst
-ructureext.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsarray.
-code.tex"
-\c@pgfplotsarray@tmp=\count180
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsmatrix
-.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\numtable\pgfplotstableshared
-.code.tex"
-\c@pgfplotstable@counta=\count181
-\t@pgfplotstable@a=\toks40
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsdeque.
-code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsbinary.code.tex
-"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsbinary.data.cod
-e.tex"))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.verb.code.
-tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\libs\pgflibrarypgfplots.surf
-shading.code.tex"
-\c@pgfplotslibrarysurf@no=\count182
+\AM@pagewidth=\dimen276
+\AM@pageheight=\dimen277
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots.surfs
-hading.pgfsys-pdftex.def")))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotscolormap.code.t
-ex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotscolor.code.tex"
-))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsstackedplots.code.te
-x")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsplothandlers.code.te
-x"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsmeshplothandler.code
-.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsmeshplotimage.code.t
-ex")))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.scaling.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotscoordprocessing.code
-.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.errorbars.code.tex"
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.markers.code.tex"
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsticks.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.paths.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
-librarydecorations.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecorations.code
-.tex"
-\pgfdecoratedcompleteddistance=\dimen275
-\pgfdecoratedremainingdistance=\dimen276
-\pgfdecoratedinputsegmentcompleteddistance=\dimen277
-\pgfdecoratedinputsegmentremainingdistance=\dimen278
-\pgf@decorate@distancetomove=\dimen279
-\pgf@decorate@repeatstate=\count183
-\pgfdecorationsegmentamplitude=\dimen280
-\pgfdecorationsegmentlength=\dimen281
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
 )
-\tikz@lib@dec@box=\box64
+\AM@pagebox=\box64
+\AM@global@opts=\toks37
+\AM@toc@title=\toks38
+\c@AM@survey=\count180
+\AM@templatesizebox=\box65
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
-librarydecorations.pathmorphing.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibraryd
-ecorations.pathmorphing.code.tex"))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
-librarydecorations.pathreplacing.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibraryd
-ecorations.pathreplacing.code.tex"))
-\pgfplots@numplots=\count184
-\pgfplots@xmin@reg=\dimen282
-\pgfplots@xmax@reg=\dimen283
-\pgfplots@ymin@reg=\dimen284
-\pgfplots@ymax@reg=\dimen285
-\pgfplots@zmin@reg=\dimen286
-\pgfplots@zmax@reg=\dimen287
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
-libraryplotmarks.code.tex"
-File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplotmarks.cod
-e.tex"
-File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
-))) ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
@@ -1293,7 +1214,7 @@ Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
@@ -1303,16 +1224,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen288
-\Hy@linkcounter=\count185
-\Hy@pagecounter=\count186
+\@linkdim=\dimen278
+\Hy@linkcounter=\count181
+\Hy@pagecounter=\count182
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count187
+\Hy@SavedSpaceFactor=\count183
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1324,17 +1245,17 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count188
+\c@Hy@tempcnt=\count184
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen289
-\Fld@menulength=\count189
-\Field@Width=\dimen290
-\Fld@charsize=\dimen291
+\XeTeXLinkMargin=\dimen279
+\Fld@menulength=\count185
+\Field@Width=\dimen280
+\Fld@charsize=\dimen281
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -1344,61 +1265,61 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count190
-\c@Item=\count191
-\c@Hfootnote=\count192
+\Hy@abspage=\count186
+\c@Item=\count187
+\c@Hfootnote=\count188
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count193
-\c@bookmark@seq@number=\count194
+\Fld@listcount=\count189
+\c@bookmark@seq@number=\count190
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip58
+\Hy@SectionHShift=\skip61
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 155.
-Package hyperref Info: Option `unicode' set `true' on input line 155.
+Package hyperref Info: Option `colorlinks' set `true' on input line 156.
+Package hyperref Info: Option `unicode' set `true' on input line 156.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
 File: puenc.def 2016/06/24 v6.83q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 155.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 156.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip59
-\bibsep=\skip60
+\bibhang=\skip62
+\bibsep=\skip63
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count195
+\c@NAT@ctr=\count191
 ) (vzor_prace.aux)
 \openout1 = `vzor_prace.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 167.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 168.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1437,7 +1358,7 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count196
+\c@lstlisting=\count192
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
@@ -1521,17 +1442,17 @@ File: siunitx-abbreviations.cfg 2016/11/24 v2.7 siunitx: Abbreviated units
 )
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count197
-\scratchdimen=\dimen292
-\scratchbox=\box65
-\nofMPsegments=\count198
-\nofMParguments=\count199
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count266
-\MPscratchDim=\dimen293
-\MPnumerator=\count267
-\makeMPintoPDFobject=\count268
-\everyMPtoPDFconversion=\toks42
+\scratchcounter=\count193
+\scratchdimen=\dimen282
+\scratchbox=\box66
+\nofMPsegments=\count194
+\nofMParguments=\count195
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count196
+\MPscratchDim=\dimen283
+\MPnumerator=\count197
+\makeMPintoPDFobject=\count198
+\everyMPtoPDFconversion=\toks40
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1546,69 +1467,73 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box67
 
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into 
-your preamble.
- on input line 167.
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-\AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring ON on input line 167.
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package hyperref Info: Link coloring ON on input line 168.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count269
+\c@section@level=\count199
 )
-LaTeX Info: Redefining \ref on input line 167.
-LaTeX Info: Redefining \pageref on input line 167.
-LaTeX Info: Redefining \nameref on input line 167.
+LaTeX Info: Redefining \ref on input line 168.
+LaTeX Info: Redefining \pageref on input line 168.
+LaTeX Info: Redefining \nameref on input line 168.
 
 (vzor_prace.out) (vzor_prace.out)
 \@outlinefile=\write4
 \openout4 = `vzor_prace.out'.
 
-\c__siunitx_mathsf_int=\count270
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 167.
+\c__siunitx_mathsf_int=\count266
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 168.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 167.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 168.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 167
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 168
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 167
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 168
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 167.
+(Font)              <12> on input line 168.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 167.
+(Font)              <8> on input line 168.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 167.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 167
+(Font)              <6> on input line 168.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 168
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\c__siunitx_mathtt_int=\count271
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 167
+\c__siunitx_mathtt_int=\count267
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 168
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmtt.fd"
@@ -1620,7 +1545,7 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ] [4] (vzor_prace.toc [5
 
 ]
-Overfull \hbox (5.61984pt too wide) in paragraph at lines 88--88
+Overfull \hbox (5.61984pt too wide) in paragraph at lines 89--89
  [][] [][][]\T1/lmr/m/n/12 Identifikujte hlavní kri-té-ria, která ovliv-¬ují ce
 l-kové hod- 
  []
@@ -1638,186 +1563,208 @@ Kapitola 2.
 [8
 
 ] [9] [10]
-Overfull \hbox (0.49884pt too wide) in paragraph at lines 218--221
+Overfull \hbox (0.49884pt too wide) in paragraph at lines 219--222
 \T1/lmr/m/n/12 Data se vi-zu-a-li-zují po-mocí r·z-ných uºi-va-tel-sky p°i-zp·-
 so-bi-tel-ných graf·, které
  []
 
-[11] [12] [13] [14] [15] [16] [17] [18] [19]
-Kapitola 3.
-[20
+[11] [12] [13] [14] [15] [16] [17] [18]
 
-] [21] [22] [23] [24]
-Overfull \hbox (4.2822pt too wide) in paragraph at lines 377--382
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19] [20]
+Kapitola 3.
+[21
+
+] [22] [23] [24] [25]
+Overfull \hbox (4.2822pt too wide) in paragraph at lines 426--431
 \T1/lmr/m/n/12 Problém na-stává p°i po-u-ºití t¥chto do-taz· na ne-a-na-ly-zo-v
 ané pole typu text,
  []
 
-[25] [26]
-Overfull \hbox (1.47527pt too wide) in paragraph at lines 398--401
+[26] [27]
+Overfull \hbox (1.47527pt too wide) in paragraph at lines 447--450
 \T1/lmr/m/n/12 Toto lze pro-vést p°i-dá-ním klau-zule expand do do-tazu pro E
 lasticsearch.[[]]
  []
 
-[27] [28]
+[28] [29]
 Kapitola 4.
-[29
+[30
 
-] <img/5_countries_highest_table.png, id=499, 458.46281pt x 137.7647pt>
+] <img/5_countries_highest_table.png, id=511, 458.46281pt x 137.7647pt>
 File: img/5_countries_highest_table.png Graphic file (type png)
 
 <use img/5_countries_highest_table.png>
 Package pdftex.def Info: img/5_countries_highest_table.png used on input line 4
-16.
+65.
 (pdftex.def)             Requested size: 386.95749pt x 116.2828pt.
 
-<img/5_countries_highest_appearance_graph.png, id=501, 639.13782pt x 660.21657p
+<img/5_countries_highest_appearance_graph.png, id=513, 639.13782pt x 660.21657p
 t>
 File: img/5_countries_highest_appearance_graph.png Graphic file (type png)
  <use img/5_countries_highest_appearance_graph.png>
 Package pdftex.def Info: img/5_countries_highest_appearance_graph.png used on i
-nput line 421.
+nput line 470.
 (pdftex.def)             Requested size: 386.95749pt x 399.71936pt.
- [30 <./img/5_countries_highest_table.png>] [31 <./img/5_countries_highest_appe
+ [31 <./img/5_countries_highest_table.png>] [32 <./img/5_countries_highest_appe
 arance_graph.png>]
-<img/Australia_travel_type_table.PNG, id=513, 615.0478pt x 197.98969pt>
+<img/Australia_travel_type_table.PNG, id=525, 615.0478pt x 197.98969pt>
 File: img/Australia_travel_type_table.PNG Graphic file (type png)
 
 <use img/Australia_travel_type_table.PNG>
 Package pdftex.def Info: img/Australia_travel_type_table.PNG used on input line
- 425.
+ 474.
 (pdftex.def)             Requested size: 386.95749pt x 124.568pt.
 
-<img/Australia_travel_type_chart.PNG, id=514, 621.07031pt x 648.17157pt>
+<img/Australia_travel_type_chart.PNG, id=526, 621.07031pt x 648.17157pt>
 File: img/Australia_travel_type_chart.PNG Graphic file (type png)
 
 <use img/Australia_travel_type_chart.PNG>
 Package pdftex.def Info: img/Australia_travel_type_chart.PNG used on input line
- 426.
+ 475.
 (pdftex.def)             Requested size: 199.16928pt x 207.85431pt.
 
-<img/detail_spojeni.PNG, id=515, 405.76593pt x 224.33812pt>
+<img/detail_spojeni.PNG, id=527, 405.76593pt x 224.33812pt>
 File: img/detail_spojeni.PNG Graphic file (type png)
 
 <use img/detail_spojeni.PNG>
-Package pdftex.def Info: img/detail_spojeni.PNG used on input line 431.
+Package pdftex.def Info: img/detail_spojeni.PNG used on input line 480.
 (pdftex.def)             Requested size: 386.95749pt x 213.94498pt.
- [32 <./img/Australia_travel_type_table.PNG> <./img/Australia_travel_type_chart
+ [33 <./img/Australia_travel_type_table.PNG> <./img/Australia_travel_type_chart
 .PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 482--483
 
  []
 
-<img/AUS_atlantis.PNG, id=522, 208.52907pt x 109.1578pt>
+<img/AUS_atlantis.PNG, id=534, 208.52907pt x 109.1578pt>
 File: img/AUS_atlantis.PNG Graphic file (type png)
 
 <use img/AUS_atlantis.PNG>
-Package pdftex.def Info: img/AUS_atlantis.PNG used on input line 435.
+Package pdftex.def Info: img/AUS_atlantis.PNG used on input line 484.
 (pdftex.def)             Requested size: 177.25053pt x 92.78456pt.
 
-<img/UK_atlantis.PNG, id=523, 205.5178pt x 110.66344pt>
+<img/UK_atlantis.PNG, id=535, 205.5178pt x 110.66344pt>
 File: img/UK_atlantis.PNG Graphic file (type png)
 
 <use img/UK_atlantis.PNG>
-Package pdftex.def Info: img/UK_atlantis.PNG used on input line 437.
+Package pdftex.def Info: img/UK_atlantis.PNG used on input line 486.
 (pdftex.def)             Requested size: 174.69095pt x 94.06435pt.
 
-Overfull \hbox (168.90005pt too wide) in paragraph at lines 439--441
+Overfull \hbox (168.90005pt too wide) in paragraph at lines 488--490
 \T1/lmr/m/n/12 re-pre-zen-tují na hor-ním ob-rázku po-£et re-cenzí, které ob-sa
 -hují v poli USER_LOCATION_COUNTRY.keyword
  []
 
-[33 <./img/detail_spojeni.PNG> <./img/AUS_atlantis.PNG> <./img/UK_atlantis.PNG>
+[34 <./img/detail_spojeni.PNG> <./img/AUS_atlantis.PNG> <./img/UK_atlantis.PNG>
 ]
-<img/Business_trip_customers_proportions.jpg, id=534, 727.21687pt x 677.53125pt
+<img/Business_trip_customers_proportions.jpg, id=546, 727.21687pt x 677.53125pt
 >
 File: img/Business_trip_customers_proportions.jpg Graphic file (type jpg)
  <use img/Business_trip_customers_proportions.jpg>
 Package pdftex.def Info: img/Business_trip_customers_proportions.jpg used on in
-put line 456.
+put line 505.
 (pdftex.def)             Requested size: 298.75394pt x 278.34787pt.
- [34]
-<img/Leisure_trip_customers_proportions_cut.jpg, id=543, 696.35156pt x 671.5087
+ [35]
+<img/Leisure_trip_customers_proportions_cut.jpg, id=555, 696.35156pt x 671.5087
 4pt>
 File: img/Leisure_trip_customers_proportions_cut.jpg Graphic file (type jpg)
  <use img/Leisure_trip_customers_proportions_cut.jpg>
 Package pdftex.def Info: img/Leisure_trip_customers_proportions_cut.jpg used on
- input line 465.
+ input line 514.
 (pdftex.def)             Requested size: 298.75394pt x 288.09761pt.
- [35] [36 <./img/Business_trip_customers_proportions.jpg> <./img/Leisure_trip_c
-ustomers_proportions_cut.jpg>] [37] [38] <img/obdobi_donut.png, id=571, 285.315
+ [36] [37 <./img/Business_trip_customers_proportions.jpg> <./img/Leisure_trip_c
+ustomers_proportions_cut.jpg>] [38] [39] <img/obdobi_donut.png, id=583, 285.315
 93pt x 287.57437pt>
 File: img/obdobi_donut.png Graphic file (type png)
 
 <use img/obdobi_donut.png>
-Package pdftex.def Info: img/obdobi_donut.png used on input line 498.
+Package pdftex.def Info: img/obdobi_donut.png used on input line 547.
 (pdftex.def)             Requested size: 142.26378pt x 143.38751pt.
- [39 <./img/obdobi_donut.png>]
-<img/sezona.PNG, id=587, 593.21625pt x 386.94562pt>
-File: img/sezona.PNG Graphic file (type png)
- <use img/sezona.PNG>
-Package pdftex.def Info: img/sezona.PNG used on input line 527.
-(pdftex.def)             Requested size: 386.95749pt x 252.41502pt.
 
-[40 <./img/sezona.PNG>] <img/food_data.png, id=595, 622.57594pt x 416.30531pt>
+Underfull \hbox (badness 10000) in paragraph at lines 565--572
+
+ []
+
+[40 <./img/obdobi_donut.png>]
+Package epstopdf Info: Source file: <img/graf_sezona.eps>
+(epstopdf)                    date: 2017-06-07 14:33:23
+(epstopdf)                    size: 42278 bytes
+(epstopdf)             Output file: <img/graf_sezona-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-07 14:33:46
+(epstopdf)                    size: 15962 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/graf_sezona-eps-convert
+ed-to.pdf img/graf_sezona.eps>
+(epstopdf)             \includegraphics on input line 576.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/graf_sezona-eps-converted-to.pdf, id=599, 455.7025pt x 248.93pt>
+File: img/graf_sezona-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/graf_sezona-eps-converted-to.pdf>
+Package pdftex.def Info: img/graf_sezona-eps-converted-to.pdf used on input lin
+e 576.
+(pdftex.def)             Requested size: 386.95749pt x 211.38258pt.
+ [41 <./img/graf_sezona-eps-converted-to.pdf>] <img/food_data.png, id=612, 622.
+57594pt x 416.30531pt>
 File: img/food_data.png Graphic file (type png)
 
 <use img/food_data.png>
-Package pdftex.def Info: img/food_data.png used on input line 541.
+Package pdftex.def Info: img/food_data.png used on input line 590.
 (pdftex.def)             Requested size: 284.52756pt x 190.2577pt.
 
-<img/food_positive.png, id=597, 453.94594pt x 274.02374pt>
+<img/food_positive.png, id=614, 453.94594pt x 274.02374pt>
 File: img/food_positive.png Graphic file (type png)
 
 <use img/food_positive.png>
-Package pdftex.def Info: img/food_positive.png used on input line 549.
+Package pdftex.def Info: img/food_positive.png used on input line 598.
 (pdftex.def)             Requested size: 227.62204pt x 137.40457pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41] <img/money_dash.png, id=605, 682.04813pt x 429.85594pt>
+[42] <img/money_dash.png, id=622, 682.04813pt x 429.85594pt>
 File: img/money_dash.png Graphic file (type png)
 
 <use img/money_dash.png>
-Package pdftex.def Info: img/money_dash.png used on input line 558.
+Package pdftex.def Info: img/money_dash.png used on input line 607.
 (pdftex.def)             Requested size: 284.52756pt x 179.32483pt.
- [42 <./img/food_data.png> <./img/food_positive.png>]
-[43 <./img/money_dash.png>]
-<img/sluzby.png, id=620, 651.93562pt x 322.95656pt>
+ [43 <./img/food_data.png> <./img/food_positive.png>]
+[44 <./img/money_dash.png>]
+<img/sluzby.png, id=637, 651.93562pt x 322.95656pt>
 File: img/sluzby.png Graphic file (type png)
  <use img/sluzby.png>
-Package pdftex.def Info: img/sluzby.png used on input line 569.
+Package pdftex.def Info: img/sluzby.png used on input line 618.
 (pdftex.def)             Requested size: 284.52756pt x 140.95311pt.
 
-<img/wifi.png, id=621, 551.05875pt x 484.05844pt>
+<img/wifi.png, id=638, 551.05875pt x 484.05844pt>
 File: img/wifi.png Graphic file (type png)
  <use img/wifi.png>
-Package pdftex.def Info: img/wifi.png used on input line 577.
+Package pdftex.def Info: img/wifi.png used on input line 626.
 (pdftex.def)             Requested size: 170.71652pt x 149.96054pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44 <./img/sluzby.png>] [45 <./img/wifi.png>] [46]
-<img/skore_vliv_vizualizace.png, id=655, 1336.995pt x 545.03625pt>
+[45 <./img/sluzby.png>] [46 <./img/wifi.png>] [47]
+<img/skore_vliv_vizualizace.png, id=672, 1336.995pt x 545.03625pt>
 File: img/skore_vliv_vizualizace.png Graphic file (type png)
 
 <use img/skore_vliv_vizualizace.png>
-Package pdftex.def Info: img/skore_vliv_vizualizace.png used on input line 657.
+Package pdftex.def Info: img/skore_vliv_vizualizace.png used on input line 706.
 
 (pdftex.def)             Requested size: 284.52756pt x 115.99124pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47]
+[48]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[48 <./img/skore_vliv_vizualizace.png>] [49]
+[49 <./img/skore_vliv_vizualizace.png>] [50]
 Kapitola 5.
-(vzor_prace.bbl [50
+(vzor_prace.bbl [51
 
 ]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 12.
@@ -1833,33 +1780,33 @@ Overfull \hbox (234.36317pt too wide) in paragraph at lines 68--72
 [][]\T1/lmr/m/n/10.95 .  
  []
 
-[51
+[52
 
-] [52]
+] [53]
 Overfull \hbox (443.02467pt too wide) in paragraph at lines 194--198
 \T1/lmtt/m/n/10.95 booz-[]allen-[]hamilton-[]and-[]splunk-[]announce-[]strategi
 c-[]alliance-[]to-[]deliver-[]predictive-[]security-[]analytics-[]and-[]operati
 onalize-[]threat-[]intelligence / 
  []
 
-[53]) [54]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 713.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 713.
+[54]) [55]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
  (vzor_prace.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 713.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 713.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 764.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 764.
 Package rerunfilecheck Info: File `vzor_prace.out' has not changed.
-(rerunfilecheck)             Checksum: 3A357ECDECA5342AC81576A2F18FE372;9390.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 713.
+(rerunfilecheck)             Checksum: 5B1487D2FCE90199781A49CBBD5C3756;9542.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 764.
  ) 
 Here is how much of TeX's memory you used:
- 42040 strings out of 494874
- 931475 string characters out of 3174258
- 1022949 words of memory out of 3000000
- 44674 multiletter control sequences out of 15000+200000
+ 33137 strings out of 494874
+ 617877 string characters out of 3174258
+ 624727 words of memory out of 3000000
+ 35877 multiletter control sequences out of 15000+200000
  99014 words of font info for 62 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 62i,15n,96p,10363b,2187s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,16n,54p,10363b,2193s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
@@ -1874,9 +1821,9 @@ KTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmtt10.pfb>
-Output written on vzor_prace.pdf (54 pages, 929060 bytes).
+Output written on vzor_prace.pdf (55 pages, 864199 bytes).
 PDF statistics:
- 859 PDF objects out of 1000 (max. 8388607)
- 221 named destinations out of 1000 (max. 500000)
- 506 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 878 PDF objects out of 1000 (max. 8388607)
+ 224 named destinations out of 1000 (max. 500000)
+ 514 words of extra memory for PDF output out of 10000 (max. 10000000)
 

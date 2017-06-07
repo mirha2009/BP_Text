@@ -132,7 +132,8 @@
 
 % Umožňuje vkládání obrázků
 \usepackage[pdftex]{graphicx}
-\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{pdfpages}
 
 
 
@@ -296,8 +297,56 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
  
  \subsection{Verze 5}
  V říjnu roku 2016 vyšla verze 5.0, kdy Kibana doznala především grafických změn, které na její funkčnost nemají velký význam. Ke změnám funkcionalit lze řadit nezobrazování histogramu záznamů u dat, která neobsahují časovou značku, což na rozdíl od předchozí verze šetří čas při zobrazování logů. Velmi podstatnou změnou je odstranění linku nad jednotlivými záznamy v databázi, které mohly způsobovat bezpečnostní riziko, jelikož odkaz vracel reálný JSON soubor uložený v Elasticsearch skrze prohlížeč a volání GET. Toto se změnilo a nyní je k dispozici pouze náhled, který neodkazuje na JSON a je tak bezpečnější ho sdílet. Novinkou je také generování krátkých URL odkazujících na vizualizace či dashboardy, což je více uživatelsky přívětivé, než předchozí dlouhé URL adresy. Novinkami jsou i nové nabídky na hlavní liště, která byla přesunuta na levou stranu a je skryta, když není používána, což zvětšuje prostor k zobrazení vizualizací. Navíc přibyly nástroje Timelion a Console, což dříve byly jen pluginy. Timelion je nástroj, který umožňuje sledovat změny v čase v jednotlivých datech. Console je nástroj, který usnadňuje psaní query dotazů. Dotazy lze skládat do jednoho souboru, dělit je podle indexů a nástroj má dokonce funkci našeptávače, který ještě více usnadňuje psaní dotazů. Co se týče možností rozšiřování kódu, doznala verze 5 také vylepšení, protože jednotlivé položky hlavního menu byly rozděleny do samostatných pluginů, které se dají lépe upravovat. Další novinkou je možnost upravovat názvy os u jednotlivých vizualizací, jelikož se v nabídce objevil nový parametr s názvem \uv{Custom Label}. U filtrů, které lze připnout nad vizualizace taktéž přibyla možnost přímé úpravy query dotazu a lze tak ovlivnit chování daného filtru. \cite{Kibana5intro}
+
  
- 
+\section{Srovnání produktů}
+Tabulka \ref{Srovnání_produktů} slouží ke srovnání jednotlivých produktů podle 14 kritérií, které jsem zvolil na základě průzkumu trhu s nástroji k analýze a vizualizaci dat.
+Legenda pro tabulku \ref{Srovnání_produktů}:
+\begin{itemize}
+	\item[] \tikz\draw[black,fill=black] (0,0) circle (.5ex); : Pouze v kombinaci s produktem Tableau Server.
+	\item[] \tikz\draw[black, thick] (0,0) circle (.5ex); : Pouze v kombinaci s produktem X-Pack.
+	\item[] \tikz\draw[red,fill=red] (0,0) circle (.5ex); : Verze Personal od 999\$ ročně a verze Professional od 1999\$ ročně.
+	\item[] + : Produkt splňuje kritérium.
+	\item[] - : Produkt nesplňuje kritérium.
+	\item[] * : Doživotní licence omezená přenosem 5GB za den. Cena za GB.
+	\item[] ** : Cena za roční licenci.
+	\item[] F : Produkt je zdarma.
+	\item[] X : Cena je individuální dle dodávaných řešení.
+\end{itemize}
+
+\begin{table}[h]
+	\centering
+
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Kritérium/\\Produkt\end{tabular}} & 
+		\begin{tabular}[c]{@{}c@{}}{\rotatebox[origin=c]{270}{ InetSoft Style }}\end{tabular} & 
+		\begin{tabular}[c]{@{}c@{}}\rotatebox[origin=c]{270}{ Splunk Enterprise }\end{tabular} & 
+		\begin{tabular}[c]{@{}c@{}}{\rotatebox[origin=c]{270}{ Splunk Free }}\end{tabular} & 
+		\begin{tabular}[c]{@{}c@{}}{\rotatebox[origin=c]{270}{ Tableau Desktop }}\end{tabular} & 
+		\begin{tabular}[c]{@{}c@{}}{\rotatebox[origin=c]{270}{ Tableau Public }}\end{tabular} & 
+		\begin{tabular}[c]{@{}c@{}}{\rotatebox[origin=c]{270}{ Tableau Reader }}\end{tabular} 
+		& \begin{tabular}[c]{@{}c@{}}{\rotatebox[origin=c]{270}{ Sisense }}\end{tabular} & 
+		\begin{tabular}[c]{@{}c@{}}{\rotatebox[origin=c]{270}{ Kibana }}\end{tabular} \\ \hline
+		Dashboardy                                                                         & +                                                        & +                                                           & +                                                     & +                                                         & +                                                        & -                                                        & +       & +      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Kompatibilita\\ s ElasticSearch\end{tabular}            & -                                                        & -                                                           & -                                                     & -                                                         & -                                                        & -                                                        & -       & +      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Export do\\ MS Office\end{tabular}                      & +                                                        & +                                                           & +                                                     & +                                                         & +                                                        & -                                                        & +       & +      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Kompatibilita\\ s OS\end{tabular}                       & +                                                        & +                                                           & +                                                     & +                                                         & +                                                        & +                                                        & +       & +      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Vlastní\\ komunita\end{tabular}                         & -                                                        & +                                                           & +                                                     & +                                                         & +                                                        & +                                                        & +       & +      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Podpora \\ nestrukturo-\\ vaných\\ dat\end{tabular}     & +                                                        & +                                                           & +                                                     & +                                                         & -                                                        & -                                                        & +       & +      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Podpora\\ NoSQL\\ databází\end{tabular}                 & +                                                        & +                                                           & +                                                     & +                                                         & +                                                        & -                                                        & +       & +      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Sdílení\\ vizualizací\end{tabular}                      & +                                                        & -                                                           & -                                                     &  \tikz\draw[black,fill=black] (0,0) circle (.5ex);                                                         & +                                                        & -                                                        & +       & +      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Strojové učení\\ na detekci\\ anomálií\end{tabular}     & -                                                        & +                                                           & +                                                     & -                                                         & -                                                        & -                                                        & +       & \tikz\draw[black, thick] (0,0) circle (.5ex);      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}SW na kolekci\\ dat\end{tabular}                        & +                                                        & +                                                           & +                                                     & +                                                         & -                                                        & -                                                        & +       & +      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Uživatelská\\ práva\end{tabular}                        & +                                                        & +                                                           & -                                                     & +                                                         & -                                                        & -                                                        & +       & -      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Webová aplikace\end{tabular}                        & +                                                        & -                                                           & -                                                     & -                                                         & -                                                        & -                                                        & +       & +      \\ \hline
+		\begin{tabular}[c]{@{}l@{}}SW  na \\ zpracování \\ dat\end{tabular}                & +                                                        & +                                                           & +                                                     & +                                                         & +                                                        & -                                                        & +       & +      \\ \hline
+		Cena                                                                               & 2800\$**                                                 & 4140\$*                                                     & F                                                  & \begin{tabular}[c]{@{}c@{}}\tikz\draw[red,fill=red] (0,0) circle (.5ex);\end{tabular} & F                                                     & F                                                     & X     & F   \\ \hline
+	\end{tabular}
+	\caption{Srovnání produktů}
+\label{Srovnání_produktů}
+\end{table}
+
 \chapter{Funkce nástroje Kibana}
 V druhé části mé práce je mým úkolem prostudovat otázky, které se vztahují k dostupným datům z ubytovacích portálů a nalézt vhodnou formu jejich vizualizace. Tato kapitola popíše syntaxi a použití filtrů a query dotazů, které jsou pro vlastní vizualizaci potřebné, dále pak popisuje rozšíření aplikace Kibana, nástroje na vizualizaci, které Kibana poskytuje, a také samozřejmě použití těchto nástrojů při vizualizaci.
 
@@ -520,11 +569,11 @@ Z grafu je patrné, že nejoblíbenější měsíce pro návštěvníky ze Spoje
 \\
 Tendence návštěvníku ze zemí Arabského poloostrova a z Austrálie jsou opačné tendencím západních zemí. Jelikož jsou obyvatelé z těchto zemí zvyklí na teplé podnebí, má křivka návštěvnosti vrchol v létě a v ostatních ročních obdobích jejich návštěvnost klesá.
 \\
-\textbf{Vyexportovat data a udělat to třeba v GNUPlot.}
+
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[ width = \textwidth]{img/sezona.PNG}
+	\includegraphics[ width = \textwidth]{img/graf_sezona.eps}
 	\caption{Sezónní vývoj návštěvnosti podle států}
 	\label{fig:Sezona_staty}	
 \end{figure}\textbf{}
@@ -658,6 +707,8 @@ Kritéria jsem volil tak, aby byla zastoupena alespoň v 25\% dostupných recenz
 	\caption{Průměrné skóre kritérií}
 	\label{fig:kkk}	
 \end{figure}
+
+ 
 \mbox{}\\
 V tabulce \ref{Korelace_výsledky} jsou výsledky postupné korelace a ne hromadné, protože hromadná korelace je zkreslena vztahy mezi jednotlivými poli, ale nás zajímá pouze vztah mezi polem SCORE\_TOTAL a jednotlivými kritérii.
 \begin{table}[h]
