@@ -70,22 +70,22 @@
 \contentsline {chapter}{\numberline {4}Vizualizace pomoc\IeC {\'\i } n\IeC {\'a}stroje Kibana}{30}{chapter.4}
 \contentsline {section}{\numberline {4.1}Vyu\IeC {\v z}it\IeC {\'\i } roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } Graph}{30}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Jak\IeC {\'e} n\IeC {\'a}rodnosti nej\IeC {\v c}ast\IeC {\v e}ji nav\IeC {\v s}t\IeC {\v e}vuj\IeC {\'\i } Dubaj, a jak\IeC {\'e} jsou jejich obl\IeC {\'\i }ben\IeC {\'e} hotely?}{30}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Charakterizujte n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ky hotel\IeC {\r u}, kte\IeC {\v r}\IeC {\'\i } jezd\IeC {\'\i } do Dubaje na pracovn\IeC {\'\i } cesty, dovolenou, l\IeC {\'\i }b\IeC {\'a}nky a podobn\IeC {\v e}.}{35}{subsection.4.1.2}
-\contentsline {subsubsection}{Charakteristika obchodn\IeC {\'\i }ch cestuj\IeC {\'\i }c\IeC {\'\i }ch}{35}{section*.30}
-\contentsline {subsubsection}{Charakteristika lid\IeC {\'\i } jezd\IeC {\'\i }c\IeC {\'\i }ch do Dubaje na dovolenou}{36}{section*.31}
-\contentsline {subsubsection}{Postup p\IeC {\v r}i tvorb\IeC {\v e} vizualizace}{38}{section*.32}
+\contentsline {subsubsection}{Charakterizujte n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ky hotel\IeC {\r u}, kte\IeC {\v r}\IeC {\'\i } jezd\IeC {\'\i } do Dubaje na pracovn\IeC {\'\i } cesty, dovolenou, l\IeC {\'\i }b\IeC {\'a}nky a podobn\IeC {\v e}.}{35}{section*.30}
+\contentsline {paragraph}{Charakteristika obchodn\IeC {\'\i }ch cestuj\IeC {\'\i }c\IeC {\'\i }ch}{35}{section*.31}
+\contentsline {paragraph}{Charakteristika lid\IeC {\'\i } jezd\IeC {\'\i }c\IeC {\'\i }ch do Dubaje na dovolenou}{37}{section*.32}
+\contentsline {paragraph}{Postup p\IeC {\v r}i tvorb\IeC {\v e} vizualizace}{38}{section*.33}
 \contentsline {section}{\numberline {4.2}N\IeC {\'a}stroje Kibana}{39}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Jak\IeC {\'a} je sez\IeC {\'o}n\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnost Dubaje podle st\IeC {\'a}t\IeC {\r u}?}{39}{subsection.4.2.1}
-\contentsline {subsubsection}{Pou\IeC {\v z}it\IeC {\'e} n\IeC {\'a}stroje}{39}{section*.33}
-\contentsline {subsubsection}{Odpov\IeC {\v e}\IeC {\v d} na ot\IeC {\'a}zku}{39}{section*.34}
-\contentsline {paragraph}{Glob\IeC {\'a}ln\IeC {\'\i } rozlo\IeC {\v z}en\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnosti do sez\IeC {\'o}n}{40}{section*.35}
-\contentsline {paragraph}{Sez\IeC {\'o}nn\IeC {\'\i } rozlo\IeC {\v z}en\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnosti podle st\IeC {\'a}t\IeC {\r u}}{40}{section*.36}
-\contentsline {subsubsection}{Postup p\IeC {\v r}i tvorb\IeC {\v e} vizualizace odpov\IeC {\v e}di}{42}{section*.37}
-\contentsline {subsection}{\numberline {4.2.2}Jak hodnot\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ci j\IeC {\'\i }dlo nab\IeC {\'\i }zen\IeC {\'e} v hotel\IeC {\'\i }ch?}{42}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Je p\IeC {\v r}\IeC {\'\i }nos z cesty do Dubaje \IeC {\'u}m\IeC {\v e}rn\IeC {\'y} vynalo\IeC {\v z}en\IeC {\'y}m n\IeC {\'a}klad\IeC {\r u}m?}{43}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Jak hodnot\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ci kvalitu slu\IeC {\v z}eb?}{44}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}M\IeC {\'a} na n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ky dopad stav a \IeC {\v c}istota hotelu?}{46}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}M\IeC {\'a} velikost hotelu vliv na celkov\IeC {\'y} dojem z hotelu?}{47}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Identifikujte hlavn\IeC {\'\i } krit\IeC {\'e}ria, kter\IeC {\'a} ovliv\IeC {\v n}uj\IeC {\'\i } celkov\IeC {\'e} hodnocen\IeC {\'\i } hotel\IeC {\r u}.}{48}{subsection.4.2.7}
+\contentsline {subsubsection}{Jak\IeC {\'a} je sez\IeC {\'o}n\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnost Dubaje podle st\IeC {\'a}t\IeC {\r u}?}{39}{section*.34}
+\contentsline {paragraph}{Pou\IeC {\v z}it\IeC {\'e} n\IeC {\'a}stroje}{39}{section*.35}
+\contentsline {paragraph}{Odpov\IeC {\v e}\IeC {\v d} na ot\IeC {\'a}zku}{39}{section*.36}
+\contentsline {paragraph}{Glob\IeC {\'a}ln\IeC {\'\i } rozlo\IeC {\v z}en\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnosti do sez\IeC {\'o}n}{40}{section*.37}
+\contentsline {paragraph}{Sez\IeC {\'o}nn\IeC {\'\i } rozlo\IeC {\v z}en\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnosti podle st\IeC {\'a}t\IeC {\r u}}{40}{section*.38}
+\contentsline {paragraph}{Postup p\IeC {\v r}i tvorb\IeC {\v e} vizualizace odpov\IeC {\v e}di}{41}{section*.39}
+\contentsline {subsubsection}{Jak hodnot\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ci j\IeC {\'\i }dlo nab\IeC {\'\i }zen\IeC {\'e} v hotel\IeC {\'\i }ch?}{42}{section*.40}
+\contentsline {subsubsection}{Je p\IeC {\v r}\IeC {\'\i }nos z cesty do Dubaje \IeC {\'u}m\IeC {\v e}rn\IeC {\'y} vynalo\IeC {\v z}en\IeC {\'y}m n\IeC {\'a}klad\IeC {\r u}m?}{43}{section*.41}
+\contentsline {subsubsection}{Jak hodnot\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ci kvalitu slu\IeC {\v z}eb?}{44}{section*.42}
+\contentsline {subsubsection}{M\IeC {\'a} na n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ky dopad stav a \IeC {\v c}istota hotelu?}{46}{section*.43}
+\contentsline {subsubsection}{M\IeC {\'a} velikost hotelu vliv na celkov\IeC {\'y} dojem z hotelu?}{47}{section*.44}
+\contentsline {subsubsection}{Identifikujte hlavn\IeC {\'\i } krit\IeC {\'e}ria, kter\IeC {\'a} ovliv\IeC {\v n}uj\IeC {\'\i } celkov\IeC {\'e} hodnocen\IeC {\'\i } hotel\IeC {\r u}.}{48}{section*.45}
 \contentsline {chapter}{\numberline {5}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{51}{chapter.5}
-\contentsline {chapter}{Literatura}{52}{chapter*.38}
+\contentsline {chapter}{Literatura}{52}{chapter*.46}
