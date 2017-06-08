@@ -172,15 +172,15 @@
 \chapter{Úvod}
 Hlavním úkolem této bakalářské práce je zanalyzovat a vizualizovat data z ubytovacích portálů. Tato data jsou uložena v databázi Elasticsearch, která byla zvolena, protože se jedná o nestrukturovaná data. Data představují recenze z hotelů v okolí Dubaje, která byla získána z ubytovacích portálů. Tyto recenze byly zpracovány skupinou NLP, která působí na Fakultě aplikovaných věd Západočeské univerzity. Úkolem této práce tudíž není připravit data a uložit je do databáze, ale využít tato data k zodpovězení otázek pro Zayedovu univerzitu z Dubaje.
 \\
-Databáze Elasticsearch byla zvolena díky možnosti ukládání velkých dat, pro které je typická jejich rozsáhlost a běžně dostupné databázové nástroje nejsou schopny zpracovat v rozumném čase, především kvůli velkému množství nestrukturovaných vazeb.\cite{BigData} První částí této bakalářské práce je prozkoumání různých nástrojů sloužících k vizualizaci dat, které jsou dostupné na trhu. Tyto nástroje jsou nejčastěji součásti aplikací Bussiness Intelligence, což jsou aplikace sloužící k analýze, reportování a vizualizaci velkého množství dat, které podniky sbírají a následně je využívají jako podporu pro strategické rozhodování. Důležitým kritériem pro výběr nástrojů k analýze dat je podpora ukládání a zpracování nestrukturovaných dat. Nestrukturovaná data jsou běžně reprezentována fotografiemi, zvukovými nahrávkami, daty ze senzorů, ale také například  souvislým textem, což je náš případ. S výběrem databáze Elasticsearch souvisí i výběr vizualizačního nástroje, kterým je nástroj Kibana. Ten slouží k vizualizaci dat z nástroje Elasticsearch skrze webové uživatelské rozhraní.
+Databáze Elasticsearch byla zvolena díky možnosti ukládání velkých dat, pro které je typická jejich rozsáhlost a běžně dostupné databázové nástroje nejsou schopny tyto data zpracovat v rozumném čase, především kvůli velkému množství nestrukturovaných vazeb.\cite{BigData} První částí této bakalářské práce je prozkoumání různých nástrojů sloužících k vizualizaci dat, které jsou dostupné na trhu. Tyto nástroje jsou nejčastěji součásti aplikací Bussiness Intelligence, což jsou aplikace sloužící k analýze, reportování a vizualizaci velkého množství dat, které podniky sbírají a následně je využívají jako podporu pro strategické rozhodování. \\Důležitým kritériem pro výběr nástrojů k analýze dat je podpora ukládání a zpracování nestrukturovaných dat. Nestrukturovaná data jsou běžně reprezentována fotografiemi, zvukovými nahrávkami, daty ze senzorů, ale také například  souvislým textem, což je náš případ. S výběrem databáze Elasticsearch souvisí i výběr vizualizačního nástroje, kterým je nástroj Kibana. Ten slouží k vizualizaci dat z nástroje Elasticsearch skrze webové uživatelské rozhraní.
 \\
 Dalším úkolem bakalářské práce je tvorba webových stránek, které budou zobrazovat vybrané vizualizace, jenž v rámci práce vzniknou. Hlavní funkcionalitou by mělo být snazší porovnání vybraných hotelů podle zadaných kritérií, než je tomu u nástroje Kibana, který není pro běžné uživatele snadno ovladatelný.
 \\
-Kapitola \uv{Nástroje k analýze a vizualizaci dat} je zaměřena na porovnání dostupných nástrojů a jejich detailnější představení. Kapitola \uv{Funkce nástroje Kibana} pojednává o možnostech vizualizace tohoto nástroje a jeho dalších rozšíření. Další kapitola obsahuje odpovědi na vybrané otázky a jejich vizualizace. Kapitola \uv{Implementace webových stránek} je tvořena popisem webových stránek a jejich strukturou. Poslední částí bakalářské práce je zhodnocení práce, za kterou následuje slovníček pojmů, ve kterém je možné dohledat vysvětlení odborných termínů a zkratek.
+Kapitola \ref{Nástroje_1} je zaměřena na porovnání dostupných nástrojů a jejich detailnější představení. Kapitola \ref{Funkce_nástroje} pojednává o možnostech vizualizace tohoto nástroje a jeho dalších rozšíření. Další kapitola obsahuje odpovědi na vybrané otázky a jejich vizualizace. Kapitola \textbf{\uv{Implementace webových stránek}} je tvořena popisem webových stránek a jejich strukturou. Poslední částí bakalářské práce je zhodnocení práce, za kterou následuje slovníček pojmů, ve kterém je možné dohledat vysvětlení odborných termínů a zkratek.
 
 
 \chapter{Nástroje k analýze a vizualizaci dat }
-
+\label{Nástroje_1}
 První kapitola práce je zaměřena na nástroje, pomocí kterých je možné analyzovat a vizualizovat semi-strukturovaná popřípadě nestrukturovaná data. Na trhu je mnoho nástrojů určených pro zpracování firemních dat a většinou jsou součástí komplexnějšího řešení ve formě BI nástroje. BI je zkratka pro Business Intelligence, což je rámocvý termín pro škálu aplikací, které slouží k analýze nestrukturovaných dat organizace.\cite{BI}
 
 \section{InetSoft Style Intelligence}
@@ -278,7 +278,8 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
  %--------------------------------------Kibana------------------------------------------------------------
  
  \section{Kibana}
- Kibana je open source nástroj na vizualizaci dat od firmy Elastic a byla vytvořena jako plugin do fulltextového vyhledávače Elasticsearch, který vychází z Apache Lucene. Elasticsearch je NoSQL bezschémová databáze, což znamená, že není nutné definovat předem přesnou strukturu databáze, ale databáze sama nastaví schéma podle dat, která obsahuje. NoSQL jsou databáze nové generace vhodné pro zpracování velkého množství dat.\cite{NoSQL} Přesto se u Elasticsearch doporučuje zvolení alespoň základního schématu, což může usnadnit následné analýzy nad daty.\cite{SchemaElastic} Oba nástroje jsou součástí produktu Elastic Stack, který je jediným produktem firmy Elastic a je dostupný jako open source. Dále jsou k  dispozici rozšířené funkce, které je ovšem již nutné zakoupit. Elastic Stack se skládá z Elasticsearch, Kibany, Logstash a Beats.
+ Kibana je open source nástroj na vizualizaci dat od firmy Elastic a byla vytvořena jako plugin do fulltextového vyhledávače Elasticsearch, který vychází z Apache Lucene. Elasticsearch je NoSQL bezschémová databáze, což znamená, že není nutné definovat předem přesnou strukturu databáze, ale databáze sama nastaví schéma podle dat, která obsahuje. NoSQL jsou databáze nové generace vhodné pro zpracování velkého množství dat.\cite{NoSQL} Přesto se u Elasticsearch doporučuje zvolení alespoň základního schématu, což může usnadnit následné analýzy nad daty.\cite{SchemaElastic} Oba nástroje jsou součástí produktu Elastic Stack, který je jediným produktem firmy Elastic a je dostupný jako open source. Dále jsou k  dispozici rozšířené funkce, které je ovšem již nutné zakoupit. Elastic Stack se skládá z Elasticsearch, Kibana
+ , Logstash a Beats.
  
  \subsection{Přehled}
  Kibana byla původně vytvořena jen jako plugin k Elasticsearch, ale nyní je z ní plnohodnotná součást celku Elastic Stack a je hojně využívána především pro monitorování logů ze serverů. Kibana umožňuje spojit data z databáze do komplexních grafických prvků, ze kterých je snazší datům přiřadit význam. Díky rychlosti databáze Elasticsearch a jejím možnostem fulltextového vyhledávání můžeme aplikaci Kibana nazývat real-time nástrojem, pokud jsou tedy správně zaindexována data, které obsahuje databáze. Problémem může být pro některé uživatele ovladatelnost, která není tak jednoduchá jako například u Tableau i přes přítomnost systému drag and drop. Na druhou stranu je ceněné rychlé vyhledávání buďto skrze všechna data, nebo skrze data, která si pomocí dotazu vybereme.
@@ -348,6 +349,7 @@ Legenda pro tabulku \ref{Srovnání_produktů}:
 \end{table}
 
 \chapter{Funkce nástroje Kibana}
+\label{Funkce_nástroje}
 V druhé části mé práce je mým úkolem prostudovat otázky, které se vztahují k dostupným datům z ubytovacích portálů a nalézt vhodnou formu jejich vizualizace. Tato kapitola popíše syntaxi a použití filtrů a query dotazů, které jsou pro vlastní vizualizaci potřebné, dále pak popisuje rozšíření aplikace Kibana, nástroje na vizualizaci, které Kibana poskytuje, a také samozřejmě použití těchto nástrojů při vizualizaci.
 
 \section{Query DSL}
@@ -373,14 +375,11 @@ Tento typ dotazů má také definovanou skupinu znaků, které nelze použít sa
 Například při hledání hotelů, jejichž celkové skóre je vetší nebo rovno 8 a zároveň menší nebo rovno 9 a jejichž skóre neplaceného WiFi připojení je vetší nebo rovna 6, by struktura dotazu ve formátu JSON vypadala následovně:
 
 \begin{lstlisting}[xleftmargin=0.2\textwidth]
-{
-"query":{
+{"query":{
  "query_string":{
   "query":"SCORE_TOTAL:[8 to 9] AND 
    SCORE_FREE_WIFI:>=6"
-  }
- }
-}
+  }}}
 \end{lstlisting}
 
 	
@@ -414,13 +413,11 @@ Ekvivalentem tohoto zápisu jsou dotazy typu match query. Například dotaz \tex
 			
 
 	\begin{lstlisting}
-	{
-	"bool":{
+	{"bool":{
 	 "must":	{"match":"fox"},
 	 "should":	{"match":"quick brown"},
 	 "must_not":	{"match":"news"}
-	 }
-	}
+	 }}
 	\end{lstlisting}
 \subsubsection{Dotazy s omezeným rozsahem}	
 Pro vyhledávání v polích s numerickými hodnotami se využívají znaky \uv{\{\}, [], <, >, =}  a operátor TO. Operátor TO se pojí s použitím obou typů závorek. Například dotaz \textit{TOTAL\_SCORE:[7 TO 8\}} vrátí záznamy, jejichž pole TOTAL\_SCORE obsahuje hodnoty 7 až 8, včetně hraniční hodnoty 7. Z tohoto příkladu je možné vypozorovat, že hranaté závorky zahrnují hraniční hodnoty a složené závorky naopak tyto hodnoty nezahrnují.
@@ -453,6 +450,7 @@ Tento nástroj je vhodný především pro analýzu dat, kde lze předem očeká
 
 
 \chapter{Vizualizace pomocí nástroje Kibana}
+\label{Vizualizace}
 Součástí zadání mé bakalářské práce je i seznam otázek, který zaslala Zayedova univerzita v Dubaji. Jak název této práce napovídá, jedná se o jedno z hlavních témat. V předchozích částech této práce byl popsán nástroj Kibana a jeho funkcionality, které využívám při získávání odpovědí na zadané otázky a k jejich případné vizualizaci.
 \\
 Problém, na který jsem během práce narážel, jsou především sebraná data z ubytovacích portálů, která nejsou úplná, a tudíž nelze na některé zadané otázky odpovědět, tak aby byla odpověď relevantní pro všechna data.
@@ -620,7 +618,7 @@ Odpovědi na otázku lze hledat také přímo v recenzích, které máme k dispo
 	\label{fig:Services}	
 \end{figure}
 \mbox{}\\
-Mezi nejčastěji hodnocené služby patří internetové připojení, které je v dnešní době velmi důležité především pro obchodní cestující. Hotely poskytují připojení prostřednictvím WiFi připojení, které je buďto zdarma, nebo je zpoplatněno. Předpokládám, že hotely nejčastěji poskytují připojení zdarma, protože pole X\_SCORE\_FREE\_WIFI obsahuje 103 804 záznamů, ale pole X\_SCORE\_PAID\_WIFI obsahuje pouze 8 888 záznamů. Právě velký rozdíl mezi počtem záznamů v obou polích je dle mého názoru také příčinou markantního rozdílu mezi průměrnými hodnotami v jednotlivých polích. Lépe hodnoceno je připojení zdarma a to o 2,3 bodu oproti zpoplatněnému připojení. S připojením  zdarma panuje podle recenzí spokojenost, ale hodnocení placeného připojení je spíše průměrné. Na první pohled je překvapivý je záporný sentiment u WiFi připojení, který má hodnotu -0,382. Tento výsledek se ovšem nedá brát jako relevantní, protože pole SENTIMENT\_WIFI obsahuje pouze 14 992 záznamů, což jsou pouhá 4\% dostupných recenzí. Z tohoto důvodu jsem také hodnotu průměrného sentimentu nezahrnul do vizualizace, která je na obrázku XY. Na vizualizaci lze tedy vidět pouze průměrné hodnoty polí X\_SCORE\_FREE\_WIFI a X\_SCORE\_PAID\_WIFI, které obsahují celkem 108 754 záznamů, což je 28,7\% všech sebraných recenzí.
+Mezi nejčastěji hodnocené služby patří internetové připojení, které je v dnešní době velmi důležité především pro obchodní cestující. Hotely poskytují připojení prostřednictvím WiFi připojení, které je buďto zdarma, nebo je zpoplatněno. Předpokládám, že hotely nejčastěji poskytují připojení zdarma, protože pole X\_SCORE\_FREE\_WIFI obsahuje 103 804 záznamů, ale pole X\_SCORE\_PAID\_WIFI obsahuje pouze 8 888 záznamů. Právě velký rozdíl mezi počtem záznamů v obou polích je dle mého názoru také příčinou markantního rozdílu mezi průměrnými hodnotami v jednotlivých polích. Lépe hodnoceno je připojení zdarma a to o 2,3 bodu oproti zpoplatněnému připojení. S připojením  zdarma panuje podle recenzí spokojenost, ale hodnocení placeného připojení je spíše průměrné. Na první pohled je překvapivý je záporný sentiment u WiFi připojení, který má hodnotu -0,382. Tento výsledek se ovšem nedá brát jako relevantní, protože pole SENTIMENT\_WIFI obsahuje pouze 14 992 záznamů, což jsou pouhá 4\% dostupných recenzí. Z tohoto důvodu jsem také hodnotu průměrného sentimentu nezahrnul do vizualizace, která je na obrázku \ref{fig:WiFi}. Na vizualizaci lze tedy vidět pouze průměrné hodnoty polí X\_SCORE\_FREE\_WIFI a X\_SCORE\_PAID\_WIFI, které obsahují celkem 108 754 záznamů, což je 28,7\% všech sebraných recenzí.
 \begin{figure}[h]
 	\centering
 	\includegraphics[ width = 6cm]{img/wifi.png}
@@ -637,16 +635,12 @@ Elasticsearch nabízí maticové agregace, které pracují s více poli a prová
 Pro zadání maticové agregace jsem využil nástroj Console, který je v aplikaci Kibana již v základním balíčku. Obecný zápis této agregace v nástroji Console vypadá následovně:
 
 \begin{lstlisting}[title={Zápis matrix\_stats}]
-	       GET_search
-  	       {
+	       GET_search{
 	        "aggs":{
 	         "matrixstats":{
 	          "matrix_stats":{
 	           "fields":["field1","filed2"]
-	          }
-	         }
-	        }
-	       }
+	          }}}}
 \end{lstlisting}
 \mbox{}\\
 Jelikož otázka žádá odpověď na vztah mezi celkovým hodnocením hotelů a jejich stavem, je maticová agregace ideálním nástrojem jak tento vztah vyjádřit. Hledáme tedy vztah mezi polem SCORE\_TOTAL  a polem SCO- RE\_HOTEL\_CONDITION/CLEANLINESS. Z výsledku agregace nás zajímá pouze sekce s korelací. V následující tabulce je vidět výsledek korelace mezi zvolenými poli. Pole SCORE\_TOTAL je reprezentováno hodnotou FIELD1 a hodnota FIELD2 reprezentuje pole SCORE\_HOTEL\_CONDI- TION/CLEANLINESS.
@@ -703,7 +697,7 @@ Jedná se o složitou otázku, která chce zjistit, co ovlivňuje celkové skór
 Kritéria jsem volil tak, aby byla zastoupena alespoň v 25\% dostupných recenzí, což vyřadilo všechna pole, která obsahují výraz \uv{REVIEW}. Výsledkem je tedy celkem 7 kritérií, u kterých určím na základě korelačního koeficientu míru závislosti na celkovém hodnocení hotelu. Na následující vizualizaci je k vidění průměrná hodnota jednotlivých polí. Tato vizualizace slouží jen k porovnání průměrné hodnoty polí s výsledky korelace.
 \begin{figure}[h]
 	\centering
-	\includegraphics[ width = 10cm]{img/skore_vliv_vizualizace.png}
+	\includegraphics[ width = \textwidth]{img/skore_vliv_vizualizace.png}
 	\caption{Průměrné skóre kritérií}
 	\label{fig:kkk}	
 \end{figure}
@@ -733,6 +727,7 @@ Z tabulky \ref{Korelace_výsledky} je jasně patrné, že pole SCORE\_TOTAL nejv
 % CITAČNÍ STYL!
 %
 \chapter{Slovník pojmů}
+\label{Slovník}
 
 
 
