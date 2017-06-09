@@ -315,7 +315,7 @@ Legenda pro tabulku \ref{Srovnání_produktů}:
 	\item[] X : Cena je individuální dle dodávaných řešení.
 \end{itemize}
 
-\begin{table}[h]
+\begin{table}[htbp]
 	\centering
 
 	\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
@@ -347,7 +347,11 @@ Legenda pro tabulku \ref{Srovnání_produktů}:
 	\caption{Srovnání produktů}
 \label{Srovnání_produktů}
 \end{table}
-
+\newpage
+\section{Výběr nástroje}
+Jak je možné vidět v tabulce \ref{Srovnání_produktů}, je si většina nástrojů z pohledu funkcionality velmi podobná. Všechny nástroje kromě jednoho podporují tvorbu tvorbu dashboardů, což je pro moji bakalářskou práci klíčové a zároveň jsou všechny nástroje plně kompatibilní s běžnými operačními systémy. Problémem je ovšem podpora nestrukturovaných popřípadě semistrukturovaných dat. Tato již nepodporují nástroje Tableau Public a Tableau Reader, které tvoří obdobu nástroje Tableau Desktop, ale jsou zdarma. Hlavním kritériem je ovšem schopnost integrace nástroje s databází ElasticSearch, ve které jsou uložena data z ubytovacích portálů. Mimo to hraje také roli cena, která rozhodně není u placených nástrojů zanedbatelná. 
+\\
+Z těchto důvodů jsem zvolil nástroj Kibana, který je plně kompatibilní s ElasticSearch, je zdarma a velkou výhodou je i webová platforma. Hlavní předností nástroje Kibana je real-time vyhledávání, které zajišťuje ElasticSearch. Zároveň je možné skrze tento nástroje efektivně komunikovat s databází ElasticSearch, kterou je možné od verze 5.0 upravovat skrze nástroj \uv{Console}. Další předností je tvorba dashboardů, kde lze kombinovat vizualizace z různých indexů. Sdílení dashboardů je umožněno buďto skrze URL, kdy lze poslat odkaz přímo na dashboard, který je možné nadále upravovat, nebo se pošle obraz této vizualizace, který se již nijak nedá upravit pomocí nástroje Kibana. Samozřejmostí je export dat do formátu CSV, což zajišťuje kompatibilitu s balíkem aplikací MS Office. Mírnou nevýhodu spatřuji s chybějící možností exportu vizualizací do formátu PDF. Export lze provést pouze při instalaci rozšíření X-Pack, které již ovšem není k dispozici zdarma.
 \chapter{Funkce nástroje Kibana}
 \label{Funkce_nástroje}
 V druhé části mé práce je mým úkolem prostudovat otázky, které se vztahují k dostupným datům z ubytovacích portálů a nalézt vhodnou formu jejich vizualizace. Tato kapitola popíše syntaxi a použití filtrů a query dotazů, které jsou pro vlastní vizualizaci potřebné, dále pak popisuje rozšíření aplikace Kibana, nástroje na vizualizaci, které Kibana poskytuje, a také samozřejmě použití těchto nástrojů při vizualizaci.
@@ -456,7 +460,7 @@ Součástí zadání mé bakalářské práce je i seznam otázek, který zaslal
 Problém, na který jsem během práce narážel, jsou především sebraná data z ubytovacích portálů, která nejsou úplná, a tudíž nelze na některé zadané otázky odpovědět, tak aby byla odpověď relevantní pro všechna data.
 \section{Využití rozšíření Graph}
 Toto rozšíření je popsáno výše a je velmi vhodné především pro analýzu chování jednotlivých uživatelů portálu. Výhodou vizualizací z nástroje Graph je především hledání spojení mezi zadanými výrazy ve všech dokumentech. Následně probíhá interní ohodnocení výsledků a podle zadaných kritérií se zobrazí jen omezený počet výsledků.
-\subsection{Jaké národnosti nejčastěji navštěvují Dubaj, a jaké jsou jejich oblíbené hotely?}
+\subsubsection{Jaké národnosti nejčastěji navštěvují Dubaj, a jaké jsou jejich oblíbené hotely?}
 Tato otázka je pro vhodná pro zpracování pomocí rozšíření Graph v aplikaci Kibana. Jedná se samozřejmě o hledání vztahů mezi národnostmi, které nejčastěji navštěvují Dubaj a mezi hotely, které navštívili. To že nejčastěji navštěvují Dubaj se dá vyvodit z toho, že zanechali nejvíce recenzí na ubytovacích portálech. Tento krok ovšem samostatné rozšíření nedokáže realizovat, takže je nutné otázku rozdělit na dvě samostatné otázky.
 Prvním úkolem je získat odpověď na otázku, které národnosti se vyskytují v datech nejčastěji. K tomu výborně poslouží vizualizace, která se nazývá \uv{Data table}, která je dostupná pod složkou \uv{Visualize}. Tato vizualizace je vlastně přehledná tabulka, která poskytuje detailní přehled numerických výsledků, což přesně potřebujeme. Po otevření vizualizace je nutné nastavit parametry \uv{metrics} a \uv{buckets}. Do prvního jmenovaného parametru jsem zadal agregaci typu počet, protože potřebuji zjistit počet recenzní, ve kterých se jednotlivé národnosti, respektive země objevují. Jako druhý parametr jsem zvolil možnost \uv{Split Rows}, protože potřebuji mít data umístěna v řádcích pro lepší přehlednost. Konkrétně tedy bude v jednom řádku název země, ze které recenze pochází a vedle něj bude počet recenzí, které jsou dostupné v datech. Do pole \uv{aggregation} jsem vyplnil agregaci podle výrazů, která je ukryta pod názvem \uv{Terms} a jako zdrojové pole jsem zvolil pole USER\_LOCATION\_COUNTRY.keyword, které obsahuje názvy zemí, ze kterých uživatel pochází a to ve formátu string. Řazení jsem zvolil sestupné, protože hledám pět nejčastějších zemí a řadí se to samozřejmě podle počtu recenzí. Výsledkem této vizualizace je tedy tabulka čítající pět nejčastěji se vyskytujících zemí a konkrétní počet recenzí. Tento výsledek je k dispozici na následujícím obrázku.
 \begin{center}
