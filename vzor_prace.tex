@@ -457,10 +457,25 @@ Tento nástroj je vhodný především pro analýzu dat, kde lze předem očeká
 \label{Vizualizace}
 Součástí zadání mé bakalářské práce je i seznam otázek, který zaslala Zayedova univerzita v Dubaji. Jak název této práce napovídá, jedná se o jedno z hlavních témat. V předchozích částech této práce byl popsán nástroj Kibana a jeho funkcionality, které využívám při získávání odpovědí na zadané otázky a k jejich případné vizualizaci.
 \\
-Problém, na který jsem během práce narážel, jsou především sebraná data z ubytovacích portálů, která nejsou úplná, a tudíž nelze na některé zadané otázky odpovědět, tak aby byla odpověď relevantní pro všechna data.
+Problém, na který jsem vizualizace narážel, jsou především sebraná data z ubytovacích portálů, která nejsou úplná, a tudíž nelze na některé zadané otázky odpovědět, tak aby byla odpověď relevantní pro všechna data.
+\\
+Ze seznamu otázek jsem společně s vedoucím práce vybral následujících deset otázek, kterým se budu v této kapitole podrobně věnovat a pokusím se o jejich zodpovězení z dostupných dat.
+\begin{enumerate}
+	\item \nameref{subsub:Národnosti}
+	\item \nameref{subsub:Charakteristika návštěvníků}
+	\item \nameref{subsub:Návštěvnost}
+	\item \nameref{subsub:Jídlo}
+	\item \nameref{subsub:Worth of money}
+	\item \nameref{subsub:služby}
+	\item \nameref{subsub:Stav a čistota}
+	\item \nameref{subsub:velikost hotelu}
+	\item \nameref{subsub:kriteria}
+	\item
+\end{enumerate}
 \section{Využití rozšíření Graph}
 Toto rozšíření je popsáno výše a je velmi vhodné především pro analýzu chování jednotlivých uživatelů portálu. Výhodou vizualizací z nástroje Graph je především hledání spojení mezi zadanými výrazy ve všech dokumentech. Následně probíhá interní ohodnocení výsledků a podle zadaných kritérií se zobrazí jen omezený počet výsledků.
 \subsubsection{Jaké národnosti nejčastěji navštěvují Dubaj, a jaké jsou jejich oblíbené hotely?}
+\label{subsub:Národnosti}
 Tato otázka je pro vhodná pro zpracování pomocí rozšíření Graph v aplikaci Kibana. Jedná se samozřejmě o hledání vztahů mezi národnostmi, které nejčastěji navštěvují Dubaj a mezi hotely, které navštívili. To že nejčastěji navštěvují Dubaj se dá vyvodit z toho, že zanechali nejvíce recenzí na ubytovacích portálech. Tento krok ovšem samostatné rozšíření nedokáže realizovat, takže je nutné otázku rozdělit na dvě samostatné otázky.
 Prvním úkolem je získat odpověď na otázku, které národnosti se vyskytují v datech nejčastěji. K tomu výborně poslouží vizualizace, která se nazývá \uv{Data table}, která je dostupná pod složkou \uv{Visualize}. Tato vizualizace je vlastně přehledná tabulka, která poskytuje detailní přehled numerických výsledků, což přesně potřebujeme. Po otevření vizualizace je nutné nastavit parametry \uv{metrics} a \uv{buckets}. Do prvního jmenovaného parametru jsem zadal agregaci typu počet, protože potřebuji zjistit počet recenzní, ve kterých se jednotlivé národnosti, respektive země objevují. Jako druhý parametr jsem zvolil možnost \uv{Split Rows}, protože potřebuji mít data umístěna v řádcích pro lepší přehlednost. Konkrétně tedy bude v jednom řádku název země, ze které recenze pochází a vedle něj bude počet recenzí, které jsou dostupné v datech. Do pole \uv{aggregation} jsem vyplnil agregaci podle výrazů, která je ukryta pod názvem \uv{Terms} a jako zdrojové pole jsem zvolil pole USER\_LOCATION\_COUNTRY.keyword, které obsahuje názvy zemí, ze kterých uživatel pochází a to ve formátu string. Řazení jsem zvolil sestupné, protože hledám pět nejčastějších zemí a řadí se to samozřejmě podle počtu recenzí. Výsledkem této vizualizace je tedy tabulka čítající pět nejčastěji se vyskytujících zemí a konkrétní počet recenzí. Tento výsledek je k dispozici na následujícím obrázku.
 \begin{center}
@@ -491,6 +506,7 @@ Velmi zajímavé je na výsledném grafu sledovat sílu jednotlivých spojení, 
 Červená čísla na obrázcích reprezentují počet dokumentů, které obsahují v poli HOTEL\_NAME.keyword hodnotu \uv{Atlantis, The Palm}, modrá čísla reprezentují na horním obrázku počet recenzí, které obsahují v poli USER\_LO\-CATION\_COUNTRY.keyword hodnotu Australia a na spodním obrázku recenze obsahující v témže poli hodnotu United Kingdom. Růžová čísla reprezentují průnik množin, a jak je možné vidět, tentýž hotel je přibližně sedm krát častěji recenzován uživateli z Velké Británie než uživateli z Austrálie, což je oproti původnímu odhadu velký rozdíl.
 
 \subsubsection{Charakterizujte návštěvníky hotelů, kteří jezdí do Dubaje na pracovní cesty, dovolenou, líbánky a podobně.}
+\label{subsub:Charakteristika návštěvníků}
 Ke zpracování této otázky je taktéž vhodné využít rozšíření Graph, protože hledáme spojitosti mezi typem cest a charakteristickými rysy návštěvníků. Těmito rysy je například stát, věk návštěvníků nebo pozitiva, která návštěvníci zmínili ve svých recenzích. Jelikož je v otázce požadováno určit charakteristiky pro jednotlivé typy cest, je nutné vytvořit více samostatných vizualizací. Tyto vizualizace odpovídají vždy danému typu cesty.
 \\
 Problémem při hledání odpovědí byla stejně jako v předchozí otázce neúplná data. Z toho důvodu je možné charakterizovat pouze návštěvníky, kteří se vydali buďto na pracovní cestu, nebo na dovolenou. Data od uživatelů, kteří byli na líbánkách, nebo na výletě nejsou z recenzí k dispozici. Odpovědi jsou také ovlivněny vlastností nástroje Graph, v jehož výstupu jsou vrcholy s největším ohodnocením. To je také důvod, proč jsou země v odpovědích rozdílné od zemí, které jsou zastoupeny v předchozí otázce.
@@ -537,9 +553,10 @@ Posledním krokem k získání vizualizace, kterou můžete vidět na obrázcíc
 
 \section{Nástroje Kibana}
 \subsubsection{Jaká je sezóní návštěvnost Dubaje podle států?}
+\label{subsub:Návštěvnost}
 \paragraph{Použité nástroje}
 \mbox{}\\
-K zodpovězení této otázky jsem využil data o vzniku recenzí, které se nacházejí v poli DATE\_CREATED. Jelikož jsou tato data rozdělena podle roků, byla by vizualizace odpovědi nepřehledná, takže jsem se rozhodl pro lehkou modifikaci dostupných dat. Modifikace spočívá ve vytvoření nového pole DATE\_CREATED\_SEASONS, ve kterém se nacházejí data z pole DATE\_CREATED, ale všechna data mají nastavený rok 2000. Tuto modifikaci provedl vedoucí této práce. Aby nedošlo ke zkreslení hodnot v indexu \uv{hospitality}, tak jsem vytvořil nový index \uv{new\_index}, z jehož dat jsem tvořil vizualizaci odpovědi. Lepší variantou by bylo využít data z pole STAYED, ale bohužel nejsou hodnoty v tomto poli u většiny recenzí vyplněné.
+K zodpovězení této otázky jsem využil data o vzniku recenzí, které se nacházejí v poli DATE\_CREATED. Jelikož jsou tato data rozdělena podle roků, byla by vizualizace odpovědi nepřehledná, takže jsem se rozhodl pro lehkou modifikaci dostupných dat. Modifikace spočívá ve vytvoření nového pole DATE\_CREATED\_SEASONS, ve kterém se nacházejí data z pole DATE\_CREATED, ale všechna data mají nastavený rok 2000. Tuto modifikaci provedl vedoucí této práce. Aby nedošlo ke zkreslení hodnot v indexu \uv{hospitality}, tak jsem vytvořil nový index \uv{new\_index}, z jehož dat jsem tvořil vizualizaci odpovědi. Lepší variantou by bylo využít data z pole STAYED, ale bohužel nejsou hodnoty v tomto poli u většiny recenzí vyplněné. 
 \\
 Při vizualizaci jsem využil nástroje, které poskytuje Kibana již v základu. Konkrétně se jedná o výsečový graf, který jsem využil k zobrazení rozložení návštěvnosti mezi jednotlivá roční období. Dále jsem využil graf liniový, jenž je vhodný k vizualizaci rozložení návštěvnosti jednotlivých národností mezi roční období.
 
@@ -593,6 +610,7 @@ Jak již bylo zmíněno, využil jsem dva typy grafů a to koláčový pro glob�
 Ani liniový graf není obtížný. Na ose y je počet recenzí, které byly v daném období přidány a na ose x jsou jednotlivá období. Agregace na ose x je stejná jako u koláčového grafu. Dále je nutné přidat jednotlivé země, což se provede kliknutím na \uv{Add sub-buckets} a volbou \uv{Split Lines}. Ve \uv{Split Lines} zvolíme agregaci podle výrazů a jako zdrojové pole vybereme USER\_LOCATION\_COUNTRY.keyword. Počet zemí omezíme na 5 a volíme sestupné řazení. Výsledek vizualizace bude ovšem matoucí, protože se zobrazí celkem 6 zemí i přes omezení výsledků na 5. Zároveň se zkreslí data pro Austrálii, kdy údajně nepřibyly žádné recenze v zimních měsících. Jedná se nejspíše o interní chybu nástroje Kibana a je nutné ji vyřešit pomocí filtrů. Postupně se musí zakázat výskyt Irska a Indie. Po vyfiltrování již vzniklá vizualizace odpovídá vizualizaci \ref{fig:Sezona_staty}.
 
 \subsubsection{Jak hodnotí návštěvníci jídlo nabízené v hotelích?}
+\label{subsub:Jídlo}
 Odpověď na tuto otázku lze získat z dostupných dat celkem snadno, protože je v datech k dispozici pole SENTIMENT\_FOOD. Pole v datech, která začínají slovem SENTIMENT, vznikla z analýzy sentimentu, která byla provedena nad texty všech recenzí. Analýza sentimentu je součástí zpracování přirozeného jazyka, čímž se skupiny NLP zabývá. Tato pole obsahují hodnoty 1, 0 nebo -1, přičemž -1 značí nespokojenost a 1 naopak spokojenost. Právě díky dostupnosti těchto dat je možné vyjádřit spokojenost s jídlem jako průměrnou hodnotu pole SENTIMENT\_FOOD. Tato hodnota je graficky i číselně vyjádřena na obrázku \ref{fig:Food_sentiment}. Na obrázku je vidět také číslo, které odpovídá celkovému počtu recenzí, ve kterých bylo jídlo hodnoceno. Jedná se celkem o 20,54\% všech recenzí, což je vzhledem k úplnosti dat celkem přijatelný výsledek. Z vizualizace je vidět, že jsou hodnotící zákazníci s jídlem spokojení a převažují kladné pocity nad negativními.
 \begin{figure}[h]
 	\centering
@@ -610,6 +628,7 @@ Na obrázku \ref{fig:Food_tags} jsou k vidění nejčastější fráze, které b
 \end{figure}
 
 \subsubsection{Je přínos z cesty do Dubaje úměrný vynaloženým nákladům?}
+\label{subsub:Worth of money}
 Odpověď na otázku lze získat přímo z dat bez nutnosti jejich úpravy. Data obsahují pole X\_SCORE\_VALUE\_FOR\_MONEY, kde je uložené skóre jednotlivých uživatelů, kteří se vyjádřili k přínosům cesty a nákladům na ní. Platí, že čím vyšší je hodnota v tomto poli, tím více se jim vynaložené náklady na cestu zdají adekvátní k přínosům. Na obrázku \ref{fig:Worth_of_money} je zobrazena maximální, minimální a průměrná hodnota pole X\_SCORE\_VA- LUE\_FOR\_MONEY a zároveň je na obrázku číslo udávající počet recenzí, které mají vyplněné hodnoty v tomto poli. Lze konstatovat, že jsou návštěvníci s náklady na cestu převážně spokojení a výsledky lze považovat za relevantní, protože vycházejí ze 49\% všech dostupných recenzí.
 \begin{figure}[htbp]
 	\centering
@@ -619,6 +638,7 @@ Odpověď na otázku lze získat přímo z dat bez nutnosti jejich úpravy. Data
 \end{figure}
 
 \subsubsection{Jak hodnotí návštěvníci kvalitu služeb?}
+\label{subsub:služby}
 Odpovědi na otázku lze hledat také přímo v recenzích, které máme k dispozici. Konkrétně jsou klíčové hodnoty uložené v polích REVIEW\_SCO- RE\_SERVICE, SCORE\_SERVICE\textbackslash STAFF a SENTIMENT\_SERVICE.\\ Hodnoty z prvního pole vyjadřují spokojenost jednotlivých návštěvníků se službami, které hotel poskytuje. Mezi tyto služby patří například pokojový servis, připojení k internetu, kvalita hotelových bazénů, nebo doprovodné programy. Průměrná hodnota v tomto poli je 9,133, což značí, že jsou návštěvníci s kvalitou poskytovaných služeb velmi spokojeni. Nižší průměrnou hodnotu obsahuje pole SCORE\_SERVICE\textbackslash STAFF, které kromě poskytovaných služeb také hodnotí přístup personálu a jejich ochotu. Jelikož je průměrná hodnota nižší než průměrná hodnota pole REVIEW\_SCORE\_SER- VICE, lze usoudit, že návštěvníci spatřují v personálu slabé místo, na které by se měly hotely zaměřit. Průměrné hodnoty z těchto dvou polí by měly být co nejvíce podobné, ideálně stejné. Třetí sloupec na obrázku \ref{fig:Services} ukazuje průměrnou hodnotu v poli SENTIMENT\_SERVICE. Z kladné hodnoty průměrného sentimentu lze vyvodit celkovou spokojenost s kvalitou poskytovaných služeb, čímž jsme potvrdili výsledky průměrných hodnot v polích REVIEW\_SCORE\_SERVICE a SCORE\_SERVICE\textbackslash STAFF. Odpověď na otázku vychází z 31,4\% všech dostupných recenzí, takže lze výsledky prohlásit za relevantní.
 % 
 
@@ -639,6 +659,7 @@ Mezi nejčastěji hodnocené služby patří internetové připojení, které je
 \newpage
 
 \subsubsection{Má na návštěvníky dopad stav a čistota hotelu?}
+\label{subsub:Stav a čistota}
 Přesnou odpověď na tuto otázku nelze získat vizualizací přímo z dat. Vizualizovat lze pouze průměrnou hodnotu pole SCORE\_TOTAL, kde jsou uložena celková hodnocení hotelů, a pole SCORE\_HOTEL\_CONDITION/CLEAN- LINESS. Z výsledné vizualizace by ale nebylo možné vyvodit žádné relevantní výsledky, protože neznáme vztah mezi hodnotami v obou polích.
 \\
 K určení vztahu mezi hodnotami ve dvou polích a ke zjištění, jak se hodnoty ovlivňují, slouží statistická metoda zvaná korelace. Výsledkem korelace je korelační koeficient, který může nabývat hodnot -1 až 1. Hodnoty korelačního koeficientu blízkého -1 značí takzvanou antikorelaci, která značí nepřímou závislost mezi hodnotami. To znamená, že pokud se zvětší hodnota v poli A, tak se hodnota v poli B adekvátně zmenší. Pokud je korelační koeficient blízký hodnotě 1, tak jsou hodnoty na sobě přímo závislé, neboli pokud se zvýší hodnota v poli A, zvýší se úměrně i hodnota v poli B. Korelační koeficient blízký 0 značí nekorelovanost, kdy není zjištěna žádná lineární závislost mezi dvěma veličinami či hodnotami. To ovšem nemusí znamenat, že mezi dvěma hodnotami není vztah, jen není lineární a tak jej korelace nedokáže odhalit.\cite{Korelace}
@@ -671,6 +692,7 @@ Jelikož otázka žádá odpověď na vztah mezi celkovým hodnocením hotelů a
 \mbox{}\\
 Jelikož je výsledný korelační koeficient roven 0,8524, což je číslo blízké hodnotě 1, lze říct, že tato pole mají mezi sebou silný vztah a vzájemně se přímo úměrně ovlivňují. Vzhled hotelu, jeho stav a čistota je pro návštěvníky důležitým kritériem při udílení bodů do celkového skóre hotelů. Závěrem je nutno podotknout, že pole SCORE\_HOTEL\_CONDITION/CLEANLINESS obsahuje celkem 186 071 záznamů, což odpovídá 49,13\% dostupných recenzí. Na základě tohoto čísla lze prohlásit výsledky analýz za relevantní a odpověď na otázku za správnou.
 \subsubsection{Má velikost hotelu vliv na celkový dojem z hotelu?}
+\label{subsub:velikost hotelu}
 Odpověď opět nelze získat pouhou vizualizací z dostupných dat, protože by odpověď měla obsahovat velikost vlivu, neboli sílu vztahu mezi celkovým dojmem z hotelu a jeho velikostí. Celkový dojem je v datech uložen ve dvou polích, a to v poli SENTIMENT\_HOTEL a SCORE\_TOTAL. Bude tedy nutné provést korelaci obou polí s polem NUMBER\_OF\_ROOMS, které obsahuje počet pokojů, které jsou v daném hotelu k dispozici. Je to jediný dostupný údaj o velikosti hotelu.  Výsledky korelace jsou k dispozici v tabulce \ref{hotel_korelace}. V této tabulce je pole SCORE\_TOTAL nahrazeno hodnotou FIELD1, SENTIMENT\_HOTEL FIELD2 a hodnota FIELD3 reprezentuje pole NUMBER\_OF\_ROOMS.
 \begin{table}[h]
 	\centering
@@ -691,6 +713,7 @@ Odpověď opět nelze získat pouhou vizualizací z dostupných dat, protože by
 Jak je možné vidět v tabulce \ref{hotel_korelace}, jsou korelační koeficienty mezi poli SCO\-RE\_TOTAL a NUMBER\_OF\_ROOMS, respektive SENTIMENT\_HO- TEL a NUMBER\_OF\_ROOMS lehce negativní. Zároveň však oba korelační koeficienty inklinují k hodnotě 0, což jak již bylo zmíněno, znamená nekorelaci. Hodnoty v polích se tedy neovlivňují lineárně, ale může mezi nimi být jiná nelineární závislost, kterou ovšem nelze prostřednictvím korelace odhalit. Odpovědí tedy je, že  celkový dojem z hotelu není zcela jistě přímo úměrný jeho velikosti, ale může existovat nepřímá úměra, která ovšem není příliš silná. Výsledky lze považovat za relevantní, jelikož pole SCORE\_TOTAL je vyplněno u 72,2\% recenzí, pole SENTIMENT\_HOTEL u 40,7\% a pole NUMBER\_OF\_ROOMS u 28,97\% dostupných recenzí, což je vzhledem k úplnosti dat uspokojivé.
 
 \subsubsection{Identifikujte hlavní kritéria, která ovlivňují celkové hodnocení hotelů.}
+\label{subsub:kriteria}
 Jedná se o složitou otázku, která chce zjistit, co ovlivňuje celkové skóre hotelů, aby se na tato kritéria mohly hotely zaměřit a získat více návštěvníků. Jedná o hledání vztahů mezi polem TOTAL\_SCORE a ostatními poli, které obsahují skóre jiných sledovaných oblastí. V tabulce \ref{Korelace_kritéria} je vidět přehled polí, u kterých budu sledovat korelaci s celkovým hodnocením. Tabulka obsahuje název pole, počet recenzí , ve kterých je pole vyplněno, procentuální podíl na dostupných recenzích a číslo, které bude reprezentovat toto pole v tabulce s korelacemi.
 
 \begin{table}[h]
