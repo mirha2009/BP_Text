@@ -154,7 +154,6 @@
   citecolor=black,
   urlcolor=black,
   bookmarksopen=true}
-
 % Při používání citačního stylu csplainnatkiv
 % (odvozen z csplainnat, http://repo.or.cz/w/csplainnat.git)
 % lze snadno modifikovat vzhled citací v textu
@@ -176,7 +175,7 @@ Databáze Elasticsearch byla zvolena díky možnosti ukládání velkých dat, p
 \\
 Dalším úkolem bakalářské práce je tvorba webových stránek, které budou zobrazovat vybrané vizualizace, jenž v rámci práce vzniknou. Hlavní funkcionalitou by mělo být snazší porovnání vybraných hotelů podle zadaných kritérií, než je tomu u nástroje Kibana, který není pro běžné uživatele snadno ovladatelný.
 \\
-Kapitola \ref{Nástroje_1} je zaměřena na porovnání dostupných nástrojů a jejich detailnější představení. Kapitola \ref{Funkce_nástroje} pojednává o možnostech vizualizace tohoto nástroje a jeho dalších rozšíření. Další kapitola obsahuje odpovědi na vybrané otázky a jejich vizualizace. Kapitola \textbf{\uv{Implementace webových stránek}} je tvořena popisem webových stránek a jejich strukturou. Poslední částí bakalářské práce je zhodnocení práce, za kterou následuje slovníček pojmů, ve kterém je možné dohledat vysvětlení odborných termínů a zkratek.
+Kapitola \ref{Nástroje_1} je zaměřena na porovnání dostupných nástrojů a jejich detailnější představení. Kapitola \ref{Funkce_nástroje} pojednává o možnostech vizualizace tohoto nástroje a jeho dalších rozšíření. Další kapitola obsahuje odpovědi na vybrané otázky a jejich vizualizace. Kapitola \ref{chap:WEB} je tvořena popisem webových stránek a využitými technologiemi. Poslední částí bakalářské práce je zhodnocení práce, za kterou následuje slovníček pojmů, ve kterém je možné dohledat vysvětlení odborných termínů a zkratek.
 
 
 \chapter{Nástroje k analýze a vizualizaci dat }
@@ -825,6 +824,7 @@ Z tabulky \ref{Korelace_výsledky} je jasně patrné, že pole SCORE\_TOTAL nejv
 Na tuto otázku nelze  bohužel najít relevantní odpověď. Důvodem jsou sebraná dat, ve kterých nejsou vyplněny podrobnosti o dostupnosti veřejné dopravy v okolí hotelu. Jediným zdrojovým polem, ve kterém jsou zmínky o dopravě, popřípadě o veřejné dopravě je pole REVIEW, kde je uložené slovní hodnocení návštěvníka. Bohužel ve většině případů nehodnotili recenzenti možnosti veřejné dopravy. Z celkového počtu 337 302 recenzí, které mají vyplněné pole REVIEW, obsahuje pouze 2873 zmínku o veřejné dopravě, popřípadě o dopravě obecně. Kvůli malému vzorku dat tudíž nelze najít odpověď. která by byla obecně platná.
 
 \chapter{Implementace webových stránek}
+\label{chap:WEB}
 Další podstatnou částí mé bakalářské práce je implementace webových stránek, které by umožňovali zobrazit vizualizace, jež během práce vznikly v nástroji Kibana. Samotný nástroj vyžaduje pokročilou znalost s databázemi, a to především kvůli specifickému jazyku Query DSL, který je využíván pro vyhledávání v datech. Pro běžné koncové uživatele může být ovládání problematické a právě to se snažím implementací webových stránek změnit. Kód stránek je uspořádán celkem do tří samostatných souborů a to autocomplete.css, web\_page.html a query.php. První jmenovaný soubor obsahuje pouze úpravu kaskádových stylů a to především pro implementovaný našeptávač. Druhý soubor je hlavní, protože se v něm nalézá HTML kód webových stránek a zároveň obsahuje funkce, které zajišťují chod stránek. Funkce jsou napsány v jazyce Javascript, protože potřebuji zajistit interaktivitu výsledných stránek. Poslední soubor slouží ke komunikaci s databází Elasticsearch a je využíván jako zdroj dat pro implementovaný našeptávač.
 \section{Funkce stránek}
 Hlavním přínosem stránek je možnost snadného srovnání dvou různých hotelů. Názvy hotelů se nemusejí zadávat ve speciálním formátu dotazu, ale do patřičných polí stačí pouze zadat název hotelu, popřípadě jej vybrat ze  seznamu našeptávače, který je nasazen na obě vyhledávací pole. Při srovnání si je možné vybrat z několika vizualizací, které lze měnit v rozbalovacím menu. Obsah tohoto menu a tudíž i nabízených vizualizací je možné změnit pouze přímo v souboru web\_page.html, kde lze zároveň i změnit adresu serveru, na kterém běží aplikace Kibana a Elasticsearch. Výhodu taktéž spatřuji v tom, že skrze implementované stránky nijak nelze trvale změnit vlastní vizualizace, které jsou uložené v nástroji Kibana, ale lze je pouze přizpůsobit pro dané srovnání. To je umožněno využitím rozšířeného režimu sdílení, který je nazýván \uv{embeded}. Při srovnání je možné využít taktéž pokročilého nastavení, které je určeno především pro zkušenější uživatele, kteří jsou seznámeni se syntaxí Lucene dotazovacího jazyka. V tomto pokročilém režimu je možné ovlivnit výsledné vizualizace zadáním konkrétních dotazů v patřičném formátu. Stránky umožňují aplikovat pro každý hotel vlastní dotaz, případně je možné zadat pouze jeden dotaz, který se následně aplikuje na oba výsledky a ovlivní zobrazené vizualizace.

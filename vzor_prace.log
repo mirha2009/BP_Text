@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  12 JUN 2017 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  12 JUN 2017 14:08
 entering extended mode
 **./vzor_prace.tex
 (vzor_prace.tex
@@ -1303,23 +1303,23 @@ LaTeX Info: Redefining \cite on input line 694.
 ) (vzor_prace.aux)
 \openout1 = `vzor_prace.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 168.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 167.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1477,7 +1477,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring ON on input line 168.
+Package hyperref Info: Link coloring ON on input line 167.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1487,62 +1487,98 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count199
 )
-LaTeX Info: Redefining \ref on input line 168.
-LaTeX Info: Redefining \pageref on input line 168.
-LaTeX Info: Redefining \nameref on input line 168.
+LaTeX Info: Redefining \ref on input line 167.
+LaTeX Info: Redefining \pageref on input line 167.
+LaTeX Info: Redefining \nameref on input line 167.
 
 (vzor_prace.out) (vzor_prace.out)
 \@outlinefile=\write4
 \openout4 = `vzor_prace.out'.
 
 \c__siunitx_mathsf_int=\count266
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 168.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 167.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 168.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 167.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 168
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 167
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 168
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 167
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 168.
+(Font)              <12> on input line 167.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 168.
+(Font)              <8> on input line 167.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 168.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 168
+(Font)              <6> on input line 167.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 167
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \c__siunitx_mathtt_int=\count267
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 168
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 167
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<zadanipdf.pdf, id=217, 597.23125pt x 845.1575pt>
+File: zadanipdf.pdf Graphic file (type pdf)
+ <use zadanipdf.pdf>
+Package pdftex.def Info: zadanipdf.pdf used on input line 170.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: zadanipdf.pdf Graphic file (type pdf)
 
-] [4] (vzor_prace.toc [5
+<use zadanipdf.pdf>
+Package pdftex.def Info: zadanipdf.pdf used on input line 170.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+ <zadanipdf.pdf, id=220, page=1, 597.23125pt x 845.1575pt>
+File: zadanipdf.pdf Graphic file (type pdf)
+
+<use zadanipdf.pdf, page 1>
+Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 170.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: zadanipdf.pdf Graphic file (type pdf)
+ <use zadanipdf.pdf, page 1>
+Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 170.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: zadanipdf.pdf Graphic file (type pdf)
+
+<use zadanipdf.pdf, page 1>
+Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 170.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: zadanipdf.pdf Graphic file (type pdf)
+ <use zadanipdf.pdf, page 1>
+Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 170.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: zadanipdf.pdf Graphic file (type pdf)
+
+<use zadanipdf.pdf, page 1>
+Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 170.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [2 <./zadanipdf.pdf>] [3
+
+] [4] (vzor_prace.toc
+[5
 
 ])
 \tf@toc=\write5
@@ -1557,7 +1593,7 @@ Kapitola 2.
 [8
 
 ] [9] [10]
-Overfull \hbox (0.49884pt too wide) in paragraph at lines 219--222
+Overfull \hbox (0.49884pt too wide) in paragraph at lines 218--221
 \T1/lmr/m/n/12 Data se vi-zu-a-li-zují po-mocí r·z-ných uºi-va-tel-sky p°i-zp·-
 so-bi-tel-ných graf·, které
  []
@@ -1567,13 +1603,13 @@ Kapitola 3.
 [22
 
 ] [23] [24] [25] [26]
-Overfull \hbox (4.2822pt too wide) in paragraph at lines 427--432
+Overfull \hbox (4.2822pt too wide) in paragraph at lines 426--431
 \T1/lmr/m/n/12 Problém na-stává p°i po-u-ºití t¥chto do-taz· na ne-a-na-ly-zo-v
 ané pole typu text,
  []
 
 [27] [28]
-Overfull \hbox (1.47527pt too wide) in paragraph at lines 448--451
+Overfull \hbox (1.47527pt too wide) in paragraph at lines 447--450
 \T1/lmr/m/n/12 Toto lze pro-vést p°i-dá-ním klau-zule expand do do-tazu pro E
 lasticsearch.[[]]
  []
@@ -1581,19 +1617,19 @@ lasticsearch.[[]]
 [29] [30]
 Kapitola 4.
 
-Overfull \hbox (1.8957pt too wide) in paragraph at lines 456--461
+Overfull \hbox (1.8957pt too wide) in paragraph at lines 455--460
 \T1/lmr/m/n/12 kána uni-ver-zitní sku-pi-nou NLP z uby-to-va-cích por-tál· ho-t
 els.com, agoda.com,
  []
 
 
-Overfull \hbox (4.12547pt too wide) in paragraph at lines 456--461
+Overfull \hbox (4.12547pt too wide) in paragraph at lines 455--460
 \T1/lmr/m/n/12 TEL_NAME_SUGGEST_TOKENS a DATE_CREATED_SEASONS. Ta-
  []
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 461.
+(hyperref)                than one, level fixed on input line 460.
 
 [31
 
@@ -1604,15 +1640,15 @@ Kapitola 5.
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 505.
+               Default added (so using `tbp') on input line 504.
 
 [34]
-<img/5_countries_highest_appearance_graph.png, id=555, 639.13782pt x 660.21657p
+<img/5_countries_highest_appearance_graph.png, id=568, 639.13782pt x 660.21657p
 t>
 File: img/5_countries_highest_appearance_graph.png Graphic file (type png)
  <use img/5_countries_highest_appearance_graph.png>
 Package pdftex.def Info: img/5_countries_highest_appearance_graph.png used on i
-nput line 523.
+nput line 522.
 (pdftex.def)             Requested size: 386.95749pt x 399.71936pt.
  [35]
 Package epstopdf Info: Source file: <img/australia.eps>
@@ -1623,58 +1659,58 @@ Package epstopdf Info: Source file: <img/australia.eps>
 (epstopdf)                    size: 16401 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/australia-eps-converted
 -to.pdf img/australia.eps>
-(epstopdf)             \includegraphics on input line 544.
+(epstopdf)             \includegraphics on input line 543.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/australia-eps-converted-to.pdf, id=561, 569.12625pt x 436.63126pt>
+<img/australia-eps-converted-to.pdf, id=574, 569.12625pt x 436.63126pt>
 File: img/australia-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/australia-eps-converted-to.pdf>
 Package pdftex.def Info: img/australia-eps-converted-to.pdf used on input line 
-544.
+543.
 (pdftex.def)             Requested size: 284.52756pt x 218.2951pt.
  [36 <./img/5_countries_highest_appearance_graph.png>] [37 <./img/australia-eps
 -converted-to.pdf>]
-<img/detail_spojeni.PNG, id=576, 405.76593pt x 224.33812pt>
+<img/detail_spojeni.PNG, id=589, 405.76593pt x 224.33812pt>
 File: img/detail_spojeni.PNG Graphic file (type png)
 
 <use img/detail_spojeni.PNG>
-Package pdftex.def Info: img/detail_spojeni.PNG used on input line 552.
+Package pdftex.def Info: img/detail_spojeni.PNG used on input line 551.
 (pdftex.def)             Requested size: 386.95749pt x 213.94498pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--555
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
 
  []
 
-<img/AUS_atlantis.PNG, id=577, 208.52907pt x 109.1578pt>
+<img/AUS_atlantis.PNG, id=590, 208.52907pt x 109.1578pt>
 File: img/AUS_atlantis.PNG Graphic file (type png)
 
 <use img/AUS_atlantis.PNG>
-Package pdftex.def Info: img/AUS_atlantis.PNG used on input line 556.
+Package pdftex.def Info: img/AUS_atlantis.PNG used on input line 555.
 (pdftex.def)             Requested size: 177.25053pt x 92.78456pt.
 
-<img/UK_atlantis.PNG, id=578, 205.5178pt x 110.66344pt>
+<img/UK_atlantis.PNG, id=591, 205.5178pt x 110.66344pt>
 File: img/UK_atlantis.PNG Graphic file (type png)
 
 <use img/UK_atlantis.PNG>
-Package pdftex.def Info: img/UK_atlantis.PNG used on input line 558.
+Package pdftex.def Info: img/UK_atlantis.PNG used on input line 557.
 (pdftex.def)             Requested size: 174.69095pt x 94.06435pt.
  [38 <./img/detail_spojeni.PNG> <./img/AUS_atlantis.PNG> <./img/UK_atlantis.PNG
 >]
-<img/Business_trip_customers_proportions.jpg, id=589, 727.21687pt x 677.53125pt
+<img/Business_trip_customers_proportions.jpg, id=602, 727.21687pt x 677.53125pt
 >
 File: img/Business_trip_customers_proportions.jpg Graphic file (type jpg)
  <use img/Business_trip_customers_proportions.jpg>
 Package pdftex.def Info: img/Business_trip_customers_proportions.jpg used on in
-put line 579.
+put line 578.
 (pdftex.def)             Requested size: 284.52756pt x 265.0942pt.
  [39] [40 <./img/Business_trip_customers_proportions.jpg>]
-<img/Leisure_trip_customers_proportions_cut.jpg, id=603, 696.35156pt x 671.5087
+<img/Leisure_trip_customers_proportions_cut.jpg, id=616, 696.35156pt x 671.5087
 4pt>
 File: img/Leisure_trip_customers_proportions_cut.jpg Graphic file (type jpg)
  <use img/Leisure_trip_customers_proportions_cut.jpg>
 Package pdftex.def Info: img/Leisure_trip_customers_proportions_cut.jpg used on
- input line 589.
+ input line 588.
 (pdftex.def)             Requested size: 298.75394pt x 288.09761pt.
  [41 <./img/Leisure_trip_customers_proportions_cut.jpg>] [42]
 Package epstopdf Info: Source file: <img/rocni_donut.eps>
@@ -1685,18 +1721,18 @@ Package epstopdf Info: Source file: <img/rocni_donut.eps>
 (epstopdf)                    size: 17496 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/rocni_donut-eps-convert
 ed-to.pdf img/rocni_donut.eps>
-(epstopdf)             \includegraphics on input line 626.
+(epstopdf)             \includegraphics on input line 625.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/rocni_donut-eps-converted-to.pdf, id=619, 278.03876pt x 328.22626pt>
+<img/rocni_donut-eps-converted-to.pdf, id=632, 278.03876pt x 328.22626pt>
 File: img/rocni_donut-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/rocni_donut-eps-converted-to.pdf>
 Package pdftex.def Info: img/rocni_donut-eps-converted-to.pdf used on input lin
-e 626.
+e 625.
 (pdftex.def)             Requested size: 142.26378pt x 167.94408pt.
  [43]
-Underfull \hbox (badness 10000) in paragraph at lines 645--652
+Underfull \hbox (badness 10000) in paragraph at lines 644--651
 
  []
 
@@ -1709,15 +1745,15 @@ Package epstopdf Info: Source file: <img/graf_sezona.eps>
 (epstopdf)                    size: 15962 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/graf_sezona-eps-convert
 ed-to.pdf img/graf_sezona.eps>
-(epstopdf)             \includegraphics on input line 656.
+(epstopdf)             \includegraphics on input line 655.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/graf_sezona-eps-converted-to.pdf, id=647, 455.7025pt x 248.93pt>
+<img/graf_sezona-eps-converted-to.pdf, id=660, 455.7025pt x 248.93pt>
 File: img/graf_sezona-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/graf_sezona-eps-converted-to.pdf>
 Package pdftex.def Info: img/graf_sezona-eps-converted-to.pdf used on input lin
-e 656.
+e 655.
 (pdftex.def)             Requested size: 386.95749pt x 211.38258pt.
  [45 <./img/graf_sezona-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/food.eps>
@@ -1728,13 +1764,13 @@ Package epstopdf Info: Source file: <img/food.eps>
 (epstopdf)                    size: 35448 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/food-eps-converted-to.p
 df img/food.eps>
-(epstopdf)             \includegraphics on input line 672.
+(epstopdf)             \includegraphics on input line 671.
 Package epstopdf Info: Output file is already uptodate.
- <img/food-eps-converted-to.pdf, id=660, 529.98pt x 483.8075pt>
+ <img/food-eps-converted-to.pdf, id=673, 529.98pt x 483.8075pt>
 File: img/food-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food-eps-converted-to.pdf>
-Package pdftex.def Info: img/food-eps-converted-to.pdf used on input line 672.
+Package pdftex.def Info: img/food-eps-converted-to.pdf used on input line 671.
 (pdftex.def)             Requested size: 227.62204pt x 207.78955pt.
 
 
@@ -1749,14 +1785,14 @@ Package epstopdf Info: Source file: <img/food_positive.eps>
 (epstopdf)                    size: 41259 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/food_positive-eps-conve
 rted-to.pdf img/food_positive.eps>
-(epstopdf)             \includegraphics on input line 680.
+(epstopdf)             \includegraphics on input line 679.
 Package epstopdf Info: Output file is already uptodate.
- <img/food_positive-eps-converted-to.pdf, id=668, 363.3575pt x 236.885pt>
+ <img/food_positive-eps-converted-to.pdf, id=681, 363.3575pt x 236.885pt>
 File: img/food_positive-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food_positive-eps-converted-to.pdf>
 Package pdftex.def Info: img/food_positive-eps-converted-to.pdf used on input l
-ine 680.
+ine 679.
 (pdftex.def)             Requested size: 227.62204pt x 148.39613pt.
 Package epstopdf Info: Source file: <img/worth_money.eps>
 (epstopdf)                    date: 2017-06-12 10:56:03
@@ -1766,15 +1802,15 @@ Package epstopdf Info: Source file: <img/worth_money.eps>
 (epstopdf)                    size: 20638 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/worth_money-eps-convert
 ed-to.pdf img/worth_money.eps>
-(epstopdf)             \includegraphics on input line 690.
+(epstopdf)             \includegraphics on input line 689.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/worth_money-eps-converted-to.pdf, id=670, 446.66875pt x 415.5525pt>
+<img/worth_money-eps-converted-to.pdf, id=683, 446.66875pt x 415.5525pt>
 File: img/worth_money-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/worth_money-eps-converted-to.pdf>
 Package pdftex.def Info: img/worth_money-eps-converted-to.pdf used on input lin
-e 690.
+e 689.
 (pdftex.def)             Requested size: 284.52756pt x 264.70988pt.
  [47 <./img/food-eps-converted-to.pdf> <./img/food_positive-eps-converted-to.pd
 f>] [48 <./img/worth_money-eps-converted-to.pdf>]
@@ -1786,14 +1822,14 @@ Package epstopdf Info: Source file: <img/sluzby.eps>
 (epstopdf)                    size: 23240 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/sluzby-eps-converted-to
 .pdf img/sluzby.eps>
-(epstopdf)             \includegraphics on input line 702.
+(epstopdf)             \includegraphics on input line 701.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/sluzby-eps-converted-to.pdf, id=692, 387.4475pt x 250.9375pt>
+<img/sluzby-eps-converted-to.pdf, id=705, 387.4475pt x 250.9375pt>
 File: img/sluzby-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/sluzby-eps-converted-to.pdf>
-Package pdftex.def Info: img/sluzby-eps-converted-to.pdf used on input line 702
+Package pdftex.def Info: img/sluzby-eps-converted-to.pdf used on input line 701
 .
 (pdftex.def)             Requested size: 284.52756pt x 184.28175pt.
 Package epstopdf Info: Source file: <img/wifi.eps>
@@ -1804,14 +1840,14 @@ Package epstopdf Info: Source file: <img/wifi.eps>
 (epstopdf)                    size: 22649 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/wifi-eps-converted-to.p
 df img/wifi.eps>
-(epstopdf)             \includegraphics on input line 710.
+(epstopdf)             \includegraphics on input line 709.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/wifi-eps-converted-to.pdf, id=694, 321.2pt x 176.66pt>
+<img/wifi-eps-converted-to.pdf, id=707, 321.2pt x 176.66pt>
 File: img/wifi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/wifi-eps-converted-to.pdf>
-Package pdftex.def Info: img/wifi-eps-converted-to.pdf used on input line 710.
+Package pdftex.def Info: img/wifi-eps-converted-to.pdf used on input line 709.
 (pdftex.def)             Requested size: 284.52756pt x 156.49368pt.
  [49 <./img/sluzby-eps-converted-to.pdf>]
 [50 <./img/wifi-eps-converted-to.pdf>] [51]
@@ -1827,14 +1863,14 @@ Package epstopdf Info: Source file: <img/kriteria.eps>
 (epstopdf)                    size: 11427 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/kriteria-eps-converted-
 to.pdf img/kriteria.eps>
-(epstopdf)             \includegraphics on input line 797.
+(epstopdf)             \includegraphics on input line 796.
 Package epstopdf Info: Output file is already uptodate.
- <img/kriteria-eps-converted-to.pdf, id=743, 399.4925pt x 223.83624pt>
+ <img/kriteria-eps-converted-to.pdf, id=756, 399.4925pt x 223.83624pt>
 File: img/kriteria-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/kriteria-eps-converted-to.pdf>
 Package pdftex.def Info: img/kriteria-eps-converted-to.pdf used on input line 7
-97.
+96.
 (pdftex.def)             Requested size: 312.9803pt x 175.37029pt.
  [53 <./img/kriteria-eps-converted-to.pdf>] [54]
 Kapitola 6.
@@ -1857,7 +1893,7 @@ Package epstopdf Info: Source file: <img/completer.eps>
 (epstopdf)             \includegraphics on input line 867.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/completer-eps-converted-to.pdf, id=798, 457.71pt x 187.70125pt>
+<img/completer-eps-converted-to.pdf, id=811, 457.71pt x 187.70125pt>
 File: img/completer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/completer-eps-converted-to.pdf>
@@ -1902,13 +1938,13 @@ Package rerunfilecheck Info: File `vzor_prace.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 934.
  ) 
 Here is how much of TeX's memory you used:
- 33221 strings out of 494874
- 619084 string characters out of 3174258
- 626174 words of memory out of 3000000
- 35910 multiletter control sequences out of 15000+200000
+ 33231 strings out of 494874
+ 619258 string characters out of 3174258
+ 626191 words of memory out of 3000000
+ 35918 multiletter control sequences out of 15000+200000
  99332 words of font info for 63 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 55i,16n,54p,10363b,1011s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,18n,54p,10363b,1011s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
@@ -1923,9 +1959,9 @@ KTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on vzor_prace.pdf (67 pages, 905642 bytes).
+Output written on vzor_prace.pdf (67 pages, 959762 bytes).
 PDF statistics:
- 1041 PDF objects out of 1200 (max. 8388607)
+ 1054 PDF objects out of 1200 (max. 8388607)
  275 named destinations out of 1000 (max. 500000)
- 501 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 521 words of extra memory for PDF output out of 10000 (max. 10000000)
 
