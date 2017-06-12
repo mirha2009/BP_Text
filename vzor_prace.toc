@@ -75,7 +75,7 @@
 \contentsline {subsubsection}{Jak\IeC {\'e} n\IeC {\'a}rodnosti nej\IeC {\v c}ast\IeC {\v e}ji nav\IeC {\v s}t\IeC {\v e}vuj\IeC {\'\i } Dubaj, a jak\IeC {\'e} jsou jejich obl\IeC {\'\i }ben\IeC {\'e} hotely?}{34}{section*.30}
 \contentsline {subsubsection}{Charakterizujte n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ky hotel\IeC {\r u}, kte\IeC {\v r}\IeC {\'\i } jezd\IeC {\'\i } do Dubaje na pracovn\IeC {\'\i } cesty, dovolenou, l\IeC {\'\i }b\IeC {\'a}nky a podobn\IeC {\v e}.}{39}{section*.31}
 \contentsline {paragraph}{Charakteristika obchodn\IeC {\'\i }ch cestuj\IeC {\'\i }c\IeC {\'\i }ch}{39}{section*.32}
-\contentsline {paragraph}{Charakteristika lid\IeC {\'\i } jezd\IeC {\'\i }c\IeC {\'\i }ch do Dubaje na dovolenou}{41}{section*.33}
+\contentsline {paragraph}{Charakteristika lid\IeC {\'\i } jezd\IeC {\'\i }c\IeC {\'\i }ch do Dubaje na dovolenou}{40}{section*.33}
 \contentsline {paragraph}{Postup p\IeC {\v r}i tvorb\IeC {\v e} vizualizace}{42}{section*.34}
 \contentsline {section}{\numberline {5.2}N\IeC {\'a}stroje Kibana}{43}{section.5.2}
 \contentsline {subsubsection}{Jak\IeC {\'a} je sez\IeC {\'o}n\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnost Dubaje podle st\IeC {\'a}t\IeC {\r u}?}{43}{section*.35}
@@ -90,5 +90,19 @@
 \contentsline {subsubsection}{M\IeC {\'a} na n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ky dopad stav a \IeC {\v c}istota hotelu?}{50}{section*.44}
 \contentsline {subsubsection}{M\IeC {\'a} velikost hotelu vliv na celkov\IeC {\'y} dojem z hotelu?}{51}{section*.45}
 \contentsline {subsubsection}{Identifikujte hlavn\IeC {\'\i } krit\IeC {\'e}ria, kter\IeC {\'a} ovliv\IeC {\v n}uj\IeC {\'\i } celkov\IeC {\'e} hodnocen\IeC {\'\i } hotel\IeC {\r u}.}{52}{section*.46}
-\contentsline {chapter}{\numberline {6}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{55}{chapter.6}
-\contentsline {chapter}{Literatura}{56}{chapter*.47}
+\contentsline {chapter}{\numberline {6}Implementace webov\IeC {\'y}ch str\IeC {\'a}nek}{55}{chapter.6}
+\contentsline {section}{\numberline {6.1}Funkce str\IeC {\'a}nek}{55}{section.6.1}
+\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technologie}{56}{section.6.2}
+\contentsline {subsubsection}{Bootstrap}{56}{section*.47}
+\contentsline {subsubsection}{HTML5}{56}{section*.48}
+\contentsline {subsubsection}{JavaScript}{57}{section*.49}
+\contentsline {subsubsection}{jQuery}{57}{section*.50}
+\contentsline {paragraph}{Autocomplete}{57}{section*.51}
+\contentsline {subsubsection}{AJAX}{58}{section*.52}
+\contentsline {subsubsection}{PHP}{59}{section*.53}
+\contentsline {section}{\numberline {6.3}Zdrojov\IeC {\'a} data pro na\IeC {\v s}ept\IeC {\'a}va\IeC {\v c}}{59}{section.6.3}
+\contentsline {subsubsection}{Completion Suggester}{59}{section*.54}
+\contentsline {subsubsection}{Zp\IeC {\r u}sob z\IeC {\'\i }sk\IeC {\'a}n\IeC {\'\i } dat}{60}{section*.55}
+\contentsline {chapter}{\numberline {7}Z\IeC {\'a}v\IeC {\v e}r}{62}{chapter.7}
+\contentsline {chapter}{\numberline {8}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{63}{chapter.8}
+\contentsline {chapter}{Literatura}{64}{chapter*.56}

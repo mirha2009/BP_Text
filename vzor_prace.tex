@@ -510,10 +510,28 @@ Díky rozdělení otázky na dvě části můžu využít výsledky z první č�
 	\includegraphics[width = \textwidth]{img/5_countries_highest_appearance_graph.png}
 \end{center}
 Z grafu lze vyčíst, že anglofonní země jakou jsou Velká Británie, Spojené státy americké nebo Austrálie preferují podobné hotely, což lze vidět především u hotelů, které mají spojení mezi Austrálií a Velkou Británií. Naopak země Arabského poloostrova, které jsou v grafu reprezentovány Saudskou Arábií a Spojenými arabskými emiráty preferují jiné hotely než anglofonní země. Zároveň však uživatelé z těchto zemí mají v oblibě podobné hotely, což značí 3 hotely, které mají spojení jak se Saudskou Arábií, tak se Spojenými arabskými emiráty. Dle mého názoru se dal takovýto výsledek na otázku očekávat a to především kvůli velikosti jednotlivých zemí, které jsou v grafu zastoupeny. Překvapivým je pro mne pouze zastoupení Austrálie, ale může to být především způsobeno geografickou polohou Dubaje, přes který míří velké množství letů z Evropy do Austrálie a opačně. To může způsobit, že většina cestujících z Austrálie stráví část dovolené právě v Dubaji, kdy čeká na navazující let do cílové destinace. To potvrzují i následující tabulka a graf, který reprezentuje zastoupení jednotlivých typů cest na celkovém počtu recenzí. Nejvýraznější zastoupení má typ cesty \uv{other}. Obě vizualizace vznikly nástrojem Kibana a jsou uložené v indexu \uv{hospitality} pod názvy Australia travel type respektive pod názvem Australia travel type table.
-\begin{center}
-	\includegraphics[width=\textwidth]{img/Australia_travel_type_table.PNG}
-	\includegraphics[width=7cm]{img/Australia_travel_type_chart.PNG}
-\end{center}
+\begin{table}[h]
+	\centering
+	
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{1}{|l|}{\textbf{Roční období}} & \multicolumn{1}{l|}{\textbf{Počet nových recenzí}} \\ \hline
+		Other                                        &  3340                                              \\ \hline
+		Couple                                        &  2111                                            \\ \hline
+		Family                                        &  1124                                              \\ \hline
+		Leisure trip                                      &  945                                              \\ \hline
+		Business trip                                      &  684                                              \\ \hline
+		Goup                                      &  409                                              \\ \hline
+		Leisure trip                                      &  191                                              \\ \hline
+	\end{tabular}
+\caption{Tabulka s druhy cest}
+\end{table}
+\begin{figure} [h]
+	\centering
+	\includegraphics[width=10cm]{img/australia.eps}
+	\label{Rozložení typů cest u Australanů}
+	\caption{Rozložení typů cest u Australanů}
+\end{figure}
 Silné zastoupení zemí z Arabského poloostrova, které se umístily na druhém a třetím místě, co se do celkového počtu recenzí týče je zapříčiněno geografickou polohou, jelikož se jedná o velmi blízké sousedy Dubaje, v případě Spojeným arabských emirátů se jedná dokonce o hlavní město stejnojmenného emirátu.
 Velmi zajímavé je na výsledném grafu sledovat sílu jednotlivých spojení, která je symbolizována tloušťkou čáry mezi jednotlivými vrcholy grafu. Jelikož je výsledný graf fakticky složený z více výsledků hledání spojení je irelevantní porovnávat sílu spojení mezi hotely a různými zeměmi. To je možné zpozorovat pří porovnání šířky spojení mezi hotelem \uv{Atlantis, The Palm} a zeměmi Velká Británie a Austrálie. Detail tohoto spojení lze vidět na následujícím obrázku.
 \begin{center}
@@ -634,10 +652,10 @@ Ani liniový graf není obtížný. Na ose y je počet recenzí, které byly v d
 
 \subsubsection{Jak hodnotí návštěvníci jídlo nabízené v hotelích?}
 \label{subsub:Jídlo}
-Odpověď na tuto otázku lze získat z dostupných dat celkem snadno, protože je v datech k dispozici pole SENTIMENT\_FOOD. Pole v datech, která začínají slovem SENTIMENT, vznikla z analýzy sentimentu, která byla provedena nad texty všech recenzí. Analýza sentimentu je součástí zpracování přirozeného jazyka, čímž se skupiny NLP zabývá. Tato pole obsahují hodnoty 1, 0 nebo -1, přičemž -1 značí nespokojenost a 1 naopak spokojenost. Právě díky dostupnosti těchto dat je možné vyjádřit spokojenost s jídlem jako průměrnou hodnotu pole SENTIMENT\_FOOD. Tato hodnota je graficky i číselně vyjádřena na obrázku \ref{fig:Food_sentiment}. Na obrázku je vidět také číslo, které odpovídá celkovému počtu recenzí, ve kterých bylo jídlo hodnoceno. Jedná se celkem o 20,66\% všech recenzí, což je vzhledem k úplnosti dat celkem přijatelný výsledek. Z vizualizace je vidět, že jsou hodnotící zákazníci s jídlem spokojení a převažují kladné pocity nad negativními.
+Odpověď na tuto otázku lze získat z dostupných dat celkem snadno, protože je v datech k dispozici pole SENTIMENT\_FOOD. Pole v datech, která začínají slovem SENTIMENT, vznikla z analýzy sentimentu, která byla provedena nad texty všech recenzí. Analýza sentimentu je součástí zpracování přirozeného jazyka, čímž se skupiny NLP zabývá. Tato pole obsahují hodnoty 1, 0 nebo -1, přičemž -1 značí nespokojenost a 1 naopak spokojenost. Právě díky dostupnosti těchto dat je možné vyjádřit spokojenost s jídlem jako průměrnou hodnotu pole SENTIMENT\_FOOD. Tato hodnota je graficky i číselně vyjádřena na obrázku \ref{fig:Food_sentiment}. Na obrázku je vidět také číslo, které odpovídá celkovému počtu recenzí, ve kterých bylo jídlo hodnoceno. Jedná se celkem o 20,59\% všech recenzí, což je vzhledem k úplnosti dat celkem přijatelný výsledek. Z vizualizace je vidět, že jsou hodnotící zákazníci s jídlem spokojení a převažují kladné pocity nad negativními.
 \begin{figure}[h]
 	\centering
-	\includegraphics[ width = 10cm]{img/food_data.png}
+	\includegraphics[ width =8cm]{img/food.eps}
 	\caption{Spokojenost hostů s jídlem}
 	\label{fig:Food_sentiment}	
 \end{figure}
@@ -645,41 +663,40 @@ Odpověď na tuto otázku lze získat z dostupných dat celkem snadno, protože 
 Na obrázku \ref{fig:Food_tags} jsou k vidění nejčastější fráze, které byly použity v recenzích hodnotící jídlo. K vizualizaci byl použit nástroj \uv{Tag cloud}, který je dostupný již v základní verzi nástroje Kibana. Při tvorbě bylo použito pole POSITIVE.keyword a ve vyhledávacím poli jsem použil dotaz ve tvaru \uv{POSITIVE.keyword:*FOOD}.
 \begin{figure}[h]
 	\centering
-	\includegraphics[ width = 8cm]{img/food_positive.png}
+	\includegraphics[ width = 8cm]{img/food_positive.eps}
 	\caption{Slovní hodnocení jídla}
 	\label{fig:Food_tags}	
 \end{figure}
 
 \subsubsection{Je přínos z cesty do Dubaje úměrný vynaloženým nákladům?}
 \label{subsub:Worth of money}
-Odpověď na otázku lze získat přímo z dat bez nutnosti jejich úpravy. Data obsahují pole X\_SCORE\_VALUE\_FOR\_MONEY, kde je uložené skóre jednotlivých uživatelů, kteří se vyjádřili k přínosům cesty a nákladům na ní. Platí, že čím vyšší je hodnota v tomto poli, tím více se jim vynaložené náklady na cestu zdají adekvátní k přínosům. Na obrázku \ref{fig:Worth_of_money} je zobrazena maximální, minimální a průměrná hodnota pole X\_SCORE\_VA- LUE\_FOR\_MONEY a zároveň je na obrázku číslo udávající počet recenzí, které mají vyplněné hodnoty v tomto poli. Lze konstatovat, že jsou návštěvníci s náklady na cestu převážně spokojení a výsledky lze považovat za relevantní, protože vycházejí ze 49,5\% všech dostupných recenzí.
+Odpověď na otázku lze získat přímo z dat bez nutnosti jejich úpravy. Data obsahují pole X\_SCORE\_VALUE\_FOR\_MONEY, kde je uložené skóre jednotlivých uživatelů, kteří se vyjádřili k přínosům cesty a nákladům na ní. Platí, že čím vyšší je hodnota v tomto poli, tím více se jim vynaložené náklady na cestu zdají adekvátní k přínosům. Na obrázku \ref{fig:Worth_of_money} je zobrazena maximální, minimální a průměrná hodnota pole X\_SCORE\_VA- LUE\_FOR\_MONEY a zároveň je na obrázku číslo udávající počet recenzí, které mají vyplněné hodnoty v tomto poli. Lze konstatovat, že jsou návštěvníci s náklady na cestu převážně spokojení a výsledky lze považovat za relevantní, protože vycházejí ze 48,9\% všech dostupných recenzí.
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[ width = 10cm]{img/money_dash.png}
+	\includegraphics[ width = 10cm]{img/worth_money.eps}
 	\caption{Přínos z cesty}
 	\label{fig:Worth_of_money}	
 \end{figure}
 
 \subsubsection{Jak hodnotí návštěvníci kvalitu služeb?}
 \label{subsub:služby}
-Odpovědi na otázku lze hledat také přímo v recenzích, které máme k dispozici. Konkrétně jsou klíčové hodnoty uložené v polích REVIEW\_SCO- RE\_SERVICE, SCORE\_SERVICE\textbackslash STAFF a SENTIMENT\_SERVICE.\\ Hodnoty z prvního pole vyjadřují spokojenost jednotlivých návštěvníků se službami, které hotel poskytuje. Mezi tyto služby patří například pokojový servis, připojení k internetu, kvalita hotelových bazénů, nebo doprovodné programy. Průměrná hodnota v tomto poli je 9,133, což značí, že jsou návštěvníci s kvalitou poskytovaných služeb velmi spokojeni. Nižší průměrnou hodnotu obsahuje pole SCORE\_SERVICE\textbackslash STAFF, které kromě poskytovaných služeb také hodnotí přístup personálu a jejich ochotu. Jelikož je průměrná hodnota nižší než průměrná hodnota pole REVIEW\_SCORE\_SER- VICE, lze usoudit, že návštěvníci spatřují v personálu slabé místo, na které by se měly hotely zaměřit. Průměrné hodnoty z těchto dvou polí by měly být co nejvíce podobné, ideálně stejné. Třetí sloupec na obrázku \ref{fig:Services} ukazuje průměrnou hodnotu v poli SENTIMENT\_SERVICE. Z kladné hodnoty průměrného sentimentu lze vyvodit celkovou spokojenost s kvalitou poskytovaných služeb, čímž jsme potvrdili výsledky průměrných hodnot v polích REVIEW\_SCORE\_SERVICE a SCORE\_SERVICE\textbackslash STAFF. Odpověď na otázku vychází z 31,6\% všech dostupných recenzí, takže lze výsledky prohlásit za relevantní.
+Odpovědi na otázku lze hledat také přímo v recenzích, které máme k dispozici. Konkrétně jsou klíčové hodnoty uložené v polích REVIEW\_SCO- RE\_SERVICE, SCORE\_SERVICE\textbackslash STAFF a SENTIMENT\_SERVICE.\\ Hodnoty z prvního pole vyjadřují spokojenost jednotlivých návštěvníků se službami, které hotel poskytuje. Mezi tyto služby patří například pokojový servis, připojení k internetu, kvalita hotelových bazénů, nebo doprovodné programy. Průměrná hodnota v tomto poli je 9,133, což značí, že jsou návštěvníci s kvalitou poskytovaných služeb velmi spokojeni. Nižší průměrnou hodnotu obsahuje pole SCORE\_SERVICE\textbackslash STAFF, které kromě poskytovaných služeb také hodnotí přístup personálu a jejich ochotu. Jelikož je průměrná hodnota nižší než průměrná hodnota pole REVIEW\_SCORE\_SER- VICE, lze usoudit, že návštěvníci spatřují v personálu slabé místo, na které by se měly hotely zaměřit. Průměrné hodnoty z těchto dvou polí by měly být co nejvíce podobné, ideálně stejné. Třetí sloupec na obrázku \ref{fig:Services} ukazuje průměrnou hodnotu v poli SENTIMENT\_SERVICE. Z kladné hodnoty průměrného sentimentu lze vyvodit celkovou spokojenost s kvalitou poskytovaných služeb, čímž jsme potvrdili výsledky průměrných hodnot v polích REVIEW\_SCORE\_SERVICE a SCORE\_SERVICE\textbackslash STAFF. Odpověď na otázku vychází z 31,54\% všech dostupných recenzí, takže lze výsledky prohlásit za relevantní.
 % 
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[ width = 10cm]{img/sluzby.png}
+	\includegraphics[ width = 10cm]{img/sluzby.eps}
 	\caption{Kvalita služeb}
 	\label{fig:Services}	
 \end{figure}
 \noindent
-Mezi nejčastěji hodnocené služby patří internetové připojení, které je v dnešní době velmi důležité především pro obchodní cestující. Hotely poskytují připojení prostřednictvím WiFi připojení, které je buďto zdarma, nebo je zpoplatněno. Předpokládám, že hotely nejčastěji poskytují připojení zdarma, protože pole X\_SCORE\_FREE\_WIFI obsahuje 103 804 záznamů, ale pole X\_SCORE\_PAID\_WIFI obsahuje pouze 8 888 záznamů. Právě velký rozdíl mezi počtem záznamů v obou polích je dle mého názoru také příčinou markantního rozdílu mezi průměrnými hodnotami v jednotlivých polích. Lépe hodnoceno je připojení zdarma a to o 2,3 bodu oproti zpoplatněnému připojení. S připojením  zdarma panuje podle recenzí spokojenost, ale hodnocení placeného připojení je spíše průměrné. Na první pohled je překvapivý je záporný sentiment u WiFi připojení, který má hodnotu -0,382. Tento výsledek se ovšem nedá brát jako relevantní, protože pole SENTIMENT\_WIFI obsahuje pouze 14 992 záznamů, což jsou pouhá 4\% dostupných recenzí. Z tohoto důvodu jsem také hodnotu průměrného sentimentu nezahrnul do vizualizace, která je na obrázku \ref{fig:WiFi}. Na vizualizaci lze tedy vidět pouze průměrné hodnoty polí X\_SCORE\_FREE\_WIFI a X\_SCORE\_PAID\_WIFI, které obsahují celkem 108 754 záznamů, což je 28,88\% všech sebraných recenzí.
+Mezi nejčastěji hodnocené služby patří internetové připojení, které je v dnešní době velmi důležité především pro obchodní cestující. Hotely poskytují připojení prostřednictvím WiFi připojení, které je buďto zdarma, nebo je zpoplatněno. Předpokládám, že hotely nejčastěji poskytují připojení zdarma, protože pole X\_SCORE\_FREE\_WIFI obsahuje 103 804 záznamů, ale pole X\_SCORE\_PAID\_WIFI obsahuje pouze 8 888 záznamů. Právě velký rozdíl mezi počtem záznamů v obou polích je dle mého názoru také příčinou markantního rozdílu mezi průměrnými hodnotami v jednotlivých polích. Lépe hodnoceno je připojení zdarma a to o 2,3 bodu oproti zpoplatněnému připojení. S připojením  zdarma panuje podle recenzí spokojenost, ale hodnocení placeného připojení je spíše průměrné. Na první pohled je překvapivý je záporný sentiment u WiFi připojení, který má hodnotu -0,382. Tento výsledek se ovšem nedá brát jako relevantní, protože pole SENTIMENT\_WIFI obsahuje pouze 14 992 záznamů, což jsou pouhá 4\% dostupných recenzí. Na vizualizaci \ref{fig:WiFi} lze tedy také vidět průměrné hodnoty polí X\_SCORE\_FREE\_WIFI a X\_SCORE\_PAID\_WIFI, které obsahují celkem 108 754 záznamů, což je 28,88\% všech sebraných recenzí.
 \begin{figure}[h]
 	\centering
-	\includegraphics[ width =10cm]{img/wifi.png}
+	\includegraphics[ width =10cm]{img/wifi.eps}
 	\caption{Hodnocení spokojenosti s internetovým připojením}
 	\label{fig:WiFi}	
 \end{figure}
-\newpage
 
 \subsubsection{Má na návštěvníky dopad stav a čistota hotelu?}
 \label{subsub:Stav a čistota}
@@ -763,7 +780,7 @@ Jedná se o složitou otázku, která chce zjistit, co ovlivňuje celkové skór
 Kritéria jsem volil tak, aby byla zastoupena alespoň v 25\% dostupných recenzí, což vyřadilo všechna pole, která obsahují výraz \uv{REVIEW}. Výsledkem je tedy celkem 7 kritérií, u kterých určím na základě korelačního koeficientu míru závislosti na celkovém hodnocení hotelu. Na následující vizualizaci je k vidění průměrná hodnota jednotlivých polí. Tato vizualizace slouží jen k porovnání průměrné hodnoty polí s výsledky korelace.
 \begin{figure}[h]
 	\centering
-	\includegraphics[ width = \textwidth]{img/skore_vliv_vizualizace.png}
+	\includegraphics[ width = 11 cm]{img/kriteria.eps}
 	\caption{Průměrné skóre kritérií}
 	\label{fig:kkk}	
 \end{figure}
@@ -789,9 +806,83 @@ V tabulce \ref{Korelace_výsledky} jsou výsledky postupné korelace a ne hromad
 \end{table}
  \\ \noindent
 Z tabulky \ref{Korelace_výsledky} je jasně patrné, že pole SCORE\_TOTAL nejvíce koreluje s poli SCORE\_SERVICE\_STAFF a SCORE\_HOTEL\_CONDITION/CLEAN- LINESS, což je pro mne překvapující, protože jejich celková průměrná hodnota se liší o 0,7 bodu. Tato odchylka bude způsobena nejspíše tím, že SCORE\_TOTAL má vyplněno o 23\% více recenzí. Z výsledků lze usoudit, že celkový dojem z hotelu nejvíce ovlivňuje kvalita poskytovaných služeb, ochota personálu, stav a čistota hotelu a také pohodlí pokojů. Lokalita hotelu a přínos návštěvy za vynaložené náklady také ovlivňují celkové skóre, ale podobnou měrou, která je oproti předchozím kritériím výrazně menší. Ze zvolených kritérií naopak nejméně ovlivňuje celkovou známku kvalita poskytované bezplatné WiFi a také úroveň vybavenosti hotelu. 
-% PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT
-% CITAČNÍ STYL!
-%
+\chapter{Implementace webových stránek}
+Další podstatnou částí mé bakalářské práce je implementace webových stránek, které by umožňovali zobrazit vizualizace, jež během práce vznikly v nástroji Kibana. Samotný nástroj vyžaduje pokročilou znalost s databázemi, a to především kvůli specifickému jazyku Query DSL, který je využíván pro vyhledávání v datech. Pro běžné koncové uživatele může být ovládání problematické a právě to se snažím implementací webových stránek změnit. Kód stránek je uspořádán celkem do tří samostatných souborů a to autocomplete.css, web\_page.html a query.php. První jmenovaný soubor obsahuje pouze úpravu kaskádových stylů a to především pro implementovaný našeptávač. Druhý soubor je hlavní, protože se v něm nalézá HTML kód webových stránek a zároveň obsahuje funkce, které zajišťují chod stránek. Funkce jsou napsány v jazyce Javascript, protože potřebuji zajistit interaktivitu výsledných stránek. Poslední soubor slouží ke komunikaci s databází Elasticsearch a je využíván jako zdroj dat pro implementovaný našeptávač.
+\section{Funkce stránek}
+Hlavním přínosem stránek je možnost snadného srovnání dvou různých hotelů. Názvy hotelů se nemusejí zadávat ve speciálním formátu dotazu, ale do patřičných polí stačí pouze zadat název hotelu, popřípadě jej vybrat ze  seznamu našeptávače, který je nasazen na obě vyhledávací pole. Při srovnání si je možné vybrat z několika vizualizací, které lze měnit v rozbalovacím menu. Obsah tohoto menu a tudíž i nabízených vizualizací je možné změnit pouze přímo v souboru web\_page.html, kde lze zároveň i změnit adresu serveru, na kterém běží aplikace Kibana a Elasticsearch. Výhodu taktéž spatřuji v tom, že skrze implementované stránky nijak nelze trvale změnit vlastní vizualizace, které jsou uložené v nástroji Kibana, ale lze je pouze přizpůsobit pro dané srovnání. To je umožněno využitím rozšířeného režimu sdílení, který je nazýván \uv{embeded}. Při srovnání je možné využít taktéž pokročilého nastavení, které je určeno především pro zkušenější uživatele, kteří jsou seznámeni se syntaxí Lucene dotazovacího jazyka. V tomto pokročilém režimu je možné ovlivnit výsledné vizualizace zadáním konkrétních dotazů v patřičném formátu. Stránky umožňují aplikovat pro každý hotel vlastní dotaz, případně je možné zadat pouze jeden dotaz, který se následně aplikuje na oba výsledky a ovlivní zobrazené vizualizace.
+\section{Použité technologie}
+\subsubsection{Bootstrap}
+Bootsrap je populární HTML, CSS a Javascript Framework určený k vývoji responzivních webových stránek.\cite{Bootsrap} Velkou výhodou je především velké množství HTML prvků, které lze využít a není nutné dále upravovat kaskádové styly, které slouží k zobrazení elementů na webových stránkách. Je možné stáhnout si celou knihovnu s kaskádovými styly na lokální disk a nadále je upravovat, ale já jsem v rámci práce využil hostovaných knihoven, které jsou k dispozici na stránkách \url{https://www.bootstrapcdn.com/}. Výhoda hostovaných knihoven je jejich neustálá inovace, která zajišťuje kompatibilitu zobrazovaných prvků i s novými způsoby zápisu. Zároveň lze ovšem vytvořit separátní lokální CSS soubor, který má před hostovanými knihovnami přednost, čehož jsem využil u prvků, ve kterých je zobrazena výsledná vizualizace z nástroje Kibana. Kromě běžných HTML elementů jako jsou tlačítka, formulářová pole, rozbalovací menu jsem využil speciální druh blokového elementu \uv{div}, který zajišťuje responzivní vzhled obsahu, který tento element obklopuje. Při zobrazování vizualizací jsem narážel na problém s jejich velikostí, která kolidovala s responzivním designem ostatních prvků a na menších zařízeních se tyto prvky překrývali. Bootsrap poskytuje třídu \uv{embeded-responsive}, která je určená pro vkládání obsahu v prvcích \uv{iframe} a zajišťuje změnu velikosti těchto prvků tak, aby se nepřekrývali s ostatními prvky na stránce. Je možné si zvolit responzivní design ve formátu 4:3 popřípadě 16:9, kdy jsem zvolil pro mé stránky první možnost, kde lépe vyniknou vizualizace z nástroje Kibana.
+\\
+Bootstrap jsem zvolil především kvůli zjednodušení práce s designem webových stránek a také kvůli snadné tvorbě responzivních webových stránek, jejichž zobrazení se vždy přizpůsobí danému zařízení.
+\subsubsection{HTML5}
+HTML5 je nejnovější verze značkovacího jazyka pro tvorbu statických webových stránek. V práci jsem použil elementární prvky tohoto jazyka především ve frameworku Bootstrap a samotné HTML jsem použil jen zřídka.
+\subsubsection{JavaScript}
+Tento objektově orientovaný skriptovací jazyk zajišťuje implementovaným webovým stránkám jejich interaktivitu. Vlastní skripty jsou umístěny přímo v HTML kódu a jsou celkem dva. Prvním je skript, který obstarává funkci našeptávače pro názvy hotelů a druhý skript naopak zajišťuje komunikaci s nástrojem Kibana, upravuje URl a zobrazuje vizualizace podle uživatelem zadaných parametrů. 
+\\
+Právě úprava URl je nejpodstatnější, protože skrze něj komunikuji s Kibana a předávám jí název hotelu a případné filtry, které má aplikovat do výsledné vizualizace. Tento způsob komunikace je nevýhodný v tom, že se pokaždé změně musí znovu načíst celá vizualizace, což v závislosti na aktuálním vytížení serveru muže trvat i pár sekund. Vhodnější formou by byla komunikace skrze internals a plugin, který umožňuje komunikovat s prvkem iframe, ve kterém je vizualizace umístěna. Bohužel není toto rozšíření oficiálně podporováno firmou Elastic a je vyvíjeno pouze komunitou a s příchodem nové verze 5.0 je nepoužitelné z důvodu nekompatibility. Komunita se to sice snaží řešit, ale rozšíření je stále ve fázi testování a to již od února 2017. Toto rozšíření se oficiálně jmenuje Kibana iFrame Comunicator a je plně kompatibilní s Kibana ve verzi 4.X.
+\subsubsection{jQuery}
+V práci jsem také využil javascriptové knihovny jQuery, která umožňuje vývojářům přidat extra funkcionalitu k HTML prvkům a zaměřuje se právě na interakci mezi HTML a JavaScriptem. Tato knihovna je open-source a je dostupná pod licencí MIT\cite{jQuery} , jejíž text vznikl na půdě Massachusetts  Institute of Technology.\cite{MIT_licence} Výhodou je, že funkcionalita nemusí být jednotlivým prvkům přiřazena přímo v HTML kódu, ale lze najít jednotlivé elementy skrze jejich unikátní identifikátory a posléze jim přiřadit funkcionalitu až ve skriptu. Této možnosti jsem využil, a na základě akcí typu kliknutí myši, stisk klávesy, jsem přiřadil jednotlivým tlačítkům a formulářovým prvkům funkce v JavaScriptu.
+\paragraph{Autocomplete}
+\mbox{}\\
+Pro zjednodušení zadávání názvů hotelů jsem se rozhodl implementovat do webových stránek našeptávač. K tomu jsem použil rozšíření Autocomplete, které je součástí jQuery uživatelského rozhraní. Toto rozšíření poskytuje koncovým uživatelům snadno vybrat a zadat název konkrétního hotelu, protože jim dává k dispozici jejich seznam, který se aktualizuje podle uživatelského vstupu. Implementace tohoto rozšíření je velmi jednoduchá, protože jej stačí jen napojit na prvek, který obstarává uživatelský vstup. Problémem mohou být pouze ostatní elementy na stránce, které mohou být zobrazeným seznamem překryty. Způsobeno je to tím, že zobrazuji všechny odpovídající názvy hotelů a rozbalovací menu se automaticky přizpůsobí počtu záznamů. Tento problém je vyřešen souborem autocomplete.css, ve kterém definuji pevnou výšku rozbalovacího menu.
+\\
+Našeptávač potřebuje také zdrojová data, ve kterých hledá relevantní výsledky, které obsahují řetězec zadaný koncovým uživatelem. Zdrojová data musí být ve formátu JSONP, který je stejný jako formát JSON, ale je navíc uzavřen v závorce. Tento formát slouží k asynchronní komunikaci klientské aplikace se serverem prostřednictvím technologie AJAX, která je popsána níže. Rozšíření bere v mém případě data z prostého javascriptového pole s názvy hotelů. Toto pole se automaticky aktualizuje pomocí PHP souboru, když uživatel změní vstupní řetězec. Našeptávač by také mělo být možné přímo napojit na PHP soubor pomocí technologie AJAX, ale bohužel i přes správný formát JSONP tento postup nefungoval a proto využívám okliku v podobě javascriptového pole.
+\\
+Stejně jako u Bootstrap jsem namísto lokálních souborů využil hostované knihovny a to konkrétně od Google, které jsou k dispozici na stránce \url{https://developers.google.com/speed/libraries/}.
+\subsubsection{AJAX}
+Další použitou technologií je AJAX, která umožňuje asynchronní komunikaci se serverem a pro změnu obsahu stránek tak není nutné jejich kompletní znovunačtení. Tato technologie také zajišťuje interaktivitu webových stránek. Konkrétně jsem využil příkaz \$.ajax, který je dostupný v knihovně jQuery. Tento příkaz slouží k zasílání HTTP požadavku serveru a v případě úspěchu je možné s výsledkem nadále pracovat. Hlavním parametrem je URl adresa serveru, se kterým chceme navázat komunikaci. V mém případě se jedná o soubor query.php, kterému předávám řetězec z uživatelského vstupu. URl tedy bude adresa serveru a následované umístěním souboru query.php. Po úspěšném požadavku zpracuji odpověď serveru a uložím hodnoty reprezentující názvy hotelů do pole, které používám jako zdrojové pole pro našeptávač.
+\\
+Problémem při použití asynchronní komunikace CORS, neboli Cross-origin resource sharing. Moderní webové prohlížeče očekávají v odpovědi serveru hlavičku s informací o CORS, podle které definují omezení o sdílení zdrojů. Na straně serveru tak může být nastavena podpora sdílení pouze pro určité URl adresy. V mé práci používám jako server, na kterém běží PHP soubor, aplikaci WampServer a pro úspěšnou komunikaci je nutné nejprve povolit v nastavení Apache \uv{headers\_module} a následně přidat do souboru \uv{http.conf} přidat řádek: \uv{Header add Access-Control-Allow-Origin „*“}.
+\subsubsection{PHP}
+PHP je serverový skriptovací jazyk, který umožňuje tvorbu dynamických a interaktivních webových stránek.\cite{PHP} V případě nově vzniklých webových stránek jsem tento jazyk využil pro dotazování se do databáze Elasticsearch, ze které následně získávám data pro našeptávač. PHP jsem zvolil z důvodu snadné implementace komunikace se serverem s běžící databází Elasticseach pomocí příkazů curl. PHP nativně podporuje knihovnu libcurl, která umožňuje připojení a komunikaci se servery.\cite{PHP_libcurl} Důležité je, že je skrze libcurl zaslat HTTP dotaz typu POST, pomocí kterého je umožněna komunikace s databází Elasticsearch.
+\\
+Soubor query.php získá z javascriptového skriptu vstupní parametr, který následně odešle databázi Elasticsearch vhodným dotazem, jehož forma je popsána v sekci Zdrojová data pro našeptávač. V souboru používám hlavně funkce jazyka PHP pro  práci s řetězci, protože hlavním úkolem tohoto skriptu je získání dat pro našeptávač ve vhodném formátu.
+\section{Zdrojová data pro našeptávač}
+Největší problém při implementaci stránek byla bezesporu tvorba našeptávače, který by koncovým uživatelům napomáhal s výběrem hotelů. Důležitou vlastností pro našeptávač je rychlost, protože uživatelé potřebují dynamicky se měnící obsah rozbalovacího menu, ze kterého si mají vybrat hotel. Jak již bylo zmíněno výše, použil jsem Autocomplete, což je součást knihovny jQuery UI, který obstarává zobrazení relevantních návrhů, dále pak technologii AJAX pro zasílání požadavků PHP serveru, jenž komunikuje přímo s databází Elasticsearch a získává názvy hotelů a předává je ve vhodném formátu. Důležitá je také rychlost, jakou databáze prohledá záznamy a vrátí ty vhodné.
+\subsubsection{Completion Suggester}
+V databázi Elasticsearch lze vytvořit speciální pole datového typu \uv{completion}, které je přímo určené pro navázání na našeptávač. V dokumentaci se píše, že poskytuje okamžitou odezvu na zadaný dotaz, jelikož je toto pole díky speciálnímu datovému typu optimalizováno na rychlé vyhledávání.\cite{Completion_suggester}
+\\
+Datová struktura poskytuje rychlé prohledávání databáze za cenu vysokého využití paměti, jelikož ukládá data do hlavní paměti serveru, na kterém běží. Jedná se tak o přístup in-memory. V této struktuře jsou uložena klíčová slova (v našem případě názvy hotelů) a je z nich vytvořen graf. Pokud by struktura obsahovala klíčová slova \uv{Villa}, \uv{Royal} a \uv{Royalton}, byl by výsledkem graf \ref{fig:Completer}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[ width =8cm]{img/completer.eps}
+	\caption{Graf Completion Suggester}
+	\label{fig:Completer}	
+\end{figure}
+\\
+Jakmile by tedy uživatel zadal písmeno \uv{v}, vrátila by databáze \uv{Villa}.
+\\
+Rychlost vyhledávání se samozřejmě postupem času zvyšuje, protože nejnáročnější je na procesu našeptávání tvorba grafu, který je uložen v paměti, ale zároveň při novém dotazu pouze doplní a nemusí se tudíž tvořit nový graf.
+\\
+Formát dotazu je podobný jako u jiných dotazů pro Elasticsearch. V mém případě přidávám  do dotazu parametr \uv{\_source:HOTEL\_NAME}, kterým specifikuji, že žádám pouze od navrácení hodnot pole HOTEL\_NAME.
+\begin{lstlisting}[title={Zápis completion dotazu}]
+		POST index/_search?pretty{
+		 "suggest":{
+	  	  "hotel-suggest":{
+		   "prefix": vstup,
+		   "completion": {
+		    "field":"suggest_field",
+		    "size":2500
+		}}}}
+\end{lstlisting}
+\subsubsection{Způsob získání dat}
+Jakmile uživatel zadá do vyhledávacího pole nějaký vstup, je tento vstup pomocí skriptu přeposlán do souboru query.php, který následovně pošle dotaz v patřičném formátu, který je uveden výše do Elasticsearch. Zdrojová pole pro našeptávač v Elastisearch jsou pole \uv{HOTEL\_NAME\_SUGGEST} a \uv{HOTEL\_NAME\_SUGGEST\_TOKENS}. Druhé pole je vhodné pro vyhledávání jednoslovných řetězců a první pole je vhodné pro doplňování přesného názvu hotelu.
+	\\
+Odpověď serveru s běžící databází Elasticsearch je následně pomocí dvou cyklů zpracována do pole, které ovšem obsahuje duplicitní údaje, jelikož odpověď může obsahovat až 2500 záznamů. Z tohoto důvodu je pole následně seřazeno pomocí funkce \uv{sort} a následně funkcí \uv{array\_unique} získám PHP pole obsahující unikátní názvy hotelů, jež jsou následně převedeny do formátu JSONP. Právě pole s názvy hotelů ve formátu JSONP je následně vráceno do skriptu v souboru web.html a slouží jako zdrojové pole pro našeptávač realizovaný pomocí Autocomplete rozšíření.
+
+\chapter{Závěr}
+\label{závěr}
+V rámci práce jsem provedl průzkum trhu s BI nástroji a detailně jsem prostudoval pět nástrojů, které se jevili jako vhodné pro zpracování dat z ubytovacích portálů. Informace o jednotlivých  produktech jsem získával z oficiálních dokumentací, uživatelských recenzí a ze stránek, které se problematice zpracování a vizualizace dat zabývají. Funkce jednotlivých nástrojů jsem vypozoroval z demonstračních videí, ale vhodnější by bylo funkcionalitu ověřit přímo na konkrétních datech. To ovšem nebylo možné, protože jednotlivé nástroje nebyli přímo kompatibilní s databází Elasticsearch. Výsledkem průzkumu je zvolení dle mého názoru nejvhodnějšího nástroje k vizualizaci dostupných dat, kterým je nástroj Kibana. Více o zkoumaných nástrojích se lze dohledat v kapitole \ref{Nástroje_1}.
+\\
+Přehled základních funkcí a jejich popis je dostupný v kapitole \ref{Funkce_nástroje}. Jelikož je ovládání většiny funkcí intuitivní, zaměřil jsem se hlavně na vysvětlení Query DSL, principu vyhledávání a na rozšíření Graph, které jsem následně využil při vizualizaci vybraných otázek.
+\\
+Hlavním přínosem práce jsou odpovědi na vybrané otázky, které jsem obdržel společně se zadáním. Celkem jsem odpověděl na deset otázek a odpovědi jsem podpořil vizualizacemi, které byly vytvořeny v nástroji Kibana, případně v aplikaci Microsoft Excel. K odpovědím, které byly složité na vypracování, jsem kromě vlastní odpovědi a vizualizace také připojil část, popisující jak jsem při jejich tvorbě postupoval, aby byly výsledky reprodukovatelné. 
+\\
+Další přínosem je implementace interaktivního webu, jehož hlavní funkcí je možnost srovnat dva vybrané hotely. Ke srovnání slouží různé vizualizace, mezi nimiž si může uživatel webu vybrat. Vizualizace může ovšem přidat pouze administrátor  webu a to přímo do HTML kódu. Zde vidím možnost pro budoucí zlepšení, kdy by se zobrazovaly všechny vizualizace, které jsou uložené v nástroji Kibana. Výhodou webových stránek možnost ovlivnění zobrazené vizualizace zadáním názvu hotelu do vstupního pole, bez nutnosti znalosti  dotazovacího jazyka. Zároveň je na vstupní pole napojen našeptávač, který tento výběr usnadňuje. Pro  zkušenější uživatele je možnost dalšího ovlivnění vizualizací zadáním dotazu, který respektuje syntaxi dotazovacího jazyka Lucene. Do budoucna by se na webových stránkách dala zcela jistě vylepšit grafická podoba, která je nyní prostá. Dalším možným vylepšením by mohlo přidání pole pro zadávání dotazů, které by již nemusely respektovat formát Query DSL a umožnit tak běžným uživatelům více filtrovat data.
+
+
+
 \chapter{Slovník pojmů}
 \label{Slovník}
 
