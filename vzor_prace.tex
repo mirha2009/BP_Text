@@ -493,7 +493,7 @@ Ze seznamu otázek jsem společně s vedoucím práce vybral následujících de
 	\item \nameref{subsub:Stav a čistota}
 	\item \nameref{subsub:velikost hotelu}
 	\item \nameref{subsub:kriteria}
-	\item
+	\item \nameref{doprava}
 \end{enumerate}
 \section{Využití rozšíření Graph}
 Toto rozšíření je popsáno výše a je velmi vhodné především pro analýzu chování jednotlivých uživatelů portálu. Výhodou vizualizací z nástroje Graph je především hledání spojení mezi zadanými výrazy ve všech dokumentech. Následně probíhá interní ohodnocení výsledků a podle zadaných kritérií se zobrazí jen omezený počet výsledků.
@@ -806,6 +806,10 @@ V tabulce \ref{Korelace_výsledky} jsou výsledky postupné korelace a ne hromad
 \end{table}
  \\ \noindent
 Z tabulky \ref{Korelace_výsledky} je jasně patrné, že pole SCORE\_TOTAL nejvíce koreluje s poli SCORE\_SERVICE\_STAFF a SCORE\_HOTEL\_CONDITION/CLEAN- LINESS, což je pro mne překvapující, protože jejich celková průměrná hodnota se liší o 0,7 bodu. Tato odchylka bude způsobena nejspíše tím, že SCORE\_TOTAL má vyplněno o 23\% více recenzí. Z výsledků lze usoudit, že celkový dojem z hotelu nejvíce ovlivňuje kvalita poskytovaných služeb, ochota personálu, stav a čistota hotelu a také pohodlí pokojů. Lokalita hotelu a přínos návštěvy za vynaložené náklady také ovlivňují celkové skóre, ale podobnou měrou, která je oproti předchozím kritériím výrazně menší. Ze zvolených kritérií naopak nejméně ovlivňuje celkovou známku kvalita poskytované bezplatné WiFi a také úroveň vybavenosti hotelu. 
+\subsubsection{Jak hodnotí návštěvníci dostupnost veřejné dopravy?}
+\label{doprava}
+Na tuto otázku nelze  bohužel najít relevantní odpověď. Důvodem jsou sebraná dat, ve kterých nejsou vyplněny podrobnosti o dostupnosti veřejné dopravy v okolí hotelu. Jediným zdrojovým polem, ve kterém jsou zmínky o dopravě, popřípadě o veřejné dopravě je pole REVIEW, kde je uložené slovní hodnocení návštěvníka. Bohužel ve většině případů nehodnotili recenzenti možnosti veřejné dopravy. Z celkového počtu 337 302 recenzí, které mají vyplněné pole REVIEW, obsahuje pouze 2873 zmínku o veřejné dopravě, popřípadě o dopravě obecně. Kvůli malému vzorku dat tudíž nelze najít odpověď. která by byla obecně platná.
+
 \chapter{Implementace webových stránek}
 Další podstatnou částí mé bakalářské práce je implementace webových stránek, které by umožňovali zobrazit vizualizace, jež během práce vznikly v nástroji Kibana. Samotný nástroj vyžaduje pokročilou znalost s databázemi, a to především kvůli specifickému jazyku Query DSL, který je využíván pro vyhledávání v datech. Pro běžné koncové uživatele může být ovládání problematické a právě to se snažím implementací webových stránek změnit. Kód stránek je uspořádán celkem do tří samostatných souborů a to autocomplete.css, web\_page.html a query.php. První jmenovaný soubor obsahuje pouze úpravu kaskádových stylů a to především pro implementovaný našeptávač. Druhý soubor je hlavní, protože se v něm nalézá HTML kód webových stránek a zároveň obsahuje funkce, které zajišťují chod stránek. Funkce jsou napsány v jazyce Javascript, protože potřebuji zajistit interaktivitu výsledných stránek. Poslední soubor slouží ke komunikaci s databází Elasticsearch a je využíván jako zdroj dat pro implementovaný našeptávač.
 \section{Funkce stránek}

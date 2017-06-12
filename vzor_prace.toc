@@ -90,19 +90,20 @@
 \contentsline {subsubsection}{M\IeC {\'a} na n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ky dopad stav a \IeC {\v c}istota hotelu?}{50}{section*.44}
 \contentsline {subsubsection}{M\IeC {\'a} velikost hotelu vliv na celkov\IeC {\'y} dojem z hotelu?}{51}{section*.45}
 \contentsline {subsubsection}{Identifikujte hlavn\IeC {\'\i } krit\IeC {\'e}ria, kter\IeC {\'a} ovliv\IeC {\v n}uj\IeC {\'\i } celkov\IeC {\'e} hodnocen\IeC {\'\i } hotel\IeC {\r u}.}{52}{section*.46}
+\contentsline {subsubsection}{Jak hodnot\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ci dostupnost ve\IeC {\v r}ejn\IeC {\'e} dopravy?}{54}{section*.47}
 \contentsline {chapter}{\numberline {6}Implementace webov\IeC {\'y}ch str\IeC {\'a}nek}{55}{chapter.6}
 \contentsline {section}{\numberline {6.1}Funkce str\IeC {\'a}nek}{55}{section.6.1}
 \contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technologie}{56}{section.6.2}
-\contentsline {subsubsection}{Bootstrap}{56}{section*.47}
-\contentsline {subsubsection}{HTML5}{56}{section*.48}
-\contentsline {subsubsection}{JavaScript}{57}{section*.49}
-\contentsline {subsubsection}{jQuery}{57}{section*.50}
-\contentsline {paragraph}{Autocomplete}{57}{section*.51}
-\contentsline {subsubsection}{AJAX}{58}{section*.52}
-\contentsline {subsubsection}{PHP}{59}{section*.53}
+\contentsline {subsubsection}{Bootstrap}{56}{section*.48}
+\contentsline {subsubsection}{HTML5}{56}{section*.49}
+\contentsline {subsubsection}{JavaScript}{57}{section*.50}
+\contentsline {subsubsection}{jQuery}{57}{section*.51}
+\contentsline {paragraph}{Autocomplete}{57}{section*.52}
+\contentsline {subsubsection}{AJAX}{58}{section*.53}
+\contentsline {subsubsection}{PHP}{59}{section*.54}
 \contentsline {section}{\numberline {6.3}Zdrojov\IeC {\'a} data pro na\IeC {\v s}ept\IeC {\'a}va\IeC {\v c}}{59}{section.6.3}
-\contentsline {subsubsection}{Completion Suggester}{59}{section*.54}
-\contentsline {subsubsection}{Zp\IeC {\r u}sob z\IeC {\'\i }sk\IeC {\'a}n\IeC {\'\i } dat}{60}{section*.55}
+\contentsline {subsubsection}{Completion Suggester}{59}{section*.55}
+\contentsline {subsubsection}{Zp\IeC {\r u}sob z\IeC {\'\i }sk\IeC {\'a}n\IeC {\'\i } dat}{60}{section*.56}
 \contentsline {chapter}{\numberline {7}Z\IeC {\'a}v\IeC {\v e}r}{62}{chapter.7}
 \contentsline {chapter}{\numberline {8}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{63}{chapter.8}
-\contentsline {chapter}{Literatura}{64}{chapter*.56}
+\contentsline {chapter}{Literatura}{64}{chapter*.57}
