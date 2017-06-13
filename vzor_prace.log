@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  12 JUN 2017 14:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  12 JUN 2017 16:59
 entering extended mode
 **./vzor_prace.tex
 (vzor_prace.tex
@@ -1714,23 +1714,23 @@ Package pdftex.def Info: img/Leisure_trip_customers_proportions_cut.jpg used on
 (pdftex.def)             Requested size: 298.75394pt x 288.09761pt.
  [41 <./img/Leisure_trip_customers_proportions_cut.jpg>] [42]
 Package epstopdf Info: Source file: <img/rocni_donut.eps>
-(epstopdf)                    date: 2017-06-12 13:55:42
-(epstopdf)                    size: 54845 bytes
+(epstopdf)                    date: 2017-06-12 16:34:26
+(epstopdf)                    size: 55903 bytes
 (epstopdf)             Output file: <img/rocni_donut-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-12 13:56:11
-(epstopdf)                    size: 17496 bytes
+(epstopdf)                    date: 2017-06-12 16:34:32
+(epstopdf)                    size: 18093 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/rocni_donut-eps-convert
 ed-to.pdf img/rocni_donut.eps>
 (epstopdf)             \includegraphics on input line 625.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/rocni_donut-eps-converted-to.pdf, id=632, 278.03876pt x 328.22626pt>
+<img/rocni_donut-eps-converted-to.pdf, id=632, 238.8925pt x 262.9825pt>
 File: img/rocni_donut-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/rocni_donut-eps-converted-to.pdf>
 Package pdftex.def Info: img/rocni_donut-eps-converted-to.pdf used on input lin
 e 625.
-(pdftex.def)             Requested size: 142.26378pt x 167.94408pt.
+(pdftex.def)             Requested size: 142.26378pt x 156.60693pt.
  [43]
 Underfull \hbox (badness 10000) in paragraph at lines 644--651
 
@@ -1757,21 +1757,21 @@ e 655.
 (pdftex.def)             Requested size: 386.95749pt x 211.38258pt.
  [45 <./img/graf_sezona-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/food.eps>
-(epstopdf)                    date: 2017-06-12 10:24:41
-(epstopdf)                    size: 112933 bytes
+(epstopdf)                    date: 2017-06-12 16:41:45
+(epstopdf)                    size: 97454 bytes
 (epstopdf)             Output file: <img/food-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-12 10:24:48
-(epstopdf)                    size: 35448 bytes
+(epstopdf)                    date: 2017-06-12 16:54:27
+(epstopdf)                    size: 22677 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/food-eps-converted-to.p
 df img/food.eps>
 (epstopdf)             \includegraphics on input line 671.
 Package epstopdf Info: Output file is already uptodate.
- <img/food-eps-converted-to.pdf, id=673, 529.98pt x 483.8075pt>
+ <img/food-eps-converted-to.pdf, id=673, 486.81876pt x 411.5375pt>
 File: img/food-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food-eps-converted-to.pdf>
 Package pdftex.def Info: img/food-eps-converted-to.pdf used on input line 671.
-(pdftex.def)             Requested size: 227.62204pt x 207.78955pt.
+(pdftex.def)             Requested size: 227.62204pt x 192.4242pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1795,62 +1795,74 @@ Package pdftex.def Info: img/food_positive-eps-converted-to.pdf used on input l
 ine 679.
 (pdftex.def)             Requested size: 227.62204pt x 148.39613pt.
 Package epstopdf Info: Source file: <img/worth_money.eps>
-(epstopdf)                    date: 2017-06-12 10:56:03
-(epstopdf)                    size: 60585 bytes
+(epstopdf)                    date: 2017-06-12 16:44:37
+(epstopdf)                    size: 85545 bytes
 (epstopdf)             Output file: <img/worth_money-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-12 10:56:50
-(epstopdf)                    size: 20638 bytes
+(epstopdf)                    date: 2017-06-12 16:54:28
+(epstopdf)                    size: 26423 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/worth_money-eps-convert
 ed-to.pdf img/worth_money.eps>
 (epstopdf)             \includegraphics on input line 689.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/worth_money-eps-converted-to.pdf, id=683, 446.66875pt x 415.5525pt>
+<img/worth_money-eps-converted-to.pdf, id=683, 430.60875pt x 399.4925pt>
 File: img/worth_money-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/worth_money-eps-converted-to.pdf>
 Package pdftex.def Info: img/worth_money-eps-converted-to.pdf used on input lin
 e 689.
-(pdftex.def)             Requested size: 284.52756pt x 264.70988pt.
+(pdftex.def)             Requested size: 284.52756pt x 263.97064pt.
  [47 <./img/food-eps-converted-to.pdf> <./img/food_positive-eps-converted-to.pd
 f>] [48 <./img/worth_money-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/sluzby.eps>
-(epstopdf)                    date: 2017-06-12 11:04:23
-(epstopdf)                    size: 80237 bytes
+(epstopdf)                    date: 2017-06-12 16:51:19
+(epstopdf)                    size: 94881 bytes
 (epstopdf)             Output file: <img/sluzby-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-12 11:05:13
-(epstopdf)                    size: 23240 bytes
+(epstopdf)                    date: 2017-06-12 16:54:29
+(epstopdf)                    size: 27867 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/sluzby-eps-converted-to
 .pdf img/sluzby.eps>
 (epstopdf)             \includegraphics on input line 701.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/sluzby-eps-converted-to.pdf, id=705, 387.4475pt x 250.9375pt>
+<img/sluzby-eps-converted-to.pdf, id=718, 386.44376pt x 238.8925pt>
 File: img/sluzby-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/sluzby-eps-converted-to.pdf>
 Package pdftex.def Info: img/sluzby-eps-converted-to.pdf used on input line 701
 .
-(pdftex.def)             Requested size: 284.52756pt x 184.28175pt.
+(pdftex.def)             Requested size: 284.52756pt x 175.89189pt.
 Package epstopdf Info: Source file: <img/wifi.eps>
-(epstopdf)                    date: 2017-06-12 11:13:26
-(epstopdf)                    size: 74607 bytes
+(epstopdf)                    date: 2017-06-12 16:58:51
+(epstopdf)                    size: 104228 bytes
 (epstopdf)             Output file: <img/wifi-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-12 11:13:48
-(epstopdf)                    size: 22649 bytes
+(epstopdf)                    date: 2017-06-12 16:54:29
+(epstopdf)                    size: 28732 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/wifi-eps-converted-to.p
 df img/wifi.eps>
 (epstopdf)             \includegraphics on input line 709.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=img/wifi-eps-converted-to.pdf img/wifi.eps)...exec
+uted (allowed).
 
-<img/wifi-eps-converted-to.pdf, id=707, 321.2pt x 176.66pt>
+Package epstopdf Info: Result file: <img/wifi-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-12 16:59:27
+(epstopdf)                    size: 33397 bytes.
+
+<img/wifi-eps-converted-to.pdf, id=720, 318.18875pt x 163.61125pt>
 File: img/wifi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/wifi-eps-converted-to.pdf>
 Package pdftex.def Info: img/wifi-eps-converted-to.pdf used on input line 709.
-(pdftex.def)             Requested size: 284.52756pt x 156.49368pt.
- [49 <./img/sluzby-eps-converted-to.pdf>]
-[50 <./img/wifi-eps-converted-to.pdf>] [51]
+(pdftex.def)             Requested size: 284.52756pt x 146.30258pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[49 <./img/sluzby-eps-converted-to.pdf>] [50 <./img/wifi-eps-converted-to.pdf>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[51]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1865,7 +1877,7 @@ Package epstopdf Info: Source file: <img/kriteria.eps>
 to.pdf img/kriteria.eps>
 (epstopdf)             \includegraphics on input line 796.
 Package epstopdf Info: Output file is already uptodate.
- <img/kriteria-eps-converted-to.pdf, id=756, 399.4925pt x 223.83624pt>
+ <img/kriteria-eps-converted-to.pdf, id=777, 399.4925pt x 223.83624pt>
 File: img/kriteria-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/kriteria-eps-converted-to.pdf>
@@ -1893,7 +1905,7 @@ Package epstopdf Info: Source file: <img/completer.eps>
 (epstopdf)             \includegraphics on input line 867.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/completer-eps-converted-to.pdf, id=811, 457.71pt x 187.70125pt>
+<img/completer-eps-converted-to.pdf, id=832, 457.71pt x 187.70125pt>
 File: img/completer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/completer-eps-converted-to.pdf>
@@ -1940,11 +1952,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 934.
 Here is how much of TeX's memory you used:
  33231 strings out of 494874
  619258 string characters out of 3174258
- 626191 words of memory out of 3000000
+ 626435 words of memory out of 3000000
  35918 multiletter control sequences out of 15000+200000
  99332 words of font info for 63 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 55i,18n,54p,10363b,1011s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,18n,54p,10363b,2193s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
@@ -1959,9 +1971,9 @@ KTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on vzor_prace.pdf (67 pages, 959762 bytes).
+Output written on vzor_prace.pdf (67 pages, 969023 bytes).
 PDF statistics:
- 1054 PDF objects out of 1200 (max. 8388607)
+ 1075 PDF objects out of 1200 (max. 8388607)
  275 named destinations out of 1000 (max. 500000)
  521 words of extra memory for PDF output out of 10000 (max. 10000000)
 
