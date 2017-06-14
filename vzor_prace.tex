@@ -513,21 +513,19 @@ Prvním úkolem je získat odpověď na otázku, které národnosti se vyskytuj�
 		United States        & 23 938                 \\ \hline
 		Australia            & 15 052                 \\ \hline
 	\end{tabular}
-	\caption{My caption}
+	\caption{Počet recenzí jednotlivých zemí}
 	\label{Pocet_zeme}
 \end{table}
 \newpage
 \noindent
 Díky rozdělení otázky na dvě části můžu využít výsledky z první části v rozšíření Graph jako výraz, pomocí kterého hledá Graph spojitosti mezi zadanými oblastmi. Nejprve jsem zvolil index, kterým je index \uv{hospitality}. Následně jelikož hledám hotely, do kterých jezdí uživatelé z dané země nejčastěji, musím zvolit, že chci ve výsledcích zobrazit vždy jeden výsledek pro pole USER\_LOCATION\_COUNTRY.keyword a pět výsledků pro pole HOTEL\_NAME.keyword. Důležitý je především správný výběr polí, protože pole USER\_LOCATION\_COUNTRY a HOTEL\_NAME nemají nastavený atribut \uv{aggregateble}, takže je není možné využít v dotazech typu \uv{aggs}, kterým ovšem rozšíření Graph komunikuje s databází Elasticsearch. Po zvolení zdrojových polí stačí jen zadat do vyhledávacího pole řetězec \uv{USER\_LOCATION\_COUNTRY:\uv{nazev}} a spustit vyhledávání spojení. Místo řetězce \uv{nazev} jsem postupně doplnil hodnoty, které jsem získal z výsledku první části otázky. Výsledkem tedy nakonec bylo pět částí, které se skládaly z jedné země a pěti hotelů, ale mezi těmito částmi nebylo žádné spojení. Na závěr tvorby vizualizace je tedy nutné použít takzvaný \uv{spidering}, který doplní vazby mezi získanými částmi grafu. Odpovědí na otázku je tedy graf \ref{fig:Top Five}, který obsahuje pět nejčastějších zemí, ze kterých jezdí návštěvníci a jejich nejoblíbenější hotely.
-\begin{center}
-	\includegraphics[width = \textwidth]{img/5_countries_highest_appearance_graph.png}
-\end{center}
-\begin{figure} [h]
+\begin{figure} [htbp]
 	\centering
-	\includegraphics[width=10cm]{img/5_countries_highest_appearance_graph.eps}
+	\includegraphics[width= 12.5 cm]{img/5_countries_highest_appearance_graph.eps}
 	\label{fig:Top Five}
 	\caption{Pět nejčastějších národností a jejich oblíbené hotely}
 \end{figure}
+\textbf{tady je blbě obrázek}
 Z grafu lze vyčíst, že anglofonní země jakou jsou Velká Británie, Spojené státy americké nebo Austrálie preferují podobné hotely, což lze vidět především u hotelů, které mají spojení mezi Austrálií a Velkou Británií. Naopak země Arabského poloostrova, které jsou v grafu reprezentovány Saudskou Arábií a Spojenými arabskými emiráty preferují jiné hotely než anglofonní země. Zároveň však uživatelé z těchto zemí mají v oblibě podobné hotely, což značí 3 hotely, které mají spojení jak se Saudskou Arábií, tak se Spojenými arabskými emiráty. Dle mého názoru se dal takovýto výsledek na otázku očekávat a to především kvůli velikosti jednotlivých zemí, které jsou v grafu zastoupeny. Překvapivým je pro mne pouze zastoupení Austrálie, ale může to být především způsobeno geografickou polohou Dubaje, přes který míří velké množství letů z Evropy do Austrálie a opačně. To může způsobit, že většina cestujících z Austrálie stráví část dovolené právě v Dubaji, kdy čeká na navazující let do cílové destinace. To potvrzují i následující tabulka a graf, který reprezentuje zastoupení jednotlivých typů cest na celkovém počtu recenzí. Nejvýraznější zastoupení má typ cesty \uv{other}. Obě vizualizace vznikly nástrojem Kibana a jsou uložené v indexu \uv{hospitality} pod názvy Australia travel type respektive pod názvem Australia travel type table.
 \begin{table}[h]
 	\centering
@@ -554,18 +552,28 @@ Z grafu lze vyčíst, že anglofonní země jakou jsou Velká Británie, Spojen�
 \\
 Silné zastoupení zemí z Arabského poloostrova, které se umístily na druhém a třetím místě, co se do celkového počtu recenzí týče, je zapříčiněno geografickou polohou, jelikož se jedná o velmi blízké sousedy Dubaje, v případě Spojeným arabských emirátů se jedná dokonce o hlavní město stejnojmenného emirátu.
 \\
-Velmi zajímavé je na výsledném grafu sledovat sílu jednotlivých spojení, která je symbolizována tloušťkou čáry mezi jednotlivými vrcholy grafu. Jelikož je výsledný graf fakticky složený z více výsledků hledání spojení, je irelevantní porovnávat sílu spojení mezi hotely a různými zeměmi. To je možné zpozorovat pří porovnání šířky spojení mezi hotelem \uv{Atlantis, The Palm} a zeměmi Velká Británie a Austrálie. Detail tohoto spojení lze vidět na následujícím obrázku.
-\begin{center}
-	\includegraphics[width=\textwidth]{img/detail_spojeni.PNG}
-\end{center}
- Na první pohled by se mohlo zdát, že do téhož hotelu jezdí zhruba dvojnásobné množství hostů z Velké Británie než hostů z Austrálie, ale ve skutečnosti je poměr větší. Hlavní příčinou je \uv{spidering}, který sice přidá spojení mezi existujícími vrcholy, ale nebere v potaz již existující spojení, které do těchto vrcholů vedou. Další příčinou je samostatný princip rozšíření Graph, který určuje sílu spojení mezi vrcholy ne podle poměru počtu dokumentů, kde se vyskytují oba výrazy ku celkovému počtu dokumentů, ale závisí jen na poměru počtu dokumentů, kde se vyskytují oba výrazy ku počtu dokumentů, kde se vyskytuje alespoň jeden z výrazů. Jedná se tedy vlastně o průnik množiny dokumentů, které obsahují výraz A a množiny dokumentů, které obsahují výraz B. Abychom tedy zjistili reálnou sílu spojení, je nutné kliknout na jednotlivá spojení a získat detailnější informace. Tyto informace jsou zjistitelné z následujících obrázků.\\
-\begin{center}
-	\includegraphics[scale=0.85]{img/AUS_atlantis.PNG}
-	\hspace{0.4cm}
-	\includegraphics[scale=0.85]{img/UK_atlantis.PNG}
-\end{center}
- \noindent	
-Červená čísla na obrázcích reprezentují počet dokumentů, které obsahují v poli HOTEL\_NAME.keyword hodnotu \uv{Atlantis, The Palm}, modrá čísla reprezentují na horním obrázku počet recenzí, které obsahují v poli U\-SER\_LOCATION\_COUNTRY.keyword hodnotu Australia a na spodním obrázku recenze obsahující v témže poli hodnotu United Kingdom. Růžová čísla reprezentují průnik množin, a jak je možné vidět, tentýž hotel je přibližně sedm krát častěji recenzován uživateli z Velké Británie než uživateli z Austrálie, což je oproti původnímu odhadu velký rozdíl.
+Velmi zajímavé je na výsledném grafu sledovat sílu jednotlivých spojení, která je symbolizována tloušťkou čáry mezi jednotlivými vrcholy grafu. Jelikož je výsledný graf fakticky složený z více výsledků hledání spojení, je irelevantní porovnávat sílu spojení mezi hotely a různými zeměmi. To je možné zpozorovat pří porovnání šířky spojení mezi hotelem \uv{Atlantis, The Palm} a zeměmi Velká Británie a Austrálie. Detail tohoto spojení lze vidět na obrázku \ref{fig:Detail spojeni}.
+\begin{figure} [htbp]
+	\centering
+	\includegraphics[width= \textwidth]{img/detail_spojeni.eps}
+	\label{fig:Detail spojeni}
+	\caption{Detail spojeni}
+\end{figure}
+\newline
+ Na první pohled by se mohlo zdát, že do téhož hotelu jezdí zhruba dvojnásobné množství hostů z Velké Británie než hostů z Austrálie, ale ve skutečnosti je poměr větší. Hlavní příčinou je \uv{spidering}, který sice přidá spojení mezi existujícími vrcholy, ale nebere v potaz již existující spojení, které do těchto vrcholů vedou. Další příčinou je samostatný princip rozšíření Graph, který určuje sílu spojení mezi vrcholy ne podle poměru počtu dokumentů, kde se vyskytují oba výrazy ku celkovému počtu dokumentů, ale závisí jen na poměru počtu dokumentů, kde se vyskytují oba výrazy ku počtu dokumentů, kde se vyskytuje alespoň jeden z výrazů. Jedná se tedy vlastně o průnik množiny dokumentů, které obsahují výraz A a množiny dokumentů, které obsahují výraz B. Abychom tedy zjistili reálnou sílu spojení, je nutné kliknout na jednotlivá spojení a získat detailnější informace. Tabulka \ref{sila spojeni} obsahuje detailní informace pro hotel \uv{Atlantis, The Palm} a země \uv{United Kingdom} a \uv{Australia}. 
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\textbf{Název země}     & \multicolumn{1}{l|}{\textbf{Počet recenzí země}} & \multicolumn{1}{l|}{\textbf{Průnik množin}} \\ \hline
+		\textbf{Australia}      & 15 734                                           & 253                                         \\ \hline
+		\textbf{United Kingdom} & 51 979                                           & 1 454                                       \\ \hline
+	\end{tabular}
+	\caption{Porovnání síly spojení}
+	\label{sila spojeni}
+\end{table}
+\newline	
+Množina dokumentů, které obsahují v poli HOTEL\_NAME.keyword hodnotu \uv{Atlantis, The Palm} se skládá z 6592 dokumentů. V druhém sloupci je množina recenzí, které byly pro danou zemi nalezeny a poslední sloupec vyjadřuje průnik předchozích množin. Jak je možné vidět v tabulce, tentýž hotel je přibližně sedm krát častěji recenzován uživateli z Velké Británie než uživateli z Austrálie, což je oproti původnímu odhadu velký rozdíl.
 
 \subsubsection{Charakterizujte návštěvníky hotelů, kteří jezdí do Dubaje na pracovní cesty, dovolenou, líbánky a podobně.}
 \label{subsub:Charakteristika návštěvníků}
@@ -583,7 +591,7 @@ Pro věkovou skupinu 55 až 64 let jsou typické země Mauricius, Kypr a Řecko.
 Obecně lze říci, že hlavním pozitivem, které shledávají všechny tři věkové skupiny, je lokace hotelu a servis, který je v hotelu poskytován. Dále je pro skupiny 35-44 let a 45-54 let důležitá čistota hotelů.
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width = 10cm]{img/Business_trip_customers_proportions.jpg}
+	\includegraphics[width = 12cm]{img/Business_trip_customers_proportions.eps}
 	\caption{Charakteristika obchodních cestujících.}
 	\label{fig:Business}	
 \end{figure}
@@ -593,7 +601,7 @@ Obecně lze říci, že hlavním pozitivem, které shledávají všechny tři v�
 Na obrázku \ref{fig:Leisure} je k vidění charakteristika návštěvníků, kteří přijeli do Dubaje strávit svůj volný čas. Z vizualizace je patrné, že i zde jsou návštěvníci rozděleni do třech věkových kategorií. Na rozdíl od obchodních cestující je zde výrazněji zastoupena skupina 25-34 let a to na úkor věkové skupiny 55-64 let. Dle mého názoru je to způsobeno vyšším věkem nahrazené skupiny, se kterým přicházejí zdravotní problémy. Z tohoto důvodu bych tuto skupinu očekával především u ozdravných pobytů, o kterých máme ovšem nedostatek dat. Ve vizualizaci jsou tedy zastoupeny věkové skupiny 25-34, 35-44 a 45-54 let.
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[ width = 10.5cm]{img/Leisure_trip_customers_proportions_cut.jpg}
+	\includegraphics[ width = 10cm]{img/Leisure_trip_customers_proportions_cut.eps}
 	\caption{Charakteristika lidí na dovolené.}
 	\label{fig:Leisure}	
 \end{figure}
