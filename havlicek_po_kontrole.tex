@@ -903,43 +903,34 @@ Odpověď opět nelze získat pouhou vizualizací z dostupných dat, protože by
 \end{table}
 
 
-Jak je možné vidět v tabulce \ref{hotel_korelace}, jsou korelační koeficienty mezi poli SCO\-RE\_TOTAL a NUMBER\_OF\_ROOMS, respektive SENTIMENT\_HOTEL a NUMBER\_OF\_ROOMS lehce negativní. Zároveň však oba korelační koeficienty inklinují k hodnotě 0, což jak již bylo zmíněno, znamená nekorelaci. Hodnoty v polích se tedy neovlivňují lineárně, ale může mezi nimi být jiná nelineární závislost, kterou ovšem nelze prostřednictvím korelace odhalit. Odpovědí tedy je, že  celkový dojem z hotelu není zcela jistě přímo úměrný jeho velikosti, ale může existovat nepřímá úměra, která ovšem není příliš silná. Výsledky lze považovat za relevantní, jelikož pole SCORE\_TOTAL je vyplněno u 72,65\% recenzí, pole SENTIMENT\_HOTEL u 40,7\% a pole NUMBER\_OF\_ROOMS u 28,97\% dostupných recenzí, což je vzhledem k úplnosti dat uspokojivé.
+Jak je možné vidět v tabulce \ref{hotel_korelace}, jsou korelační koeficienty mezi poli SCO\-RE\_TOTAL a NUMBER\_OF\_ROOMS, respektive SENTIMENT\_HO\-TEL a NUMBER\_OF\_ROOMS lehce negativní. Zároveň však oba korelační koeficienty inklinují k hodnotě 0, což jak již bylo zmíněno, znamená nekorelaci. Hodnoty v polích se tedy neovlivňují lineárně, ale může mezi nimi být jiná nelineární závislost, kterou ovšem nelze prostřednictvím korelace odhalit. Odpovědí tedy je, že  celkový dojem z hotelu není zcela jistě přímo úměrný jeho velikosti, ale může existovat nepřímá úměra, která ovšem není příliš silná. Výsledky lze považovat za relevantní, jelikož pole SCORE\_TOTAL je vyplněno u 72,65\% recenzí, pole SENTIMENT\_HOTEL u 40,7\% a pole NUMBER\_OF\_ROOMS u 28,97\% dostupných recenzí, což je vzhledem k úplnosti dat uspokojivé.
 
 \subsubsection{Identifikujte hlavní kritéria, která ovlivňují celkové hodnocení hotelů.}
 \label{subsub:kriteria}
-Jedná se o složitou otázku, která chce zjistit, co ovlivňuje celkové skóre hotelů, aby se na tato kritéria mohly hotely zaměřit a získat více návštěvníků. Jedná o hledání vztahů mezi polem TOTAL\_SCORE a ostatními poli, které obsahují skóre jiných sledovaných oblastí. V tabulce \ref{Korelace_kritéria} je vidět přehled polí, u kterých budu sledovat korelaci s celkovým hodnocením. Tabulka obsahuje název pole, počet recenzí , ve kterých je pole vyplněno, procentuální podíl na dostupných recenzích a číslo, které bude reprezentovat toto pole v tabulce s korelacemi.
+Jedná se o složitou otázku, která chce zjistit, co ovlivňuje celkové skóre hotelů, aby se na tato kritéria mohly hotely zaměřit a získat více návštěvníků. Jedná o hledání vztahů mezi polem TOTAL\_SCORE a ostatními poli, které obsahují skóre jiných sledovaných oblastí. V tabulce \ref{Korelace_kritéria} je vidět přehled polí, u kterých budu sled  ovat korelaci s celkovým hodnocením. Tabulka obsahuje název pole, počet recenzí , ve kterých je pole vyplněno, procentuální podíl na dostupných recenzích a průměrnou hodnotu daného pole. 
+
+
+Kritéria jsem volil tak, aby byla zastoupena alespoň v 25\% dostupných recenzí, což vyřadilo všechna pole, která obsahují výraz \uv{REVIEW}. Výsledkem je tedy celkem 7 kritérií, u kterých určím na základě korelačního koeficientu míru závislosti na celkovém hodnocení hotelu.
 
 \begin{table}[h]
 	\centering
 
 	\begin{tabular}{|l|c|c|c|}
 		\hline
-		\multicolumn{1}{|c|}{\textbf{Název pole}}                                                & \textbf{\begin{tabular}[c]{@{}c@{}}Recenze s\\ vyplněným\\  údajem\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Podíl na\\  celkových\\ recenzích\end{tabular}} & \textbf{Alias} \\ \hline
-		\textbf{SCORE\_TOAL}                                                                     & 273 559                                                                                   & 72,65\%                                                                               & 1              \\ \hline
-		\textbf{SCORE\_LOCATION}                                                                 & 185 931                                                                                   & 49,38\%                                                                               & 2              \\ \hline
-		\textbf{\begin{tabular}[c]{@{}l@{}}SCORE\_HOTEL\_CONDITI-\\ ON/CLEANLINESS\end{tabular}} & 186 071                                                                                   & 49,41\%                                                                               & 3              \\ \hline
-		\textbf{SCORE\_SERVICE\_STAFF}                                                           & 186 148                                                                                   & 49,43\%                                                                               & 4              \\ \hline
-		\textbf{\begin{tabular}[c]{@{}l@{}}SCORE\_ROOM\_COM-\\ FORT/STANDARD\end{tabular}}       & 196 185                                                                                   & 52\%                                                                               & 5              \\ \hline
-		\textbf{SCORE\_FACILITIES}                                                               & 181 120                                                                                   & 48\%                                                                               & 6              \\ \hline
-		\textbf{\begin{tabular}[c]{@{}l@{}}SCORE\_VALUE\_FOR\_MO-\\ NEY\end{tabular}}            & 168 220                                                                                   & 44,67\%                                                                               & 7              \\ \hline
-		\textbf{SCORE\_FREE\_WIFI}                                                               & 103 804                                                                                   & 27\%                                                                               & 8              \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Název pole}}                                                & \textbf{\begin{tabular}[c]{@{}c@{}}Recenze s\\ vyplněným\\  údajem\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Podíl na\\  celkových\\ recenzích\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Průměr-\\né skóre\end{tabular}} \\ \hline
+		\textbf{SCORE\_TOAL}                                                                     & 273 559                                                                                   & 72,65\%                                                                               & 7.32              \\ \hline
+		\textbf{SCORE\_LOCATION}                                                                 & 185 931                                                                                   & 49,38\%                                                                               & 8.08              \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}SCORE\_HOTEL\_CON-\\DITION/CLEANLINESS\end{tabular}} & 186 071                                                                                   & 49,41\%                                                                               & 7.98              \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}SCORE\_SER-\\VICE\_STAFF\end{tabular}}                                                           & 186 148                                                                                   & 49,43\%                                                                               & 7.87              \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}SCORE\_ROOM\_COM-\\ FORT/STANDARD\end{tabular}}       & 196 185                                                                                   & 52\%                                                                               & 7.86              \\ \hline
+		\textbf{SCORE\_FACILITIES}                                                               & 181 120                                                                                   & 48\%                                                                               & 7.49              \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}SCORE\_LUE\_FOR\_MO-\\NEY\end{tabular}}            & 168 220                                                                                   & 44,67\%                                                                               & 7.45              \\ \hline
+		\textbf{SCORE\_FREE\_WIFI}                                                               & 103 804                                                                                   & 27\%                                                                               & 7.42              \\ \hline
 	\end{tabular}
 	\caption{Korelace kritérií}
 \label{Korelace_kritéria}
 \end{table}
-
-
-
-Kritéria jsem volil tak, aby byla zastoupena alespoň v 25\% dostupných recenzí, což vyřadilo všechna pole, která obsahují výraz \uv{REVIEW}. Výsledkem je tedy celkem 7 kritérií, u kterých určím na základě korelačního koeficientu míru závislosti na celkovém hodnocení hotelu. Na následující vizualizaci je k vidění průměrná hodnota jednotlivých polí. Tato vizualizace slouží jen k porovnání průměrné hodnoty polí s výsledky korelace.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[ width = 11 cm]{img/kriteria.eps}
-	\caption{Průměrné skóre kritérií}
-	\label{fig:kkk}	
-\end{figure}
-
-
+\vspace{4cm}
 
 V tabulce \ref{Korelace_výsledky} jsou výsledky postupné korelace a ne hromadné, protože hromadná korelace je zkreslena vztahy mezi jednotlivými poli, ale nás zajímá pouze vztah mezi polem SCORE\_TOTAL a jednotlivými kritérii.
 \begin{table}[h]
@@ -1058,12 +1049,41 @@ Jakmile uživatel zadá do vyhledávacího pole nějaký vstup, je tento vstup p
 
 Odpověď serveru s běžící databází Elasticsearch je následně pomocí dvou cyklů zpracována do pole, které ovšem obsahuje duplicitní údaje, jelikož odpověď může obsahovat až 2500 záznamů. Z tohoto důvodu je pole následně seřazeno pomocí funkce \uv{sort} a následně funkcí \uv{array\_unique} získám PHP pole obsahující unikátní názvy hotelů, jež jsou následně převedeny do formátu JSONP. Právě pole s názvy hotelů ve formátu JSONP je následně vráceno do skriptu v souboru web.html a slouží jako zdrojové pole pro našeptávač realizovaný pomocí Autocomplete rozšíření.
 
+\chapter{Zhodnocení dosažených výsledků}
+Dosažené výsledky z práce lze rozdělit na tři hlavní kategorie a to na výběr vhodného nástroje k analýze a  vizualizaci dat z ubytovacích portálů, odpovědi na zadaná otázky a poslední kategorií je výsledná podoba implementovaného interaktivního webu.
+
+\section{Nástroje k analýze a vizualizaci dat}
+Po průzkumu trhu s vhodnými nástroji pro analýzu dat, jsem nakonec zvolil nástroj Kibana jako nástroj, který bude pro potřeby této bakalářské práce nejvhodnější. Informace o jednotlivých  produktech jsem získával z oficiálních dokumentací, uživatelských recenzí a ze stránek, které se problematice zpracování a vizualizace dat zabývají. Celkem jsem zkoumal pět různých nástrojů, ale nástroj Kibana je jediný, který je zdarma, podporuje analýzu nestrukturovaných dat a zároveň je kompatibilní s databází Elasticsearch. Funkce jednotlivých nástrojů jsem vypozoroval z demonstračních videí, ale vhodnější by bylo funkcionalitu ověřit přímo na konkrétních datech. To ovšem nebylo možné, protože jednotlivé nástroje nebyly přímo kompatibilní s databází Elasticsearch a musejí spoléhat na rozšíření, které vyvíjí komunitní uživatelé. S výběrem nástroje Kibana jsem celkově spokojený, protože převážně odpovídal mým požadavkům při práci s daty. Nevýhodou je pouze nemožnost exportu vizualizací do běžných formátů typu PDF, SVG, JPEG a podobně.
+
+\section{Vizualizované otázky}
+V práci jsem odpověděl celkem na deset různě obtížných otázek a využil jsem k tomu běžné funkce Kibana, ale i rozšíření Graph, jenž je vhodné pro zjišťování spojitostí mezi záznamy. 
+
+\subsubsection{Graph}
+Toto rozšíření jsem využil při vizualizaci otázek \uv{\nameref{subsub:Národnosti}} a \uv{\nameref{subsub:Charakteristika návštěvníků}}. Kvůli omezené možnosti exportu výsledných vizualizací jsem ovšem musel grafy, které jsou součástí této práce, vytvořit v  programu draw.io. Důvodem je komplexnost, velikost a složitost výsledných vizualizací, což způsobovalo jejich nečitelnost v rastrové podobě. Kladně hodnotím možnost reprodukce vizualizací podle postupu, který je součástí všech odpovědí, jejichž vizualizace vznikaly složitě. Zároveň lze v tomto případě lépe poznat funkci rozšíření Graph. První otázka by se dala vyřešit i bez použití nástroje Graph prostou tabulkou, ale druhá otázka je díky využití tohoto rozšíření lépe odpovězená a je snazší interpretovat získané výsledky a ty následně využít například pro marketing.
+
+\subsubsection{Funkce Kibana}
+Odpověď na otázku \uv{\nameref{subsub:Návštěvnost}} jsem vytvořil kombinací nástroje Kibana a aplikace MS Excel. Důvodem byla chyba v upravených datech, kterou jsem objevil až při tvorbě vizualizace. Při úpravě dat jsem vedoucího poprosil o uložení dat tak, aby byla všechna data v roce 2000. Problém ovšem nastal při nastavování ročních období, jelikož Kibana rozdělila zimní období na dvě podle Nového roku. Nebylo tudíž možné vytvořit přehlednou vizualizaci, a tak jsem data získaná z Kibana vyexportoval ve formátu CSV a následně jsem je zpracoval v aplikaci MS Excel. Tento postup není nejvhodnější, ale případná úprava dat by znamenala nutnost přeindexovat data, a proto jsem se rozhodl pro toto řešení.
+
+Odpovědi na otázky \uv{\nameref{subsub:Jídlo}}, \nameref{subsub:Worth of money} a \uv{\nameref{subsub:služby}} jsem podpořil vizualizacemi z nástroje Kibana. Jedná se o jednoduché dashboardy, které vznikly kombinací dvou a více vizualizací. Důležité je, že jsem při tvorbě odpovědí sledoval počet recenzí, ze kterých jsem získal výsledek, aby bylo možné prohlásit odpověď za relevantní. Vizualizace jsou v bakalářské práci ve vektorové podobě díky programu Inkscape. Otázku \uv{\nameref{doprava}} nelze bohužel z dostupných dat zodpovědět.
+
+
+U zbylých otázek jsem vždy hledal vztah mezi hodnotou pole SCO\-RE\_TOTAL a jinými poli skrze  korelaci. Sice se nejedná o vizualizaci odpovědi, ale tento postup byl jediný správný, jelikož jsem hledal globální vztah, který by byl vyjádřený jasnou hodnotou. Z vizualizací by tudíž šlo pouze odhadnout vztah mezi patřičnými poli, ale nebylo by z nich možné vyvodit žádný závěr. Problémem korelace je, že hledá pouze lineární závislosti a proto by bylo vhodné, zaměřit se u otázky \uv{\nameref{subsub:velikost hotelu}} i na nelineární závislosti. Tuto závislost jsem ovšem v práci neřešil a pouze jsem jí zmínil.
+
+\section{Implementovaný web}
+Posledním dosaženým výsledkem jsou interaktivní webové stránky, které zobrazují vizualizace z nástroje Kibana. Web umožňuje běžným uživatelům porovnávat dva hotely na dostupných vizualizacích. Dostupné vizualizace je může ovlivnit pouze provozovatel stránek tím, že vloží patřičný odkaz přímo do zdrojového kódu stránek. Toto řešení není elegantní, ale jiný postup jsem nevymyslel. Pokročilejší uživatelé mohou ovlivnit zobrazené vizualizace i zadáním dotazu, který ovšem musí být v souladu s Query DSL syntaxí.
+
+
+Pro komunikaci s nástrojem Kibana používám URL adresu, kterou modifikuji. Elegantnějším řešením by bylo bezesporu využít takzvané Internals a rozšíření Kibana iFrame Comunicator. Výhodou by byla nejen rychlejší reakce vizualizace na zadaný hotel případně na dotaz, ale zároveň by bylo možné poskytnout rozšířené ovládání jako jsou filtry pomocí jednoduchých ovládacích prvků. Toto rozšíření ovšem doposud není kompatibilní s verzí 5.X a jedná se tak pouze o možné vylepšení funkcionality stránek do budoucna.
+
+
+Zadávání hotelů, které chce uživatel porovnat, je usnadněné implementací jednoduchého našeptávače. Nevýhodou je ovšem rychlost našeptávání, která je proměnná v závislosti na zatížení serveru s databází Elasticsearch a také na počtu záznamů, které Elasticsearch vrátí jako vyhovující. Velkým problémem jsou data v Elasticsearch, jelikož jsou rozlišena podle data vložení a unikátních klíčů, ale pro potřeby našeptávače by bylo vhodnější mít data sdružená podle názvů hotelů.
+
+
+Slabou stránkou webu je jeho grafická podoba, která je základní a  bylo by vhodně ji do budoucna vylepšit.
+
 \chapter{Závěr}
 \label{závěr}
-V rámci práce jsem provedl průzkum trhu s BI nástroji a detailně jsem prostudoval pět nástrojů, které se jevily jako vhodné pro zpracování dat z ubytovacích portálů. Informace o jednotlivých  produktech jsem získával z oficiálních dokumentací, uživatelských recenzí a ze stránek, které se problematice zpracování a vizualizace dat zabývají. Funkce jednotlivých nástrojů jsem vypozoroval z demonstračních videí, ale vhodnější by bylo funkcionalitu ověřit přímo na konkrétních datech. To ovšem nebylo možné, protože jednotlivé nástroje nebyly přímo kompatibilní s databází Elasticsearch. Výsledkem průzkumu je zvolení dle mého názoru nejvhodnějšího nástroje k vizualizaci dostupných dat, kterým je nástroj Kibana. Více o zkoumaných nástrojích se lze dohledat v kapitole \ref{Nástroje_1}.
-
-
-Přehled základních funkcí a jejich popis je dostupný v kapitole \ref{Funkce_nástroje}. Jelikož je ovládání většiny funkcí intuitivní, zaměřil jsem se hlavně na vysvětlení Query DSL, principu vyhledávání a na rozšíření Graph, které jsem následně využil při vizualizaci vybraných otázek.
+V rámci práce jsem provedl průzkum trhu s BI nástroji a detailně jsem prostudoval pět nástrojů, které se jevily jako vhodné pro zpracování dat z ubytovacích portálů. Výsledkem průzkumu je zvolení dle mého názoru nejvhodnějšího nástroje k vizualizaci dostupných dat, kterým je nástroj Kibana. Více o zkoumaných nástrojích se lze dohledat v kapitole \ref{Nástroje_1}. Přehled základních funkcí nástroje Kibana a jejich popis je dostupný v kapitole \ref{Funkce_nástroje}.
 
 
 Hlavním přínosem práce jsou odpovědi na vybrané otázky, které jsem obdržel společně se zadáním. Celkem jsem odpověděl na deset otázek a odpovědi jsem podpořil vizualizacemi, které byly vytvořeny v nástroji Kibana, případně v aplikaci Microsoft Excel. K odpovědím, které byly složité na vypracování, jsem kromě vlastní odpovědi a vizualizace také připojil část, popisující jak jsem při jejich tvorbě postupoval, aby byly výsledky reprodukovatelné. 

@@ -103,6 +103,12 @@
 \contentsline {section}{\numberline {6.3}Zdrojov\IeC {\'a} data pro na\IeC {\v s}ept\IeC {\'a}va\IeC {\v c}}{59}{section.6.3}
 \contentsline {subsubsection}{Completion Suggester}{59}{section*.55}
 \contentsline {subsubsection}{Zp\IeC {\r u}sob z\IeC {\'\i }sk\IeC {\'a}n\IeC {\'\i } dat}{60}{section*.56}
-\contentsline {chapter}{\numberline {7}Z\IeC {\'a}v\IeC {\v e}r}{62}{chapter.7}
-\contentsline {chapter}{\numberline {8}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{63}{chapter.8}
-\contentsline {chapter}{Literatura}{64}{chapter*.57}
+\contentsline {chapter}{\numberline {7}Zhodnocen\IeC {\'\i } dosa\IeC {\v z}en\IeC {\'y}ch v\IeC {\'y}sledk\IeC {\r u}}{62}{chapter.7}
+\contentsline {section}{\numberline {7.1}N\IeC {\'a}stroje k anal\IeC {\'y}ze a vizualizaci dat}{62}{section.7.1}
+\contentsline {section}{\numberline {7.2}Vizualizovan\IeC {\'e} ot\IeC {\'a}zky}{62}{section.7.2}
+\contentsline {subsubsection}{Graph}{62}{section*.57}
+\contentsline {subsubsection}{Funkce Kibana}{63}{section*.58}
+\contentsline {section}{\numberline {7.3}Implementovan\IeC {\'y} web}{64}{section.7.3}
+\contentsline {chapter}{\numberline {8}Z\IeC {\'a}v\IeC {\v e}r}{65}{chapter.8}
+\contentsline {chapter}{\numberline {9}Slovn\IeC {\'\i }k pojm\IeC {\r u}}{66}{chapter.9}
+\contentsline {chapter}{Literatura}{67}{chapter*.59}
