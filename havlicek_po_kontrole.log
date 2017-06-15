@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  15 JUN 2017 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  15 JUN 2017 14:51
 entering extended mode
 **./havlicek_po_kontrole.tex
 (havlicek_po_kontrole.tex
@@ -1791,21 +1791,21 @@ e 782.
 (pdftex.def)             Requested size: 386.95749pt x 211.38258pt.
  [45 <./img/graf_sezona-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/food.eps>
-(epstopdf)                    date: 2017-06-12 16:41:45
-(epstopdf)                    size: 97454 bytes
+(epstopdf)                    date: 2017-06-15 14:51:37
+(epstopdf)                    size: 116574 bytes
 (epstopdf)             Output file: <img/food-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-12 16:54:27
-(epstopdf)                    size: 22677 bytes
+(epstopdf)                    date: 2017-06-15 14:51:43
+(epstopdf)                    size: 37544 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/food-eps-converted-to.p
 df img/food.eps>
 (epstopdf)             \includegraphics on input line 800.
 Package epstopdf Info: Output file is already uptodate.
- <img/food-eps-converted-to.pdf, id=699, 486.81876pt x 411.5375pt>
+ <img/food-eps-converted-to.pdf, id=699, 493.845pt x 411.5375pt>
 File: img/food-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food-eps-converted-to.pdf>
 Package pdftex.def Info: img/food-eps-converted-to.pdf used on input line 800.
-(pdftex.def)             Requested size: 227.62204pt x 192.4242pt.
+(pdftex.def)             Requested size: 227.62204pt x 189.68004pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1840,7 +1840,7 @@ ed-to.pdf img/worth_money.eps>
 (epstopdf)             \includegraphics on input line 820.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/worth_money-eps-converted-to.pdf, id=728, 430.60875pt x 399.4925pt>
+<img/worth_money-eps-converted-to.pdf, id=736, 430.60875pt x 399.4925pt>
 File: img/worth_money-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/worth_money-eps-converted-to.pdf>
@@ -1858,7 +1858,7 @@ Package epstopdf Info: Source file: <img/sluzby.eps>
 .pdf img/sluzby.eps>
 (epstopdf)             \includegraphics on input line 832.
 Package epstopdf Info: Output file is already uptodate.
- <img/sluzby-eps-converted-to.pdf, id=744, 386.44376pt x 238.8925pt>
+ <img/sluzby-eps-converted-to.pdf, id=752, 386.44376pt x 238.8925pt>
 File: img/sluzby-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/sluzby-eps-converted-to.pdf>
@@ -1876,7 +1876,7 @@ df img/wifi.eps>
 (epstopdf)             \includegraphics on input line 842.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/wifi-eps-converted-to.pdf, id=746, 318.18875pt x 163.61125pt>
+<img/wifi-eps-converted-to.pdf, id=754, 318.18875pt x 163.61125pt>
 File: img/wifi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/wifi-eps-converted-to.pdf>
@@ -1920,7 +1920,7 @@ Package epstopdf Info: Source file: <img/completer.eps>
 -to.pdf img/completer.eps>
 (epstopdf)             \includegraphics on input line 1022.
 Package epstopdf Info: Output file is already uptodate.
- <img/completer-eps-converted-to.pdf, id=859, 457.71pt x 187.70125pt>
+ <img/completer-eps-converted-to.pdf, id=867, 457.71pt x 187.70125pt>
 File: img/completer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/completer-eps-converted-to.pdf>
@@ -1991,9 +1991,9 @@ KTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on havlicek_po_kontrole.pdf (70 pages, 1952921 bytes).
+Output written on havlicek_po_kontrole.pdf (70 pages, 1967891 bytes).
 PDF statistics:
- 1131 PDF objects out of 1200 (max. 8388607)
+ 1139 PDF objects out of 1200 (max. 8388607)
  285 named destinations out of 1000 (max. 500000)
  530 words of extra memory for PDF output out of 10000 (max. 10000000)
 
