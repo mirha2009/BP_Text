@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  15 JUN 2017 14:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  16 JUN 2017 14:36
 entering extended mode
-**./havlicek.tex
-(havlicek.tex
+**"./havlicek (1).tex"
+("havlicek (1).tex"
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 13 language(s) loaded.
 (thesiskiv.cls
@@ -1172,6 +1172,56 @@ File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count180
 \AM@templatesizebox=\box65
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen278
+\epsfysize=\dimen279
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
@@ -1184,24 +1234,14 @@ Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
@@ -1221,10 +1261,7 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-)
-\@linkdim=\dimen278
+\@linkdim=\dimen280
 \Hy@linkcounter=\count181
 \Hy@pagecounter=\count182
 
@@ -1252,10 +1289,10 @@ Package hyperref Info: Bookmarks ON on input line 4735.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen279
+\XeTeXLinkMargin=\dimen281
 \Fld@menulength=\count185
-\Field@Width=\dimen280
-\Fld@charsize=\dimen281
+\Field@Width=\dimen282
+\Fld@charsize=\dimen283
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -1284,15 +1321,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip61
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 157.
-Package hyperref Info: Option `unicode' set `true' on input line 157.
+Package hyperref Info: Option `colorlinks' set `true' on input line 159.
+Package hyperref Info: Option `unicode' set `true' on input line 159.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
 File: puenc.def 2016/06/24 v6.83q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 157.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 159.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
@@ -1300,28 +1337,27 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip63
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count191
-) (havlicek.aux)
-\openout1 = `havlicek.aux'.
+) ("havlicek (1).aux")
+\openout1 = `"havlicek (1).aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 168.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 173.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -1443,30 +1479,17 @@ File: siunitx-abbreviations.cfg 2016/11/24 v2.7 siunitx: Abbreviated units
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count193
-\scratchdimen=\dimen282
+\scratchdimen=\dimen284
 \scratchbox=\box66
 \nofMPsegments=\count194
 \nofMParguments=\count195
 \everyMPshowfont=\toks39
 \MPscratchCnt=\count196
-\MPscratchDim=\dimen283
+\MPscratchDim=\dimen285
 \MPnumerator=\count197
 \makeMPintoPDFobject=\count198
 \everyMPtoPDFconversion=\toks40
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
-ABD: EveryShipout initializing macros
+) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box67
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
@@ -1477,7 +1500,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring ON on input line 168.
+Package hyperref Info: Link coloring ON on input line 173.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1487,53 +1510,53 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count199
 )
-LaTeX Info: Redefining \ref on input line 168.
-LaTeX Info: Redefining \pageref on input line 168.
-LaTeX Info: Redefining \nameref on input line 168.
+LaTeX Info: Redefining \ref on input line 173.
+LaTeX Info: Redefining \pageref on input line 173.
+LaTeX Info: Redefining \nameref on input line 173.
 
-(havlicek.out) (havlicek.out)
+("havlicek (1).out") ("havlicek (1).out")
 \@outlinefile=\write4
-\openout4 = `havlicek.out'.
+\openout4 = `"havlicek (1).out"'.
 
 \c__siunitx_mathsf_int=\count266
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 168.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 173.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 168.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 173.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 168
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 173
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 168
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 173
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 168.
+(Font)              <12> on input line 173.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 168.
+(Font)              <8> on input line 173.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 168.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 168
+(Font)              <6> on input line 173.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 173
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \c__siunitx_mathtt_int=\count267
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 168
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 173
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmtt.fd"
@@ -1544,45 +1567,45 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 <zadanipdf.pdf, id=229, 597.23125pt x 845.1575pt>
 File: zadanipdf.pdf Graphic file (type pdf)
  <use zadanipdf.pdf>
-Package pdftex.def Info: zadanipdf.pdf used on input line 171.
+Package pdftex.def Info: zadanipdf.pdf used on input line 176.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: zadanipdf.pdf Graphic file (type pdf)
 
 <use zadanipdf.pdf>
-Package pdftex.def Info: zadanipdf.pdf used on input line 171.
+Package pdftex.def Info: zadanipdf.pdf used on input line 176.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  <zadanipdf.pdf, id=232, page=1, 597.23125pt x 845.1575pt>
 File: zadanipdf.pdf Graphic file (type pdf)
 
 <use zadanipdf.pdf, page 1>
-Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 171.
+Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 176.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: zadanipdf.pdf Graphic file (type pdf)
  <use zadanipdf.pdf, page 1>
-Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 171.
+Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 176.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: zadanipdf.pdf Graphic file (type pdf)
 
 <use zadanipdf.pdf, page 1>
-Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 171.
+Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 176.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: zadanipdf.pdf Graphic file (type pdf)
  <use zadanipdf.pdf, page 1>
-Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 171.
+Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 176.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: zadanipdf.pdf Graphic file (type pdf)
 
 <use zadanipdf.pdf, page 1>
-Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 171.
+Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 176.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [2 <./zadanipdf.pdf>] [3
 
-] [4] (havlicek.toc
+] [4] ("havlicek (1).toc"
 [5
 
 ])
 \tf@toc=\write5
-\openout5 = `havlicek.toc'.
+\openout5 = `"havlicek (1).toc"'.
 
  [6]
 Kapitola 1.
@@ -1592,16 +1615,12 @@ Kapitola 1.
 Kapitola 2.
 [8
 
-] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18]
-
-LaTeX Warning: Float too large for page by 29.3118pt on input line 387.
-
-[19] [20]
+] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20]
 Kapitola 3.
 [21
 
 ] [22] [23] [24] [25] [26] [27]
-Overfull \hbox (1.47527pt too wide) in paragraph at lines 516--517
+Overfull \hbox (1.47527pt too wide) in paragraph at lines 526--527
 \T1/lmr/m/n/12 Toto lze pro-vést p°i-dá-ním klau-zule expand do do-tazu pro E
 lasticsearch.[[]] 
  []
@@ -1609,38 +1628,30 @@ lasticsearch.[[]]
 [28] [29]
 Kapitola 4.
 
-Overfull \hbox (1.8957pt too wide) in paragraph at lines 524--525
+Overfull \hbox (1.8957pt too wide) in paragraph at lines 534--535
 \T1/lmr/m/n/12 kána uni-ver-zitní sku-pi-nou NLP z uby-to-va-cích por-tál· ho-t
 els.com, agoda.com,
  []
 
 
-Overfull \hbox (3.9824pt too wide) in paragraph at lines 527--528
+Overfull \hbox (3.9824pt too wide) in paragraph at lines 537--538
 []\T1/lmr/m/n/12 Databáze Elas-tic-search ob-sa-huje dva in-dexy a to hospital
 ity a new_in-
  []
 
 
-Overfull \hbox (2.16293pt too wide) in paragraph at lines 530--531
-\T1/lmr/m/n/12 HO-TEL_NAME_SUGGEST_TOKENS a DATE_CREATED_SEASONS.
+Overfull \hbox (1.32172pt too wide) in paragraph at lines 540--541
+\T1/lmr/m/it/12 HO-TEL_NAME_SUGGEST_TOKENS \T1/lmr/m/n/12 a DATE_CREATED_SEASON
+S.
  []
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 532.
 
 [30
 
-] [31]
+] [31] [32] [33]
 Kapitola 5.
-[32
+[34
 
-]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 586.
-
-[33]
+] [35]
 Package epstopdf Info: Source file: <img/5_countries_highest_appearance_graph.e
 ps>
 (epstopdf)                    date: 2017-06-14 14:07:24
@@ -1652,20 +1663,20 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=img/5_countries_highest_app
 earance_graph-eps-converted-to.pdf img/5_countries_highest_appearance_graph.eps
 >
-(epstopdf)             \includegraphics on input line 606.
+(epstopdf)             \includegraphics on input line 714.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/5_countries_highest_appearance_graph-eps-converted-to.pdf, id=580, 573.141
+<img/5_countries_highest_appearance_graph-eps-converted-to.pdf, id=680, 573.141
 25pt x 752.8125pt>
 File: img/5_countries_highest_appearance_graph-eps-converted-to.pdf Graphic fil
 e (type pdf)
 
 <use img/5_countries_highest_appearance_graph-eps-converted-to.pdf>
 Package pdftex.def Info: img/5_countries_highest_appearance_graph-eps-converted
--to.pdf used on input line 606.
+-to.pdf used on input line 714.
 (pdftex.def)             Requested size: 355.65944pt x 467.16394pt.
- [34]
-[35 <./img/5_countries_highest_appearance_graph-eps-converted-to.pdf>]
+ [36]
+[37 <./img/5_countries_highest_appearance_graph-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/australia.eps>
 (epstopdf)                    date: 2017-06-12 10:41:01
 (epstopdf)                    size: 53638 bytes
@@ -1674,16 +1685,17 @@ Package epstopdf Info: Source file: <img/australia.eps>
 (epstopdf)                    size: 16401 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/australia-eps-converted
 -to.pdf img/australia.eps>
-(epstopdf)             \includegraphics on input line 631.
+(epstopdf)             \includegraphics on input line 740.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/australia-eps-converted-to.pdf, id=593, 569.12625pt x 436.63126pt>
+<img/australia-eps-converted-to.pdf, id=696, 569.12625pt x 436.63126pt>
 File: img/australia-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/australia-eps-converted-to.pdf>
 Package pdftex.def Info: img/australia-eps-converted-to.pdf used on input line 
-631.
+740.
 (pdftex.def)             Requested size: 284.52756pt x 218.2951pt.
+ [38 <./img/australia-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/detail_spojeni.eps>
 (epstopdf)                    date: 2017-06-14 14:29:52
 (epstopdf)                    size: 81002 bytes
@@ -1692,18 +1704,17 @@ Package epstopdf Info: Source file: <img/detail_spojeni.eps>
 (epstopdf)                    size: 81286 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/detail_spojeni-eps-conv
 erted-to.pdf img/detail_spojeni.eps>
-(epstopdf)             \includegraphics on input line 643.
+(epstopdf)             \includegraphics on input line 753.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/detail_spojeni-eps-converted-to.pdf, id=595, 234.8775pt x 161.60374pt>
+<img/detail_spojeni-eps-converted-to.pdf, id=706, 234.8775pt x 161.60374pt>
 File: img/detail_spojeni-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/detail_spojeni-eps-converted-to.pdf>
 Package pdftex.def Info: img/detail_spojeni-eps-converted-to.pdf used on input 
-line 643.
+line 753.
 (pdftex.def)             Requested size: 341.43306pt x 234.91862pt.
- [36 <./img/australia-eps-converted-to.pdf>] [37 <./img/detail_spojeni-eps-conv
-erted-to.pdf>] [38]
+ [39 <./img/detail_spojeni-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/Business_trip_customers_proportions.ep
 s>
 (epstopdf)                    date: 2017-06-14 15:09:42
@@ -1714,18 +1725,20 @@ s-converted-to.pdf>
 (epstopdf)                    size: 350113 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/Business_trip_customers
 _proportions-eps-converted-to.pdf img/Business_trip_customers_proportions.eps>
-(epstopdf)             \includegraphics on input line 689.
+(epstopdf)             \includegraphics on input line 790.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/Business_trip_customers_proportions-eps-converted-to.pdf, id=625, 809.0225
+<img/Business_trip_customers_proportions-eps-converted-to.pdf, id=719, 809.0225
 pt x 683.55376pt>
 File: img/Business_trip_customers_proportions-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use img/Business_trip_customers_proportions-eps-converted-to.pdf>
 Package pdftex.def Info: img/Business_trip_customers_proportions-eps-converted-
-to.pdf used on input line 689.
+to.pdf used on input line 790.
 (pdftex.def)             Requested size: 386.95749pt x 326.94432pt.
+ [40]
+[41 <./img/Business_trip_customers_proportions-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/Leisure_trip_customers_proportions_cut
 .eps>
 (epstopdf)                    date: 2017-06-14 15:32:01
@@ -1737,21 +1750,21 @@ Package epstopdf Info: Source file: <img/Leisure_trip_customers_proportions_cut
 (epstopdf)             Command: <epstopdf --outfile=img/Leisure_trip_customers_
 proportions_cut-eps-converted-to.pdf img/Leisure_trip_customers_proportions_cut
 .eps>
-(epstopdf)             \includegraphics on input line 702.
+(epstopdf)             \includegraphics on input line 813.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf, id=627, 680.5
+<img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf, id=736, 680.5
 425pt x 642.4pt>
 File: img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf Graphic f
 ile (type pdf)
 
 <use img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf>
 Package pdftex.def Info: img/Leisure_trip_customers_proportions_cut-eps-convert
-ed-to.pdf used on input line 702.
+ed-to.pdf used on input line 813.
 (pdftex.def)             Requested size: 386.95749pt x 365.27pt.
- [39]
-[40 <./img/Business_trip_customers_proportions-eps-converted-to.pdf>] [41 <./im
-g/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf>] [42] [43]
+ [42]
+[43 <./img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf>]
+[44] [45]
 Package epstopdf Info: Source file: <img/rocni_donut.eps>
 (epstopdf)                    date: 2017-06-12 16:34:26
 (epstopdf)                    size: 55903 bytes
@@ -1760,17 +1773,17 @@ Package epstopdf Info: Source file: <img/rocni_donut.eps>
 (epstopdf)                    size: 18093 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/rocni_donut-eps-convert
 ed-to.pdf img/rocni_donut.eps>
-(epstopdf)             \includegraphics on input line 748.
+(epstopdf)             \includegraphics on input line 860.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/rocni_donut-eps-converted-to.pdf, id=665, 238.8925pt x 262.9825pt>
+<img/rocni_donut-eps-converted-to.pdf, id=769, 238.8925pt x 262.9825pt>
 File: img/rocni_donut-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/rocni_donut-eps-converted-to.pdf>
 Package pdftex.def Info: img/rocni_donut-eps-converted-to.pdf used on input lin
-e 748.
+e 860.
 (pdftex.def)             Requested size: 142.26378pt x 156.60693pt.
- [44 <./img/rocni_donut-eps-converted-to.pdf>]
+ [46 <./img/rocni_donut-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/graf_sezona.eps>
 (epstopdf)                    date: 2017-06-07 14:33:23
 (epstopdf)                    size: 42278 bytes
@@ -1779,17 +1792,17 @@ Package epstopdf Info: Source file: <img/graf_sezona.eps>
 (epstopdf)                    size: 15962 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/graf_sezona-eps-convert
 ed-to.pdf img/graf_sezona.eps>
-(epstopdf)             \includegraphics on input line 782.
+(epstopdf)             \includegraphics on input line 894.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/graf_sezona-eps-converted-to.pdf, id=686, 455.7025pt x 248.93pt>
+<img/graf_sezona-eps-converted-to.pdf, id=788, 455.7025pt x 248.93pt>
 File: img/graf_sezona-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/graf_sezona-eps-converted-to.pdf>
 Package pdftex.def Info: img/graf_sezona-eps-converted-to.pdf used on input lin
-e 782.
+e 894.
 (pdftex.def)             Requested size: 386.95749pt x 211.38258pt.
- [45 <./img/graf_sezona-eps-converted-to.pdf>]
+ [47 <./img/graf_sezona-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/food.eps>
 (epstopdf)                    date: 2017-06-15 14:51:37
 (epstopdf)                    size: 116574 bytes
@@ -1798,18 +1811,14 @@ Package epstopdf Info: Source file: <img/food.eps>
 (epstopdf)                    size: 37544 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/food-eps-converted-to.p
 df img/food.eps>
-(epstopdf)             \includegraphics on input line 800.
+(epstopdf)             \includegraphics on input line 913.
 Package epstopdf Info: Output file is already uptodate.
- <img/food-eps-converted-to.pdf, id=699, 493.845pt x 411.5375pt>
+ <img/food-eps-converted-to.pdf, id=802, 493.845pt x 411.5375pt>
 File: img/food-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food-eps-converted-to.pdf>
-Package pdftex.def Info: img/food-eps-converted-to.pdf used on input line 800.
-(pdftex.def)             Requested size: 227.62204pt x 189.68004pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+Package pdftex.def Info: img/food-eps-converted-to.pdf used on input line 913.
+(pdftex.def)             Requested size: 193.47874pt x 161.2274pt.
 Package epstopdf Info: Source file: <img/food_positive.eps>
 (epstopdf)                    date: 2017-06-12 10:45:59
 (epstopdf)                    size: 123282 bytes
@@ -1818,17 +1827,25 @@ Package epstopdf Info: Source file: <img/food_positive.eps>
 (epstopdf)                    size: 41259 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/food_positive-eps-conve
 rted-to.pdf img/food_positive.eps>
-(epstopdf)             \includegraphics on input line 809.
+(epstopdf)             \includegraphics on input line 919.
 Package epstopdf Info: Output file is already uptodate.
-<img/food_positive-eps-converted-to.pdf, id=701, 363.3575pt x 236.885pt>
+
+<img/food_positive-eps-converted-to.pdf, id=803, 363.3575pt x 236.885pt>
 File: img/food_positive-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food_positive-eps-converted-to.pdf>
 Package pdftex.def Info: img/food_positive-eps-converted-to.pdf used on input l
-ine 809.
-(pdftex.def)             Requested size: 227.62204pt x 148.39613pt.
- [46] [47 <./img/food-eps-converted-to.pdf> <./img/food_positive-eps-converted-
-to.pdf>]
+ine 919.
+(pdftex.def)             Requested size: 193.47874pt x 126.13762pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 911--923
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[48]
 Package epstopdf Info: Source file: <img/worth_money.eps>
 (epstopdf)                    date: 2017-06-12 16:44:37
 (epstopdf)                    size: 85545 bytes
@@ -1837,17 +1854,17 @@ Package epstopdf Info: Source file: <img/worth_money.eps>
 (epstopdf)                    size: 26423 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/worth_money-eps-convert
 ed-to.pdf img/worth_money.eps>
-(epstopdf)             \includegraphics on input line 820.
+(epstopdf)             \includegraphics on input line 934.
 Package epstopdf Info: Output file is already uptodate.
-
-<img/worth_money-eps-converted-to.pdf, id=736, 430.60875pt x 399.4925pt>
+ <img/worth_money-eps-converted-to.pdf, id=813, 430.60875pt x 399.4925pt>
 File: img/worth_money-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/worth_money-eps-converted-to.pdf>
 Package pdftex.def Info: img/worth_money-eps-converted-to.pdf used on input lin
-e 820.
+e 934.
 (pdftex.def)             Requested size: 284.52756pt x 263.97064pt.
- [48 <./img/worth_money-eps-converted-to.pdf>]
+ [49 <./img/food-eps-converted-to.pdf> <./img/food_positive-eps-converted-to.pd
+f>]
 Package epstopdf Info: Source file: <img/sluzby.eps>
 (epstopdf)                    date: 2017-06-12 16:51:19
 (epstopdf)                    size: 94881 bytes
@@ -1856,13 +1873,14 @@ Package epstopdf Info: Source file: <img/sluzby.eps>
 (epstopdf)                    size: 27867 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/sluzby-eps-converted-to
 .pdf img/sluzby.eps>
-(epstopdf)             \includegraphics on input line 832.
+(epstopdf)             \includegraphics on input line 946.
 Package epstopdf Info: Output file is already uptodate.
- <img/sluzby-eps-converted-to.pdf, id=752, 386.44376pt x 238.8925pt>
+
+<img/sluzby-eps-converted-to.pdf, id=842, 386.44376pt x 238.8925pt>
 File: img/sluzby-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/sluzby-eps-converted-to.pdf>
-Package pdftex.def Info: img/sluzby-eps-converted-to.pdf used on input line 832
+Package pdftex.def Info: img/sluzby-eps-converted-to.pdf used on input line 946
 .
 (pdftex.def)             Requested size: 284.52756pt x 175.89189pt.
 Package epstopdf Info: Source file: <img/wifi.eps>
@@ -1873,43 +1891,38 @@ Package epstopdf Info: Source file: <img/wifi.eps>
 (epstopdf)                    size: 33397 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/wifi-eps-converted-to.p
 df img/wifi.eps>
-(epstopdf)             \includegraphics on input line 842.
+(epstopdf)             \includegraphics on input line 956.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/wifi-eps-converted-to.pdf, id=754, 318.18875pt x 163.61125pt>
+<img/wifi-eps-converted-to.pdf, id=844, 318.18875pt x 163.61125pt>
 File: img/wifi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/wifi-eps-converted-to.pdf>
-Package pdftex.def Info: img/wifi-eps-converted-to.pdf used on input line 842.
+Package pdftex.def Info: img/wifi-eps-converted-to.pdf used on input line 956.
 (pdftex.def)             Requested size: 284.52756pt x 146.30258pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[49 <./img/sluzby-eps-converted-to.pdf>] [50 <./img/wifi-eps-converted-to.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (9.58725pt too wide) in paragraph at lines 906--907
-\T1/lmr/m/n/12 SCO-RE_TOTAL a NUM-BER_OF_ROOMS, re-spek-tive SENTIMENT_HO-
- []
-
-[51]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[52] [53] [54]
+ [50 <./img/worth_money-eps-converted-to.pdf>] [51 <./img/sluzby-eps-converted-
+to.pdf> <./img/wifi-eps-converted-to.pdf>]
+[52] [53] [54] [55]
 Kapitola 6.
-[55
+[56
 
 ]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 972.
-
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 1086
+.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [56] [57] [58]
-[59]
+) [57] [58]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 1111.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 1111.
+
+Overfull \hbox (2.06218pt too wide) in paragraph at lines 1117--1118
+\T1/lmtt/m/n/12 http.conf \T1/lmr/m/n/12 p°i-dat °á-dek: \T1/lmtt/m/n/12 Header
+ add Access-Control-Allow-Origin "*"\T1/lmr/m/n/12 . 
+ []
+
+[59] [60]
 Package epstopdf Info: Source file: <img/completer.eps>
 (epstopdf)                    date: 2017-06-12 12:20:41
 (epstopdf)                    size: 20322 bytes
@@ -1918,65 +1931,51 @@ Package epstopdf Info: Source file: <img/completer.eps>
 (epstopdf)                    size: 7461 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/completer-eps-converted
 -to.pdf img/completer.eps>
-(epstopdf)             \includegraphics on input line 1022.
+(epstopdf)             \includegraphics on input line 1136.
 Package epstopdf Info: Output file is already uptodate.
- <img/completer-eps-converted-to.pdf, id=867, 457.71pt x 187.70125pt>
+ <img/completer-eps-converted-to.pdf, id=970, 457.71pt x 187.70125pt>
 File: img/completer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/completer-eps-converted-to.pdf>
 Package pdftex.def Info: img/completer-eps-converted-to.pdf used on input line 
-1022.
-(pdftex.def)             Requested size: 227.62204pt x 93.34344pt.
- [60 <./img/completer-eps-converted-to.pdf>] [61]
+1136.
+(pdftex.def)             Requested size: 309.56717pt x 126.9535pt.
+ [61 <./img/completer-eps-converted-to.pdf>] [62]
 Kapitola 7.
-[62
+[63
 
-] [63] [64]
+] [64] [65]
 Kapitola 8.
-[65
+[66
 
 ]
 Kapitola 9.
-(havlicek.bbl [66
+("havlicek (1).bbl" [67
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 12.
- [67
+ [68
 
-]
-Overfull \hbox (234.36317pt too wide) in paragraph at lines 77--81
-\T1/lmtt/m/n/10.95 how-[]to-[]get-[]a-[]20-[]million-[]pre-[]money-[]valuation-
-[]for-[]series-[]a-[]tableau-[]software-[]ceo-[]christian-[]chabot-[]part-[]2/$
-[][]\T1/lmr/m/n/10.95 .  
- []
+] [69] [70]) [71]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1239.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1239.
+ ("havlicek (1).aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1239.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1239.
 
-[68] [69]
-Overfull \hbox (443.02467pt too wide) in paragraph at lines 221--225
-\T1/lmtt/m/n/10.95 booz-[]allen-[]hamilton-[]and-[]splunk-[]announce-[]strategi
-c-[]alliance-[]to-[]deliver-[]predictive-[]security-[]analytics-[]and-[]operati
-onalize-[]threat-[]intelligence / 
- []
-
-) [70]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1126.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1126.
- (havlicek.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1126.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1126.
-
-Package rerunfilecheck Info: File `havlicek.out' has not changed.
-(rerunfilecheck)             Checksum: C288408123CE5638352C543BC4A5A0EE;7717.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1126.
+Package rerunfilecheck Info: File `"havlicek (1)".out' has not changed.
+(rerunfilecheck)             Checksum: FEFD98DC0290A3A17725D64E2734D6AE;7712.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1239.
  ) 
 Here is how much of TeX's memory you used:
- 33228 strings out of 494874
- 619264 string characters out of 3174258
- 628728 words of memory out of 3000000
- 35911 multiletter control sequences out of 15000+200000
- 99332 words of font info for 63 fonts, out of 3000000 for 9000
+ 33392 strings out of 494874
+ 622205 string characters out of 3174258
+ 643901 words of memory out of 3000000
+ 35966 multiletter control sequences out of 15000+200000
+ 118902 words of font info for 76 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 55i,18n,54p,10361b,2193s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,18n,54p,10367b,2173s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
@@ -1985,15 +1984,16 @@ Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri1
-2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on havlicek.pdf (70 pages, 1967875 bytes).
+KTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on "havlicek (1).pdf" (71 pages, 2012280 bytes).
 PDF statistics:
- 1139 PDF objects out of 1200 (max. 8388607)
- 285 named destinations out of 1000 (max. 500000)
+ 1251 PDF objects out of 1440 (max. 8388607)
+ 370 named destinations out of 1000 (max. 500000)
  530 words of extra memory for PDF output out of 10000 (max. 10000000)
 
