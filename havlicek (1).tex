@@ -563,8 +563,10 @@ Tabulka \ref{statistiky} obsahuje základní statistické údaje o použitých d
 \label{statistiky}
 \end{table}
 
+\section{Obsah recenzí}
+Ná následujícím příkladě se lze detailně seznámit s obsahem jednotlivých polí, které recenze uložené v databázi Elasticsearch obsahují. Jedná se o příklad běžné recenze, která nemá vyplněna všechna pole.
 
-	\begin{lstlisting}
+	\begin{lstlisting}[caption=Příkald recenze]
 {"_index": "new_index", "_type": "tripadvisor",
 "_id": "http://www.tripadvisor.com/
 ShowUserReviews-g295424-d3447941-r442604683-
@@ -614,11 +616,10 @@ _Dubai.html#CHECK_RATES_CONT",
   "REVIEW": "An absolutely pleasant stay at the
    JW Marriott Marquis Hotel in Dubai. The guest
    reception staff is very professional and 
-   helpful. I would like to thank Mahesh for
-   his assistance. The rooms are perfectly
-   clean and the executive lounge is unique
-   for the frequent travellers. A world 
-   class hotel.",   
+   helpful. I would like to thank Mahesh for his
+   assistance. The rooms are perfectly clean and
+   the executive lounge is unique for the frequent
+   travellers. A world class hotel.",   
   "LANG_CODE": "en",
   "DATE_CREATED": "2016-12-07T00:00:00.000Z",
   "USER_UPDATED_DATESTR": "08 Dec 2016 18:17",
@@ -658,9 +659,24 @@ _Dubai.html#CHECK_RATES_CONT",
   "DATE_CREATEDSTR_SEASONS_SDF": "December 7"},}
 	\end{lstlisting}
 	
-	
-Teď spíše vypsat jenom pole, která jsou pro nás zajímavá: REVIEW, RESPONSE\_TEXT, SENTIMENT obecně, LOCATION, SCORE obecně, Country, HOTEL\_NAME, HOTEL\_NAME\_SUGGEST, HOTEL\_NAME\_SUGGEST\_TOKENS...
-Tato recenze má většinu základních polí vyplněnou. Pouze pole POSITIVE, NEGAtIVE nejsou v této recenzi vyplněna
+
+Každá recenze se liší nejen v obsahu jednotlivých polí, ale především v počtu polí, které jsou v dané recenzi vyplněné. Je to způsobeno tím, že někteří recenzenti vyplnili své recenze poctivěji a obsáhleji a jiní poskytli pouze základní údaje jako je název hotelu, celkové skóre a vlastní text recenze. Výše uvedená recenze patří k těm zajímavějším, jelikož obsahuje i reakci hotelového personálu. Ta je vyplněna pouze u 7 571 recenzí, což představuje pouze 20\% ze všech sebraných recenzí. Právě proto jsem vybral tuto recenzi jako vzorovou, i když u ní naopak nejsou vyplněné jiné pole, které využívám ve své práci k zodpovězení vybraných otázek.
+
+
+Mezi nejdůležitější pole pro zodpovězení otázek patří jistě všechna pole, které obsahují hodnocení nějakého kritéria ve formě čísla. Hodnoty v těchto polích jsou datového typu float a mohou nabývat být v rozmezí 0 - 10. Všechna tato pole obsahují ve svém názvu řetězec \uv{SCORE}.
+
+
+Významným polem je i pole \texttt{REVIEW}, které obsahuje písemnou recenzi. Toto pole je vyplněno u 336 980 záznamů, což představuje 89\% všech dostupných recenzí. Nad těmito texty byla provedena analýza sentimentu a výsledkem byl vznik nových polí, které obsahují údaje o sentimentu. Všechna pole, která obsahují sentiment mohou obsahovat hodnoty -1, 0 nebo 1 a v jejich názvu je použité klíčové slovo \uv{SENTIMENT}. Pole se sentimentem využívám v práci často, protože jejich průměrná hodnotou lze potvrdit, či zpochybnit průměrné hodnoty polí s numerickým hodnocením. V recenzích jsou i pole, která obsahují v názvu řetězec \uv{SENTIMENT\_TEXT} a v těchto polích jsou části recenzí, na  jejichž základě se určila hodnota polí obsahující v názvu pouze \uv{SENTIMENT}.
+
+Další analýzou textů z \texttt{REVIEW} jsou pole \texttt{POSITIVE} a \texttt{NEGATIVVE}. Ty obsahují řetězce, které byly analýzou vyhodnoceny jako citové zabarvené, buďto pozitivně, nebo negativně.
+
+
+Velmi často vyplněným polem, které jsem využíval je pole \texttt{HOTEL\_NAME}. Přestože se jedná o základní pole, existují recenze, které toto pole vyplněné nemají. Celkem 98.62\% recenzí má toto pole vyplněné a je velmi důležité především pro našeptávač, jelikož z něj vznikla pole \texttt{HOTEL\_NAME\_SUGGEST} a \texttt{HOTEL\_NAME\_SUGGEST\_TOKENS}, která slouží jako zdrojová pole pro implementovaný našeptávač.
+
+Jednotlivé recenze jsou od sebe odlišeny hodnotami v poli \texttt{\_id}, které obsahuje odkaz na zdroj recenze. Toto pole je vyplněno u všech recenzí. Stejně tak je tomu i u \texttt{WEB\_SOURCE}, jež obsahuje název domény, ze které recenze pochází.
+
+
+Obecně lze o datech prohlásit, že jsou neúplná, což je způsobené jejich původem. Pro zodpovězení některých otázek by bylo vhodné provést průzkum mezi návštěvníky hotelů, ve kterém by museli být vyplněny všechny potřebné informace. To je ale vzhledem k časové náročnosti sběru dat téměř neproveditelné. To je důvod, proč jsem musel otázky pečlivě vybírat, aby odpovědi byly co nejvíce relevantní pro všechna data.
 
 \chapter{Vizualizace pomocí nástroje Kibana}
 \label{Vizualizace}
@@ -710,7 +726,7 @@ Prvním úkolem je získat odpověď na otázku, které národnosti se vyskytuj�
 \end{table}
 
 
-Díky rozdělení otázky na dvě části můžu využít výsledky z první části v rozšíření Graph jako výraz, pomocí kterého hledá Graph spojitosti mezi zadanými oblastmi. Nejprve jsem zvolil index, kterým je index \uv{hospitality}. Následně jelikož hledám hotely, do kterých jezdí uživatelé z dané země nejčastěji, musím zvolit, že chci ve výsledcích zobrazit vždy jeden výsledek pro pole\texttt{ USER\_LOCATION\_COUNTRY.keyword} a pět výsledků pro pole \texttt{HOTEL\_NAME.keyword}. Důležitý je především správný výběr polí, protože pole \texttt{USER\_LOCATION\_COUNTRY} a \texttt{HOTEL\_NAME} nemají nastavený atribut \uv{a\-ggregateble}, takže je není možné využít v dotazech typu \uv{aggs}, kterým ovšem rozšíření Graph komunikuje s databází Elasticsearch. Po zvolení zdrojových polí stačí jen zadat do vyhledávacího pole řetězec \uv{\texttt{USER\_LOCATI\-ON\_COUNTRY}:\uv{nazev}} a spustit vyhledávání spojení. Místo řetězce \uv{nazev} jsem postupně doplnil hodnoty, které jsem získal z výsledku první části otázky. Výsledkem tedy nakonec bylo pět částí, které se skládaly z jedné země a pěti hotelů, ale mezi těmito částmi nebylo žádné spojení. Na závěr tvorby vizualizace je tedy nutné použít takzvaný \uv{spidering}, který doplní vazby mezi získanými částmi grafu. Odpovědí na otázku je tedy graf \ref{fig:TopFive}, který obsahuje pět nejčastějších zemí, ze kterých jezdí návštěvníci a jejich nejoblíbenější hotely.
+Díky rozdělení otázky na dvě části můžu využít výsledky z první části v rozšíření Graph jako výraz, pomocí kterého hledá Graph spojitosti mezi zadanými oblastmi. Nejprve jsem zvolil index, kterým je index \uv{hospitality}. Následně jelikož hledám hotely, do kterých jezdí uživatelé z dané země nejčastěji, musím zvolit, že chci ve výsledcích zobrazit vždy jeden výsledek pro pole\texttt{ USER\_LOCATION\_COUNTRY.keyword} a pět výsledků pro pole \texttt{HOTEL\_NAME.keyword}. Důležitý je především správný výběr polí, protože pole \texttt{USER\_LOCATION\_COUNTRY} a \texttt{HOTEL\_NAME} nemají nastavený atribut \uv{a\-ggregateble}, takže je není možné využít v dotazech typu \uv{aggs}, kterým ovšem rozšíření Graph komunikuje s databází Elasticsearch. Po zvolení zdrojových polí stačí jen zadat do vyhledávacího pole řetězec \uv{\texttt{USER\_LOCATI\-ON\_COUNTRY}: country\_name} a spustit vyhledávání spojení. Místo řetězce \uv{nazev} jsem postupně doplnil hodnoty, které jsem získal z výsledku první části otázky. Výsledkem tedy nakonec bylo pět částí, které se skládaly z jedné země a pěti hotelů, ale mezi těmito částmi nebylo žádné spojení. Na závěr tvorby vizualizace je tedy nutné použít takzvaný \textbf{\uv{spidering}}, který doplní vazby mezi získanými částmi grafu. Odpovědí na otázku je tedy graf \ref{fig:TopFive}, který obsahuje pět nejčastějších zemí, ze kterých jezdí návštěvníci a jejich nejoblíbenější hotely.
 
 \begin{figure} [htbp]
 	\centering
@@ -753,7 +769,7 @@ Velmi zajímavé je na výsledném grafu sledovat sílu jednotlivých spojení, 
 
 \begin{figure} [htbp]
 	\centering
-	\includegraphics[width= 12 cm]{img/detail_spojeni.eps}
+	\includegraphics[width= 0.8\textwidth]{img/detail_spojeni.eps}
 	\label{fig:DetailSpojeni1}
 	\caption{Detail spojeni}
 \end{figure}
@@ -1076,8 +1092,26 @@ Z tabulky \ref{Korelace_výsledky} je jasně patrné, že pole \texttt{SCORE\_TO
  
 \subsubsection{Jak hodnotí návštěvníci dostupnost veřejné dopravy?}
 \label{doprava}
-Na tuto otázku nelze  bohužel najít relevantní odpověď. Důvodem jsou sebraná data, ve kterých nejsou vyplněny podrobnosti o dostupnosti veřejné dopravy v okolí hotelu. Jediným zdrojovým polem, ve kterém jsou zmínky o dopravě, popřípadě o veřejné dopravě je pole \texttt{REVIEW}, kde je uložené slovní hodnocení návštěvníka. Bohužel ve většině případů nehodnotili recenzenti možnosti veřejné dopravy. Z celkového počtu 337 302 recenzí, které mají vyplněné pole \texttt{REVIEW}, obsahuje pouze 2873 zmínku o veřejné dopravě, popřípadě o dopravě obecně. Kvůli malému vzorku dat tudíž nelze najít odpověď. která by byla obecně platná.
-\textbf{2 příklady, které nelze zobecnit do 1?? zeptat se}
+Na tuto otázku nelze  bohužel najít relevantní odpověď. Důvodem jsou sebraná data, ve kterých nejsou vyplněny podrobnosti o dostupnosti veřejné dopravy v okolí hotelu. Ve většině případů totiž recenzenti nehodnotili možnosti veřejné dopravy. Kvůli malému vzorku dat tudíž nelze najít odpověď. která by byla obecně platná. Přesto jsem se pokusil nalézt odpověď prohledáváním polí \texttt{REVIEW}, \texttt{POSITIVE} a \texttt{NEGATIVE}.
+
+
+V 5\% recenzí obsahující vyplněné pole \texttt{POSITIVE} hodnotí návštěvníci pozitivně polohu stanice metra, která je v blízkosti hotelu. Celkem se jedná o 8 514 recenzí a navíc 56 recenzentů si stěžuje na velkou vzdálenost od stanice metra. Z těchto výsledků lze usoudit, že vzdálenost hotelu od metra je důležitá. Výrazy vyskytující se v těchto polích lze vidět na obrázku \ref{fig:METRO}. Je vidět, že je hodnocena opravdu pouze vzdálenost hotelu od metra.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[ width =\textwidth]{img/METRO.eps}
+	\caption{Výrazy spojené s hodnocením metra}
+	\label{fig:METRO}	
+\end{figure}
+
+
+Taxislužby jsou zmíněny celkem v 969 polích \texttt{POSITIVE} a v 1140 polích \texttt{NEGATIVE}. Na služby taxi mají návštěvníci zcela opačný názor. Jedna skupina je hodnotí jako spolehlivé, ochotné a všudepřítomné, ale druhá skupina není s jejich prací spokojena a očekávala by především jejich větší dostupnost. Příkladem jsou následující dvě hodnocení. V prvním případě obsahuje pole \texttt{POSITIVE} text: \textit{\uv{Near to Dubi Metro (about 10 minutes)and taxi most of time around and in front...}}, ale lze naopak najít příklad recenze, která v poli \texttt{NEGATIVE} obsahuje zcela opačné tvrzení: \textit{\uv{Swimming pool, and spa is small. Hard to catch Taxi. Not the best location.}}
+
+
+Celkem ve 320 recenzích je kladně hodnocena veřejná doprava a to z důvodu její dostupnosti po městě a zastávek, které se nacházejí v blízkosti hotelů. Přesto je v databázi 31 záznamů, ve kterých si návštěvníci stěžují na nedostupnost veřejné dopravy po městě a na její rychlost. 
+
+
+ 
 
 \chapter{Implementace webových stránek}
 \label{chap:WEB}
