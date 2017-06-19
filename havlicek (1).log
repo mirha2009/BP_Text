@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  19 JUN 2017 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  19 JUN 2017 13:46
 entering extended mode
 **"./havlicek (1).tex"
 ("havlicek (1).tex"
@@ -1648,7 +1648,7 @@ ps>
 (epstopdf)             \includegraphics on input line 733.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/5_countries_highest_appearance_graph2-eps-converted-to.pdf, id=689, 815.04
+<img/5_countries_highest_appearance_graph2-eps-converted-to.pdf, id=690, 815.04
 5pt x 1048.91875pt>
 File: img/5_countries_highest_appearance_graph2-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -1670,7 +1670,7 @@ Package epstopdf Info: Source file: <img/australia.eps>
 (epstopdf)             \includegraphics on input line 759.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/australia-eps-converted-to.pdf, id=705, 569.12625pt x 436.63126pt>
+<img/australia-eps-converted-to.pdf, id=706, 569.12625pt x 436.63126pt>
 File: img/australia-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/australia-eps-converted-to.pdf>
@@ -1689,7 +1689,7 @@ erted-to.pdf img/detail_spojeni.eps>
 (epstopdf)             \includegraphics on input line 772.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/detail_spojeni-eps-converted-to.pdf, id=715, 234.8775pt x 161.60374pt>
+<img/detail_spojeni-eps-converted-to.pdf, id=716, 234.8775pt x 161.60374pt>
 File: img/detail_spojeni-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/detail_spojeni-eps-converted-to.pdf>
@@ -1710,7 +1710,7 @@ _proportions-eps-converted-to.pdf img/Business_trip_customers_proportions.eps>
 (epstopdf)             \includegraphics on input line 808.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/Business_trip_customers_proportions-eps-converted-to.pdf, id=728, 825.0825
+<img/Business_trip_customers_proportions-eps-converted-to.pdf, id=729, 825.0825
 pt x 689.57625pt>
 File: img/Business_trip_customers_proportions-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1735,7 +1735,7 @@ proportions_cut-eps-converted-to.pdf img/Leisure_trip_customers_proportions_cut
 (epstopdf)             \includegraphics on input line 831.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf, id=745, 716.6
+<img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf, id=746, 716.6
 775pt x 653.44125pt>
 File: img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1758,7 +1758,7 @@ ed-to.pdf img/rocni_donut.eps>
 (epstopdf)             \includegraphics on input line 878.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/rocni_donut-eps-converted-to.pdf, id=778, 238.8925pt x 262.9825pt>
+<img/rocni_donut-eps-converted-to.pdf, id=779, 238.8925pt x 262.9825pt>
 File: img/rocni_donut-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/rocni_donut-eps-converted-to.pdf>
@@ -1777,7 +1777,7 @@ ed-to.pdf img/graf_sezona.eps>
 (epstopdf)             \includegraphics on input line 911.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/graf_sezona-eps-converted-to.pdf, id=797, 455.7025pt x 248.93pt>
+<img/graf_sezona-eps-converted-to.pdf, id=798, 455.7025pt x 248.93pt>
 File: img/graf_sezona-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/graf_sezona-eps-converted-to.pdf>
@@ -1795,7 +1795,7 @@ Package epstopdf Info: Source file: <img/food.eps>
 df img/food.eps>
 (epstopdf)             \includegraphics on input line 930.
 Package epstopdf Info: Output file is already uptodate.
- <img/food-eps-converted-to.pdf, id=811, 486.81876pt x 411.5375pt>
+ <img/food-eps-converted-to.pdf, id=812, 486.81876pt x 411.5375pt>
 File: img/food-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food-eps-converted-to.pdf>
@@ -1812,7 +1812,7 @@ rted-to.pdf img/food_positive.eps>
 (epstopdf)             \includegraphics on input line 936.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/food_positive-eps-converted-to.pdf, id=812, 363.3575pt x 236.885pt>
+<img/food_positive-eps-converted-to.pdf, id=813, 363.3575pt x 236.885pt>
 File: img/food_positive-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food_positive-eps-converted-to.pdf>
@@ -1832,7 +1832,7 @@ ed-to.pdf img/worth_money.eps>
 (epstopdf)             \includegraphics on input line 951.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/worth_money-eps-converted-to.pdf, id=843, 423.5825pt x 271.0125pt>
+<img/worth_money-eps-converted-to.pdf, id=844, 423.5825pt x 271.0125pt>
 File: img/worth_money-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/worth_money-eps-converted-to.pdf>
@@ -1850,7 +1850,7 @@ Package epstopdf Info: Source file: <img/sluzby.eps>
 .pdf img/sluzby.eps>
 (epstopdf)             \includegraphics on input line 965.
 Package epstopdf Info: Output file is already uptodate.
- <img/sluzby-eps-converted-to.pdf, id=853, 381.425pt x 238.8925pt>
+ <img/sluzby-eps-converted-to.pdf, id=854, 381.425pt x 238.8925pt>
 File: img/sluzby-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/sluzby-eps-converted-to.pdf>
@@ -1869,7 +1869,7 @@ df img/wifi.eps>
 (epstopdf)             \includegraphics on input line 975.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/wifi-eps-converted-to.pdf, id=866, 318.18875pt x 163.61125pt>
+<img/wifi-eps-converted-to.pdf, id=867, 318.18875pt x 163.61125pt>
 File: img/wifi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/wifi-eps-converted-to.pdf>
@@ -1888,7 +1888,7 @@ pdf img/METRO.eps>
 (epstopdf)             \includegraphics on input line 1101.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/METRO-eps-converted-to.pdf, id=918, 469.755pt x 191.71625pt>
+<img/METRO-eps-converted-to.pdf, id=919, 469.755pt x 191.71625pt>
 File: img/METRO-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/METRO-eps-converted-to.pdf>
@@ -1917,7 +1917,7 @@ Package epstopdf Info: Source file: <img/completer.eps>
 (epstopdf)             \includegraphics on input line 1174.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/completer-eps-converted-to.pdf, id=984, 457.71pt x 187.70125pt>
+<img/completer-eps-converted-to.pdf, id=985, 457.71pt x 187.70125pt>
 File: img/completer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/completer-eps-converted-to.pdf>
@@ -1975,9 +1975,9 @@ iles/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "havlicek (1).pdf" (74 pages, 2591242 bytes).
+Output written on "havlicek (1).pdf" (74 pages, 2591412 bytes).
 PDF statistics:
- 1279 PDF objects out of 1440 (max. 8388607)
+ 1280 PDF objects out of 1440 (max. 8388607)
  382 named destinations out of 1000 (max. 500000)
  543 words of extra memory for PDF output out of 10000 (max. 10000000)
 
