@@ -525,7 +525,7 @@ Pokud při tvoření sítě potřebujeme zadat do vyhledávacího pole více vý
 Základním úkonem při práci s vektory je jejich selekce, která je umožněna buďto tlačítky \uv{all}, \uv{none}, \uv{invert} a \uv{linked}, nebo lze výběr provádět ručně za pomoci klávesnice \uv{Shift} a myši.
 
 
-Rozšíření Graph umožňuje uživatelům provádět takzvaný \uv{spidering}, což je operace, při které uživatelé rozšiřují jen vybranou část původního vygenerovaného grafu. K této operaci jsou potřeba dva mezikroky. Tím prvním je označit si skupinu vektorů, pro které si přejeme provést \uv{spidering} a následně vyloučit z hledání vektory, které jsou již v původním grafu zobrazené. Toto lze provést přidáním klauzule \uv{expand} do dotazu pro Elasticsearch.\cite{Spidering} 
+Rozšíření Graph umožňuje uživatelům provádět takzvaný \uv{spidering}, což je operace, při které uživatelé rozšiřují jen vybranou část původního vygenerovaného grafu. K této operaci jsou potřeba dva mezikroky. Tím prvním je označit si skupinu vektorů, pro které si přejeme provést \uv{spidering} a následně vyloučit z hledání vektory, které jsou již v původním grafu zobrazené. Toto lze provést přidáním klauzule \uv{expand} do dotazu pro Elasticsearch. \cite{Spidering} 
 
 Tyto kroky lze také vykonat v rozšíření pro aplikaci Kibana. V tomto případě je pouze nutné zvolit vektory původního grafu, které si přejeme rozšířit, což je ekvivalent ke klauzuli \uv{expand}. Dále se musí upravit vstupní zdrojová pole a následně jen stisknout ikonu s plusem, kdy se vytvoří nový dotaz a výsledkem je obnovený a rozšířený graf. Dále je možné jednotlivé vektory sdružovat do skupin. Nejprve je nutné si vybrané vektory označit a následně je pomocí tlačítka \uv{group} sloučit. Inverzní operaci lze provést kliknutím na tlačítko \uv{ungroup}. Sjednocení vektorů je vhodné, pokud je použito neanalyzované zdrojové pole, které je citlivé na velikost písmen. Vektory lze také vyloučit z budoucího hledání jejich přidáním na černou listinu. K tomu slouží tlačítko \uv{Blacklist selection from return to workspace}. Seznam blokovaných vektorů lze kdykoliv najít v nastavení aplikace Graph.
 
@@ -533,10 +533,10 @@ Tyto kroky lze také vykonat v rozšíření pro aplikaci Kibana. V tomto příp
 Tento nástroj je vhodný především pro analýzu dat, kde lze předem očekávat spojitosti mezi daty. Především ve spojení s aplikací Logstah se jedná o velmi účinný nástroj například k analýze chování uživatelů, popřípadě na hledání vzorů chování útočníků. Další možnost použití vidím v analyzování dat ze sociálních sítí, kdy lze zjistit například jak moc se jednotlivé příspěvky šíří a jak jsou populární. Obecně je tento nástroj užitečný v oblasti bezpečnosti jako detekce hrozeb a také v oblasti komerce jako personalizované návrhy produktů. Nevýhodou je, že je dostupný jen jako součást balíku Elastic Stack, který je ovšem placený.
 
 \chapter{Zdrojová data}
-Jak již bylo zmíněno, veškerá data jsou uložena v databázi Elastisearch. Databáze obsahuje recenze hotelů, které se nacházejí v okolí Dubaje a byla získána univerzitní skupinou NLP z ubytovacích portálů hotels.com, agoda.com, tripadvisor.com a booking.com v letech 2013 - 2017. Jednotlivé záznamy v databázi jsou rozlišené podle pole \texttt{\_id}. Pro vizualizaci odpovědí na otázky je tato forma uložení vhodná, ale pro využití našeptávače na nově vzniklém  webu by bylo vhodnější sdružit záznamy podle názvů hotelů, neboli pole \texttt{HOTEL\_NAME}. Samotná nezaindexovaná data jsou k dispozici v kořenovém adresáři Elasticsearch ve složce script-json/data. Data jsou uložena ve formátu JSON, který je vhodný pro snadné zaindexování do Elasticsearch.
+Jak již bylo zmíněno, veškerá data jsou uložena v databázi Elastisearch. Databáze obsahuje recenze hotelů, které se nacházejí v okolí Dubaje a byla získána univerzitní skupinou NLP z ubytovacích portálů hotels.com, ago\-da.com, tripadvisor.com a booking.com v letech 2013 - 2017. Jednotlivé záznamy v databázi jsou rozlišené podle pole \texttt{\_id}. Pro vizualizaci odpovědí na otázky je tato forma uložení vhodná, ale pro využití našeptávače na nově vzniklém  webu by bylo vhodnější sdružit záznamy podle názvů hotelů, neboli pole \texttt{HOTEL\_NAME}. Samotná nezaindexovaná data jsou k dispozici v kořenovém adresáři Elasticsearch ve složce script-json/data. Data jsou uložena ve formátu JSON, který je vhodný pro snadné zaindexování do Elasticsearch.
 
 
-Databáze Elasticsearch obsahuje dva indexy a to \uv{hospitality} a \uv{new\_in\-dex}. První index využívám k vlastní vizualizaci otázek, tudíž je to hlavní index. Index \uv{new\_index} je pouze pomocným indexem, který využívám jako zdroj dat pro našeptávač, který jsem vytvořil v rámci webových stránek. Zároveň používám druhý index k vizualizaci otázky \nameref{subsub:Návštěvnost}, protože má tento index vhodněji nastavené mapování pro tato pole.
+Databáze Elasticsearch obsahuje dva indexy a to konkrétně \uv{hospitality} a \uv{new\_index}. První index využívám k vlastní vizualizaci otázek, tudíž je to hlavní index. Index \uv{new\_index} je pouze pomocným indexem, který využívám jako zdroj dat pro našeptávač, který jsem vytvořil v rámci webových stránek. Zároveň používám druhý index k vizualizaci otázky \nameref{subsub:Návštěvnost}, protože má tento index vhodněji nastavené mapování pro tato pole.
 
 
 Indexy se od sebe liší pouze obsahem polí \texttt{HOTEL\_NAME\_SUGGEST},  \texttt{HO\-TEL\_NAME\_SUGGEST\_TOKENS} a\texttt{ DATE\_CREATED\_SEASONS}. Ta\-to pole a jejich data nebyla v původní verzi k dispozici, ale vznikla až v průběhu práce, protože byla nezbytná k jejímu zdárnému dokončení. 
@@ -553,11 +553,11 @@ Tabulka \ref{statistiky} obsahuje základní statistické údaje o použitých d
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|l|c|}
-	\hline
+\begin{tabular}{l|c}
+	
 	\textbf{Počet záznamů} & 376 519 \\ \hline
-	\textbf{Počet polí}    & 178     \\ \hline
-	\textbf{Počet indexů}  & 2       \\ \hline
+	\textbf{Počet polí}    & 178     \\ 
+	\textbf{Počet indexů}  & 2       \\ 
 \end{tabular}
 \caption{Statistiky dat}
 \label{statistiky}
@@ -712,14 +712,14 @@ Prvním úkolem je získat odpověď na otázku, které národnosti se vyskytuj�
 
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{|l|l|}
-		\hline
+	\begin{tabular}{l|l}
+		
 		\textbf{Země}        & \textbf{Počet recenzí} \\ \hline
-		United Kingdom       & 50 491                 \\ \hline
-		United Arab Emirates & 41 912                 \\ \hline
-		Saudi Arabia         & 29 147                 \\ \hline
-		United States        & 23 938                 \\ \hline
-		Australia            & 15 052                 \\ \hline
+		United Kingdom       & 50 491                 \\ 
+		United Arab Emirates & 41 912                 \\ 
+		Saudi Arabia         & 29 147                 \\ 
+		United States        & 23 938                 \\ 
+		Australia            & 15 052                 \\ 
 	\end{tabular}
 	\caption{Počet recenzí z jednotlivých zemí}
 	\label{Pocet_zeme}
@@ -771,18 +771,17 @@ Velmi zajímavé je na výsledném grafu sledovat sílu jednotlivých spojení, 
 	\centering
 	\includegraphics[width= 0.8\textwidth]{img/detail_spojeni.eps}
 	\label{fig:DetailSpojeni1}
-	\caption{Detail spojeni}
+	\caption{Detail spojení}
 \end{figure}
 
 
 
- Na první pohled by se mohlo zdát, že do téhož hotelu jezdí zhruba dvojnásobné množství hostů z Velké Británie než hostů z Austrálie, ale ve skutečnosti je poměr větší. Hlavní příčinou je \uv{\textbf{spidering}}, který sice přidá spojení mezi existujícími vrcholy, ale nebere v potaz již existující spojení, které do těchto vrcholů vedou. Další příčinou je samostatný princip rozšíření Graph, který určuje sílu spojení mezi vrcholy ne podle poměru počtu dokumentů, kde se vyskytují oba výrazy ku celkovému počtu dokumentů, ale závisí jen na poměru počtu dokumentů, kde se vyskytují oba výrazy ku počtu dokumentů, kde se vyskytuje alespoň jeden z výrazů. Jedná se tedy vlastně o průnik množiny dokumentů, které obsahují výraz A a množiny dokumentů, které obsahují výraz B. Abychom tedy zjistili reálnou sílu spojení, je nutné kliknout na jednotlivá spojení a získat detailnější informace. Tabulka \ref{sila spojeni} obsahuje detailní informace pro hotel \uv{Atlantis, The Palm} a země \uv{United Kingdom} a \uv{Australia}. 
- 
+ Na první pohled by se mohlo zdát, že do téhož hotelu jezdí zhruba dvojnásobné množství hostů z Velké Británie než hostů z Austrálie, ale ve skutečnosti je poměr větší. Hlavní příčinou je \uv{\textbf{spidering}}, který sice přidá spojení mezi existujícími vrcholy, ale nebere v potaz již existující spojení, které do těchto vrcholů vedou. Další příčinou je samostatný princip rozšíření Graph, který určuje sílu spojení mezi vrcholy ne podle poměru počtu dokumentů, kde se vyskytují oba výrazy ku celkovému počtu dokumentů, ale závisí jen na poměru počtu dokumentů, kde se vyskytují oba výrazy ku počtu dokumentů, kde se vyskytuje alespoň jeden z výrazů. Jedná se tedy vlastně o průnik množiny dokumentů, které obsahují výraz A a množiny dokumentů, které obsahují výraz B. Abychom tedy zjistili reálnou sílu spojení, je nutné kliknout na jednotlivá spojení a získat detailnější informace. Tabulka \ref{sila spojeni} obsahuje detailní informace pro hotel \uv{Atlantis, The Palm} a země \uv{United Kingdom} a \uv{Australia}.
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{l|c c}
 		
-		\textbf{Název země}     & \multicolumn{1}{l|}{\textbf{Počet recenzí země}} & \multicolumn{1}{l|}{\textbf{Průnik množin}} \\ \hline
+		\textbf{Název země}     & \multicolumn{1}{l}{\textbf{Počet recenzí země}} & \multicolumn{1}{l|}{\textbf{Průnik množin}} \\ \hline
 		\textbf{Australia}      & 15 734                                           & 253                                         \\ 
 		\textbf{United Kingdom} & 51 979                                           & 1 454                                       \\ 
 	\end{tabular}
@@ -854,7 +853,7 @@ V první řadě je v nástroji Graph nutné zvolit index, v jehož dokumentech b
 Dále chceme zpřesnit charakteristiku jednotlivých skupin o země, ze kterých nejčastěji návštěvníci jezdí. Ponecháme tedy výraz z původního hledání ve vyhledávacím poli, zneaktivníme zdrojové pole \texttt{USER\_AGE\_GROUP} a přidáme nové zdrojové pole \texttt{USER\_LOCATION\_COUNTRY}, které obsahuje domovské státy recenzentů. U tohoto pole nastavíme, že požadujeme pouze tři výsledné vrcholy reprezentující země. Nyní je nutné rozšířit výsledný graf, což se provede označením vybrané věkové skupiny a stiskem tlačítka \uv{Add links}. Po provedení procesu \uv{spidering} pro všechny skupiny uživatelů, které byly zastoupeny v původní jednoduché vizualizaci, se nová vizualizace skládá celkem ze tři úrovní a to z typu cesty, věkové skupiny a zemí, ze kterých pocházejí recenzenti.
 
 
-Posledním krokem k získání vizualizace, kterou můžete vidět na obrázcích \ref{fig:Business} a \ref{fig:Leisure} je přidání pozitivních výrazů, které recenzenti zanechali. Přidáme pole \texttt{POSITIVE.key\-word}, zneaktivníme i pole \texttt{USER\_LOCATION\_COUN\-TRY} a postupně rozšíříme jednotlivé země o nejčastější hodnoty z pole \texttt{POSITIVE.keyword}. Rozšíření provádíme obdobným způsobem jako při rozšiřování grafu o země uživatelů. Může se stát, že nově vzniklé vrcholy budou u stejných zemí obsahovat duplicitní hodnoty. Tyto vrcholy můžeme následně sloučit pomocí tlačítka \uv{Group}. Pokud je vrchol složen z vícero vrcholů, zobrazí se na výsledné vizualizaci u tohoto vrcholu žlutě vyplněný kruh.
+Posledním krokem k získání vizualizace, kterou můžete vidět na obrázcích \ref{fig:Business} a \ref{fig:Leisure} je přidání pozitivních výrazů, které recenzenti zanechali. Přidáme pole \texttt{POSITIVE.key\-word}, zneaktivníme i pole \texttt{USER\_LOCATION\_COUN\-TRY} a postupně rozšíříme jednotlivé země o nejčastější hodnoty z pole \texttt{POSITIVE.key\-word}. Rozšíření provádíme obdobným způsobem jako při rozšiřování grafu o země uživatelů. Může se stát, že nově vzniklé vrcholy budou u stejných zemí obsahovat duplicitní hodnoty. Tyto vrcholy můžeme následně sloučit pomocí tlačítka \uv{Group}. Pokud je vrchol složen z vícero vrcholů, zobrazí se na výsledné vizualizaci u tohoto vrcholu žlutě vyplněný kruh.
 
 \section{Nástroje Kibana}
 \subsubsection{Jaká je sezóní návštěvnost Dubaje podle států?}
@@ -932,7 +931,7 @@ Odpověď na tuto otázku lze získat z dostupných dat celkem snadno, protože 
 	\caption{Spokojenost s jídlem}
 	\label{fig:Food_sentiment}	
 	\end{minipage}
-	\begin{minipage}{.5\textwidth}
+	\begin{minipage}{.49\textwidth}
 	\centering
 	\includegraphics[ width = .9\linewidth, height = 0.227\textheight]{img/food_positive.eps}
 	\caption{Slovní hodnocení jídla}
@@ -1153,7 +1152,7 @@ Stejně jako u Bootstrap jsem namísto lokálních souborů využil hostované k
 Další použitou technologií je AJAX, která umožňuje asynchronní komunikaci se serverem a pro změnu obsahu stránek tak není nutné jejich kompletní znovunačtení. Tato technologie také zajišťuje interaktivitu webových stránek. Konkrétně jsem využil příkaz \textbf{\$.ajax}, který je dostupný v knihovně jQuery. Tento příkaz slouží k zasílání HTTP požadavku serveru a v případě úspěchu je možné s výsledkem nadále pracovat. Hlavním parametrem je URL adresa serveru, se kterým chceme navázat komunikaci. V mém případě se jedná o soubor query.php, kterému předávám řetězec z uživatelského vstupu. URL tedy bude adresa serveru a následované umístěním souboru query.php. Po úspěšném požadavku zpracuji odpověď serveru a uložím hodnoty reprezentující názvy hotelů do pole, které používám jako zdrojové pole pro našeptávač.
 
 
-Problémem při použití asynchronní komunikace je CORS, neboli Cross-origin resource sharing. Moderní webové prohlížeče očekávají v odpovědi serveru hlavičku s informací o CORS, podle které definují omezení o sdílení zdrojů. Na straně serveru tak může být nastavena podpora sdílení pouze pro určité URL adresy. V mé práci používám jako server, na kterém běží PHP soubor, aplikaci WampServer a pro úspěšnou komunikaci je nutné nejprve povolit v nastavení Apache \texttt{headers\_module} a následně přidat do souboru \texttt{http.conf} přidat řádek: \texttt{Header add Access-Control-Allow-Origin "*"}.
+Problémem při použití asynchronní komunikace je CORS, neboli Cross-origin resource sharing. Moderní webové prohlížeče očekávají v odpovědi serveru hlavičku s informací o CORS, podle které definují omezení o sdílení zdrojů. Na straně serveru tak může být nastavena podpora sdílení pouze pro určité URL adresy. V mé práci používám jako server, na kterém běží PHP soubor, aplikaci WampServer a pro úspěšnou komunikaci je nutné nejprve povolit v nastavení Apache \texttt{headers\_module} a následně přidat do souboru \texttt{http.conf} přidat řádek: \textit{Header add Access-Control-Allow-Origin "*"}.
 
 \subsubsection{PHP}
 PHP je serverový skriptovací jazyk, který umožňuje tvorbu dynamických a interaktivních webových stránek.\cite{PHP} V případě nově vzniklých webových stránek jsem tento jazyk využil pro dotazování se do databáze Elasticsearch, ze které následně získávám data pro našeptávač. PHP jsem zvolil z důvodu snadné implementace komunikace se serverem s běžící databází Elasticseach pomocí příkazů curl. PHP nativně podporuje knihovnu libcurl, která umožňuje připojení a komunikaci se servery.\cite{PHP_libcurl} Důležité je, že lze skrze \textbf{libcurl} zaslat HTTP dotaz typu POST, pomocí kterého je umožněna komunikace s databází Elasticsearch.
@@ -1219,7 +1218,7 @@ Odpověď na otázku \uv{\nameref{subsub:Návštěvnost}} jsem vytvořil kombina
 Odpovědi na otázky \uv{\nameref{subsub:Jídlo}}, \nameref{subsub:Worth of money} a \uv{\nameref{subsub:služby}} jsem podpořil vizualizacemi z nástroje Kibana. Jedná se o jednoduché dashboardy, které vznikly kombinací dvou a více vizualizací. Důležité je, že jsem při tvorbě odpovědí sledoval počet recenzí, ze kterých jsem získal výsledek, aby bylo možné prohlásit odpověď za relevantní. Vizualizace jsou v bakalářské práci ve vektorové podobě díky programu Inkscape. Otázku \uv{\nameref{doprava}} nelze bohužel z dostupných dat zodpovědět.
 
 
-U zbylých otázek jsem vždy hledal vztah mezi hodnotou pole \texttt{SCO\-RE\_TOTAL} a jinými poli skrze  korelaci. Sice se nejedná o vizualizaci odpovědi, ale tento postup byl jediný správný, jelikož jsem hledal globální vztah, který by byl vyjádřený jasnou hodnotou. Z vizualizací by tudíž šlo pouze odhadnout vztah mezi patřičnými poli, ale nebylo by z nich možné vyvodit žádný závěr. Problémem korelace je, že hledá pouze lineární závislosti a proto by bylo vhodné, zaměřit se u otázky \uv{\nameref{subsub:velikost hotelu}} i na nelineární závislosti. Tuto závislost jsem ovšem v práci neřešil a pouze jsem jí zmínil.
+U zbylých otázek jsem vždy hledal vztah mezi hodnotou pole \texttt{SCO\-RE\_TO\-TAL} a jinými poli skrze  korelaci. Sice se nejedná o vizualizaci odpovědi, ale tento postup byl jediný správný, jelikož jsem hledal globální vztah, který by byl vyjádřený jasnou hodnotou. Z vizualizací by tudíž šlo pouze odhadnout vztah mezi patřičnými poli, ale nebylo by z nich možné vyvodit žádný závěr. Problémem korelace je, že hledá pouze lineární závislosti a proto by bylo vhodné, zaměřit se u otázky \uv{\nameref{subsub:velikost hotelu}} i na nelineární závislosti. Tuto závislost jsem ovšem v práci neřešil a pouze jsem jí zmínil.
 
 \section{Implementovaný web}
 Posledním dosaženým výsledkem jsou interaktivní webové stránky, které zobrazují vizualizace z nástroje Kibana. Web umožňuje běžným uživatelům porovnávat dva hotely na dostupných vizualizacích. Dostupné vizualizace je může ovlivnit pouze provozovatel stránek tím, že vloží patřičný odkaz přímo do zdrojového kódu stránek. Toto řešení není elegantní, ale jiný postup jsem nevymyslel. Pokročilejší uživatelé mohou ovlivnit zobrazené vizualizace i zadáním dotazu, který ovšem musí být v souladu s Query DSL syntaxí.

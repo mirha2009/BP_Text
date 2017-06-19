@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  19 JUN 2017 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  19 JUN 2017 13:42
 entering extended mode
 **"./havlicek (1).tex"
 ("havlicek (1).tex"
@@ -1625,26 +1625,8 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 463.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [24]
-[25] [26] [27]
-Overfull \hbox (1.47527pt too wide) in paragraph at lines 528--529
-\T1/lmr/m/n/12 Toto lze pro-vést p°i-dá-ním klau-zule expand do do-tazu pro E
-lasticsearch.[[]] 
- []
-
-[28] [29]
+[25] [26] [27] [28] [29]
 Kapitola 4.
-
-Overfull \hbox (1.8957pt too wide) in paragraph at lines 536--537
-\T1/lmr/m/n/12 kána uni-ver-zitní sku-pi-nou NLP z uby-to-va-cích por-tál· ho-t
-els.com, agoda.com,
- []
-
-
-Overfull \hbox (3.9824pt too wide) in paragraph at lines 539--540
-[]\T1/lmr/m/n/12 Databáze Elas-tic-search ob-sa-huje dva in-dexy a to hospital
-ity a new_in-
- []
-
 [30
 
 ] [31] [32] [33] [34]
@@ -1725,7 +1707,7 @@ s-converted-to.pdf>
 (epstopdf)                    size: 416047 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/Business_trip_customers
 _proportions-eps-converted-to.pdf img/Business_trip_customers_proportions.eps>
-(epstopdf)             \includegraphics on input line 809.
+(epstopdf)             \includegraphics on input line 808.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/Business_trip_customers_proportions-eps-converted-to.pdf, id=728, 825.0825
@@ -1735,7 +1717,7 @@ File: img/Business_trip_customers_proportions-eps-converted-to.pdf Graphic file
 
 <use img/Business_trip_customers_proportions-eps-converted-to.pdf>
 Package pdftex.def Info: img/Business_trip_customers_proportions-eps-converted-
-to.pdf used on input line 809.
+to.pdf used on input line 808.
 (pdftex.def)             Requested size: 386.95749pt x 323.40642pt.
  [41]
 [42 <./img/Business_trip_customers_proportions-eps-converted-to.pdf>]
@@ -1750,7 +1732,7 @@ Package epstopdf Info: Source file: <img/Leisure_trip_customers_proportions_cut
 (epstopdf)             Command: <epstopdf --outfile=img/Leisure_trip_customers_
 proportions_cut-eps-converted-to.pdf img/Leisure_trip_customers_proportions_cut
 .eps>
-(epstopdf)             \includegraphics on input line 832.
+(epstopdf)             \includegraphics on input line 831.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf, id=745, 716.6
@@ -1760,15 +1742,10 @@ ile (type pdf)
 
 <use img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf>
 Package pdftex.def Info: img/Leisure_trip_customers_proportions_cut-eps-convert
-ed-to.pdf used on input line 832.
+ed-to.pdf used on input line 831.
 (pdftex.def)             Requested size: 386.95749pt x 352.8231pt.
  [43]
 [44 <./img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf>]
-Overfull \hbox (21.1931pt too wide) in paragraph at lines 857--858
-\T1/lmr/m/n/12 stupn¥ roz-²í-°íme jed-not-livé zem¥ o nej-£as-t¥j²í hod-noty z 
-pole \T1/lmtt/m/n/12 POSITIVE.keyword\T1/lmr/m/n/12 .
- []
-
 [45] [46]
 Package epstopdf Info: Source file: <img/rocni_donut.eps>
 (epstopdf)                    date: 2017-06-12 16:34:26
@@ -1778,7 +1755,7 @@ Package epstopdf Info: Source file: <img/rocni_donut.eps>
 (epstopdf)                    size: 18093 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/rocni_donut-eps-convert
 ed-to.pdf img/rocni_donut.eps>
-(epstopdf)             \includegraphics on input line 879.
+(epstopdf)             \includegraphics on input line 878.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/rocni_donut-eps-converted-to.pdf, id=778, 238.8925pt x 262.9825pt>
@@ -1786,7 +1763,7 @@ File: img/rocni_donut-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/rocni_donut-eps-converted-to.pdf>
 Package pdftex.def Info: img/rocni_donut-eps-converted-to.pdf used on input lin
-e 879.
+e 878.
 (pdftex.def)             Requested size: 142.26378pt x 156.60693pt.
  [47 <./img/rocni_donut-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/graf_sezona.eps>
@@ -1797,7 +1774,7 @@ Package epstopdf Info: Source file: <img/graf_sezona.eps>
 (epstopdf)                    size: 15962 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/graf_sezona-eps-convert
 ed-to.pdf img/graf_sezona.eps>
-(epstopdf)             \includegraphics on input line 912.
+(epstopdf)             \includegraphics on input line 911.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/graf_sezona-eps-converted-to.pdf, id=797, 455.7025pt x 248.93pt>
@@ -1805,7 +1782,7 @@ File: img/graf_sezona-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/graf_sezona-eps-converted-to.pdf>
 Package pdftex.def Info: img/graf_sezona-eps-converted-to.pdf used on input lin
-e 912.
+e 911.
 (pdftex.def)             Requested size: 386.95749pt x 211.38258pt.
  [48 <./img/graf_sezona-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/food.eps>
@@ -1816,13 +1793,13 @@ Package epstopdf Info: Source file: <img/food.eps>
 (epstopdf)                    size: 34184 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/food-eps-converted-to.p
 df img/food.eps>
-(epstopdf)             \includegraphics on input line 931.
+(epstopdf)             \includegraphics on input line 930.
 Package epstopdf Info: Output file is already uptodate.
  <img/food-eps-converted-to.pdf, id=811, 486.81876pt x 411.5375pt>
 File: img/food-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food-eps-converted-to.pdf>
-Package pdftex.def Info: img/food-eps-converted-to.pdf used on input line 931.
+Package pdftex.def Info: img/food-eps-converted-to.pdf used on input line 930.
 (pdftex.def)             Requested size: 174.12968pt x 147.1989pt.
 Package epstopdf Info: Source file: <img/food_positive.eps>
 (epstopdf)                    date: 2017-06-12 10:45:59
@@ -1832,7 +1809,7 @@ Package epstopdf Info: Source file: <img/food_positive.eps>
 (epstopdf)                    size: 41259 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/food_positive-eps-conve
 rted-to.pdf img/food_positive.eps>
-(epstopdf)             \includegraphics on input line 937.
+(epstopdf)             \includegraphics on input line 936.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/food_positive-eps-converted-to.pdf, id=812, 363.3575pt x 236.885pt>
@@ -1840,15 +1817,10 @@ File: img/food_positive-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food_positive-eps-converted-to.pdf>
 Package pdftex.def Info: img/food_positive-eps-converted-to.pdf used on input l
-ine 937.
-(pdftex.def)             Requested size: 174.13239pt x 144.68398pt.
-
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 929--941
-[]$[]$ $[]$ 
- []
-
-[49 <./img/food-eps-converted-to.pdf> <./img/food_positive-eps-converted-to.pdf
->]
+ine 936.
+(pdftex.def)             Requested size: 170.65051pt x 144.68398pt.
+ [49 <./img/food-eps-converted-to.pdf> <./img/food_positive-eps-converted-to.pd
+f>]
 Package epstopdf Info: Source file: <img/worth_money.eps>
 (epstopdf)                    date: 2017-06-16 16:24:18
 (epstopdf)                    size: 87642 bytes
@@ -1857,14 +1829,15 @@ Package epstopdf Info: Source file: <img/worth_money.eps>
 (epstopdf)                    size: 82899 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/worth_money-eps-convert
 ed-to.pdf img/worth_money.eps>
-(epstopdf)             \includegraphics on input line 952.
+(epstopdf)             \includegraphics on input line 951.
 Package epstopdf Info: Output file is already uptodate.
- <img/worth_money-eps-converted-to.pdf, id=843, 423.5825pt x 271.0125pt>
+
+<img/worth_money-eps-converted-to.pdf, id=843, 423.5825pt x 271.0125pt>
 File: img/worth_money-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/worth_money-eps-converted-to.pdf>
 Package pdftex.def Info: img/worth_money-eps-converted-to.pdf used on input lin
-e 952.
+e 951.
 (pdftex.def)             Requested size: 386.95749pt x 247.58942pt.
  [50 <./img/worth_money-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/sluzby.eps>
@@ -1875,13 +1848,13 @@ Package epstopdf Info: Source file: <img/sluzby.eps>
 (epstopdf)                    size: 29129 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/sluzby-eps-converted-to
 .pdf img/sluzby.eps>
-(epstopdf)             \includegraphics on input line 966.
+(epstopdf)             \includegraphics on input line 965.
 Package epstopdf Info: Output file is already uptodate.
  <img/sluzby-eps-converted-to.pdf, id=853, 381.425pt x 238.8925pt>
 File: img/sluzby-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/sluzby-eps-converted-to.pdf>
-Package pdftex.def Info: img/sluzby-eps-converted-to.pdf used on input line 966
+Package pdftex.def Info: img/sluzby-eps-converted-to.pdf used on input line 965
 .
 (pdftex.def)             Requested size: 284.52756pt x 178.21024pt.
  [51 <./img/sluzby-eps-converted-to.pdf>]
@@ -1893,14 +1866,14 @@ Package epstopdf Info: Source file: <img/wifi.eps>
 (epstopdf)                    size: 30537 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/wifi-eps-converted-to.p
 df img/wifi.eps>
-(epstopdf)             \includegraphics on input line 976.
+(epstopdf)             \includegraphics on input line 975.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/wifi-eps-converted-to.pdf, id=866, 318.18875pt x 163.61125pt>
 File: img/wifi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/wifi-eps-converted-to.pdf>
-Package pdftex.def Info: img/wifi-eps-converted-to.pdf used on input line 976.
+Package pdftex.def Info: img/wifi-eps-converted-to.pdf used on input line 975.
 (pdftex.def)             Requested size: 284.52756pt x 146.30258pt.
  [52 <./img/wifi-eps-converted-to.pdf>]
 [53] [54] [55]
@@ -1912,14 +1885,14 @@ Package epstopdf Info: Source file: <img/METRO.eps>
 (epstopdf)                    size: 43317 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/METRO-eps-converted-to.
 pdf img/METRO.eps>
-(epstopdf)             \includegraphics on input line 1102.
+(epstopdf)             \includegraphics on input line 1101.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/METRO-eps-converted-to.pdf, id=918, 469.755pt x 191.71625pt>
 File: img/METRO-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/METRO-eps-converted-to.pdf>
-Package pdftex.def Info: img/METRO-eps-converted-to.pdf used on input line 1102
+Package pdftex.def Info: img/METRO-eps-converted-to.pdf used on input line 1101
 .
 (pdftex.def)             Requested size: 386.95749pt x 157.92505pt.
  [56 <./img/METRO-eps-converted-to.pdf>]
@@ -1929,16 +1902,10 @@ Kapitola 6.
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1125.
+(Font)              <10> on input line 1124.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1125.
- [59] [60]
-Overfull \hbox (2.06218pt too wide) in paragraph at lines 1156--1157
-\T1/lmtt/m/n/12 http.conf \T1/lmr/m/n/12 p°i-dat °á-dek: \T1/lmtt/m/n/12 Header
- add Access-Control-Allow-Origin "*"\T1/lmr/m/n/12 . 
- []
-
-[61] [62]
+(Font)              <7> on input line 1124.
+ [59] [60] [61] [62]
 Package epstopdf Info: Source file: <img/completer.eps>
 (epstopdf)                    date: 2017-06-12 12:20:41
 (epstopdf)                    size: 20322 bytes
@@ -1947,26 +1914,21 @@ Package epstopdf Info: Source file: <img/completer.eps>
 (epstopdf)                    size: 7461 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/completer-eps-converted
 -to.pdf img/completer.eps>
-(epstopdf)             \includegraphics on input line 1175.
+(epstopdf)             \includegraphics on input line 1174.
 Package epstopdf Info: Output file is already uptodate.
- <img/completer-eps-converted-to.pdf, id=984, 457.71pt x 187.70125pt>
+
+<img/completer-eps-converted-to.pdf, id=984, 457.71pt x 187.70125pt>
 File: img/completer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/completer-eps-converted-to.pdf>
 Package pdftex.def Info: img/completer-eps-converted-to.pdf used on input line 
-1175.
+1174.
 (pdftex.def)             Requested size: 309.56717pt x 126.9535pt.
  [63 <./img/completer-eps-converted-to.pdf>] [64]
 Kapitola 7.
 [65
 
-]
-Overfull \hbox (4.8052pt too wide) in paragraph at lines 1222--1223
-[]\T1/lmr/m/n/12 U zby-lých otá-zek jsem vºdy hle-dal vztah mezi hod-no-tou pol
-e \T1/lmtt/m/n/12 SCO-RE_TOTAL
- []
-
-[66] [67]
+] [66] [67]
 Kapitola 8.
 [68
 
@@ -1980,15 +1942,15 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [71
 
 ] [72] [73]) [74]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1273.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1273.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1272.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1272.
  ("havlicek (1).aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1273.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1273.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1272.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1272.
 
 Package rerunfilecheck Info: File `"havlicek (1)".out' has not changed.
 (rerunfilecheck)             Checksum: F34F1CB833BED3EFDA58B4E729C04DFC;7838.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1273.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1272.
  ) 
 Here is how much of TeX's memory you used:
  33412 strings out of 494874
@@ -2013,9 +1975,9 @@ iles/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "havlicek (1).pdf" (74 pages, 2591129 bytes).
+Output written on "havlicek (1).pdf" (74 pages, 2591242 bytes).
 PDF statistics:
- 1274 PDF objects out of 1440 (max. 8388607)
+ 1279 PDF objects out of 1440 (max. 8388607)
  382 named destinations out of 1000 (max. 500000)
  543 words of extra memory for PDF output out of 10000 (max. 10000000)
 
