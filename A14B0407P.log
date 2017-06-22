@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  19 JUN 2017 13:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  22 JUN 2017 13:16
 entering extended mode
-**"./havlicek (1).tex"
-("havlicek (1).tex"
+**./A14B0407P.tex
+(A14B0407P.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 13 language(s) loaded.
 (thesiskiv.cls
@@ -1337,8 +1337,8 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip63
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count191
-) ("havlicek (1).aux")
-\openout1 = `"havlicek (1).aux"'.
+) (A14B0407P.aux)
+\openout1 = `A14B0407P.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
 LaTeX Font Info:    ... okay on input line 173.
@@ -1357,7 +1357,8 @@ LaTeX Font Info:    ... okay on input line 173.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 173.
 LaTeX Font Info:    ... okay on input line 173.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 173.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -1514,9 +1515,9 @@ LaTeX Info: Redefining \ref on input line 173.
 LaTeX Info: Redefining \pageref on input line 173.
 LaTeX Info: Redefining \nameref on input line 173.
 
-("havlicek (1).out") ("havlicek (1).out")
+(A14B0407P.out) (A14B0407P.out)
 \@outlinefile=\write4
-\openout4 = `"havlicek (1).out"'.
+\openout4 = `A14B0407P.out'.
 
 \c__siunitx_mathsf_int=\count266
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 173.
@@ -1600,12 +1601,12 @@ Package pdftex.def Info: zadanipdf.pdf, page1 used on input line 176.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [2 <./zadanipdf.pdf>] [3
 
-] [4] ("havlicek (1).toc"
+] [4] (A14B0407P.toc
 [5
 
 ])
 \tf@toc=\write5
-\openout5 = `"havlicek (1).toc"'.
+\openout5 = `A14B0407P.toc'.
 
  [6]
 Kapitola 1.
@@ -1936,7 +1937,7 @@ Kapitola 8.
 Kapitola 9.
 [69
 
-] ("havlicek (1).bbl" [70]
+] (A14B0407P.bbl [70]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 12.
  [71
@@ -1944,22 +1945,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] [72] [73]) [74]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1272.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1272.
- ("havlicek (1).aux")
+ (A14B0407P.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1272.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1272.
 
-Package rerunfilecheck Info: File `"havlicek (1)".out' has not changed.
+Package rerunfilecheck Info: File `A14B0407P.out' has not changed.
 (rerunfilecheck)             Checksum: F34F1CB833BED3EFDA58B4E729C04DFC;7838.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1272.
  ) 
 Here is how much of TeX's memory you used:
  33412 strings out of 494874
- 622615 string characters out of 3174258
- 644054 words of memory out of 3000000
+ 622557 string characters out of 3174258
+ 644049 words of memory out of 3000000
  35973 multiletter control sequences out of 15000+200000
  118902 words of font info for 76 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 55i,18n,54p,10367b,2201s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,18n,54p,10362b,2201s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
@@ -1975,7 +1976,7 @@ iles/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "havlicek (1).pdf" (74 pages, 2591412 bytes).
+Output written on A14B0407P.pdf (74 pages, 2591412 bytes).
 PDF statistics:
  1280 PDF objects out of 1440 (max. 8388607)
  382 named destinations out of 1000 (max. 500000)
