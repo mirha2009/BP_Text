@@ -350,7 +350,7 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
 	\centering
 	
 	\begin{tabular}{l|c c c c c c c c}
-		
+		\hline
 		\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Kritérium/\\Produkt\end{tabular}} & 
 		\begin{tabular}[c]{@{}c@{}}{\rotatebox[origin=c]{90}{ InetSoft Style }}\end{tabular} & 
 		\begin{tabular}[c]{@{}c@{}}\rotatebox[origin=c]{90}{ Splunk Enterprise }\end{tabular} & 
@@ -375,7 +375,7 @@ Splunk je zaměřen především na zpracování big dat, ale je možné ho při
 		\begin{tabular}[c]{@{}l@{}}SW  na zpracování  dat\end{tabular}                & +                                                        & +                                                           & +                                                     & +                                                         & +                                                        & --                                                        & +       & +      \\ 
 		Cena                                                                               & \begin{tabular}[c]{@{}c@{}}2800\$ \\
 			\textbf{**}\end{tabular}                                                  & \begin{tabular}[c]{@{}c@{}}4140\$ \\
-			\textbf{*}\end{tabular}                                                     & F                                                  & \begin{tabular}[c]{@{}c@{}}\tikz\draw[red,fill=red] (0,0) circle (.5ex);\end{tabular} & F                                                     & F                                                     & X     & F   \\ 
+			\textbf{*}\end{tabular}                                                     & F                                                  & \begin{tabular}[c]{@{}c@{}}\tikz\draw[red,fill=red] (0,0) circle (.5ex);\end{tabular} & F                                                     & F                                                     & X     & F   \\ \hline
 	\end{tabular}
 	\caption{Srovnání produktů}
 	\raggedright{
@@ -554,10 +554,10 @@ Tabulka \ref{statistiky} obsahuje základní statistické údaje o použitých d
 \begin{table}[h]
 \centering
 \begin{tabular}{l|c}
-	
+	\hline 
 	\textbf{Počet záznamů} & 376 519 \\ \hline
 	\textbf{Počet polí}    & 178     \\ 
-	\textbf{Počet indexů}  & 2       \\ 
+	\textbf{Počet indexů}  & 2       \\ \hline
 \end{tabular}
 \caption{Statistiky dat}
 \label{statistiky}
@@ -713,13 +713,13 @@ Prvním úkolem je získat odpověď na otázku, které národnosti se vyskytuj�
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{l|l}
-		
+		\hline
 		\textbf{Země}        & \textbf{Počet recenzí} \\ \hline
 		United Kingdom       & 50 491                 \\ 
 		United Arab Emirates & 41 912                 \\ 
 		Saudi Arabia         & 29 147                 \\ 
 		United States        & 23 938                 \\ 
-		Australia            & 15 052                 \\ 
+		Australia            & 15 052                 \\ \hline
 	\end{tabular}
 	\caption{Počet recenzí z jednotlivých zemí}
 	\label{Pocet_zeme}
@@ -741,7 +741,7 @@ Z grafu lze vyčíst, že anglofonní země jakou jsou Velká Británie, Spojen�
 	\centering
 	
 	\begin{tabular}{c|c}
-		
+		\hline
 		\multicolumn{1}{l|}{\textbf{Roční období}} & \multicolumn{1}{l}{\textbf{Počet nových recenzí}} \\ \hline
 		Other                                        &  3340                                              \\ 
 		Couple                                        &  2111                                            \\ 
@@ -749,7 +749,7 @@ Z grafu lze vyčíst, že anglofonní země jakou jsou Velká Británie, Spojen�
 		Leisure trip                                      &  945                                              \\ 
 		Business trip                                      &  684                                              \\ 
 		Goup                                      &  409                                              \\ 
-		Leisure trip                                      &  191                                              \\ 
+		Leisure trip                                      &  191                                              \\ \hline
 	\end{tabular}
 \caption{Tabulka s druhy cest}	\label{tab:rozlozeniAustralanu}
 \end{table}
@@ -780,10 +780,10 @@ Velmi zajímavé je na výsledném grafu sledovat sílu jednotlivých spojení, 
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{l|c c}
-		
+		\hline
 		\textbf{Název země}     & \multicolumn{1}{l}{\textbf{Počet recenzí země}} & \multicolumn{1}{l|}{\textbf{Průnik množin}} \\ \hline
 		\textbf{Australia}      & 15 734                                           & 253                                         \\ 
-		\textbf{United Kingdom} & 51 979                                           & 1 454                                       \\ 
+		\textbf{United Kingdom} & 51 979                                           & 1 454                                       \\ \hline
 	\end{tabular}
 	\caption{Porovnání síly spojení}
 	\label{sila spojeni}
@@ -886,11 +886,12 @@ V následující tabulce je vidět počet přidaných recenzí pro jednotlivá r
 	\centering
 	
 	\begin{tabular}{c|c}
+		\hline
 		\multicolumn{1}{l|}{\textbf{Roční období}} & \multicolumn{1}{l}{\textbf{Počet nových recenzí}} \\ \hline
 		ZIMA                                        & 87 493                                              \\ 
 		JARO                                        & 100 602                                             \\ 
 		LÉTO                                        & 91 817                                              \\ 
-		PODZIM                                      & 89 512                                              \\ 
+		PODZIM                                      & 89 512                                              \\ \hline
 	\end{tabular}
 \caption{Počet přidaných recenzí za roční období}
 \label{Recenze celkem}
@@ -1005,10 +1006,10 @@ Jelikož otázka žádá odpověď na vztah mezi celkovým hodnocením hotelů a
 	\centering
 	
 	\begin{tabular}{c|c c}
-		
+		\hline
 		\multicolumn{1}{l|}{\textbf{Název pole}} & \multicolumn{1}{l}{\textbf{F1}} & \multicolumn{1}{l}{\textbf{F2}} \\ \hline
 		\textbf{F1} & 1 & 0,8524 \\ 
-		\textbf{F2} & 0,8524 & 1 \\ 
+		\textbf{F2} & 0,8524 & 1 \\ \hline
 	\end{tabular}
 \caption{Výsledné hodnoty korelace}
 \label{my-label}
@@ -1025,11 +1026,11 @@ Odpověď opět nelze získat pouhou vizualizací z dostupných dat, protože by
 	\centering
 
 	\begin{tabular}{c|c c c}
-		
+		\hline
 		\textbf{Název pole} & \textbf{F1} & \textbf{F2} & \textbf{F3} \\ \hline
 		\textbf{F1}     & 1               & 0,8524          & -0,0331         \\ 
 		\textbf{F2}     & 0,0228          & 1               & -0,0636         \\ 
-		\textbf{F3}     & -0,0331         & -0,0636         & 1               \\ 
+		\textbf{F3}     & -0,0331         & -0,0636         & 1               \\ \hline
 	\end{tabular}
 	\caption{Vliv velikosti na celkový dojem z hotelu}
 \label{hotel_korelace}
@@ -1049,7 +1050,7 @@ Kritéria jsem volil tak, aby byla zastoupena alespoň v 25\% dostupných recenz
 	\centering
 
 	\begin{tabular}{l| c c c}
-		
+		\hline
 		\multicolumn{1}{c|}{\textbf{Název pole}}                                                & \textbf{\begin{tabular}[c]{@{}c@{}}Recenze s\\ vyplněným\\  údajem\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Podíl na\\  celkových\\ recenzích\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Průměr-\\né skóre\end{tabular}} \\ \hline
 		\texttt{SCORE\_TOTAL}                                                                     & 273 559                                                                                   & 72,65\%                                                                               & 7,32              \\ 
 		\texttt{SCORE\_LOCATION}                                                                 & 185 931                                                                                   & 49,38\%                                                                               & 8,08              \\ 
@@ -1058,7 +1059,7 @@ Kritéria jsem volil tak, aby byla zastoupena alespoň v 25\% dostupných recenz
 		\texttt{\begin{tabular}[c]{@{}l@{}}SCORE\_ROOM\_COMFORT-\\/STANDARD\end{tabular}}       & 196 185                                                                                   & 52,10\%                                                                               & 7,86              \\ 
 		\texttt{SCORE\_FACILITIES}                                                               & 181 120                                                                                   & 48,10\%                                                                               & 7,49              \\ 
 		\texttt{\begin{tabular}[c]{@{}l@{}}SCORE\_LUE\_FOR\_MONEY\end{tabular}}            & 168 220                                                                                   & 44,67\%                                                                               & 7,45              \\ 
-		\texttt{SCORE\_FREE\_WIFI}                                                               & 103 804                                                                                   & 27,56\%                                                                               & 7,42              \\ 
+		\texttt{SCORE\_FREE\_WIFI}                                                               & 103 804                                                                                   & 27,56\%                                                                               & 7,42              \\ \hline
 	\end{tabular}
 	\caption{Korelace kritérií}
 \label{Korelace_kritéria}
@@ -1070,7 +1071,7 @@ V tabulce \ref{Korelace_výsledky} jsou výsledky postupné korelace a ne hromad
 	\centering
 
 	\begin{tabular}{l|c}
-		
+		\hline
 		\multicolumn{1}{c|}{\textbf{Název pole}}    & \textbf{Korelace} \\ 
 		\hline
 		\texttt{SCORE\_SERVICE\_STAFF}               & 0,8022            \\ 
@@ -1079,7 +1080,7 @@ V tabulce \ref{Korelace_výsledky} jsou výsledky postupné korelace a ne hromad
 		\texttt{SCORE\_ROOM\_COMFORT/STANDARD}       & 0,7187            \\ 
 		\texttt{SCORE\_FACILITIES}                   & 0,6001            \\ 
 		\texttt{SCORE\_HOTEL\_CONDITION/CLEANLINESS} & 0,8524            \\ 
-		\texttt{SCORE\_FREE\_WIFI}                   & 0,5977            \\ 
+		\texttt{SCORE\_FREE\_WIFI}                   & 0,5977            \\ \hline
 	\end{tabular}
 	\caption{Výsledky korelace}
 \label{Korelace_výsledky}
