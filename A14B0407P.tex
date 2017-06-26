@@ -145,36 +145,21 @@
 \definecolor{delim}{RGB}{20,105,176}
 \colorlet{numb}{magenta!60!black}
 
-%\lstdefinelanguage{json}{
-%	basicstyle=\normalfont\ttfamily,
-%	numbers=left,
-%	numberstyle=\scriptsize,
-%	stepnumber=1,
-%	numbersep=8pt,
-%	showstringspaces=false,
-%	breaklines=true,
-%	frame=lines,
-%	backgroundcolor=\color{background},
-%	literate=
-%	*{0}{{{\color{numb}0}}}{1}
-%	{1}{{{\color{numb}1}}}{1}
-%	{2}{{{\color{numb}2}}}{1}
-%	{3}{{{\color{numb}3}}}{1}
-%	{4}{{{\color{numb}4}}}{1}
-%	{5}{{{\color{numb}5}}}{1}
-%	{6}{{{\color{numb}6}}}{1}
-%	{7}{{{\color{numb}7}}}{1}
-%	{8}{{{\color{numb}8}}}{1}
-%	{9}{{{\color{numb}9}}}{1}
-%	{:}{{{\color{punct}{:}}}}{1}
-%	{,}{{{\color{punct}{,}}}}{1}
-%	{\{}{{{\color{delim}{\{}}}}{1}
-%	{\}}{{{\color{delim}{\}}}}}{1}
-%	{[}{{{\color{delim}{[}}}}{1}
-%	{BB}{{{\color{numb}{BB}}}}{1}
-%	{"}{{{\color{delim}{"}}}}{1}
-%	{]}{{{\color{delim}{]}}}}{1},
-%}
+\lstdefinelanguage{json}{
+	basicstyle=\normalfont\ttfamily,
+	numbers=left,
+	numberstyle=\scriptsize,
+	stepnumber=1,
+	numbersep=8pt,
+	showstringspaces=false,
+	breaklines=true,
+	frame=lines,
+	backgroundcolor=\color{background},
+		string=[s]{"}{"},
+	stringstyle=\color{blue},
+	comment=[l]{:},
+	commentstyle=\color{black},
+}
 
 
 
@@ -521,9 +506,9 @@ Ekvivalentem tohoto zápisu jsou dotazy typu match query. Například dotaz \tex
 
 	\begin{lstlisting}
 	{"bool":{
-	 "must":	{"match":"fox"},
-	 "should":	{"match":"quick brown"},
-	 "must_not":	{"match":"news"}
+	  "must":	{"match":"fox"},
+	  "should":	{"match":"quick brown"},
+	  "must_not":	{"match":"news"}
 	 }}
 	\end{lstlisting}
 	
@@ -599,21 +584,21 @@ Tabulka \ref{statistiky} obsahuje základní statistické údaje o použitých d
 \section{Obsah recenzí}
 Ná následujícím příkladě se lze detailně seznámit s obsahem jednotlivých polí, které recenze uložené v databázi Elasticsearch obsahují. Jedná se o příklad běžné recenze, která nemá vyplněna všechna pole.
 
-\lstset{
-	string=[s]{"}{"},
-	stringstyle=\color{blue},
-	comment=[l]{:},
-	commentstyle=\color{black},
-	numbers=left,
-	stepnumber=1,    
-	firstnumber=1,
-	numberfirstline=true
-}
+%\lstset{
+%	string=[s]{"}{"},
+%	stringstyle=\color{blue},
+%	comment=[l]{:},
+%	commentstyle=\color{black},
+%	numbers=left,
+%	stepnumber=1,    
+%	firstnumber=1,
+%	numberfirstline=true
+%}
 
 
-\begin{lstlisting}[caption=Příkald recenze]
+\begin{lstlisting}[caption=Příkald recenze, language=json]
 {"_index": "new_index", "_type": "tripadvisor",
-"_id": "http://www.tripadvisor.com/ShowUserRevie...",
+"_id": "http://www.tripadvisor.com/ShowUserR...",
 "_score": null, "_source": {
   "SENTIMENT_SERVICE": 1,
   "HOTEL_STARS": 0,
@@ -630,11 +615,7 @@ Ná následujícím příkladě se lze detailně seznámit s obsahem jednotlivý
   "COUNTRY": "United Arab EmiratesUnited Arab...",
   "LANG_NAME": "English",
   "USER_CITY_REVIEWS": 0,
-  "RESPONSE_TEXT": "Dear Guest, Thank you for taking
-  the time to review your stay with us. I am very
-  pleased to hear that our staff made your stay
-  pleasant. Looking forward to seeing you again soon.
-  Sincerely, Balan ParavantavidaHotel Manager"",
+  "RESPONSE_TEXT": "Dear Guest, Thank you for taking the time to review your stay with us. I am very pleased to hear that our staff made your stay pleasant. Looking forward to seeing you again soon. Sincerely, Balan ParavantavidaHotel Manager",
   "SCORE_TOTAL": 8.75,
   "DATE_CREATEDSTR": "December 7, 2016",
   "LOCATION1": "United Arab Emirates",
@@ -648,13 +629,7 @@ Ná následujícím příkladě se lze detailně seznámit s obsahem jednotlivý
   "USER_HELPFUL": 0,
   "ADDRESS": "Sheikh Zayed Road | Business Bay,
    Dubai 121000, United Arab Emirates"",
-  "REVIEW": "An absolutely pleasant stay at the
-   JW Marriott Marquis Hotel in Dubai. The guest
-   reception staff is very professional and 
-   helpful. I would like to thank Mahesh for his
-   assistance. The rooms are perfectly clean and
-   the executive lounge is unique for the frequent
-   travellers. A world class hotel."",   
+  "REVIEW": "An absolutely pleasant stay at the JW Marriott Marquis Hotel in Dubai. The guest reception staff is very professional and helpful. I would like to thank Mahesh for his assistance. The rooms are perfectly clean and the executive lounge is unique for the frequent travellers. A world class hotel.",   
   "LANG_CODE": "en",
   "DATE_CREATED": "2016-12-07T00:00:00.000Z",
   "USER_UPDATED_DATESTR": "08 Dec 2016 18:17",
@@ -663,8 +638,7 @@ Ná následujícím příkladě se lze detailně seznámit s obsahem jednotlivý
   "FETCH_DATE": "2016-12-08T18:17:53.000Z",
   "REFERENCE": "http://www.tripadvisor.com/Show...",
   "STAYED": "2016-11-01T00:00:00.000Z",
-  "EXT_ADDRESS": "Business BayBusiness BayBusi-
-  ness Bay"",
+  "EXT_ADDRESS": "Business BayBusiness BayBusiness Bay",
   "USER_LOCATION_COUNTRY": "Switzerland",
   "NUMBER_OF_ROOMS": 1608,
   "FETCH_DATESTR": "08 Dec 2016 18:17",
@@ -677,14 +651,11 @@ Ná následujícím příkladě se lze detailně seznámit s obsahem jednotlivý
   "SCORE_COUNT": 4664,
   "RESPONSE_DATESTR": "December 7, 2016",
   "HAS_RESPONSE": true,
-  "SENTIMENT_TEXT_STAFF": ["guest rece-
-  ption staff is very professional and helpful.""],
+  "SENTIMENT_TEXT_STAFF": ["guest reception staff is very professional and helpful."],
   "SENTIMENT_TEXT_HOTEL": ["world class hotel."],
   "DATE_CREATED_SEASONS:"2000-12-07T00:00:00.000Z",
-  "HOTEL_NAME_SUGGEST": "JW Marriott Marquis Hotel
-  Dubai"",
-  "HOTEL_NAME_SUGGEST_TOKENS":["JW","Marriott", "Mar-
-  quis","Hotel","Dubai""],
+  "HOTEL_NAME_SUGGEST": "JW Marriott Marquis Hotel Dubai",
+  "HOTEL_NAME_SUGGEST_TOKENS":["JW","Marriott","Marquis","Hotel","Dubai"],
   "DATE_CREATEDSTR_SEASONS_SDF": "December 7"},}
 	\end{lstlisting}
 	
