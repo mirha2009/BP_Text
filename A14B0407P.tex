@@ -137,11 +137,44 @@
 \usepackage{pdfpages}
 \usepackage{epsfig}
 \usepackage{epstopdf}
+\usepackage{xcolor}
 
 
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
 
-
-
+%\lstdefinelanguage{json}{
+%	basicstyle=\normalfont\ttfamily,
+%	numbers=left,
+%	numberstyle=\scriptsize,
+%	stepnumber=1,
+%	numbersep=8pt,
+%	showstringspaces=false,
+%	breaklines=true,
+%	frame=lines,
+%	backgroundcolor=\color{background},
+%	literate=
+%	*{0}{{{\color{numb}0}}}{1}
+%	{1}{{{\color{numb}1}}}{1}
+%	{2}{{{\color{numb}2}}}{1}
+%	{3}{{{\color{numb}3}}}{1}
+%	{4}{{{\color{numb}4}}}{1}
+%	{5}{{{\color{numb}5}}}{1}
+%	{6}{{{\color{numb}6}}}{1}
+%	{7}{{{\color{numb}7}}}{1}
+%	{8}{{{\color{numb}8}}}{1}
+%	{9}{{{\color{numb}9}}}{1}
+%	{:}{{{\color{punct}{:}}}}{1}
+%	{,}{{{\color{punct}{,}}}}{1}
+%	{\{}{{{\color{delim}{\{}}}}{1}
+%	{\}}{{{\color{delim}{\}}}}}{1}
+%	{[}{{{\color{delim}{[}}}}{1}
+%	{BB}{{{\color{numb}{BB}}}}{1}
+%	{"}{{{\color{delim}{"}}}}{1}
+%	{]}{{{\color{delim}{]}}}}{1},
+%}
 
 
 
@@ -566,7 +599,19 @@ Tabulka \ref{statistiky} obsahuje základní statistické údaje o použitých d
 \section{Obsah recenzí}
 Ná následujícím příkladě se lze detailně seznámit s obsahem jednotlivých polí, které recenze uložené v databázi Elasticsearch obsahují. Jedná se o příklad běžné recenze, která nemá vyplněna všechna pole.
 
-	\begin{lstlisting}[caption=Příkald recenze]
+\lstset{
+	string=[s]{"}{"},
+	stringstyle=\color{blue},
+	comment=[l]{:},
+	commentstyle=\color{black},
+	numbers=left,
+	stepnumber=1,    
+	firstnumber=1,
+	numberfirstline=true
+}
+
+
+\begin{lstlisting}[caption=Příkald recenze]
 {"_index": "new_index", "_type": "tripadvisor",
 "_id": "http://www.tripadvisor.com/ShowUserRevie...",
 "_score": null, "_source": {
@@ -581,17 +626,15 @@ Ná následujícím příkladě se lze detailně seznámit s obsahem jednotlivý
   "WEB_SOURCE": "tripadvisor.com",
   "HOTEL_NAME": "JW Marriott Marquis Hotel Dubai",
   "ORDERID": 4660,
-  "LOCALITY": "Dubai 121000, Dubai 121000,
-   Dubai 121000,",
-  "COUNTRY": "United Arab EmiratesUnited Arab 
-  EmiratesUnited Arab Emirates",
+  "LOCALITY": "Dubai 121000, Dubai 121000...",
+  "COUNTRY": "United Arab EmiratesUnited Arab...",
   "LANG_NAME": "English",
   "USER_CITY_REVIEWS": 0,
   "RESPONSE_TEXT": "Dear Guest, Thank you for taking
   the time to review your stay with us. I am very
   pleased to hear that our staff made your stay
   pleasant. Looking forward to seeing you again soon.
-  Sincerely, Balan ParavantavidaHotel Manager",
+  Sincerely, Balan ParavantavidaHotel Manager"",
   "SCORE_TOTAL": 8.75,
   "DATE_CREATEDSTR": "December 7, 2016",
   "LOCATION1": "United Arab Emirates",
@@ -599,36 +642,33 @@ Ná následujícím příkladě se lze detailně seznámit s obsahem jednotlivý
   "LOCATION3": "Dubai",
   "REVIEW_SCORE_ROOMS": 10,
   "SENTIMENT_HOTEL": 0,
-  "HOTEL_REF": "http://www.traveladvisor.com/
-  Hotel_Revie...",
+  "HOTEL_REF": "http://www.traveladvisor.com/...",
   "REVIEW_SCORE_SERVICE": 10,
   "REVIEW_SCORE_VALUE": 10,
   "USER_HELPFUL": 0,
   "ADDRESS": "Sheikh Zayed Road | Business Bay,
-   Dubai 121000, United Arab Emirates",
+   Dubai 121000, United Arab Emirates"",
   "REVIEW": "An absolutely pleasant stay at the
    JW Marriott Marquis Hotel in Dubai. The guest
    reception staff is very professional and 
    helpful. I would like to thank Mahesh for his
    assistance. The rooms are perfectly clean and
    the executive lounge is unique for the frequent
-   travellers. A world class hotel.",   
+   travellers. A world class hotel."",   
   "LANG_CODE": "en",
   "DATE_CREATED": "2016-12-07T00:00:00.000Z",
   "USER_UPDATED_DATESTR": "08 Dec 2016 18:17",
   "BUSINESS_TRIP": true,
   "SENTIMENT_STAFF": 1,
   "FETCH_DATE": "2016-12-08T18:17:53.000Z",
-  "REFERENCE": "http://www.tripadvisor.com/Show-
-  UserRevie...",
+  "REFERENCE": "http://www.tripadvisor.com/Show...",
   "STAYED": "2016-11-01T00:00:00.000Z",
   "EXT_ADDRESS": "Business BayBusiness BayBusi-
-  ness Bay",
+  ness Bay"",
   "USER_LOCATION_COUNTRY": "Switzerland",
   "NUMBER_OF_ROOMS": 1608,
   "FETCH_DATESTR": "08 Dec 2016 18:17",
-  "STREET": "Sheikh Zayed RoadSheikh Zayed 
-  RoadSheikh Zayed Road",
+  "STREET": "Sheikh Zayed RoadSheikh Zayed...",
   "USER": "synchrony77",
   "USER_UPDATED_DATE": "2016-12-08T18:17:53.000Z",
   "SENTIMENT_ROOM": 1,
@@ -638,13 +678,13 @@ Ná následujícím příkladě se lze detailně seznámit s obsahem jednotlivý
   "RESPONSE_DATESTR": "December 7, 2016",
   "HAS_RESPONSE": true,
   "SENTIMENT_TEXT_STAFF": ["guest rece-
-  ption staff is very professional and helpful."],
+  ption staff is very professional and helpful.""],
   "SENTIMENT_TEXT_HOTEL": ["world class hotel."],
   "DATE_CREATED_SEASONS:"2000-12-07T00:00:00.000Z",
   "HOTEL_NAME_SUGGEST": "JW Marriott Marquis Hotel
-  Dubai",
-  "HOTEL_NAME_SUGGEST_TOKENS":["JW","Marriott",
-  "Marquis","Hotel","Dubai"],
+  Dubai"",
+  "HOTEL_NAME_SUGGEST_TOKENS":["JW","Marriott", "Mar-
+  quis","Hotel","Dubai""],
   "DATE_CREATEDSTR_SEASONS_SDF": "December 7"},}
 	\end{lstlisting}
 	

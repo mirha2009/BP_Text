@@ -1,16 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  16 JUN 2017 14:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  26 JUN 2017 15:31
 entering extended mode
-**literatura.tex
-
+**%.tex
 ! Emergency stop.
-<*> literatura.tex
-                  
-*** (job aborted, file error in nonstop mode)
+<*> %.tex
+         
+*** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 2 strings out of 494874
- 20 string characters out of 3174258
+ 1 string out of 494874
+ 10 string characters out of 3174258
  46302 words of memory out of 3000000
  3538 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
