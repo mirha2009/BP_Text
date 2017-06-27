@@ -924,7 +924,7 @@ Ani liniový graf není obtížný. Na ose y je počet recenzí, které byly v d
 \label{subsub:Jídlo}
 Odpověď na tuto otázku lze získat z dostupných dat celkem snadno, protože je v datech k dispozici pole \texttt{SENTIMENT\_FOOD}. Pole v datech, která začínají slovem \texttt{SENTIMENT}, vznikla z analýzy sentimentu, která byla provedena nad texty všech recenzí. Analýza sentimentu je součástí zpracování přirozeného jazyka, čímž se skupiny NLP zabývá. Tato pole obsahují hodnoty 1, 0 nebo -1, přičemž -1 značí nespokojenost a 1 naopak spokojenost. Právě díky dostupnosti těchto dat je možné vyjádřit spokojenost s jídlem jako průměrnou hodnotu pole \texttt{SENTIMENT\_FOOD}. Tato hodnota je graficky i číselně vyjádřena na obrázku \ref{fig:Food_sentiment}. Na obrázku je vidět také číslo, které odpovídá celkovému počtu recenzí, ve kterých bylo jídlo hodnoceno. Jedná se celkem o 20,59\% všech recenzí, což je vzhledem k úplnosti dat celkem přijatelný výsledek. Z vizualizace je vidět, že jsou hodnotící zákazníci s jídlem spokojení a převažují kladné pocity nad negativními.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{minipage}{.5\textwidth}
 	\centering
 	\includegraphics[ width =0.9\linewidth]{img/food.eps}
