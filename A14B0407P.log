@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  27 JUN 2017 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  27 JUN 2017 12:43
 entering extended mode
 **./A14B0407P.tex
 (A14B0407P.tex
@@ -1768,23 +1768,23 @@ e 877.
 (pdftex.def)             Requested size: 142.26378pt x 156.60693pt.
  [47 <./img/rocni_donut-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/graf_sezona.eps>
-(epstopdf)                    date: 2017-06-07 14:33:23
-(epstopdf)                    size: 42278 bytes
+(epstopdf)                    date: 2017-06-27 12:43:28
+(epstopdf)                    size: 94974 bytes
 (epstopdf)             Output file: <img/graf_sezona-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-07 14:33:46
-(epstopdf)                    size: 15962 bytes
+(epstopdf)                    date: 2017-06-27 12:43:38
+(epstopdf)                    size: 27677 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/graf_sezona-eps-convert
 ed-to.pdf img/graf_sezona.eps>
 (epstopdf)             \includegraphics on input line 911.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/graf_sezona-eps-converted-to.pdf, id=767, 455.7025pt x 248.93pt>
+<img/graf_sezona-eps-converted-to.pdf, id=767, 736.7525pt x 476.78125pt>
 File: img/graf_sezona-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/graf_sezona-eps-converted-to.pdf>
 Package pdftex.def Info: img/graf_sezona-eps-converted-to.pdf used on input lin
 e 911.
-(pdftex.def)             Requested size: 386.95749pt x 211.38258pt.
+(pdftex.def)             Requested size: 386.95749pt x 250.40848pt.
  [48 <./img/graf_sezona-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/food.eps>
 (epstopdf)                    date: 2017-06-16 16:09:19
@@ -1796,7 +1796,7 @@ Package epstopdf Info: Source file: <img/food.eps>
 df img/food.eps>
 (epstopdf)             \includegraphics on input line 930.
 Package epstopdf Info: Output file is already uptodate.
- <img/food-eps-converted-to.pdf, id=783, 486.81876pt x 411.5375pt>
+ <img/food-eps-converted-to.pdf, id=787, 486.81876pt x 411.5375pt>
 File: img/food-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food-eps-converted-to.pdf>
@@ -1813,7 +1813,7 @@ rted-to.pdf img/food_positive.eps>
 (epstopdf)             \includegraphics on input line 936.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/food_positive-eps-converted-to.pdf, id=784, 363.3575pt x 236.885pt>
+<img/food_positive-eps-converted-to.pdf, id=788, 363.3575pt x 236.885pt>
 File: img/food_positive-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/food_positive-eps-converted-to.pdf>
@@ -1835,7 +1835,7 @@ Package epstopdf Info: Source file: <img/worth_money.eps>
 ed-to.pdf img/worth_money.eps>
 (epstopdf)             \includegraphics on input line 951.
 Package epstopdf Info: Output file is already uptodate.
- <img/worth_money-eps-converted-to.pdf, id=795, 423.5825pt x 271.0125pt>
+ <img/worth_money-eps-converted-to.pdf, id=799, 423.5825pt x 271.0125pt>
 File: img/worth_money-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/worth_money-eps-converted-to.pdf>
@@ -1843,7 +1843,7 @@ Package pdftex.def Info: img/worth_money-eps-converted-to.pdf used on input lin
 e 951.
 (pdftex.def)             Requested size: 386.95749pt x 247.58942pt.
  [50 <./img/food-eps-converted-to.pdf> <./img/food_positive-eps-converted-to.pd
-f> <./img/worth_money-eps-converted-to.pdf>]
+f>]
 Package epstopdf Info: Source file: <img/sluzby.eps>
 (epstopdf)                    date: 2017-06-16 16:32:22
 (epstopdf)                    size: 99328 bytes
@@ -1854,14 +1854,15 @@ Package epstopdf Info: Source file: <img/sluzby.eps>
 .pdf img/sluzby.eps>
 (epstopdf)             \includegraphics on input line 965.
 Package epstopdf Info: Output file is already uptodate.
- <img/sluzby-eps-converted-to.pdf, id=826, 381.425pt x 238.8925pt>
+
+<img/sluzby-eps-converted-to.pdf, id=827, 381.425pt x 238.8925pt>
 File: img/sluzby-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/sluzby-eps-converted-to.pdf>
 Package pdftex.def Info: img/sluzby-eps-converted-to.pdf used on input line 965
 .
 (pdftex.def)             Requested size: 284.52756pt x 178.21024pt.
- [51 <./img/sluzby-eps-converted-to.pdf>]
+ [51 <./img/worth_money-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/wifi.eps>
 (epstopdf)                    date: 2017-06-16 16:37:11
 (epstopdf)                    size: 108536 bytes
@@ -1872,15 +1873,14 @@ Package epstopdf Info: Source file: <img/wifi.eps>
 df img/wifi.eps>
 (epstopdf)             \includegraphics on input line 975.
 Package epstopdf Info: Output file is already uptodate.
-
-<img/wifi-eps-converted-to.pdf, id=839, 318.18875pt x 163.61125pt>
+ <img/wifi-eps-converted-to.pdf, id=837, 318.18875pt x 163.61125pt>
 File: img/wifi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/wifi-eps-converted-to.pdf>
 Package pdftex.def Info: img/wifi-eps-converted-to.pdf used on input line 975.
 (pdftex.def)             Requested size: 284.52756pt x 146.30258pt.
- [52 <./img/wifi-eps-converted-to.pdf>]
-[53] [54] [55]
+ [52 <./img/sluzby-eps-converted-to.pdf> <./img/wifi-eps-converted-to.pdf>] [53
+] [54] [55]
 Package epstopdf Info: Source file: <img/METRO.eps>
 (epstopdf)                    date: 2017-06-19 11:09:39
 (epstopdf)                    size: 137963 bytes
@@ -1892,7 +1892,7 @@ pdf img/METRO.eps>
 (epstopdf)             \includegraphics on input line 1101.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/METRO-eps-converted-to.pdf, id=891, 469.755pt x 191.71625pt>
+<img/METRO-eps-converted-to.pdf, id=895, 469.755pt x 191.71625pt>
 File: img/METRO-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/METRO-eps-converted-to.pdf>
@@ -1921,7 +1921,7 @@ Package epstopdf Info: Source file: <img/completer.eps>
 (epstopdf)             \includegraphics on input line 1174.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/completer-eps-converted-to.pdf, id=957, 457.71pt x 187.70125pt>
+<img/completer-eps-converted-to.pdf, id=961, 457.71pt x 187.70125pt>
 File: img/completer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/completer-eps-converted-to.pdf>
@@ -1979,9 +1979,9 @@ iles/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on A14B0407P.pdf (74 pages, 2594288 bytes).
+Output written on A14B0407P.pdf (74 pages, 2606161 bytes).
 PDF statistics:
- 1245 PDF objects out of 1440 (max. 8388607)
+ 1249 PDF objects out of 1440 (max. 8388607)
  352 named destinations out of 1000 (max. 500000)
  543 words of extra memory for PDF output out of 10000 (max. 10000000)
 
