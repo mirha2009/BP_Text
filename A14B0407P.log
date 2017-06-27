@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  27 JUN 2017 12:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  27 JUN 2017 12:48
 entering extended mode
 **./A14B0407P.tex
 (A14B0407P.tex
@@ -1724,8 +1724,8 @@ to.pdf used on input line 807.
 [42 <./img/Business_trip_customers_proportions-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/Leisure_trip_customers_proportions_cut
 .eps>
-(epstopdf)                    date: 2017-06-17 14:09:33
-(epstopdf)                    size: 363961 bytes
+(epstopdf)                    date: 2017-06-27 12:48:36
+(epstopdf)                    size: 365780 bytes
 (epstopdf)             Output file: <img/Leisure_trip_customers_proportions_cut
 -eps-converted-to.pdf>
 (epstopdf)                    date: 2017-06-17 14:09:43
@@ -1734,7 +1734,14 @@ Package epstopdf Info: Source file: <img/Leisure_trip_customers_proportions_cut
 proportions_cut-eps-converted-to.pdf img/Leisure_trip_customers_proportions_cut
 .eps>
 (epstopdf)             \includegraphics on input line 830.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=img/Leisure_trip_customers_proportions_cut-eps-con
+verted-to.pdf img/Leisure_trip_customers_proportions_cut.eps)...executed (allow
+ed).
+
+Package epstopdf Info: Result file: <img/Leisure_trip_customers_proportions_cut
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-27 12:48:43
+(epstopdf)                    size: 370859 bytes.
 
 <img/Leisure_trip_customers_proportions_cut-eps-converted-to.pdf, id=715, 716.6
 775pt x 653.44125pt>
@@ -1979,7 +1986,7 @@ iles/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on A14B0407P.pdf (74 pages, 2606161 bytes).
+Output written on A14B0407P.pdf (74 pages, 2608604 bytes).
 PDF statistics:
  1249 PDF objects out of 1440 (max. 8388607)
  352 named destinations out of 1000 (max. 500000)
