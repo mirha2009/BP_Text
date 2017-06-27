@@ -26,10 +26,10 @@
 \contentsline {subsection}{\numberline {2.3.2}Technologie}{13}{subsection.2.3.2}
 \contentsline {subsubsection}{Kolekce a p\IeC {\v r}\IeC {\'\i }prava dat}{13}{section*.10}
 \contentsline {subsubsection}{Zpracov\IeC {\'a}n\IeC {\'\i } dat}{13}{section*.11}
-\contentsline {subsection}{\numberline {2.3.3}Kompatibilita}{14}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Kompatibilita}{13}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Hodnocen\IeC {\'\i } a cen\IeC {\'\i }k}{14}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Sisense}{14}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}P\IeC {\v r}ehled}{15}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}P\IeC {\v r}ehled}{14}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Technologie}{15}{subsection.2.4.2}
 \contentsline {subsubsection}{Kolekce a p\IeC {\v r}\IeC {\'\i }prava dat}{15}{section*.12}
 \contentsline {subsubsection}{Zpracov\IeC {\'a}n\IeC {\'\i } dat}{15}{section*.13}
@@ -85,7 +85,7 @@
 \contentsline {paragraph}{Sez\IeC {\'o}nn\IeC {\'\i } rozlo\IeC {\v z}en\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vnosti podle st\IeC {\'a}t\IeC {\r u}}{47}{section*.39}
 \contentsline {paragraph}{Postup p\IeC {\v r}i tvorb\IeC {\v e} vizualizace odpov\IeC {\v e}di}{48}{section*.40}
 \contentsline {subsubsection}{Jak hodnot\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ci j\IeC {\'\i }dlo nab\IeC {\'\i }zen\IeC {\'e} v hotel\IeC {\'\i }ch?}{49}{section*.41}
-\contentsline {subsubsection}{Je p\IeC {\v r}\IeC {\'\i }nos z cesty do Dubaje \IeC {\'u}m\IeC {\v e}rn\IeC {\'y} vynalo\IeC {\v z}en\IeC {\'y}m n\IeC {\'a}klad\IeC {\r u}m?}{50}{section*.42}
+\contentsline {subsubsection}{Je p\IeC {\v r}\IeC {\'\i }nos z cesty do Dubaje \IeC {\'u}m\IeC {\v e}rn\IeC {\'y} vynalo\IeC {\v z}en\IeC {\'y}m n\IeC {\'a}klad\IeC {\r u}m?}{49}{section*.42}
 \contentsline {subsubsection}{Jak hodnot\IeC {\'\i } n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ci kvalitu slu\IeC {\v z}eb?}{51}{section*.43}
 \contentsline {subsubsection}{M\IeC {\'a} na n\IeC {\'a}v\IeC {\v s}t\IeC {\v e}vn\IeC {\'\i }ky dopad stav a \IeC {\v c}istota hotelu?}{52}{section*.44}
 \contentsline {subsubsection}{M\IeC {\'a} velikost hotelu vliv na celkov\IeC {\'y} dojem z hotelu?}{54}{section*.45}
